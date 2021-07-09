@@ -1,0 +1,80 @@
+
+@@@@@@@@@@@@@@@@@@@@@@@@@@@@@ rdfox @@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@
+
+Query 3.) List of person's working at a particular company. (requires all the datasets used in our work)
+
+
+ PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+ PREFIX d:  <http://learningsparql.com/ns/data#> 
+ Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+ SELECT ?last ?first ?c
+ WHERE 
+ {   SERVICE <http://localhost:12110/datastores/repo1/sparql>{ 
+ 
+ ?s a ab:Person.    
+ ?s ab:firstname ?first ;   
+ ab:lastname ?last . }   
+ 
+ SERVICE <http://localhost:12110/datastores/repo2/sparql> {  
+ 
+  ?s ab:employedat d:8254.               }   
+ SERVICE <http://localhost:12110/datastores/repo3/sparql>{   
+ 
+ d:8254 a ab:Company.       
+ d:8254 ab:hasname ?c.          } }
+ 
+14:57:20 INFO  Fuseki          :: [9] 200 OK (179,892 s)
+
+-------------------------------------------------------------------
+Query 5.) List of company id's, names and number of employees working in a company. (requires other datasets also used in our work)
+
+ PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+ PREFIX d:  <http://learningsparql.com/ns/data#> 
+ Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>  
+ SELECT DISTINCT ?c_id ?c_name ?c_emp 
+ WHERE 
+ {        
+ SERVICE <http://localhost:12110/datastores/repo2/sparql>{        
+ ?s ab:employedat ?c_id.}     
+
+ SERVICE  <http://localhost:12110/datastores/repo3/sparql>{         
+ 
+ ?c_id a ab:Company.       
+ ?c_id ab:hasname ?c_name;            
+ ab:hasempnumber ?c_emp.                        }          }
+ 
+15:08:09 INFO  Fuseki          :: [10] 200 OK (232,699 s)
+
+----------------------------------------------------------------------
+Query 8.) list of persons and the companies in which they are working. ( requires other datasets used in our work )
+
+ PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+ PREFIX d:  <http://learningsparql.com/ns/data#>
+ Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>   
+ 
+ SELECT ?c_name  ?first ?last  
+ 
+ WHERE {     
+ 
+ SERVICE<http://localhost:12110/datastores/repo1/sparql>{     
+ 
+ ?s a ab:Person;         
+ ab:firstname ?first;       
+ ab:lastname ?last.}         
+ 
+ SERVICE<http://localhost:12110/datastores/repo2/sparql>{        
+ ?s ab:employedat ?c_id.}          
+ 
+ SERVICE<http://localhost:12110/datastores/repo3/sparql>{      
+ ?c_id a ab:Company.      
+ ?c_id ab:hasname ?c_name;    
+ }              }  
+ 
+ LIMIT 500 
+ 
+15:19:30 INFO  Fuseki          :: [16] 200 OK (3,780 s)
+
+
+
+
+
