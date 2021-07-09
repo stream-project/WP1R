@@ -52,12 +52,12 @@ end = time.time()
 
 print('time taken to upload :', end -   start)
 
-''' inserting dataset4 (combined all dataset)'''    
+''' inserting dataset4 '''    
 
 start = time.time()
 
 
-insert_by_put(open(r'C:\Users\GuptaR\Desktop\sparql\relation and company dataset.ttl').read(),'http://localhost:8890/DAV/two_data','dba','rohit') 
+insert_by_put(open(r'C:\Users\GuptaR\Desktop\sparql\company_relation.ttl').read(),'http://localhost:8890/DAV/two_data','dba','rohit') 
 
 end = time.time()
 
