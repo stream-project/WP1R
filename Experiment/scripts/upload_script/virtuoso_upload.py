@@ -46,13 +46,12 @@ start = time.time()
 
 
 insert_by_put(open(r'C:\Users\GuptaR\Desktop\sparql\company.ttl').read(),'http://localhost:8890/DAV/company','dba','rohit') 
-# insert_by_put(open('book1.ttl').read(),'http://localhost:8890/sparql','dba','rohit') 
 
 end = time.time()
 
 print('time taken to upload :', end -   start)
 
-''' inserting dataset4 '''    
+''' inserting dataset4 (company and relation dataset combined)'''    
 
 start = time.time()
 
