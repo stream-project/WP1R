@@ -23,5 +23,5 @@ In the Experiment folder we have three sub-folders (datasets, scripts and result
     used to query rdfox and also it contains one text file which has three queries that we have used with 
     Jena Fuseki Server. 
           
-#### Sub-folder "results" contains all the results of the queries that we have performed.         
+#### Sub-folder "results" contains all the results of the queries that we have performed.     
          
