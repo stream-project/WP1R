@@ -17,6 +17,8 @@ In the Experiment folder we have two sub-folders and two files, file "Queries.tx
           
 ### Sub-folder "scripts" has two folders in it:
           1. upload_script: which contains four python scripts that we have used to upload the triples into the repositories and to measure the uploading time.
-          2. query_script: It also contains python scripts that we have used to query the above mentioned repositories. Inside the query_script, there is another folder                            named "rdfox" which contains python script that we have used to query rdfox and also it contains one text file which has three queries that we                            have used with Jena Fuseki Server. 
+          2. query_script: It also contains python scripts that we have used to query the above mentioned repositories. 
+          
+    Inside the query_script, there is another folder named "rdfox" which contains python script that we have used to query rdfox and also it contains one text file which has three queries that we have used with Jena Fuseki Server. 
           
          
