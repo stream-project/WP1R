@@ -24,4 +24,14 @@ In the Experiment folder we have three sub-folders (datasets, scripts and result
     Jena Fuseki Server. 
           
 #### Sub-folder "results" contains all the results of the queries that we have performed.     
+
+# Experiment_v2
+
+Experiment_v2 folder contains results of querying and uploading triples of two graph databases: GraphDB and RDFox, here we have combined all the datasets that we have seen above into a single dataset and uploaded into GraphDB and RDFox and then query it with the same queries that we have used above (NOTE: query1 and query8 have been modified; query1 has a different format and in query 8 we are querying all the results, so basically we have removed the LIMIT which was 500 before in query 8)
+
+In the experiment_v2 folder there are two sub-folders and two files. file "queries.txt" has all the nine queries that we have used  and file "combined_dataset" has triples uploading and querying result table.
+
+The two sub-folders; "results" and "scripts" contains the results of the queries and the python scripts that we have used for uploading and querying triples respectively.
+
+
          
