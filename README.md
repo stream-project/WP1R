@@ -31,7 +31,7 @@ Experiment_v2 folder contains results of querying and uploading triples of two g
 
 In the experiment_v2 folder there are two sub-folders and two files. file "queries.txt" has all the nine queries that we have used  and file "combined_dataset" has triples uploading and querying result table.
 
-The two sub-folders; "results" and "scripts" contains the results of the queries and the python scripts that we have used for uploading and querying triples respectively.
+The two sub-folders; "results" and "scripts" contains the results of the queries and the python scripts that we have used for uploading and querying triples respectively. 
 
 
          
