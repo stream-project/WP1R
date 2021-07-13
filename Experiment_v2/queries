@@ -1,0 +1,207 @@
+
+############Query1#############
+
+1.) Counting total number of triples.
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+select ((?co+?com) as ?total_triples)
+{
+    {
+        select (count(?s) AS ?co)
+        { ?s a ab:Person ;
+             ?o ?p.}
+    } 
+    {
+        select (count(?d) AS ?com) 
+        { ?d a ab:Company;
+             ?w ?q.} 
+     
+
+
+    }
+
+}
+   
+
+############Query2#############
+
+2.) list of  person first and last names.
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+  
+
+SELECT ?first ?last
+WHERE
+{
+ ?s a ab:Person;
+    ab:firstname ?first;
+    ab:lastname ?last.
+}
+
+############Query3#############
+
+3.) List of person's working at a particular company. (requires all the datasets used in our work)
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+SELECT ?last ?first ?c
+WHERE
+{
+  ?s a ab:Person.  
+  ?s ab:firstname ?first ;
+     ab:lastname ?last . 
+  
+
+        ?s ab:employedat d:8254. 
+        
+    
+
+         d:8254 a ab:Company.
+         d:8254 ab:hasname ?c. 
+        
+}
+
+############Query4#############
+
+4.) Counting total number of companies. 
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+
+
+
+SELECT (count(?c) as ?total_companies)
+
+where{
+
+SELECT DISTINCT ?c 
+
+WHERE
+{ 
+     
+  
+            ?s ab:employedat ?c.
+        
+}}
+
+############Query5#############
+
+5.) List of company id's, names and number of employees working in a company. (requires other datasets also used in our work)
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+SELECT DISTINCT ?c_id ?c_name ?c_emp
+
+WHERE
+{ 
+       
+  
+            ?s ab:employedat ?c_id.
+    
+
+        ?c_id a ab:Company.
+         ?c_id ab:hasname ?c_name;
+               ab:hasempnumber ?c_emp.
+ 
+            
+        }
+
+############Query6#############
+       
+
+6.) Count of persons having unique first and last names.
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+  
+
+SELECT (count(distinct concat(str(?first), str(?last))) as ?unique)
+WHERE
+{
+ ?s a ab:Person;
+    ab:firstname ?first;
+    ab:lastname ?last.
+}
+
+############Query7#############
+
+7. ) Count of persons having same first and last names.
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+  
+
+SELECT ?first ?last 
+(count(concat(str(?first), str(?last))) as ?unique)
+WHERE
+{
+ ?s a ab:Person;
+    ab:firstname ?first;
+    ab:lastname ?last.
+}
+group by ?first ?last
+
+############Query8#############
+
+8. ) list of persons and the companies in which they are working. ( requires other datasets used in our work )
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+SELECT ?c_name  ?first ?last 
+
+WHERE
+{     
+      ?s a ab:Person;
+         ab:firstname ?first;
+            ab:lastname ?last.
+    
+    
+      
+  
+            ?s ab:employedat ?c_id.
+    
+ 
+        ?c_id a ab:Company.
+         ?c_id ab:hasname ?c_name;
+               
+ 
+            
+        
+        
+    }
+
+
+############Query9#############
+
+
+9.) Count of total number of persons.
+
+PREFIX ab: <http://learningsparql.com/ns/addressbook#> 
+PREFIX d:  <http://learningsparql.com/ns/data#>
+Prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+
+select (count(?s) as ?unique)
+where{
+SELECT  ?s ?first ?last
+WHERE
+{
+ ?s a ab:Person;
+    ab:firstname ?first;
+    ab:lastname ?last.
+}
+}
