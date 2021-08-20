@@ -1,0 +1,615 @@
+
+
+############# query1 #############
+
+ ''' Query to retrieve all station details '''
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select ?station_id ?label ?lat ?lon ?alt 
+where{
+    
+    
+    ?station_id a sosa:Platform;
+           rdfs:label ?label;
+           geo:lat ?lat;
+           geo:lon ?lon;
+            geo:alt ?r.
+    ?r qudt:numericValue ?alt.
+
+}
+
+
+############ query2 ############
+
+''' Query to retrieve all properties, their label and sensors that are observing those properties  '''
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+
+select ?feature ?FOI ?prop ?label ?sensor
+where{
+
+    ?feature a ?FOI.
+   base:sample90 sosa:isSampleOf ?feature;
+     ssn:hasProperty ?prop.
+    ?prop a ssn:Property;
+       rdfs:label ?label.
+
+        ?sensor sosa:observes ?prop.
+       
+    }
+
+
+
+
+############## query3 ##################
+
+''' Query to retrieve a particular observation result '''
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+
+
+
+select ?feature ?sample ?sensor ?prop ?label ?result
+
+where{
+      ?feature a ?f.
+      ?sample  sosa:isSampleOf ?feature.
+      ?prop a ssn:Property.
+    
+ 
+        
+    ?sensor a sosa:Sensor;
+     sosa:observes ?prop.
+    
+        
+      base:802647971temperature_air_200  a sosa:Observation;
+           rdfs:label ?label;
+           sosa:madeBySensor ?sensor;
+          sosa:hasFeatureOfInterest ?sample;
+          sosa:hasResult ?bl.
+     ?bl qudt:numericValue ?result.
+         
+}
+
+
+
+################ query4 ##################
+
+ ''' Query to get all samples present in the dataset '''
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select ?sample
+where{
+    ?feature a ?FOI.
+    
+    ?sample sosa:isSampleOf ?feature.
+}
+
+
+################## query5 ####################
+
+''' Query to get subject, predicate and object of a particular observation '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+select ?s ?p ?o ?o1 ?p2 ?o2 ?o3 ?p4 ?o4
+
+where{
+    
+
+    { ?s a sosa:Observation;
+        ?p ?o.
+        FILTER(?s = base:802647971temperature_air_200)}
+UNION
+{
+      ?s1 ?p1 ?o1.
+    ?o1 a qudt:quantityValue;
+       ?p2 ?o2.
+         
+
+   FILTER (?s1 = base:802647971temperature_air_200)}
+ union
+    {
+             ?s2 ?p3 ?o3.
+    ?o3 a time:Instant;
+       ?p4 ?o4.
+         
+
+   FILTER (?s2 = base:802647971temperature_air_200)
+        
+        
+    }
+    
+}
+
+
+
+
+################ query 6 #################
+
+''' Query for retrieving all properties observations for sample 1 '''
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+
+
+select ?sample ?prop ?sensor ?result 
+where{
+
+
+    ?feature a ?FOI.
+    ?sample sosa:isSampleOf ?feature;
+            ssn:hasProperty ?prop.
+            
+ 
+        
+        ?sensor sosa:observes ?prop.
+          
+    
+    
+        ?ob a sosa:Observation;
+            # sosa:madeBySensor ?sensor;
+            sosa:hasFeatureOfInterest ?sample;
+            sosa:hasResult ?r.
+        ?r qudt:numericValue ?result.
+    ?ob sosa:madeBySensor ?sensor.
+        
+       
+    
+
+
+Filter(?sample = base:sample1)
+ 
+}
+
+
+
+################# query 7 #################
+
+''' Query for retrieving single property observations for all samples '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+
+select ?sample ?prop ?sensor ?result
+where{
+
+    ?feature a ?FOI.
+    ?sample sosa:isSampleOf ?feature;
+            ssn:hasProperty ?prop.
+   
+        
+        ?sensor sosa:observes ?prop
+          
+    
+    
+        ?ob a sosa:Observation;
+            sosa:madeBySensor ?sensor;
+            sosa:hasFeatureOfInterest ?sample;
+            sosa:hasResult ?r.
+        ?r qudt:numericValue ?result.
+        
+       
+    
+        Filter(?prop = base:temperature_air_min_005)
+ 
+}
+
+
+
+
+################## query 8 ##################
+
+''' Query for retrieving all properties observations and the dates on which those observations were taken for sample 1 '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+
+
+select ?sample ?prop ?sensor ?time ?result 
+where{
+
+    ?feature a ?FOI.
+    ?sample sosa:isSampleOf ?feature;
+            ssn:hasProperty ?prop.
+            
+  
+        
+        ?sensor sosa:observes ?prop.
+          
+    
+   
+        
+        ?ob a sosa:Observation;
+            # sosa:madeBySensor ?sensor;
+            sosa:hasFeatureOfInterest ?sample;
+            sosa:hasResult ?r.
+        ?r qudt:numericValue ?result.
+    ?ob sosa:madeBySensor ?sensor;
+         sosa:resultTime ?t.
+    ?t a time:Instant;
+       time:inXSDDateTimeStamp ?time.
+        
+       
+    
+
+
+Filter(?sample = base:sample1)
+ 
+}
+
+
+
+
+
+################## query 9 #####################
+
+''' Query for retrieving all properties observations for all samples taken on a specific date '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select  ?prop ?sample ?result
+where
+{
+      ?feature a ?f.
+      ?sample  sosa:isSampleOf ?feature.
+      ?prop a ssn:Property.
+    
+   
+    
+ ?sensor sosa:observes ?prop.
+    
+
+    
+?s a sosa:Observation;
+ sosa:hasFeatureOfInterest ?sample ;
+ sosa:hasResult ?r.
+?r qudt:numericValue ?result.
+?s sosa:madeBySensor ?sensor;
+   sosa:resultTime ?t.
+?t time:inXSDDateTimeStamp ?time.
+   
+    
+    
+FILTER ( ?time  = "2012-09-26T00:00:00+00:00"^^xsd:dateTime )   
+ 
+}
+
+
+
+
+#################### query 10 ####################
+
+''' Query to retrieve all station and the sensors that they are hosting '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+
+select   ?station ?sensor
+
+where{
+	#?feature a ?FOI.
+	?prop a sosa:ObservableProperty.
+	
+		?sensor sosa:observes ?prop.
+		?station sosa:hosts ?sensor.
+	   
+	}
+
+
+
+
+
+######################### query 11 ######################
+
+''' Query to count total number of triples present in all three repositories/Graphs '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+
+select ((?co+?com+?co2) as ?total_triples_features)
+((?co1+?b1+?com1) as ?total_triples_platforms)
+  ((?co3+?co4+?co5) as ?total_triples_observations)
+
+{
+    {
+        select (count(?s) AS ?co)
+        { ?s a sosa:FeatureOfInterest ;
+              ?o ?p.}
+  }
+    {
+        select (count(?d) AS ?com) 
+        { ?d a sosa:Sample;
+              ?w ?q.} 
+    
+    
+    
+    }
+              
+              {
+        select (count(?s2) AS ?co2)
+        { ?s2 a sosa:ObservableProperty ;
+              ?o1 ?p1.}
+        }
+        
+        
+            {
+        select (count(?s1) AS ?co1)
+        { ?s1 a sosa:Platform ;
+              ?o2 ?p2.}
+  }
+                {
+          select (count(?p2) AS ?b1) 
+        { 
+            ?p2  a qudt:quantityValue;
+                ?q1 ?q2.
+       
+        } 
+        }
+        
+        {
+        select (count(?d1) AS ?com1) 
+        { ?d1 a sosa:Sensor;
+              ?w ?q.} 
+    
+    
+    
+    }
+        
+        {
+
+select (count(?s3) AS ?co3)
+        { ?s3 a sosa:Observation ;
+              ?o ?p.}
+        }
+      
+      {
+      select (count(?p) AS ?co4)
+        { ?p a qudt:quantityValue;
+              ?p1 ?p2.
+              }
+        }
+           
+            {
+      select (count(?p) AS ?co5)
+        { ?p a time:Instant;
+              ?p3 ?p4.
+              }
+        }
+    
+    }
+	
+
+	
+################# query 12 ######################
+
+''' Query for retrieving all properties observations for all samples taken over 10 years of time period (2010 to 2020)''
+
+
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+    
+    
+    
+    select ?sample ?prop ?sensor ?result 
+    where{
+	
+	
+        ?feature a ?FOI.
+        ?sample sosa:isSampleOf ?feature;
+                ssn:hasProperty ?prop.
+                
+        ?sensor sosa:observes ?prop.
+              
+        
+        ?ob a sosa:Observation;
+              sosa:hasFeatureOfInterest ?sample;
+                sosa:hasResult ?r.
+            ?r qudt:numericValue ?result.
+        ?ob sosa:madeBySensor ?sensor.
+            
+           
+        
+     
+    }
+    
+################# query 13 ############################
+
+''' Query for getting average of all observations of every property of every sample present in the dataset  '''
+
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+    
+    
+
+select  ?sample ?prop (avg(?result) as ?avg)
+where
+{
+      
+        ?sensor sosa:observes ?prop.
+    
+        ?s a sosa:Observation;
+		sosa:hasFeatureOfInterest ?sample ;
+		sosa:hasResult ?r.
+		?r qudt:numericValue ?result.
+		?s sosa:madeBySensor ?sensor;
+		sosa:resultTime ?t.
+		?t time:inXSDDateTimeStamp ?date.
+
+
+
+
+    
+}
+
+GROUP BY ?sample ?prop 	
+
+
+
+################# query14 ####################################
+
+''' Query for retrieving all properties observations for all samples which were taken over 1 year of time period '''
+
+
+PREFIX base: <http://example.org/data/> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX cdt: <http://w3id.org/lindt/custom_datatypes#>
+PREFIX time: <http://www.w3.org/2006/time#>
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX geo: <http://www.w3.org/2003/01/geo/wgs84_pos#>
+
+select  ?prop ?sample ?time ?result
+where
+{
+      ?feature a ?f.
+      ?sample  sosa:isSampleOf ?feature.
+      ?prop a ssn:Property.
+    
+    
+    
+ ?sensor sosa:observes ?prop.
+    
+
+   
+?s a sosa:Observation;
+ sosa:hasFeatureOfInterest ?sample ;
+ sosa:hasResult ?r.
+?r qudt:numericValue ?result.
+?s sosa:madeBySensor ?sensor;
+   sosa:resultTime ?t.
+?t time:inXSDDateTime ?time.
+   
+    
+FILTER ( ?time  >= "2018-07-07T00:00:00+00:00"^^xsd:dateTime  && ?time <= "2019-07-07T00:00:00+00:00"^^xsd:dateTime)    
+
+}
+
+
+	
+	
+
+	
+
