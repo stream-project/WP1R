@@ -2,10 +2,29 @@
 # This folder has two files in it: Queries.txt and dwd_query_upload. 
 
 Queries.txt contains all the queries that we have used to query all the four databases with the explanation of what they are doing and 
-dwd_query_upload contains the querying time comparison table
+dwd_query_upload contains the querying time comparison table (Query result table).
+
+## Below is the Query result table for all the databases used in our experiment. 
+
+This table contains uploading and querying time of the triples for all the four databases (This is the same table which dwd_query_upload.docx file contains).
 
 
-
-
+|    <br>                                          |    <br>GraphDB<br>   <br><br>(Time in seconds)    |    <br>RDFox<br>   <br><br>(Time in seconds)    |    <br>Rdfox using Jena<br>   <br><br>(Time in seconds)    |    <br>Virtuoso<br>   <br><br>(Time in seconds)    |    <br>AllegroGraph<br>   <br><br>(Time in seconds)                |
+|--------------------------------------------------|---------------------------------------------------|-------------------------------------------------|------------------------------------------------------------|----------------------------------------------------|--------------------------------------------------------------------|
+|    <br>Uploading<br>   <br>24.758.648 triples    |    <br>Approx. 1960<br>   <br>seconds             |    <br>Approx. 30 seconds                       |    <br>     -                                              |    <br>Approx. 1140 seconds                        |    <br>Uploading 4953016 triples<br>   <br>(approx. 68 seconds)    |
+|    <br> <br>   <br>Query1                        |    <br> <br>   <br>Approx.<br>   <br> 2.03        |    <br> <br>   <br>Approx.<br>   <br>0.003      |    <br> <br>   <br>Approx.<br>   <br>0.012                 |    <br> <br>   <br>Approx.<br>   <br>2.03          |    <br> <br>   <br>Approx.<br>   <br>0.01                          |
+|    <br> <br>   <br>Query2                        |    <br> <br>   <br>Approx. <br>   <br>2.07        |    <br> <br>   <br>Approx.<br>   <br>0.003      |    <br> <br>   <br>Approx.<br>   <br>0.019                 |    <br> <br>   <br>Approx.<br>   <br>2.03          |    <br> <br>   <br>Approx.<br>   <br>0.007                         |
+|    <br> <br>   <br>Query3                        |    <br> <br>   <br>Approx.<br>   <br> 2.17        |    <br> <br>   <br>Approx.<br>   <br>0.003      |    <br> <br>   <br>Approx.<br>   <br>0.26                  |    <br> <br>   <br>Approx.<br>   <br>2.07          |    <br> <br>   <br>Approx.<br>   <br>0.005                         |
+|    <br> <br>   <br>Query4                        |    <br> <br>   <br>Approx.<br>   <br> 2.03        |    <br> <br>   <br>Approx.<br>   <br>0.002      |    <br> <br>   <br>Approx.<br>   <br>0.005                 |    <br> <br>   <br>Approx.<br>   <br>2.04          |    <br> <br>   <br>Approx.<br>   <br>0.008                         |
+|    <br> <br>   <br>Query5                        |    <br> <br>   <br>Approx.<br>   <br>2.04         |    <br> <br>   <br>Approx.<br>   <br>0.004      |    <br> <br>   <br>Approx.<br>   <br>0.006                 |    <br> <br>   <br>Approx.<br>   <br>2.04          |    <br> <br>   <br>Approx.<br>   <br>0.56                          |
+|    <br> <br>   <br>Query6                        |    <br> <br>   <br>Approx.<br>   <br>4.17         |    <br> <br>   <br>Approx.<br>   <br>0.41       |    <br> <br>   <br>Approx.<br>   <br>1.3                   |    <br> <br>   <br>Approx.<br>   <br>4.57          |    <br> <br>   <br>Approx.<br>   <br>5.37                          |
+|    <br> <br>   <br>Query7                        |    <br> <br>   <br>Approx.<br>   <br>4.43         |    <br> <br>   <br>Approx.<br>   <br>2.60       |    <br> <br>   <br>Approx.<br>   <br>6.8                   |    <br> <br>   <br>Approx.<br>   <br>15.78         |    <br> <br>   <br>Approx.<br>   <br>4.22                          |
+|    <br> <br>   <br>Query8                        |    <br> <br>   <br>Approx.<br>   <br>4.92         |    <br> <br>   <br>Approx.<br>   <br>0.45       |    <br> <br>   <br>Approx.<br>   <br>1.34                  |    <br> <br>   <br>Approx.<br>   <br>4.76          |    <br> <br>   <br>Approx.<br>   <br>8.41                          |
+|    <br> <br>   <br>Query9                        |    <br> <br>   <br>Approx.<br>   <br>62.56        |    <br> <br>   <br>Approx.<br>   <br>0.005      |    <br> <br>   <br>Approx.<br>   <br>21.04                 |    <br> <br>   <br>Approx.<br>   <br>29.18         |    <br> <br>   <br>Approx.<br>   <br>2.44                          |
+|    <br> <br>   <br>Query10                       |    <br> <br>   <br>Approx.<br>   <br>2.16         |    <br> <br>   <br>Approx.<br>   <br>0.004      |    <br> <br>   <br>Approx.<br>   <br>0.018                 |    <br> <br>   <br>Approx.<br>   <br>2.03          |    <br> <br>   <br>Approx.<br>   <br>0.03                          |
+|    <br> <br>   <br>Query11                       |    <br> <br>   <br>Approx.<br>   <br>42.74        |    <br> <br>   <br>Approx.<br>   <br>1.80       |    <br> <br>   <br>Approx.<br>   <br>2.18                  |    <br> <br>   <br>Approx.<br>   <br>7.25          |    <br> <br>   <br>Approx.<br>   <br>9.03                          |
+|    <br> <br>   <br>Query12                       |    <br> <br>   <br>Approx.<br>   <br>59.15        |    <br> <br>   <br>Approx.<br>   <br>18.18      |    <br> <br>   <br>Approx.<br>   <br>59.2                  |    <br> <br>   <br>Approx.<br>   <br>91.68         |    <br> <br>   <br>Approx.<br>   <br>41.96                         |
+|    <br> <br>   <br>Query13                       |    <br> <br>   <br>Approx.<br>   <br>69.75        |    <br> <br>   <br>Approx.<br>   <br>2.17       |    <br> <br>   <br>Approx.<br>   <br>29.18                 |    <br> <br>   <br>Approx.<br>   <br>4.67          |    <br> <br>   <br>Approx.<br>   <br>2.65                          |
+|    <br> <br>   <br>Query14                       |    <br> <br>   <br>Approx.<br>   <br>76.12        |    <br> <br>   <br>Approx.<br>   <br>2.49       |    <br> <br>   <br>Approx.<br>   <br>17.91                 |    <br> <br>   <br>Approx.<br>   <br>18.32         |    <br> <br>   <br>Approx.<br>   <br>6.48                          |
 
 
