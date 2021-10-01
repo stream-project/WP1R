@@ -1,0 +1,101 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+
+############# defining metadata of materials ################
+
+ab:mat1 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[3.50758669e-10 2.02511396e-10 4.42678188e-10]
+ [2.12169356e-10 1.22495279e-10 1.91300562e-10]
+ [5.14393162e-10 2.96984988e-10 1.26803475e-10]
+ [6.63214312e-10 3.82906938e-10 3.69827375e-10]
+ [3.71912782e-10 2.14723936e-10 2.41296611e-10]
+ [5.23576756e-10 4.50239273e-10 2.49264072e-10]
+ [5.22237918e-10 3.01514213e-10 4.86776511e-10]
+ [6.51707018e-10 2.28311063e-10 2.49264072e-10]
+ [6.74721607e-10 5.37502812e-10 4.90390678e-10]
+ [8.02851869e-10 3.15574602e-10 4.90390678e-10]
+ [8.04190707e-10 4.64299662e-10 2.52878239e-10]
+ [9.54515843e-10 5.51089939e-10 4.98358139e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[3.50758669e-10 2.02511396e-10 4.42678188e-10]
+ [2.12169356e-10 1.22495279e-10 1.91300562e-10]
+ [5.14393162e-10 2.96984988e-10 1.26803475e-10]
+ [6.63214312e-10 3.82906938e-10 3.69827375e-10]
+ [3.71912782e-10 2.14723936e-10 2.41296611e-10]
+ [5.23576756e-10 4.50239273e-10 2.49264072e-10]
+ [5.22237918e-10 3.01514213e-10 4.86776511e-10]
+ [6.51707018e-10 2.28311063e-10 2.49264072e-10]
+ [6.74721607e-10 5.37502812e-10 4.90390678e-10]
+ [8.02851869e-10 3.15574602e-10 4.90390678e-10]
+ [8.04190707e-10 4.64299662e-10 2.52878239e-10]
+ [9.54515843e-10 5.51089939e-10 4.98358139e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "9.309509321677973e+28 / meter ** 3" ;
+    nomad:has_atoms "['O', 'Ti']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "q1miEUaOfNiP07PAZ5NSNAuoypMg" ;
+    nomad:has_calc_id "pieH9n6qoVbsOnH7bTdjtPeVo6QM" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-1041573" ;
+    nomad:has_formula "O8Ti4",
+        "Ti4O8" ;
+    nomad:has_formula_reduced "TiO2" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-08-26T14:02:24.214567"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[ 5.460856e-10 -6.423360e-11  5.283800e-11]
+ [ 2.174150e-10  5.050408e-10  5.283800e-11]
+ [ 2.976423e-10  1.718439e-10  4.860478e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_mass_density "4115.43247358617 kilogram / meter ** 3" ;
+    nomad:has_material_id "jY8pynmQa53qb0Y4V0JrjKI-J_8W" ;
+    nomad:has_material_name "Titanium(IV) Oxide" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 12 ;
+    nomad:has_nomad_commit "59baef14" ;
+    nomad:has_nomad_version "0.10.4" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-1041573']" ;
+    nomad:has_simulation_cell [ nomad:array """[[ 5.460856e-10 -6.423360e-11  5.283800e-11]
+ [ 2.174150e-10  5.050408e-10  5.283800e-11]
+ [ 2.976423e-10  1.718439e-10  4.860478e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Ti O" ;
+    nomad:has_species_and_counts "Ti O2" ;
+    nomad:has_upload_id "5TM3DMqGTtKtP5qfQ7havg" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2021-08-26T13:53:09.818000"^^xsd:dateTime ] ;
+    ab:has_atom_labels "['Ti', 'Ti', 'Ti', 'Ti', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "TiTiTiTiOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "O8Ti4" ;
+    ab:has_chemical_composition_reduced "Ti4O8" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "nv86DZUspebcGmo9wJcqXVMX3HDP" ;
+    ab:has_is_representative true ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project Upload at 2021-08-26 06:00:22.089529"@en ;
+    sosa:isResultOf ab:method1 ;
+    sosa:isSampleOf ab:materials .
+
+
+############ defining feature of Interest #################
+
+ab:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample ab:mat1 .
+
