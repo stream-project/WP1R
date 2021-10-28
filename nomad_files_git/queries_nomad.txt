@@ -1,0 +1,94 @@
+
+###### Query1 #######
+
+
+Query1: Query to find formula of a material, code name of a material and value of atom forces of a material
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <http://https://nomad-coe.eu/ontology#> 
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX time: <http://www.w3.org/2006/time#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc#> 
+
+select distinct  ?mat ?name ?label ?value 
+
+where
+
+{
+    
+      ?mat a sosa:Sample;
+         nomad:has_formula ?for;
+        sosa:isResultOf ?s.
+    
+    
+    
+
+    SERVICE <http://localhost:7200/repositories/method>
+    {
+        
+    ?s a sosa:Sampling;
+       nomad:has_code_name ?name;
+       sosa:hasResult ?mat.
+      
+       
+    }
+    SERVICE <http://localhost:7200/repositories/observation>{
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?mat;
+                                   sosa:hasResult ?r.
+        ?r rdfs:label ?label;
+           ?p ?value.
+        FILTER (?p = nomad:array || ?p = qudt:numericValue )
+    
+    }
+
+}
+
+
+
+##### Query 2 #######
+
+Query2: Query to find details of method used for calculating the obsrvations of a material
+
+
+PREFIX ab: <http://learningsparql.com/ns/data#> 
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <http://https://nomad-coe.eu/ontology#> 
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX time: <http://www.w3.org/2006/time#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+
+select ?mat ?set ?name ?version ?comp ?crystal
+
+where
+
+{
+    
+      ?mat a sosa:Sample;
+        sosa:isResultOf ?s.
+    
+    
+    
+
+    SERVICE <http://localhost:7200/repositories/nomad_method>
+    {
+        
+    ?s a sosa:Sampling;
+       nomad:has_basis_set ?set;
+       nomad:has_code_name ?name;
+       nomad:has_code_version ?version;
+       nomad:has_compound_type ?comp;
+       nomad:has_crystal_system ?crystal.
+       
+    }
+}
