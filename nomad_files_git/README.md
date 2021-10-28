@@ -1,1 +1,2 @@
 
+This folder contains three turtle files: 'method_v1', 'nomad_obser_v1' and 'nomad_single_mat', which contains information about the method used for doing claculations on materials, results of the calculations and the general metadata associated with the materials respectively. The folder also has one text file: 'queries_nomad', which contains few queries that we have performed over these three files.
