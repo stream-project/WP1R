@@ -10,7 +10,6 @@ import numpy as np
 import urllib.parse
 import validators
 import os
-
 from nomad.client import ArchiveQuery
 from nomad.metainfo import units
 
