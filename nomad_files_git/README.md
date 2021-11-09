@@ -20,4 +20,5 @@ This folder has matvoc based turtle files that contains information about the me
 This folder has  matvoc based turtle files that contains results of the calculations/observations.
 
 
-## queries.txt file contains two queries that we have performed over these files that we have generated above using pur python scripts.
+## queries.txt 
+This file contains two queries that we have performed over these files that we have generated above using pur python scripts.
