@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Nov  1 15:31:38 2021
-
-@author: GuptaR
-"""
 
 
 
