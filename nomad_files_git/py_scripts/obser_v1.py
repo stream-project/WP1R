@@ -1,9 +1,4 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Mon Nov  1 15:32:05 2021
-
-@author: GuptaR
-"""
 
 
 import time
