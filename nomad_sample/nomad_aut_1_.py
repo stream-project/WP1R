@@ -545,3 +545,4 @@ g.serialize(r'C:\Users\GuptaR\Desktop\nomad\nomad_aut_1.ttl', format='turtle')
 
 
 
+
