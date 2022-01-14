@@ -67,7 +67,7 @@ print(results)
 # print(results)
 
 
-# print(results)
+
 
 ''' creating rdf graphs '''
 
