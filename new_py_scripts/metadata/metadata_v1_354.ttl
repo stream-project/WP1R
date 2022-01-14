@@ -1,0 +1,396 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:MgNaPd a matvoc:Formula ;
+    rdfs:label "MgNaPd" .
+
+matvoc:mat_MgNaPd_2QxuO26MZErX5tebc13TKW-3fBVn a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Mg', 'Na', 'Pd']" ;
+    nomad:has_bulk [ nomad:has_space_group_number 156 ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_point_group "3m" ],
+        [ nomad:has_crystal_system "trigonal" ],
+        [ nomad:has_space_group_international_short_symbol "P3m1" ],
+        [ nomad:has_bravais_lattice "hP" ] ;
+    nomad:has_calc_hash "oqpT_Kc_AvyXJR6Hjuy2tEgdpOdM" ;
+    nomad:has_calc_id "2QxuO26MZErX5tebc13TKW-3fBVn" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F26493E20>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F26493E50>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F26493EB0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F26493F10>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F26493F70>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F26493FD0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D070>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D0D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D130>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D190>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D1F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D250>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D2B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F2648D310>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:MgNaPd ;
+    nomad:has_formula_reduced "MgNaPd" ;
+    nomad:has_idealized_structure [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 2.094395e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 5.754617e-29 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.699831e-10 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Pd" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 4.699831e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_number_of_atoms 3 ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69983116e-10  0.00000000e+00  0.00000000e+00]
+ [-2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 3.008301e-10 ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.33333333 0.66666667 0.97991144]
+ [0.         0.         0.34185585]
+ [0.66666666 0.33333334 0.67823271]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Mg" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[ 4.69983116e-10  0.00000000e+00  0.00000000e+00]
+ [-2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "c" ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Na" ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:06:57.687310"^^xsd:dateTime ] ;
+    nomad:has_material_id "Q0CLkuALi792ie6k2-oCwSGhCEwl" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 3 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Mg Na Pd" ;
+    nomad:has_species_and_counts "Mg Na Pd" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_configuration_raw_gid "mO9wK-eFkCXxRZmYeUHf1GXtjtNG" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 2.64995983e-10 -1.52995505e-10  1.08184156e-10]
+ [ 2.64995983e-10  1.52995505e-10  2.16368315e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.64995983e-10 -4.58986506e-10  0.00000000e+00]
+ [ 2.64995983e-10  4.58986506e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24552471e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 2.64995983e-10 -1.52995505e-10  1.08184156e-10]
+ [ 2.64995983e-10  1.52995505e-10  2.16368315e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.64995983e-10 -4.58986506e-10  0.00000000e+00]
+ [ 2.64995983e-10  4.58986506e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24552471e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_1 [ nomad:has_configuration_raw_gid "mO9wK-eFkCXxRZmYeUHf1GXtjtNG" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 2.64995983e-10 -1.52995505e-10  1.08184156e-10]
+ [ 2.64995983e-10  1.52995505e-10  2.16368315e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.64995983e-10 -4.58986506e-10  0.00000000e+00]
+ [ 2.64995983e-10  4.58986506e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24552471e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 2.64995983e-10 -1.52995505e-10  1.08184156e-10]
+ [ 2.64995983e-10  1.52995505e-10  2.16368315e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.64995983e-10 -4.58986506e-10  0.00000000e+00]
+ [ 2.64995983e-10  4.58986506e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24552471e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_10 [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.33975709e-10 -4.05257817e-10 -0.00000000e+00]
+ [ 2.33975709e-10  4.05257817e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00370388e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.58956251e-12]
+ [ 2.33975709e-10 -1.35085942e-10  1.02544657e-10]
+ [ 2.33975709e-10  1.35085942e-10  2.03415293e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.58956251e-12]
+ [ 2.33975709e-10 -1.35085942e-10  1.02544657e-10]
+ [ 2.33975709e-10  1.35085942e-10  2.03415293e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.33975709e-10 -4.05257817e-10 -0.00000000e+00]
+ [ 2.33975709e-10  4.05257817e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00370388e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_configuration_raw_gid "jCCcsxaTIyUIjJUsxN4H3FEGdbZy" ] ;
+    matvoc:section_system_11 [ nomad:has_configuration_raw_gid "jEm9IQIypHhUIzx1IBRKf-GGr9fy" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.19087161e-12]
+ [ 2.35322328e-10 -1.35863412e-10  1.02936847e-10]
+ [ 2.35322328e-10  1.35863412e-10  2.04233830e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.35322328e-10 -4.07590228e-10  0.00000000e+00]
+ [ 2.35322328e-10  4.07590228e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00979802e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.35322328e-10 -4.07590228e-10  0.00000000e+00]
+ [ 2.35322328e-10  4.07590228e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00979802e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.19087161e-12]
+ [ 2.35322328e-10 -1.35863412e-10  1.02936847e-10]
+ [ 2.35322328e-10  1.35863412e-10  2.04233830e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ] ;
+    matvoc:section_system_12 [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34991558e-10 -4.07017318e-10  0.00000000e+00]
+ [ 2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "q1D_Pi9y2BBoskWnkbGpZWUNZohN" ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.34991558e-10 -4.07017318e-10  0.00000000e+00]
+ [ 2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.04324373e-12]
+ [ 2.34991558e-10 -1.35672442e-10  1.02840533e-10]
+ [ 2.34991558e-10  1.35672442e-10  2.04032821e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.04324373e-12]
+ [ 2.34991558e-10 -1.35672442e-10  1.02840533e-10]
+ [ 2.34991558e-10  1.35672442e-10  2.04032821e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ] ;
+    matvoc:section_system_13 [ nomad:has_simulation_cell [ nomad:array """[[ 2.34991558e-10 -4.07017318e-10  0.00000000e+00]
+ [ 2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.04324373e-12]
+ [ 2.34991558e-10 -1.35672442e-10  1.02840533e-10]
+ [ 2.34991558e-10  1.35672442e-10  2.04032821e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.04324373e-12]
+ [ 2.34991558e-10 -1.35672442e-10  1.02840533e-10]
+ [ 2.34991558e-10  1.35672442e-10  2.04032821e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34991558e-10 -4.07017318e-10  0.00000000e+00]
+ [ 2.34991558e-10  4.07017318e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00830111e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_configuration_raw_gid "q1D_Pi9y2BBoskWnkbGpZWUNZohN" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ] ;
+    matvoc:section_system_2 [ nomad:has_simulation_cell [ nomad:array """[[ 2.49052612e-10 -4.31371778e-10 -0.00000000e+00]
+ [ 2.49052612e-10  4.31371778e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.09321527e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02356040e-12]
+ [ 2.49052612e-10 -1.43790596e-10  1.03606079e-10]
+ [ 2.49052612e-10  1.43790596e-10  2.06739005e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.49052612e-10 -4.31371778e-10 -0.00000000e+00]
+ [ 2.49052612e-10  4.31371778e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.09321527e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02356040e-12]
+ [ 2.49052612e-10 -1.43790596e-10  1.03606079e-10]
+ [ 2.49052612e-10  1.43790596e-10  2.06739005e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "o5VHLYbJKJS0Y-SkUmoXtncxa27Y" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition "MgNaPd" ] ;
+    matvoc:section_system_3 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.46990470e-12]
+ [ 2.41936061e-10 -1.39681853e-10  1.01557454e-10]
+ [ 2.41936061e-10  1.39681853e-10  2.02435426e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.46990470e-12]
+ [ 2.41936061e-10 -1.39681853e-10  1.01557454e-10]
+ [ 2.41936061e-10  1.39681853e-10  2.02435426e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "V9FudYwbu8TKZp8at31AEZaBq9n7" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.41936061e-10 -4.19045550e-10 -0.00000000e+00]
+ [ 2.41936061e-10  4.19045550e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.02522978e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.41936061e-10 -4.19045550e-10 -0.00000000e+00]
+ [ 2.41936061e-10  4.19045550e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.02522978e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_4 [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.27702960e-10 -3.94393095e-10 -0.00000000e+00]
+ [ 2.27702960e-10  3.94393095e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.88925880e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.27702960e-10 -3.94393095e-10 -0.00000000e+00]
+ [ 2.27702960e-10  3.94393095e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.88925880e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "tZ1YbkX6ihpnMvMGRnpouMUrM2iu" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -2.31949985e-12]
+ [ 2.27702960e-10 -1.31464368e-10  9.74392013e-11]
+ [ 2.27702960e-10  1.31464368e-10  1.93806181e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -2.31949985e-12]
+ [ 2.27702960e-10 -1.31464368e-10  9.74392013e-11]
+ [ 2.27702960e-10  1.31464368e-10  1.93806181e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_5 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.88656764e-12]
+ [ 2.34769466e-10 -1.35544217e-10  9.94784270e-11]
+ [ 2.34769466e-10  1.35544217e-10  1.98084762e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "qiPRvyu7f5QEIFJjsq70CbjCbIaA" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.34769466e-10 -4.06632643e-10 -0.00000000e+00]
+ [ 2.34769466e-10  4.06632643e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.95676621e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.88656764e-12]
+ [ 2.34769466e-10 -1.35544217e-10  9.94784270e-11]
+ [ 2.34769466e-10  1.35544217e-10  1.98084762e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34769466e-10 -4.06632643e-10 -0.00000000e+00]
+ [ 2.34769466e-10  4.06632643e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.95676621e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.35943001e-10 -4.08665265e-10 -0.00000000e+00]
+ [ 2.35943001e-10  4.08665265e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.96797717e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.81437193e-12]
+ [ 2.35943001e-10 -1.36221758e-10  9.98169336e-11]
+ [ 2.35943001e-10  1.36221758e-10  1.98795152e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.35943001e-10 -4.08665265e-10 -0.00000000e+00]
+ [ 2.35943001e-10  4.08665265e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.96797717e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_configuration_raw_gid "jtoCymW7QDGaCiNsh4HAXAjleQND" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.81437193e-12]
+ [ 2.35943001e-10 -1.36221758e-10  9.98169336e-11]
+ [ 2.35943001e-10  1.36221758e-10  1.98795152e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -2.41172152e-12]
+ [ 2.35528788e-10 -1.35982612e-10  1.00514399e-10]
+ [ 2.35528788e-10  1.35982612e-10  1.99993287e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.35528788e-10 -4.07947827e-10 -0.00000000e+00]
+ [ 2.35528788e-10  4.07947827e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.98095961e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -2.41172152e-12]
+ [ 2.35528788e-10 -1.35982612e-10  1.00514399e-10]
+ [ 2.35528788e-10  1.35982612e-10  1.99993287e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.35528788e-10 -4.07947827e-10 -0.00000000e+00]
+ [ 2.35528788e-10  4.07947827e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  2.98095961e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "Lh8MWD34kXe_nyezHB76nnUAKh74" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ] ;
+    matvoc:section_system_8 [ nomad:has_configuration_raw_gid "yAOR8fRPzr-wA1zwQDhfrDFj2T4U" ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.34546845e-10 -4.06247052e-10 -0.00000000e+00]
+ [ 2.34546845e-10  4.06247052e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.01173608e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34546845e-10 -4.06247052e-10 -0.00000000e+00]
+ [ 2.34546845e-10  4.06247052e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.01173608e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -3.84218014e-12]
+ [ 2.34546845e-10 -1.35415687e-10  1.02174174e-10]
+ [ 2.34546845e-10  1.35415687e-10  2.02841615e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -3.84218014e-12]
+ [ 2.34546845e-10 -1.35415687e-10  1.02174174e-10]
+ [ 2.34546845e-10  1.35415687e-10  2.02841615e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_9 [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34176220e-10 -4.05605110e-10 -0.00000000e+00]
+ [ 2.34176220e-10  4.05605110e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00652376e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "MgNaPd" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Pd']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.34176220e-10 -4.05605110e-10 -0.00000000e+00]
+ [ 2.34176220e-10  4.05605110e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.00652376e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaPd" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.97648231e-12]
+ [ 2.34176220e-10 -1.35201706e-10  1.02414727e-10]
+ [ 2.34176220e-10  1.35201706e-10  2.03214128e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "JZ-cN8qr8LaiQ3-l4sxx4ZGkjGMo" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaPd" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.97648231e-12]
+ [ 2.34176220e-10 -1.35201706e-10  1.02414727e-10]
+ [ 2.34176220e-10  1.35201706e-10  2.03214128e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_MgNaPd_2QxuO26MZErX5tebc13TKW-3fBVn ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_MgNaPd_2QxuO26MZErX5tebc13TKW-3fBVn .
+

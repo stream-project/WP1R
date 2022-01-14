@@ -1,0 +1,212 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:LaMo2Pt a matvoc:Formula ;
+    rdfs:label "LaMo2Pt" .
+
+matvoc:mat_LaMo2Pt_0IvnwW_FmpjmbLn0jgAFzhH65m7K a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['La', 'Mo', 'Pt']" ;
+    nomad:has_bulk [ nomad:has_point_group "4mm" ],
+        [ nomad:has_crystal_system "tetragonal" ],
+        [ nomad:has_space_group_number 99 ],
+        [ nomad:has_bravais_lattice "tP" ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_space_group_international_short_symbol "P4mm" ] ;
+    nomad:has_calc_hash "r-OxSy02W1aN_LjIlw3TKeh3TpKI" ;
+    nomad:has_calc_id "0IvnwW_FmpjmbLn0jgAFzhH65m7K" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C1C0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C3A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C430>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C490>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C4F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C550>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C5B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C610>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C670>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C6D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C730>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C790>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C7F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF621C850>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:LaMo2Pt ;
+    nomad:has_formula_reduced "LaMo2Pt" ;
+    nomad:has_idealized_structure [ nomad:has_lattice_parameters [ nomad:has_a 3.251976e-10 ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Mo" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "La" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 3.251976e-10 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Mo" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 7.49356e-10 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[3]" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ] ],
+        [ nomad:has_number_of_atoms 4 ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Pt" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 7.924699e-29 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.74790046]
+ [0.5        0.5        0.0627044 ]
+ [0.         0.         0.23520167]
+ [0.5        0.5        0.45419346]]""" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[2]" ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:03:41.653785"^^xsd:dateTime ] ;
+    nomad:has_material_id "xSjijGPe5fDf2IpmUDM-cFeqpuG6" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "La Mo Pt" ;
+    nomad:has_species_and_counts "La Mo2 Pt" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_lattice_vectors [ nomad:array """[[3.25788943e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25788943e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49381594e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LaMoMoPt" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.62894472e-10 1.62894472e-10 5.60272736e-10]
+ [0.00000000e+00 0.00000000e+00 4.71278965e-11]
+ [1.62894472e-10 1.62894472e-10 1.76255915e-10]
+ [0.00000000e+00 0.00000000e+00 3.40415844e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.25788943e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25788943e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49381594e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LaMo2Pt" ],
+        [ nomad:has_configuration_raw_gid "dpcNLMQOUDCNnim3dRjX1DHpkaz4" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.62894472e-10 1.62894472e-10 5.60272736e-10]
+ [0.00000000e+00 0.00000000e+00 4.71278965e-11]
+ [1.62894472e-10 1.62894472e-10 1.76255915e-10]
+ [0.00000000e+00 0.00000000e+00 3.40415844e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_1 [ nomad:has_atom_positions [ nomad:array """[[1.62894472e-10 1.62894472e-10 5.60272736e-10]
+ [0.00000000e+00 0.00000000e+00 4.71278965e-11]
+ [1.62894472e-10 1.62894472e-10 1.76255915e-10]
+ [0.00000000e+00 0.00000000e+00 3.40415844e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.25788943e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25788943e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49381594e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "dpcNLMQOUDCNnim3dRjX1DHpkaz4" ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.62894472e-10 1.62894472e-10 5.60272736e-10]
+ [0.00000000e+00 0.00000000e+00 4.71278965e-11]
+ [1.62894472e-10 1.62894472e-10 1.76255915e-10]
+ [0.00000000e+00 0.00000000e+00 3.40415844e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LaMoMoPt" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LaMo2Pt" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.25788943e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25788943e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49381594e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LaMo2Pt" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_2 [ nomad:has_configuration_raw_gid "AnKbTgpNOla3Oat6Gc-FcGSIC0mk" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.62465845e-10 1.62465845e-10 5.60520570e-10]
+ [0.00000000e+00 0.00000000e+00 4.69249864e-11]
+ [1.62465845e-10 1.62465845e-10 1.76247032e-10]
+ [0.00000000e+00 0.00000000e+00 3.40324154e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[1.62465845e-10 1.62465845e-10 5.60520570e-10]
+ [0.00000000e+00 0.00000000e+00 4.69249864e-11]
+ [1.62465845e-10 1.62465845e-10 1.76247032e-10]
+ [0.00000000e+00 0.00000000e+00 3.40324154e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.24931690e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.24931690e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49344495e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LaMo2Pt" ],
+        [ nomad:has_chemical_composition "LaMoMoPt" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.24931690e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.24931690e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49344495e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_3 [ nomad:has_chemical_composition_bulk_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.62598784e-10 1.62598784e-10 5.60443698e-10]
+ [0.00000000e+00 0.00000000e+00 4.69879184e-11]
+ [1.62598784e-10 1.62598784e-10 1.76249783e-10]
+ [0.00000000e+00 0.00000000e+00 3.40352595e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_chemical_composition_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_raw_gid "Adty5lA1nDqj-USX4qDEQ-71abLK" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.62598784e-10 1.62598784e-10 5.60443698e-10]
+ [0.00000000e+00 0.00000000e+00 4.69879184e-11]
+ [1.62598784e-10 1.62598784e-10 1.76249783e-10]
+ [0.00000000e+00 0.00000000e+00 3.40352595e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "LaMoMoPt" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_4 [ nomad:has_chemical_composition_bulk_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.62598784e-10 1.62598784e-10 5.60443698e-10]
+ [0.00000000e+00 0.00000000e+00 4.69879184e-11]
+ [1.62598784e-10 1.62598784e-10 1.76249783e-10]
+ [0.00000000e+00 0.00000000e+00 3.40352595e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LaMo2Pt" ],
+        [ nomad:has_atom_labels "['La', 'Mo', 'Mo', 'Pt']" ],
+        [ nomad:has_configuration_raw_gid "Adty5lA1nDqj-USX4qDEQ-71abLK" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.62598784e-10 1.62598784e-10 5.60443698e-10]
+ [0.00000000e+00 0.00000000e+00 4.69879184e-11]
+ [1.62598784e-10 1.62598784e-10 1.76249783e-10]
+ [0.00000000e+00 0.00000000e+00 3.40352595e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LaMoMoPt" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.25197568e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.25197568e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.49356001e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_system_type "bulk" ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_LaMo2Pt_0IvnwW_FmpjmbLn0jgAFzhH65m7K ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_LaMo2Pt_0IvnwW_FmpjmbLn0jgAFzhH65m7K .
+

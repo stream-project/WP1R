@@ -1,0 +1,356 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:LiNiTe2 a matvoc:Formula ;
+    rdfs:label "LiNiTe2" .
+
+matvoc:mat_LiNiTe2_0IzirnjRFjhjCU8qB3ruXVUlUCvB a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Li', 'Ni', 'Te']" ;
+    nomad:has_bulk [ nomad:has_space_group_number 99 ],
+        [ nomad:has_point_group "4mm" ],
+        [ nomad:has_space_group_international_short_symbol "P4mm" ],
+        [ nomad:has_crystal_system "tetragonal" ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_bravais_lattice "tP" ] ;
+    nomad:has_calc_hash "aC1woIn_ja-o_ZoxQAUvSRks9Zx8" ;
+    nomad:has_calc_id "0IzirnjRFjhjCU8qB3ruXVUlUCvB" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000024AF6215FA0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF6215FD0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B070>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B0D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B130>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B190>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B1F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B250>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B2B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B310>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B370>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B3D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B430>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF622B490>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:LiNiTe2 ;
+    nomad:has_formula_reduced "LiNiTe2" ;
+    nomad:has_idealized_structure [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[3]" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Te" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.38892757e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.38892757e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.66340164e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[2]" ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.53331717]
+ [0.5        0.5        0.72759457]
+ [0.         0.         0.88036352]
+ [0.5        0.5        0.35872474]]""" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 8.801287e-29 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Te" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 3.388928e-10 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Ni" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.38892757e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.38892757e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.66340164e-10]]""" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Li" ] ],
+        [ nomad:has_number_of_atoms 4 ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 7.663402e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.388928e-10 ] ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:05:45.030675"^^xsd:dateTime ] ;
+    nomad:has_material_id "gjmCZ6qeOGeKajjZ359OSR6m5dxC" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Li Ni Te" ;
+    nomad:has_species_and_counts "Li Ni Te2" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.12435725e-10]
+ [2.30354783e-10 0.00000000e+00 5.60353187e-10]
+ [0.00000000e+00 0.00000000e+00 6.78244808e-10]
+ [2.30354783e-10 0.00000000e+00 2.72932089e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.30354783e-10 -2.45027988e-10  0.00000000e+00]
+ [ 2.30354783e-10  2.45027988e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.69586324e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "xPHfd5rkxmvT087uVGfSJ-T8WS7T" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.30354783e-10 -2.45027988e-10  0.00000000e+00]
+ [ 2.30354783e-10  2.45027988e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.69586324e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.12435725e-10]
+ [2.30354783e-10 0.00000000e+00 5.60353187e-10]
+ [0.00000000e+00 0.00000000e+00 6.78244808e-10]
+ [2.30354783e-10 0.00000000e+00 2.72932089e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_1 [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.30354783e-10 -2.45027988e-10  0.00000000e+00]
+ [ 2.30354783e-10  2.45027988e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.69586324e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.12435725e-10]
+ [2.30354783e-10 0.00000000e+00 5.60353187e-10]
+ [0.00000000e+00 0.00000000e+00 6.78244808e-10]
+ [2.30354783e-10 0.00000000e+00 2.72932089e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "xPHfd5rkxmvT087uVGfSJ-T8WS7T" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.30354783e-10 -2.45027988e-10  0.00000000e+00]
+ [ 2.30354783e-10  2.45027988e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.69586324e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.12435725e-10]
+ [2.30354783e-10 0.00000000e+00 5.60353187e-10]
+ [0.00000000e+00 0.00000000e+00 6.78244808e-10]
+ [2.30354783e-10 0.00000000e+00 2.72932089e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ] ;
+    matvoc:section_system_10 [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.40662110e-10 -2.38600188e-10  0.00000000e+00]
+ [ 2.40662110e-10  2.38600188e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.66340164e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_configuration_raw_gid "Ftwopkzm30eipIJ4aDUuZBJrQmtt" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08702368e-10]
+ [2.40662110e-10 0.00000000e+00 5.57584942e-10]
+ [0.00000000e+00 0.00000000e+00 6.74657924e-10]
+ [2.40662110e-10 0.00000000e+00 2.74905176e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.40662110e-10 -2.38600188e-10  0.00000000e+00]
+ [ 2.40662110e-10  2.38600188e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.66340164e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08702368e-10]
+ [2.40662110e-10 0.00000000e+00 5.57584942e-10]
+ [0.00000000e+00 0.00000000e+00 6.74657924e-10]
+ [2.40662110e-10 0.00000000e+00 2.74905176e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_2 [ nomad:has_configuration_raw_gid "DSzkzHp_L20TtcEcMl_0FR7y7U7P" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.32293915e-10 -2.43015878e-10  0.00000000e+00]
+ [ 2.32293915e-10  2.43015878e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.64176585e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.09627925e-10]
+ [2.32293915e-10 0.00000000e+00 5.56262973e-10]
+ [0.00000000e+00 0.00000000e+00 6.73104557e-10]
+ [2.32293915e-10 0.00000000e+00 2.71446007e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.09627925e-10]
+ [2.32293915e-10 0.00000000e+00 5.56262973e-10]
+ [0.00000000e+00 0.00000000e+00 6.73104557e-10]
+ [2.32293915e-10 0.00000000e+00 2.71446007e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.32293915e-10 -2.43015878e-10  0.00000000e+00]
+ [ 2.32293915e-10  2.43015878e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.64176585e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_3 [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_configuration_raw_gid "A4rwpeYe_l0qdp6iJzzJbXNze_a0" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.07136753e-10]
+ [2.34014025e-10 0.00000000e+00 5.52635596e-10]
+ [0.00000000e+00 0.00000000e+00 6.68546980e-10]
+ [2.34014025e-10 0.00000000e+00 2.70125341e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.34014025e-10 -2.41231033e-10  0.00000000e+00]
+ [ 2.34014025e-10  2.41231033e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59377868e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.07136753e-10]
+ [2.34014025e-10 0.00000000e+00 5.52635596e-10]
+ [0.00000000e+00 0.00000000e+00 6.68546980e-10]
+ [2.34014025e-10 0.00000000e+00 2.70125341e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.34014025e-10 -2.41231033e-10  0.00000000e+00]
+ [ 2.34014025e-10  2.41231033e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59377868e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_4 [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06871038e-10]
+ [2.36881873e-10 0.00000000e+00 5.52302779e-10]
+ [0.00000000e+00 0.00000000e+00 6.68725278e-10]
+ [2.36881873e-10 0.00000000e+00 2.70348579e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06871038e-10]
+ [2.36881873e-10 0.00000000e+00 5.52302779e-10]
+ [0.00000000e+00 0.00000000e+00 6.68725278e-10]
+ [2.36881873e-10 0.00000000e+00 2.70348579e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "HPBVfXMlC1NLrYLIn-bRHKs2RP4E" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.36881873e-10 -2.40685762e-10  0.00000000e+00]
+ [ 2.36881873e-10  2.40685762e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59299073e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.36881873e-10 -2.40685762e-10  0.00000000e+00]
+ [ 2.36881873e-10  2.40685762e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59299073e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ] ;
+    matvoc:section_system_5 [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_configuration_raw_gid "nx73AcHydCC0CSjGyeN0-lJ334Rq" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06640022e-10]
+ [2.39375540e-10 0.00000000e+00 5.52013405e-10]
+ [0.00000000e+00 0.00000000e+00 6.68880292e-10]
+ [2.39375540e-10 0.00000000e+00 2.70542676e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.39375540e-10 -2.40211634e-10  0.00000000e+00]
+ [ 2.39375540e-10  2.40211634e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59230558e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.39375540e-10 -2.40211634e-10  0.00000000e+00]
+ [ 2.39375540e-10  2.40211634e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59230558e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06640022e-10]
+ [2.39375540e-10 0.00000000e+00 5.52013405e-10]
+ [0.00000000e+00 0.00000000e+00 6.68880292e-10]
+ [2.39375540e-10 0.00000000e+00 2.70542676e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_configuration_raw_gid "Jy5N0OlgE7ZRmoyOGKM82ZMnyzOg" ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.39566377e-10 -2.39822154e-10  0.00000000e+00]
+ [ 2.39566377e-10  2.39822154e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.60411981e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.39566377e-10 -2.39822154e-10  0.00000000e+00]
+ [ 2.39566377e-10  2.39822154e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.60411981e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06899272e-10]
+ [2.39566377e-10 0.00000000e+00 5.52949852e-10]
+ [0.00000000e+00 0.00000000e+00 6.69875916e-10]
+ [2.39566377e-10 0.00000000e+00 2.71304912e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.06899272e-10]
+ [2.39566377e-10 0.00000000e+00 5.52949852e-10]
+ [0.00000000e+00 0.00000000e+00 6.69875916e-10]
+ [2.39566377e-10 0.00000000e+00 2.71304912e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.40127119e-10 -2.38677733e-10  0.00000000e+00]
+ [ 2.40127119e-10  2.38677733e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.63883392e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "E4uacXkFIXSDQ-KzsYe-yLnHtGxL" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.07656028e-10]
+ [2.40127119e-10 0.00000000e+00 5.55702480e-10]
+ [0.00000000e+00 0.00000000e+00 6.72800793e-10]
+ [2.40127119e-10 0.00000000e+00 2.73549179e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.07656028e-10]
+ [2.40127119e-10 0.00000000e+00 5.55702480e-10]
+ [0.00000000e+00 0.00000000e+00 6.72800793e-10]
+ [2.40127119e-10 0.00000000e+00 2.73549179e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.40127119e-10 -2.38677733e-10  0.00000000e+00]
+ [ 2.40127119e-10  2.38677733e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.63883392e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_8 [ nomad:has_simulation_cell [ nomad:array """[[ 2.40447997e-10 -2.38631223e-10  0.00000000e+00]
+ [ 2.40447997e-10  2.38631223e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.65356918e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08283681e-10]
+ [2.40447997e-10 0.00000000e+00 5.56831515e-10]
+ [0.00000000e+00 0.00000000e+00 6.73914760e-10]
+ [2.40447997e-10 0.00000000e+00 2.74362331e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.40447997e-10 -2.38631223e-10  0.00000000e+00]
+ [ 2.40447997e-10  2.38631223e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.65356918e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_configuration_raw_gid "zMkAzkrIGTHl271Zuj74JlTULvan" ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08283681e-10]
+ [2.40447997e-10 0.00000000e+00 5.56831515e-10]
+ [0.00000000e+00 0.00000000e+00 6.73914760e-10]
+ [2.40447997e-10 0.00000000e+00 2.74362331e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_9 [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_raw_gid "Ftwopkzm30eipIJ4aDUuZBJrQmtt" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08702368e-10]
+ [2.40662110e-10 0.00000000e+00 5.57584942e-10]
+ [0.00000000e+00 0.00000000e+00 6.74657924e-10]
+ [2.40662110e-10 0.00000000e+00 2.74905176e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.40662110e-10 -2.38600188e-10  0.00000000e+00]
+ [ 2.40662110e-10  2.38600188e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.66340164e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 4.08702368e-10]
+ [2.40662110e-10 0.00000000e+00 5.57584942e-10]
+ [0.00000000e+00 0.00000000e+00 6.74657924e-10]
+ [2.40662110e-10 0.00000000e+00 2.74905176e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiNiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "LiNiTe2" ],
+        [ nomad:has_atom_labels "['Li', 'Ni', 'Te', 'Te']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.40662110e-10 -2.38600188e-10  0.00000000e+00]
+ [ 2.40662110e-10  2.38600188e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.66340164e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiNiTeTe" ],
+        [ nomad:has_is_representative true ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_LiNiTe2_0IzirnjRFjhjCU8qB3ruXVUlUCvB ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_LiNiTe2_0IzirnjRFjhjCU8qB3ruXVUlUCvB .
+

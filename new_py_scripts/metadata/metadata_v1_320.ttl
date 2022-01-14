@@ -1,0 +1,212 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:Mo2SbZn a matvoc:Formula ;
+    rdfs:label "Mo2SbZn" .
+
+matvoc:mat_Mo2SbZn_25QNHwkckeftLj3cIIzqV317fDuz a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Mo', 'Sb', 'Zn']" ;
+    nomad:has_bulk [ nomad:has_space_group_international_short_symbol "Pmmm" ],
+        [ nomad:has_point_group "mmm" ],
+        [ nomad:has_has_free_wyckoff_parameters false ],
+        [ nomad:has_bravais_lattice "oP" ],
+        [ nomad:has_crystal_system "orthorhombic" ],
+        [ nomad:has_space_group_number 47 ] ;
+    nomad:has_calc_hash "SJZzWUWsPDFyOcdvl27z5KyN4_PF" ;
+    nomad:has_calc_id "25QNHwkckeftLj3cIIzqV317fDuz" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA27F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2D30>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2370>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2790>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2610>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2250>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2880>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2910>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2130>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2B20>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA22B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA20A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2940>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F0CEA2670>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:Mo2SbZn ;
+    nomad:has_formula_reduced "Mo2SbZn" ;
+    nomad:has_idealized_structure [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "g" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Zn" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[2]" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.36651096e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.39154756e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.59595920e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[3]" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.36651096e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.39154756e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.59595920e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Mo" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "f" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.391548e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Sb" ] ],
+        [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.366511e-10 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Mo" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 6.794755e-29 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_number_of_atoms 4 ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "d" ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.  0.5 0.5]
+ [0.5 0.5 0. ]
+ [0.5 0.  0.5]
+ [0.  0.  0. ]]""" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 4.595959e-10 ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:11:25.596758"^^xsd:dateTime ] ;
+    nomad:has_material_id "-TYubp8mQlFOsU8GnyrmBHYiv1NW" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Mo Sb Zn" ;
+    nomad:has_species_and_counts "Mo2 Sb Zn" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_lattice_vectors [ nomad:array """[[3.34647744e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.60510259e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.41395877e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MoMoSbZn" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.34647744e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.60510259e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.41395877e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67323872e-10 2.30255130e-10 0.00000000e+00]
+ [1.67323872e-10 0.00000000e+00 2.20697939e-10]
+ [0.00000000e+00 2.30255130e-10 2.20697939e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Mo2SbZn" ],
+        [ nomad:has_configuration_raw_gid "ZCxKDdfsAMQqaT-bdai_8kVGiOQD" ],
+        [ nomad:has_chemical_composition_reduced "Mo2SbZn" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67323872e-10 2.30255130e-10 0.00000000e+00]
+ [1.67323872e-10 0.00000000e+00 2.20697939e-10]
+ [0.00000000e+00 2.30255130e-10 2.20697939e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ] ;
+    matvoc:section_system_1 [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ],
+        [ nomad:has_chemical_composition_reduced "Mo2SbZn" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Mo2SbZn" ],
+        [ nomad:has_configuration_raw_gid "ZCxKDdfsAMQqaT-bdai_8kVGiOQD" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.34647744e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.60510259e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.41395877e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67323872e-10 2.30255130e-10 0.00000000e+00]
+ [1.67323872e-10 0.00000000e+00 2.20697939e-10]
+ [0.00000000e+00 2.30255130e-10 2.20697939e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67323872e-10 2.30255130e-10 0.00000000e+00]
+ [1.67323872e-10 0.00000000e+00 2.20697939e-10]
+ [0.00000000e+00 2.30255130e-10 2.20697939e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.34647744e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.60510259e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.41395877e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MoMoSbZn" ] ;
+    matvoc:section_system_2 [ nomad:has_simulation_cell [ nomad:array """[[ 3.35148582e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.60281674e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.40835597e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Mo2SbZn" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67574291e-10 2.30140837e-10 0.00000000e+00]
+ [1.67574291e-10 0.00000000e+00 2.20417798e-10]
+ [0.00000000e+00 2.30140837e-10 2.20417798e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Mo2SbZn" ],
+        [ nomad:has_configuration_raw_gid "f-3jOc0nESvbCMtn25PJ4Lji0ko2" ],
+        [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.35148582e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.60281674e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.40835597e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.67574291e-10 2.30140837e-10 0.00000000e+00]
+ [1.67574291e-10 0.00000000e+00 2.20417798e-10]
+ [0.00000000e+00 2.30140837e-10 2.20417798e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "MoMoSbZn" ] ;
+    matvoc:section_system_3 [ nomad:has_chemical_composition_reduced "Mo2SbZn" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.68325548e-10 2.29797960e-10 0.00000000e+00]
+ [1.68325548e-10 0.00000000e+00 2.19577378e-10]
+ [0.00000000e+00 2.29797960e-10 2.19577378e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.68325548e-10 2.29797960e-10 0.00000000e+00]
+ [1.68325548e-10 0.00000000e+00 2.19577378e-10]
+ [0.00000000e+00 2.29797960e-10 2.19577378e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "5o8m80nBpaswdwPXniOdD7qycHPf" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36651096e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.59595920e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.39154756e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Mo2SbZn" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.36651096e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.59595920e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.39154756e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_chemical_composition "MoMoSbZn" ] ;
+    matvoc:section_system_4 [ nomad:has_atom_labels "['Mo', 'Mo', 'Sb', 'Zn']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.68325548e-10 2.29797960e-10 0.00000000e+00]
+ [1.68325548e-10 0.00000000e+00 2.19577378e-10]
+ [0.00000000e+00 2.29797960e-10 2.19577378e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "5o8m80nBpaswdwPXniOdD7qycHPf" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36651096e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.59595920e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.39154756e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.36651096e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  4.59595920e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.39154756e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Mo2SbZn" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Mo2SbZn" ],
+        [ nomad:has_chemical_composition "MoMoSbZn" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.68325548e-10 2.29797960e-10 0.00000000e+00]
+ [1.68325548e-10 0.00000000e+00 2.19577378e-10]
+ [0.00000000e+00 2.29797960e-10 2.19577378e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_Mo2SbZn_25QNHwkckeftLj3cIIzqV317fDuz ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_Mo2SbZn_25QNHwkckeftLj3cIIzqV317fDuz .
+
