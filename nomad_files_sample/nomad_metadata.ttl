@@ -1,0 +1,1674 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+############# defining metadata associated with the materials ################
+
+
+ab:mat1 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[ 1.90630016e-10  2.01496091e-27  4.67955682e-11]
+ [ 1.89961138e-09 -1.83885856e-26  4.66313732e-10]
+ [ 1.04512070e-09  0.00000000e+00  2.56554650e-10]
+ [ 7.38732900e-10  0.00000000e+00  0.00000000e+00]
+ [ 6.75754250e-10  1.52519500e-10  2.56554650e-10]
+ [ 6.75754250e-10 -1.52519500e-10  2.56554650e-10]
+ [ 1.57676942e-09 -1.15951221e-26  3.87062974e-10]
+ [ 5.13471980e-10 -2.14280533e-27  1.26046326e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[ 1.90630016e-10  2.01496091e-27  4.67955682e-11]
+ [ 1.89961138e-09 -1.83885856e-26  4.66313732e-10]
+ [ 1.04512070e-09  0.00000000e+00  2.56554650e-10]
+ [ 7.38732900e-10  0.00000000e+00  0.00000000e+00]
+ [ 6.75754250e-10  1.52519500e-10  2.56554650e-10]
+ [ 6.75754250e-10 -1.52519500e-10  2.56554650e-10]
+ [ 1.57676942e-09 -1.15951221e-26  3.87062974e-10]
+ [ 5.13471980e-10 -2.14280533e-27  1.26046326e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "3.4594518914219437e+28 / meter ** 3" ;
+    nomad:has_atoms "['Ag', 'As', 'K']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "iKRQIFqVodAqtSylPvnsCH5ecYPl" ;
+    nomad:has_calc_id "4jb-jIn1EaLCYopFl67o7WmdsARf" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-715813" ;
+    nomad:has_formula "Ag3As2K3" ;
+    nomad:has_formula_reduced "Ag3As2K3" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:17.425552"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[ 7.387329e-10 -3.050390e-10  0.000000e+00]
+ [ 7.387329e-10  3.050390e-10  0.000000e+00]
+ [ 6.127756e-10  0.000000e+00  5.131093e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "4241.942424624732 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"arsenide\"]}" ;
+    nomad:has_material_id "ZzDYnWFceP9cPyGtkrRvTNDu4Ub8" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 8 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-14206#mp-715813']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[ 7.387329e-10 -3.050390e-10  0.000000e+00]
+ [ 7.387329e-10  3.050390e-10  0.000000e+00]
+ [ 6.127756e-10  0.000000e+00  5.131093e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Ag As K" ;
+    nomad:has_species_and_counts "Ag3 As2 K3" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['K', 'K', 'K', 'Ag', 'Ag', 'Ag', 'As', 'As']" ;
+    ab:has_chemical_composition "KKKAgAgAgAsAs" ;
+    ab:has_chemical_composition_bulk_reduced "Ag3As2K3" ;
+    ab:has_chemical_composition_reduced "K3Ag3As2" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "82oyldXxR_nHt3ZqH1us7DTOpLBr" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method1 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat10 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[ 3.33257237e-10  3.09025700e-26  6.00881400e-10]
+ [ 6.00881400e-10 -4.44089210e-26  2.67624163e-10]
+ [-5.86336818e-26  2.67624163e-10  6.00881400e-10]
+ [ 4.44089210e-26  6.00881400e-10  3.33257237e-10]
+ [ 6.00881400e-10  3.33257237e-10  2.45304828e-27]
+ [ 2.67624163e-10  6.00881400e-10 -4.68619693e-26]
+ [ 1.34980128e-26  3.50120372e-10  7.15517553e-11]
+ [ 8.51642428e-10  7.15517553e-11  6.20480868e-27]
+ [ 5.29329645e-10  6.00881400e-10 -2.50761028e-10]
+ [ 2.50761028e-10  5.29329645e-10  6.00881400e-10]
+ [ 7.15517553e-11 -3.57340540e-26  8.51642428e-10]
+ [-2.50761028e-10  5.29329645e-10  6.00881400e-10]
+ [ 5.29329645e-10  6.00881400e-10  2.50761028e-10]
+ [ 7.15517553e-11  3.12375185e-27  3.50120372e-10]
+ [ 3.50120372e-10  7.15517553e-11 -2.07912169e-26]
+ [ 3.09109082e-26  8.51642428e-10  7.15517553e-11]
+ [ 6.00881400e-10 -2.50761028e-10  5.29329645e-10]
+ [ 6.00881400e-10  2.50761028e-10  5.29329645e-10]
+ [ 1.43852209e-10  1.17259602e-10  3.05032636e-10]
+ [ 4.83621798e-10 -2.95848764e-10  4.57029191e-10]
+ [ 2.95848764e-10  4.57029191e-10  7.18141002e-10]
+ [-1.17259602e-10  8.96730164e-10  1.43852209e-10]
+ [-2.95848764e-10  4.57029191e-10  4.83621798e-10]
+ [ 7.18141002e-10  2.95848764e-10  4.57029191e-10]
+ [ 8.96730164e-10  1.43852209e-10 -1.17259602e-10]
+ [ 3.05032636e-10  1.43852209e-10  1.17259602e-10]
+ [ 1.17259602e-10  3.05032636e-10  1.43852209e-10]
+ [ 4.57029191e-10  4.83621798e-10 -2.95848764e-10]
+ [ 4.57029191e-10  7.18141002e-10  2.95848764e-10]
+ [ 1.43852209e-10 -1.17259602e-10  8.96730164e-10]
+ [ 4.57029191e-10  4.83621798e-10  2.95848764e-10]
+ [ 1.17259602e-10  8.96730164e-10  1.43852209e-10]
+ [ 3.05032636e-10  1.43852209e-10 -1.17259602e-10]
+ [ 7.18141002e-10 -2.95848764e-10  4.57029191e-10]
+ [ 8.96730164e-10  1.43852209e-10  1.17259602e-10]
+ [-1.17259602e-10  3.05032636e-10  1.43852209e-10]
+ [-2.95848764e-10  4.57029191e-10  7.18141002e-10]
+ [ 2.95848764e-10  4.57029191e-10  4.83621798e-10]
+ [ 4.83621798e-10  2.95848764e-10  4.57029191e-10]
+ [ 1.43852209e-10  1.17259602e-10  8.96730164e-10]
+ [ 1.43852209e-10 -1.17259602e-10  3.05032636e-10]
+ [ 4.57029191e-10  7.18141002e-10 -2.95848764e-10]
+ [ 7.23599408e-11  2.32374658e-10  2.60485091e-10]
+ [ 3.68506742e-10 -3.40396309e-10  5.28521459e-10]
+ [ 9.41277709e-10 -7.23599408e-11  2.32374658e-10]
+ [ 3.68506742e-10  3.40396309e-10  6.73241341e-10]
+ [-3.40396309e-10  5.28521459e-10  3.68506742e-10]
+ [ 2.32374658e-10  9.41277709e-10 -7.23599408e-11]
+ [ 3.40396309e-10  6.73241341e-10  3.68506742e-10]
+ [ 2.60485091e-10  7.23599408e-11  2.32374658e-10]
+ [ 2.32374658e-10  2.60485091e-10  7.23599408e-11]
+ [ 5.28521459e-10  3.68506742e-10 -3.40396309e-10]
+ [-7.23599408e-11  2.32374658e-10  9.41277709e-10]
+ [ 6.73241341e-10  3.68506742e-10  3.40396309e-10]
+ [ 5.28521459e-10  3.68506742e-10  3.40396309e-10]
+ [ 2.32374658e-10  9.41277709e-10  7.23599408e-11]
+ [-3.40396309e-10  6.73241341e-10  3.68506742e-10]
+ [ 2.32374658e-10  2.60485091e-10 -7.23599408e-11]
+ [ 9.41277709e-10  7.23599408e-11  2.32374658e-10]
+ [ 3.68506742e-10 -3.40396309e-10  6.73241341e-10]
+ [ 2.60485091e-10 -7.23599408e-11  2.32374658e-10]
+ [ 3.40396309e-10  5.28521459e-10  3.68506742e-10]
+ [ 3.68506742e-10  3.40396309e-10  5.28521459e-10]
+ [ 7.23599408e-11  2.32374658e-10  9.41277709e-10]
+ [ 6.73241341e-10  3.68506742e-10 -3.40396309e-10]
+ [-7.23599408e-11  2.32374658e-10  2.60485091e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[ 3.33257237e-10  3.09025700e-26  6.00881400e-10]
+ [ 6.00881400e-10 -4.44089210e-26  2.67624163e-10]
+ [-5.86336818e-26  2.67624163e-10  6.00881400e-10]
+ [ 4.44089210e-26  6.00881400e-10  3.33257237e-10]
+ [ 6.00881400e-10  3.33257237e-10  2.45304828e-27]
+ [ 2.67624163e-10  6.00881400e-10 -4.68619693e-26]
+ [ 1.34980128e-26  3.50120372e-10  7.15517553e-11]
+ [ 8.51642428e-10  7.15517553e-11  6.20480868e-27]
+ [ 5.29329645e-10  6.00881400e-10 -2.50761028e-10]
+ [ 2.50761028e-10  5.29329645e-10  6.00881400e-10]
+ [ 7.15517553e-11 -3.57340540e-26  8.51642428e-10]
+ [-2.50761028e-10  5.29329645e-10  6.00881400e-10]
+ [ 5.29329645e-10  6.00881400e-10  2.50761028e-10]
+ [ 7.15517553e-11  3.12375185e-27  3.50120372e-10]
+ [ 3.50120372e-10  7.15517553e-11 -2.07912169e-26]
+ [ 3.09109082e-26  8.51642428e-10  7.15517553e-11]
+ [ 6.00881400e-10 -2.50761028e-10  5.29329645e-10]
+ [ 6.00881400e-10  2.50761028e-10  5.29329645e-10]
+ [ 1.43852209e-10  1.17259602e-10  3.05032636e-10]
+ [ 4.83621798e-10 -2.95848764e-10  4.57029191e-10]
+ [ 2.95848764e-10  4.57029191e-10  7.18141002e-10]
+ [-1.17259602e-10  8.96730164e-10  1.43852209e-10]
+ [-2.95848764e-10  4.57029191e-10  4.83621798e-10]
+ [ 7.18141002e-10  2.95848764e-10  4.57029191e-10]
+ [ 8.96730164e-10  1.43852209e-10 -1.17259602e-10]
+ [ 3.05032636e-10  1.43852209e-10  1.17259602e-10]
+ [ 1.17259602e-10  3.05032636e-10  1.43852209e-10]
+ [ 4.57029191e-10  4.83621798e-10 -2.95848764e-10]
+ [ 4.57029191e-10  7.18141002e-10  2.95848764e-10]
+ [ 1.43852209e-10 -1.17259602e-10  8.96730164e-10]
+ [ 4.57029191e-10  4.83621798e-10  2.95848764e-10]
+ [ 1.17259602e-10  8.96730164e-10  1.43852209e-10]
+ [ 3.05032636e-10  1.43852209e-10 -1.17259602e-10]
+ [ 7.18141002e-10 -2.95848764e-10  4.57029191e-10]
+ [ 8.96730164e-10  1.43852209e-10  1.17259602e-10]
+ [-1.17259602e-10  3.05032636e-10  1.43852209e-10]
+ [-2.95848764e-10  4.57029191e-10  7.18141002e-10]
+ [ 2.95848764e-10  4.57029191e-10  4.83621798e-10]
+ [ 4.83621798e-10  2.95848764e-10  4.57029191e-10]
+ [ 1.43852209e-10  1.17259602e-10  8.96730164e-10]
+ [ 1.43852209e-10 -1.17259602e-10  3.05032636e-10]
+ [ 4.57029191e-10  7.18141002e-10 -2.95848764e-10]
+ [ 7.23599408e-11  2.32374658e-10  2.60485091e-10]
+ [ 3.68506742e-10 -3.40396309e-10  5.28521459e-10]
+ [ 9.41277709e-10 -7.23599408e-11  2.32374658e-10]
+ [ 3.68506742e-10  3.40396309e-10  6.73241341e-10]
+ [-3.40396309e-10  5.28521459e-10  3.68506742e-10]
+ [ 2.32374658e-10  9.41277709e-10 -7.23599408e-11]
+ [ 3.40396309e-10  6.73241341e-10  3.68506742e-10]
+ [ 2.60485091e-10  7.23599408e-11  2.32374658e-10]
+ [ 2.32374658e-10  2.60485091e-10  7.23599408e-11]
+ [ 5.28521459e-10  3.68506742e-10 -3.40396309e-10]
+ [-7.23599408e-11  2.32374658e-10  9.41277709e-10]
+ [ 6.73241341e-10  3.68506742e-10  3.40396309e-10]
+ [ 5.28521459e-10  3.68506742e-10  3.40396309e-10]
+ [ 2.32374658e-10  9.41277709e-10  7.23599408e-11]
+ [-3.40396309e-10  6.73241341e-10  3.68506742e-10]
+ [ 2.32374658e-10  2.60485091e-10 -7.23599408e-11]
+ [ 9.41277709e-10  7.23599408e-11  2.32374658e-10]
+ [ 3.68506742e-10 -3.40396309e-10  6.73241341e-10]
+ [ 2.60485091e-10 -7.23599408e-11  2.32374658e-10]
+ [ 3.40396309e-10  5.28521459e-10  3.68506742e-10]
+ [ 3.68506742e-10  3.40396309e-10  5.28521459e-10]
+ [ 7.23599408e-11  2.32374658e-10  9.41277709e-10]
+ [ 6.73241341e-10  3.68506742e-10 -3.40396309e-10]
+ [-7.23599408e-11  2.32374658e-10  2.60485091e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atoms "['C', 'Cs']" ;
+    nomad:has_calc_hash "q2LvlhlP8grP3pl8X_cKcNy1zRLk" ;
+    nomad:has_calc_id "JI4TaXDoLYcCOtugKnb0crC3AMDI" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-718781" ;
+    nomad:has_formula "C60Cs6" ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.306867"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[-6.008814e-10  6.008814e-10  6.008814e-10]
+ [ 6.008814e-10 -6.008814e-10  6.008814e-10]
+ [ 6.008814e-10  6.008814e-10 -6.008814e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_material_type "unavailable"@en ;
+    nomad:has_n_atoms 66 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-1721#mp-718781']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[-6.008814e-10  6.008814e-10  6.008814e-10]
+ [ 6.008814e-10 -6.008814e-10  6.008814e-10]
+ [ 6.008814e-10  6.008814e-10 -6.008814e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C']" ;
+    ab:has_chemical_composition "CsCsCsCsCsCsCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCCC" ;
+    ab:has_chemical_composition_bulk_reduced "C60Cs6" ;
+    ab:has_chemical_composition_reduced "Cs6C60" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "gG6vErSe06Bwp0HbRMfvzmH-xzfQ" ;
+    ab:has_is_representative true ;
+    ab:has_system_type "unavailable" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method10 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat2 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[ 5.31418350e-10 -2.22044605e-26  2.22044605e-26]
+ [ 1.77139450e-10  0.00000000e+00  0.00000000e+00]
+ [ 3.54278900e-10 -1.74730644e-10  2.76479502e-10]
+ [-8.33431744e-28  5.40338644e-10  2.49472898e-10]
+ [ 3.54278900e-10  1.90877356e-10  2.49472898e-10]
+ [ 4.35583705e-28  1.74730644e-10  2.76479502e-10]
+ [ 1.77139450e-10  0.00000000e+00  5.25952400e-10]
+ [ 1.77139450e-10  3.65608000e-10  2.22044605e-26]
+ [ 2.09936465e-10  5.07645246e-10  1.49728129e-10]
+ [ 2.09936465e-10  2.23570754e-10 -1.49728129e-10]
+ [ 1.44342435e-10  5.07645246e-10 -1.49728129e-10]
+ [ 1.44342435e-10  2.23570754e-10  1.49728129e-10]
+ [ 1.44342435e-10 -1.42037246e-10  3.76224271e-10]
+ [ 1.44342435e-10  1.42037246e-10  6.75680529e-10]
+ [ 2.09936465e-10 -1.42037246e-10  6.75680529e-10]
+ [ 2.09936465e-10  1.42037246e-10  3.76224271e-10]
+ [ 3.54278900e-10  3.57672113e-10 -3.43254419e-10]
+ [ 1.72780838e-26  7.93588725e-12  8.69206819e-10]
+ [ 4.10879384e-26  3.57672113e-10  3.43254419e-10]
+ [ 3.54278900e-10  7.93588725e-12  1.82697981e-10]
+ [ 3.32190235e-27  8.47640212e-11  4.52866054e-10]
+ [ 3.54278900e-10  2.80843979e-10  7.30863455e-11]
+ [ 3.78976085e-26  4.50372021e-10  7.30863455e-11]
+ [ 3.54278900e-10 -8.47640212e-11  4.52866054e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[ 5.31418350e-10 -2.22044605e-26  2.22044605e-26]
+ [ 1.77139450e-10  0.00000000e+00  0.00000000e+00]
+ [ 3.54278900e-10 -1.74730644e-10  2.76479502e-10]
+ [-8.33431744e-28  5.40338644e-10  2.49472898e-10]
+ [ 3.54278900e-10  1.90877356e-10  2.49472898e-10]
+ [ 4.35583705e-28  1.74730644e-10  2.76479502e-10]
+ [ 1.77139450e-10  0.00000000e+00  5.25952400e-10]
+ [ 1.77139450e-10  3.65608000e-10  2.22044605e-26]
+ [ 2.09936465e-10  5.07645246e-10  1.49728129e-10]
+ [ 2.09936465e-10  2.23570754e-10 -1.49728129e-10]
+ [ 1.44342435e-10  5.07645246e-10 -1.49728129e-10]
+ [ 1.44342435e-10  2.23570754e-10  1.49728129e-10]
+ [ 1.44342435e-10 -1.42037246e-10  3.76224271e-10]
+ [ 1.44342435e-10  1.42037246e-10  6.75680529e-10]
+ [ 2.09936465e-10 -1.42037246e-10  6.75680529e-10]
+ [ 2.09936465e-10  1.42037246e-10  3.76224271e-10]
+ [ 3.54278900e-10  3.57672113e-10 -3.43254419e-10]
+ [ 1.72780838e-26  7.93588725e-12  8.69206819e-10]
+ [ 4.10879384e-26  3.57672113e-10  3.43254419e-10]
+ [ 3.54278900e-10  7.93588725e-12  1.82697981e-10]
+ [ 3.32190235e-27  8.47640212e-11  4.52866054e-10]
+ [ 3.54278900e-10  2.80843979e-10  7.30863455e-11]
+ [ 3.78976085e-26  4.50372021e-10  7.30863455e-11]
+ [ 3.54278900e-10 -8.47640212e-11  4.52866054e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "8.807321124789415e+28 / meter ** 3" ;
+    nomad:has_atoms "['Na', 'O', 'Ta']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "YLk3fk1IXHQZFNZdxeBEFhtR4K0U" ;
+    nomad:has_calc_id "8BcxPy_CqguiqsWU6SRJ_osB2VIE" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-718591" ;
+    nomad:has_formula "Na2O16Ta6" ;
+    nomad:has_formula_reduced "NaO8Ta3" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:17.628842"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[-3.542789e-10  3.656080e-10  5.259524e-10]
+ [ 3.542789e-10 -3.656080e-10  5.259524e-10]
+ [ 3.542789e-10  3.656080e-10 -5.259524e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "8455.978818988468 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"oxide\"]}" ;
+    nomad:has_material_id "iYY-ACpWbTLV76BtAEDjTedwvB4J" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 24 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-14532#mp-718591']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[-3.542789e-10  3.656080e-10  5.259524e-10]
+ [ 3.542789e-10 -3.656080e-10  5.259524e-10]
+ [ 3.542789e-10  3.656080e-10 -5.259524e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Na O Ta" ;
+    nomad:has_species_and_counts "Na O8 Ta3" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Na', 'Na', 'Ta', 'Ta', 'Ta', 'Ta', 'Ta', 'Ta', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "NaNaTaTaTaTaTaTaOOOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "Na2O16Ta6" ;
+    ab:has_chemical_composition_reduced "Na2Ta6O16" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "7gTOyA2ooH3dSwDs-AgRnBw5BiyG" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method2 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat3 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[1.36621767e-10 4.97249844e-10 3.63961721e-10]
+ [4.09944017e-10 9.17546106e-10 1.00270728e-09]
+ [4.10022733e-10 2.56511938e-11 3.19372779e-10]
+ [1.36700483e-10 4.45947456e-10 1.04729622e-09]
+ [1.45670373e-10 4.80067619e-10 1.91114993e-11]
+ [4.18992623e-10 9.34728331e-10 1.34755750e-09]
+ [4.00974127e-10 8.46896856e-12 6.64223001e-10]
+ [1.27651877e-10 4.63129681e-10 7.02445999e-10]
+ [3.88568030e-10 6.28645716e-10 7.95005024e-10]
+ [1.15245780e-10 7.86150234e-10 5.71663976e-10]
+ [1.58076470e-10 1.57047066e-10 1.25499848e-09]
+ [4.31398720e-10 3.14551584e-10 1.11670524e-10]
+ [1.34364125e-10 1.14755986e-10 8.13237755e-10]
+ [4.07686375e-10 3.56842664e-10 5.53431245e-10]
+ [4.12280375e-10 5.86354636e-10 1.23676574e-09]
+ [1.38958125e-10 8.28441314e-10 1.29903255e-10]
+ [4.04931833e-10 6.53646104e-10 4.86781531e-10]
+ [1.31609583e-10 7.61149846e-10 8.79887469e-10]
+ [1.41712667e-10 1.82047454e-10 1.96552969e-10]
+ [4.15034917e-10 2.89551196e-10 1.17011603e-09]
+ [4.21892572e-10 6.47242738e-10 1.89395723e-10]
+ [1.48570322e-10 7.67553212e-10 1.17727328e-09]
+ [1.24751928e-10 1.75644088e-10 4.93938777e-10]
+ [3.98074178e-10 2.95954562e-10 8.72730223e-10]
+ [4.51676498e-10 1.55198400e-10 8.43158240e-10]
+ [1.78354248e-10 3.16400250e-10 5.23510760e-10]
+ [9.49680023e-11 6.26797050e-10 1.20684526e-09]
+ [3.68290252e-10 7.87998900e-10 1.59823740e-10]
+ [2.45622133e-10 3.02019321e-10 8.86357280e-10]
+ [5.18944383e-10 1.69579329e-10 4.80311720e-10]
+ [3.01022367e-10 7.73617971e-10 1.16364622e-09]
+ [2.77001167e-11 6.41177979e-10 2.03022780e-10]
+ [4.54640951e-10 4.02905591e-10 7.78662396e-10]
+ [1.81318701e-10 6.86930594e-11 5.88006604e-10]
+ [9.20035492e-11 8.74504241e-10 1.27134110e-09]
+ [3.65325799e-10 5.40291709e-10 9.53278961e-11]
+ [3.83016855e-10 1.40110073e-10 1.16466029e-09]
+ [1.09694605e-10 3.31488577e-10 2.02008712e-10]
+ [1.63627645e-10 6.11708723e-10 8.85343212e-10]
+ [4.36949895e-10 8.03087227e-10 4.81325788e-10]
+ [2.92863151e-10 3.74639854e-10 1.20714456e-09]
+ [1.95409009e-11 9.69587960e-11 1.59524439e-10]
+ [2.53781349e-10 8.46238504e-10 8.42858939e-10]
+ [5.27103599e-10 5.68557446e-10 5.23810061e-10]
+ [5.36982012e-10 3.23877918e-10 1.25693368e-09]
+ [2.63659762e-10 1.47720732e-10 1.09735321e-10]
+ [9.66248818e-12 7.95476568e-10 7.93069821e-10]
+ [2.82984738e-10 6.19319382e-10 5.73599179e-10]
+ [3.56665857e-10 6.03596283e-10 3.36626975e-10]
+ [8.33436070e-11 8.11199667e-10 1.03004203e-09]
+ [1.89978643e-10 1.31997633e-10 3.46707525e-10]
+ [4.63300893e-10 3.39601017e-10 1.01996147e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[1.36621767e-10 4.97249844e-10 3.63961721e-10]
+ [4.09944017e-10 9.17546106e-10 1.00270728e-09]
+ [4.10022733e-10 2.56511938e-11 3.19372779e-10]
+ [1.36700483e-10 4.45947456e-10 1.04729622e-09]
+ [1.45670373e-10 4.80067619e-10 1.91114993e-11]
+ [4.18992623e-10 9.34728331e-10 1.34755750e-09]
+ [4.00974127e-10 8.46896856e-12 6.64223001e-10]
+ [1.27651877e-10 4.63129681e-10 7.02445999e-10]
+ [3.88568030e-10 6.28645716e-10 7.95005024e-10]
+ [1.15245780e-10 7.86150234e-10 5.71663976e-10]
+ [1.58076470e-10 1.57047066e-10 1.25499848e-09]
+ [4.31398720e-10 3.14551584e-10 1.11670524e-10]
+ [1.34364125e-10 1.14755986e-10 8.13237755e-10]
+ [4.07686375e-10 3.56842664e-10 5.53431245e-10]
+ [4.12280375e-10 5.86354636e-10 1.23676574e-09]
+ [1.38958125e-10 8.28441314e-10 1.29903255e-10]
+ [4.04931833e-10 6.53646104e-10 4.86781531e-10]
+ [1.31609583e-10 7.61149846e-10 8.79887469e-10]
+ [1.41712667e-10 1.82047454e-10 1.96552969e-10]
+ [4.15034917e-10 2.89551196e-10 1.17011603e-09]
+ [4.21892572e-10 6.47242738e-10 1.89395723e-10]
+ [1.48570322e-10 7.67553212e-10 1.17727328e-09]
+ [1.24751928e-10 1.75644088e-10 4.93938777e-10]
+ [3.98074178e-10 2.95954562e-10 8.72730223e-10]
+ [4.51676498e-10 1.55198400e-10 8.43158240e-10]
+ [1.78354248e-10 3.16400250e-10 5.23510760e-10]
+ [9.49680023e-11 6.26797050e-10 1.20684526e-09]
+ [3.68290252e-10 7.87998900e-10 1.59823740e-10]
+ [2.45622133e-10 3.02019321e-10 8.86357280e-10]
+ [5.18944383e-10 1.69579329e-10 4.80311720e-10]
+ [3.01022367e-10 7.73617971e-10 1.16364622e-09]
+ [2.77001167e-11 6.41177979e-10 2.03022780e-10]
+ [4.54640951e-10 4.02905591e-10 7.78662396e-10]
+ [1.81318701e-10 6.86930594e-11 5.88006604e-10]
+ [9.20035492e-11 8.74504241e-10 1.27134110e-09]
+ [3.65325799e-10 5.40291709e-10 9.53278961e-11]
+ [3.83016855e-10 1.40110073e-10 1.16466029e-09]
+ [1.09694605e-10 3.31488577e-10 2.02008712e-10]
+ [1.63627645e-10 6.11708723e-10 8.85343212e-10]
+ [4.36949895e-10 8.03087227e-10 4.81325788e-10]
+ [2.92863151e-10 3.74639854e-10 1.20714456e-09]
+ [1.95409009e-11 9.69587960e-11 1.59524439e-10]
+ [2.53781349e-10 8.46238504e-10 8.42858939e-10]
+ [5.27103599e-10 5.68557446e-10 5.23810061e-10]
+ [5.36982012e-10 3.23877918e-10 1.25693368e-09]
+ [2.63659762e-10 1.47720732e-10 1.09735321e-10]
+ [9.66248818e-12 7.95476568e-10 7.93069821e-10]
+ [2.82984738e-10 6.19319382e-10 5.73599179e-10]
+ [3.56665857e-10 6.03596283e-10 3.36626975e-10]
+ [8.33436070e-11 8.11199667e-10 1.03004203e-09]
+ [1.89978643e-10 1.31997633e-10 3.46707525e-10]
+ [4.63300893e-10 3.39601017e-10 1.01996147e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "7.379593988737084e+28 / meter ** 3" ;
+    nomad:has_atoms "['Na', 'O', 'P']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "tU1vVc6Gwum5HllNXGAkzWUJv27p" ;
+    nomad:has_calc_id "9uxGHGnObSJTR8wpQgmRkcRBEeiT" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719258" ;
+    nomad:has_formula "Na16O28P8" ;
+    nomad:has_formula_reduced "Na4O7P2" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.501841"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[5.466445e-10 0.000000e+00 0.000000e+00]
+ [0.000000e+00 9.431973e-10 0.000000e+00]
+ [0.000000e+00 0.000000e+00 1.366669e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "2506.4582365171527 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"diphosphate\"]}" ;
+    nomad:has_material_id "GrAmWRX3ajYHKesHiOx-z1Pk59xY" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 52 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-27579#mp-719258']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[5.466445e-10 0.000000e+00 0.000000e+00]
+ [0.000000e+00 9.431973e-10 0.000000e+00]
+ [0.000000e+00 0.000000e+00 1.366669e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Na O P" ;
+    nomad:has_species_and_counts "Na4 O7 P2" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'Na', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'P', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "NaNaNaNaNaNaNaNaNaNaNaNaNaNaNaNaPPPPPPPPOOOOOOOOOOOOOOOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "Na16O28P8" ;
+    ab:has_chemical_composition_reduced "Na16P8O28" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "3kKpNPkf211rPY8lhCfZtbN4ORK0" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method3 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat4 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[1.16747426e-10 4.22117614e-10 6.46223333e-10]
+ [8.65590801e-11 8.68419570e-10 6.59408056e-10]
+ [7.68414484e-10 8.67301694e-10 1.44486515e-09]
+ [5.25905130e-10 6.68328780e-10 1.29246244e-10]
+ [7.92133020e-10 1.61398130e-10 9.17900544e-10]
+ [7.72800036e-10 4.26125417e-10 1.43291862e-09]
+ [3.52786970e-10 3.61488920e-10 1.44806236e-09]
+ [1.05892064e-10 6.03692283e-10 1.44389984e-10]
+ [3.29068434e-10 6.77424856e-10 9.21097749e-10]
+ [3.22598624e-10 9.37026464e-10 1.43487763e-09]
+ [7.61944674e-10 6.07700086e-10 9.31085267e-10]
+ [5.56093476e-10 9.27912359e-11 1.42430967e-10]
+ [5.45238114e-10 9.33056067e-10 6.44264316e-10]
+ [3.33453986e-10 9.67616333e-11 9.33044284e-10]
+ [5.49623666e-10 3.52392844e-10 6.56210851e-10]
+ [1.10277616e-10 1.62516006e-10 1.32443449e-10]
+ [3.87026086e-10 3.72364115e-10 3.12863893e-10]
+ [8.26372136e-10 1.42544735e-10 4.75790407e-10]
+ [5.07034339e-10 3.90736332e-10 1.09923740e-09]
+ [6.02491055e-10 9.07225782e-10 1.09290609e-09]
+ [6.76882885e-11 1.32150718e-10 1.26672550e-09]
+ [6.16367360e-10 1.42729441e-10 1.26887221e-09]
+ [3.71657761e-10 6.39081368e-10 4.78071195e-10]
+ [7.01670790e-10 6.49660091e-10 4.80217913e-10]
+ [5.23199637e-11 8.87272965e-10 1.10151819e-09]
+ [4.91666014e-10 6.57453585e-10 1.26444471e-09]
+ [2.62324740e-10 8.87088259e-10 3.08436387e-10]
+ [2.76201045e-10 1.22591918e-10 4.84402512e-10]
+ [1.77021310e-10 3.80157609e-10 1.09709069e-09]
+ [1.63145005e-10 6.37500768e-10 1.27305681e-09]
+ [7.15547095e-10 3.92316932e-10 3.04251788e-10]
+ [8.11003811e-10 8.97666982e-10 3.10583105e-10]
+ [1.08868194e-10 9.11903180e-10 9.54811143e-10]
+ [7.52202615e-10 8.00685843e-10 4.32121041e-10]
+ [5.65835535e-10 2.93755193e-10 1.22077534e-09]
+ [1.26489485e-10 2.29131857e-10 1.14518756e-09]
+ [7.68142968e-10 3.71671807e-10 1.55588875e-10]
+ [3.30477856e-10 3.96994330e-10 1.66156843e-10]
+ [1.12972565e-10 1.42996430e-10 4.67313951e-10]
+ [5.67921550e-10 3.90016210e-11 1.14788791e-09]
+ [7.81908559e-10 1.49128621e-10 1.25905662e-09]
+ [5.52318615e-10 3.71912420e-10 3.21340349e-10]
+ [7.50116600e-10 5.45932271e-10 3.59233611e-10]
+ [7.50278279e-10 8.70540508e-10 1.66197853e-10]
+ [3.10770550e-10 9.90816079e-10 4.29420689e-10]
+ [5.41542335e-10 5.46158766e-10 1.15047627e-09]
+ [5.48214244e-10 6.32823370e-10 1.41115176e-09]
+ [1.28413821e-10 1.59277192e-10 1.41111075e-09]
+ [7.65719535e-10 8.86821270e-10 1.10999465e-09]
+ [5.36129591e-10 6.56059271e-10 4.70402321e-10]
+ [3.26373485e-10 6.57905280e-10 1.25596825e-09]
+ [1.10549132e-10 6.58145893e-10 1.42171973e-09]
+ [3.42562509e-10 3.73758429e-10 1.10690628e-09]
+ [5.35453877e-10 8.05923191e-10 1.20573886e-09]
+ [3.10932229e-10 6.66207842e-10 6.22456447e-10]
+ [3.37149765e-10 4.83658934e-10 4.26832326e-10]
+ [3.28796918e-10 1.43237043e-10 6.33065425e-10]
+ [3.12856565e-10 7.36062507e-10 3.56533259e-10]
+ [3.43238223e-10 2.23894509e-10 3.71569742e-10]
+ [3.16377484e-10 9.21962986e-10 1.62852381e-10]
+ [7.82584273e-10 2.91014341e-10 4.17084558e-10]
+ [9.67835414e-11 8.80689079e-10 3.18251979e-10]
+ [7.69823906e-10 1.17914520e-10 6.22497457e-10]
+ [1.28575500e-10 4.83885429e-10 1.21807499e-09]
+ [5.62314616e-10 1.07854714e-10 1.41445622e-09]
+ [9.61078271e-11 7.38803359e-10 1.16022404e-09]
+ [5.49895182e-10 8.86580657e-10 9.44243175e-10]
+ [5.67759871e-10 3.63609858e-10 9.54852153e-10]
+ [7.76495815e-10 3.12499163e-11 3.61821974e-10]
+ [1.02196285e-10 9.98567784e-10 1.21548663e-09]
+ [1.22968566e-10 4.15032336e-10 9.51506681e-10]
+ [7.55723534e-10 6.14785364e-10 6.25801919e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[1.16747426e-10 4.22117614e-10 6.46223333e-10]
+ [8.65590801e-11 8.68419570e-10 6.59408056e-10]
+ [7.68414484e-10 8.67301694e-10 1.44486515e-09]
+ [5.25905130e-10 6.68328780e-10 1.29246244e-10]
+ [7.92133020e-10 1.61398130e-10 9.17900544e-10]
+ [7.72800036e-10 4.26125417e-10 1.43291862e-09]
+ [3.52786970e-10 3.61488920e-10 1.44806236e-09]
+ [1.05892064e-10 6.03692283e-10 1.44389984e-10]
+ [3.29068434e-10 6.77424856e-10 9.21097749e-10]
+ [3.22598624e-10 9.37026464e-10 1.43487763e-09]
+ [7.61944674e-10 6.07700086e-10 9.31085267e-10]
+ [5.56093476e-10 9.27912359e-11 1.42430967e-10]
+ [5.45238114e-10 9.33056067e-10 6.44264316e-10]
+ [3.33453986e-10 9.67616333e-11 9.33044284e-10]
+ [5.49623666e-10 3.52392844e-10 6.56210851e-10]
+ [1.10277616e-10 1.62516006e-10 1.32443449e-10]
+ [3.87026086e-10 3.72364115e-10 3.12863893e-10]
+ [8.26372136e-10 1.42544735e-10 4.75790407e-10]
+ [5.07034339e-10 3.90736332e-10 1.09923740e-09]
+ [6.02491055e-10 9.07225782e-10 1.09290609e-09]
+ [6.76882885e-11 1.32150718e-10 1.26672550e-09]
+ [6.16367360e-10 1.42729441e-10 1.26887221e-09]
+ [3.71657761e-10 6.39081368e-10 4.78071195e-10]
+ [7.01670790e-10 6.49660091e-10 4.80217913e-10]
+ [5.23199637e-11 8.87272965e-10 1.10151819e-09]
+ [4.91666014e-10 6.57453585e-10 1.26444471e-09]
+ [2.62324740e-10 8.87088259e-10 3.08436387e-10]
+ [2.76201045e-10 1.22591918e-10 4.84402512e-10]
+ [1.77021310e-10 3.80157609e-10 1.09709069e-09]
+ [1.63145005e-10 6.37500768e-10 1.27305681e-09]
+ [7.15547095e-10 3.92316932e-10 3.04251788e-10]
+ [8.11003811e-10 8.97666982e-10 3.10583105e-10]
+ [1.08868194e-10 9.11903180e-10 9.54811143e-10]
+ [7.52202615e-10 8.00685843e-10 4.32121041e-10]
+ [5.65835535e-10 2.93755193e-10 1.22077534e-09]
+ [1.26489485e-10 2.29131857e-10 1.14518756e-09]
+ [7.68142968e-10 3.71671807e-10 1.55588875e-10]
+ [3.30477856e-10 3.96994330e-10 1.66156843e-10]
+ [1.12972565e-10 1.42996430e-10 4.67313951e-10]
+ [5.67921550e-10 3.90016210e-11 1.14788791e-09]
+ [7.81908559e-10 1.49128621e-10 1.25905662e-09]
+ [5.52318615e-10 3.71912420e-10 3.21340349e-10]
+ [7.50116600e-10 5.45932271e-10 3.59233611e-10]
+ [7.50278279e-10 8.70540508e-10 1.66197853e-10]
+ [3.10770550e-10 9.90816079e-10 4.29420689e-10]
+ [5.41542335e-10 5.46158766e-10 1.15047627e-09]
+ [5.48214244e-10 6.32823370e-10 1.41115176e-09]
+ [1.28413821e-10 1.59277192e-10 1.41111075e-09]
+ [7.65719535e-10 8.86821270e-10 1.10999465e-09]
+ [5.36129591e-10 6.56059271e-10 4.70402321e-10]
+ [3.26373485e-10 6.57905280e-10 1.25596825e-09]
+ [1.10549132e-10 6.58145893e-10 1.42171973e-09]
+ [3.42562509e-10 3.73758429e-10 1.10690628e-09]
+ [5.35453877e-10 8.05923191e-10 1.20573886e-09]
+ [3.10932229e-10 6.66207842e-10 6.22456447e-10]
+ [3.37149765e-10 4.83658934e-10 4.26832326e-10]
+ [3.28796918e-10 1.43237043e-10 6.33065425e-10]
+ [3.12856565e-10 7.36062507e-10 3.56533259e-10]
+ [3.43238223e-10 2.23894509e-10 3.71569742e-10]
+ [3.16377484e-10 9.21962986e-10 1.62852381e-10]
+ [7.82584273e-10 2.91014341e-10 4.17084558e-10]
+ [9.67835414e-11 8.80689079e-10 3.18251979e-10]
+ [7.69823906e-10 1.17914520e-10 6.22497457e-10]
+ [1.28575500e-10 4.83885429e-10 1.21807499e-09]
+ [5.62314616e-10 1.07854714e-10 1.41445622e-09]
+ [9.61078271e-11 7.38803359e-10 1.16022404e-09]
+ [5.49895182e-10 8.86580657e-10 9.44243175e-10]
+ [5.67759871e-10 3.63609858e-10 9.54852153e-10]
+ [7.76495815e-10 3.12499163e-11 3.61821974e-10]
+ [1.02196285e-10 9.98567784e-10 1.21548663e-09]
+ [1.22968566e-10 4.15032336e-10 9.51506681e-10]
+ [7.55723534e-10 6.14785364e-10 6.25801919e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atoms "['Cs', 'O', 'Si']" ;
+    nomad:has_calc_hash "ShT8lapzxKaV-iHMPGFfSgzh8KSa" ;
+    nomad:has_calc_id "B9ZXTsToWfzYX4TgO0T3m4s6d3Uo" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719423" ;
+    nomad:has_formula "Cs16O40Si16" ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.508560"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[8.7869210e-10 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 1.0218395e-09 0.0000000e+00]
+ [0.0000000e+00 7.9782000e-12 1.5773086e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_material_type "unavailable"@en ;
+    nomad:has_n_atoms 72 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-562345#mp-719423']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[8.7869210e-10 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 1.0218395e-09 0.0000000e+00]
+ [0.0000000e+00 7.9782000e-12 1.5773086e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "CsCsCsCsCsCsCsCsCsCsCsCsCsCsCsCsSiSiSiSiSiSiSiSiSiSiSiSiSiSiSiSiOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "Cs16O40Si16" ;
+    ab:has_chemical_composition_reduced "Cs16Si16O40" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "gU2oIuozgEU-gI494rmN2XGTe4p1" ;
+    ab:has_is_representative true ;
+    ab:has_system_type "unavailable" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method4 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat5 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[ 3.58866504e-10  9.03795600e-10  4.51897800e-10]
+ [ 4.51897800e-10  5.44929096e-10 -8.32966132e-26]
+ [-4.51897800e-10  5.44929096e-10  9.03795600e-10]
+ [ 4.51897800e-10  3.58866504e-10  9.03795600e-10]
+ [ 3.58866504e-10 -1.38023251e-26  1.35569340e-09]
+ [ 5.44929096e-10 -5.56919630e-26  4.51897800e-10]
+ [ 1.35569340e-09  3.58866504e-10 -5.52122881e-27]
+ [-4.44089210e-26  4.51897800e-10  5.44929096e-10]
+ [ 5.44929096e-10  9.03795600e-10 -4.51897800e-10]
+ [ 4.44089210e-26  1.35569340e-09  3.58866504e-10]
+ [ 9.03795600e-10 -4.51897800e-10  5.44929096e-10]
+ [ 9.03795600e-10  4.51897800e-10  3.58866504e-10]
+ [ 4.51897800e-10  4.51897800e-10  4.51897800e-10]
+ [ 4.51897800e-10  4.51897800e-10 -4.51897800e-10]
+ [-4.51897800e-10  4.51897800e-10  4.51897800e-10]
+ [ 4.51897800e-10 -4.51897800e-10  4.51897800e-10]
+ [ 8.41584637e-10 -1.17814275e-10  1.30622867e-10]
+ [ 1.30622867e-10 -6.22109625e-11  1.17814275e-10]
+ [-1.30622867e-10  8.41584637e-10  7.85981325e-10]
+ [ 6.22109625e-11  1.17814275e-10  1.03441847e-09]
+ [ 6.22109625e-11  1.02160988e-09  7.73172733e-10]
+ [ 8.41584637e-10  1.17814275e-10  7.73172733e-10]
+ [ 1.03441847e-09  6.22109625e-11  1.17814275e-10]
+ [ 7.73172733e-10  9.66006563e-10  7.85981325e-10]
+ [ 1.30622867e-10  8.41584637e-10 -1.17814275e-10]
+ [ 1.17814275e-10  1.30622867e-10 -6.22109625e-11]
+ [ 1.30622867e-10  6.22109625e-11  7.85981325e-10]
+ [ 1.17814275e-10  7.73172733e-10  8.41584637e-10]
+ [-6.22109625e-11  1.17814275e-10  1.30622867e-10]
+ [ 1.17814275e-10  1.03441847e-09  6.22109625e-11]
+ [ 7.85981325e-10 -1.30622867e-10  8.41584637e-10]
+ [ 8.41584637e-10  7.85981325e-10 -1.30622867e-10]
+ [ 1.02160988e-09  7.73172733e-10  6.22109625e-11]
+ [ 9.66006563e-10  7.85981325e-10  7.73172733e-10]
+ [ 7.73172733e-10  6.22109625e-11  1.02160988e-09]
+ [ 6.22109625e-11  7.85981325e-10  1.30622867e-10]
+ [ 7.85981325e-10  7.73172733e-10  9.66006563e-10]
+ [ 7.73172733e-10  8.41584637e-10  1.17814275e-10]
+ [ 7.85981325e-10  1.30622867e-10  6.22109625e-11]
+ [-1.17814275e-10  1.30622867e-10  8.41584637e-10]
+ [ 6.34669673e-10  1.05103023e-09  6.52557595e-10]
+ [ 2.69125927e-10  1.47234630e-10  6.52557595e-10]
+ [ 7.56560970e-10 -2.51238005e-10  2.69125927e-10]
+ [ 2.51238005e-10  1.17292153e-09  1.47234630e-10]
+ [ 6.52557595e-10  2.69125927e-10  1.47234630e-10]
+ [ 2.69125927e-10  7.56560970e-10 -2.51238005e-10]
+ [ 6.52557595e-10 -2.69125927e-10  7.56560970e-10]
+ [-1.47234630e-10  2.51238005e-10  2.69125927e-10]
+ [ 2.51238005e-10  6.34669673e-10  7.56560970e-10]
+ [ 1.15503360e-09  6.34669673e-10  1.47234630e-10]
+ [ 6.34669673e-10  1.47234630e-10  1.15503360e-09]
+ [ 1.05103023e-09  6.52557595e-10  6.34669673e-10]
+ [ 6.34669673e-10  7.56560970e-10  2.51238005e-10]
+ [ 7.56560970e-10  2.51238005e-10  6.34669673e-10]
+ [ 1.47234630e-10  1.15503360e-09  6.34669673e-10]
+ [ 7.56560970e-10  6.52557595e-10 -2.69125927e-10]
+ [ 6.52557595e-10  6.34669673e-10  1.05103023e-09]
+ [-2.69125927e-10  7.56560970e-10  6.52557595e-10]
+ [ 1.47234630e-10  6.52557595e-10  2.69125927e-10]
+ [ 1.17292153e-09  1.47234630e-10  2.51238005e-10]
+ [-2.51238005e-10  2.69125927e-10  7.56560970e-10]
+ [ 1.47234630e-10  2.51238005e-10  1.17292153e-09]
+ [ 2.51238005e-10  2.69125927e-10 -1.47234630e-10]
+ [ 2.69125927e-10 -1.47234630e-10  2.51238005e-10]
+ [-1.71536790e-10  7.32258810e-10  1.71536790e-10]
+ [ 8.35391830e-10  2.85141185e-10  9.47232920e-10]
+ [ 9.47232920e-10  8.35391830e-10  2.85141185e-10]
+ [ 6.18654415e-10  8.60358280e-10 -6.84037700e-11]
+ [ 4.34373203e-11  6.84037700e-11  1.52245001e-09]
+ [-6.18654415e-10  8.60358280e-10  8.35391830e-10]
+ [ 6.84037700e-11  2.85141185e-10  8.60358280e-10]
+ [ 8.35391830e-10  6.18654415e-10  4.34373203e-11]
+ [ 2.85141185e-10  4.34373203e-11  9.72199370e-10]
+ [-6.84037700e-11  6.18654415e-10  8.60358280e-10]
+ [ 1.71536790e-10  1.07533239e-09 -1.71536790e-10]
+ [-1.71536790e-10  1.71536790e-10  1.07533239e-09]
+ [ 1.71536790e-10  1.71536790e-10  1.71536790e-10]
+ [ 8.60358280e-10 -6.84037700e-11  6.18654415e-10]
+ [ 8.60358280e-10  6.84037700e-11  2.85141185e-10]
+ [ 2.85141185e-10  9.47232920e-10  8.35391830e-10]
+ [ 6.84037700e-11  1.52245001e-09  4.34373203e-11]
+ [ 4.34373203e-11  8.35391830e-10  6.18654415e-10]
+ [ 1.52245001e-09  4.34373203e-11  6.84037700e-11]
+ [ 1.71536790e-10 -1.71536790e-10  7.32258810e-10]
+ [ 9.72199370e-10  2.85141185e-10  4.34373203e-11]
+ [ 8.35391830e-10 -6.18654415e-10  8.60358280e-10]
+ [ 7.32258810e-10  1.71536790e-10 -1.71536790e-10]
+ [ 4.34373203e-11  9.72199370e-10  2.85141185e-10]
+ [-4.34373203e-11  6.84037700e-11  6.18654415e-10]
+ [ 1.07533239e-09 -1.71536790e-10  1.71536790e-10]
+ [ 6.18654415e-10  4.34373203e-11  8.35391830e-10]
+ [ 8.60358280e-10  8.35391830e-10 -6.18654415e-10]
+ [ 6.18654415e-10 -4.34373203e-11  6.84037700e-11]
+ [ 2.85141185e-10  8.60358280e-10  6.84037700e-11]
+ [ 7.32258810e-10  7.32258810e-10  7.32258810e-10]
+ [ 6.84037700e-11  6.18654415e-10 -4.34373203e-11]
+ [ 5.62453693e-10  1.10904577e-09  5.79712574e-10]
+ [ 3.24083026e-10  3.41341907e-10 -2.05250173e-10]
+ [ 6.98545427e-10 -3.24083026e-10  3.41341907e-10]
+ [ 1.22787863e-09  5.62453693e-10  2.05250173e-10]
+ [ 2.05250173e-10  1.22787863e-09  5.62453693e-10]
+ [ 5.79712574e-10  5.62453693e-10  1.10904577e-09]
+ [-3.41341907e-10  6.98545427e-10  5.79712574e-10]
+ [ 3.41341907e-10  2.05250173e-10  5.79712574e-10]
+ [ 3.24083026e-10  5.62453693e-10  6.98545427e-10]
+ [ 3.41341907e-10 -2.05250173e-10  3.24083026e-10]
+ [ 1.24513751e-09  2.05250173e-10  3.24083026e-10]
+ [ 3.24083026e-10  1.24513751e-09  2.05250173e-10]
+ [ 5.62453693e-10  6.98545427e-10  3.24083026e-10]
+ [ 1.10904577e-09  5.79712574e-10  5.62453693e-10]
+ [ 2.05250173e-10  3.24083026e-10  1.24513751e-09]
+ [ 6.98545427e-10  3.24083026e-10  5.62453693e-10]
+ [ 5.79712574e-10  3.41341907e-10  2.05250173e-10]
+ [-3.24083026e-10  3.41341907e-10  6.98545427e-10]
+ [-2.05250173e-10  3.24083026e-10  3.41341907e-10]
+ [ 5.62453693e-10  2.05250173e-10  1.22787863e-09]
+ [ 5.79712574e-10 -3.41341907e-10  6.98545427e-10]
+ [ 6.98545427e-10  5.79712574e-10 -3.41341907e-10]
+ [ 2.05250173e-10  5.79712574e-10  3.41341907e-10]
+ [ 3.41341907e-10  6.98545427e-10 -3.24083026e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[ 3.58866504e-10  9.03795600e-10  4.51897800e-10]
+ [ 4.51897800e-10  5.44929096e-10 -8.32966132e-26]
+ [-4.51897800e-10  5.44929096e-10  9.03795600e-10]
+ [ 4.51897800e-10  3.58866504e-10  9.03795600e-10]
+ [ 3.58866504e-10 -1.38023251e-26  1.35569340e-09]
+ [ 5.44929096e-10 -5.56919630e-26  4.51897800e-10]
+ [ 1.35569340e-09  3.58866504e-10 -5.52122881e-27]
+ [-4.44089210e-26  4.51897800e-10  5.44929096e-10]
+ [ 5.44929096e-10  9.03795600e-10 -4.51897800e-10]
+ [ 4.44089210e-26  1.35569340e-09  3.58866504e-10]
+ [ 9.03795600e-10 -4.51897800e-10  5.44929096e-10]
+ [ 9.03795600e-10  4.51897800e-10  3.58866504e-10]
+ [ 4.51897800e-10  4.51897800e-10  4.51897800e-10]
+ [ 4.51897800e-10  4.51897800e-10 -4.51897800e-10]
+ [-4.51897800e-10  4.51897800e-10  4.51897800e-10]
+ [ 4.51897800e-10 -4.51897800e-10  4.51897800e-10]
+ [ 8.41584637e-10 -1.17814275e-10  1.30622867e-10]
+ [ 1.30622867e-10 -6.22109625e-11  1.17814275e-10]
+ [-1.30622867e-10  8.41584637e-10  7.85981325e-10]
+ [ 6.22109625e-11  1.17814275e-10  1.03441847e-09]
+ [ 6.22109625e-11  1.02160988e-09  7.73172733e-10]
+ [ 8.41584637e-10  1.17814275e-10  7.73172733e-10]
+ [ 1.03441847e-09  6.22109625e-11  1.17814275e-10]
+ [ 7.73172733e-10  9.66006563e-10  7.85981325e-10]
+ [ 1.30622867e-10  8.41584637e-10 -1.17814275e-10]
+ [ 1.17814275e-10  1.30622867e-10 -6.22109625e-11]
+ [ 1.30622867e-10  6.22109625e-11  7.85981325e-10]
+ [ 1.17814275e-10  7.73172733e-10  8.41584637e-10]
+ [-6.22109625e-11  1.17814275e-10  1.30622867e-10]
+ [ 1.17814275e-10  1.03441847e-09  6.22109625e-11]
+ [ 7.85981325e-10 -1.30622867e-10  8.41584637e-10]
+ [ 8.41584637e-10  7.85981325e-10 -1.30622867e-10]
+ [ 1.02160988e-09  7.73172733e-10  6.22109625e-11]
+ [ 9.66006563e-10  7.85981325e-10  7.73172733e-10]
+ [ 7.73172733e-10  6.22109625e-11  1.02160988e-09]
+ [ 6.22109625e-11  7.85981325e-10  1.30622867e-10]
+ [ 7.85981325e-10  7.73172733e-10  9.66006563e-10]
+ [ 7.73172733e-10  8.41584637e-10  1.17814275e-10]
+ [ 7.85981325e-10  1.30622867e-10  6.22109625e-11]
+ [-1.17814275e-10  1.30622867e-10  8.41584637e-10]
+ [ 6.34669673e-10  1.05103023e-09  6.52557595e-10]
+ [ 2.69125927e-10  1.47234630e-10  6.52557595e-10]
+ [ 7.56560970e-10 -2.51238005e-10  2.69125927e-10]
+ [ 2.51238005e-10  1.17292153e-09  1.47234630e-10]
+ [ 6.52557595e-10  2.69125927e-10  1.47234630e-10]
+ [ 2.69125927e-10  7.56560970e-10 -2.51238005e-10]
+ [ 6.52557595e-10 -2.69125927e-10  7.56560970e-10]
+ [-1.47234630e-10  2.51238005e-10  2.69125927e-10]
+ [ 2.51238005e-10  6.34669673e-10  7.56560970e-10]
+ [ 1.15503360e-09  6.34669673e-10  1.47234630e-10]
+ [ 6.34669673e-10  1.47234630e-10  1.15503360e-09]
+ [ 1.05103023e-09  6.52557595e-10  6.34669673e-10]
+ [ 6.34669673e-10  7.56560970e-10  2.51238005e-10]
+ [ 7.56560970e-10  2.51238005e-10  6.34669673e-10]
+ [ 1.47234630e-10  1.15503360e-09  6.34669673e-10]
+ [ 7.56560970e-10  6.52557595e-10 -2.69125927e-10]
+ [ 6.52557595e-10  6.34669673e-10  1.05103023e-09]
+ [-2.69125927e-10  7.56560970e-10  6.52557595e-10]
+ [ 1.47234630e-10  6.52557595e-10  2.69125927e-10]
+ [ 1.17292153e-09  1.47234630e-10  2.51238005e-10]
+ [-2.51238005e-10  2.69125927e-10  7.56560970e-10]
+ [ 1.47234630e-10  2.51238005e-10  1.17292153e-09]
+ [ 2.51238005e-10  2.69125927e-10 -1.47234630e-10]
+ [ 2.69125927e-10 -1.47234630e-10  2.51238005e-10]
+ [-1.71536790e-10  7.32258810e-10  1.71536790e-10]
+ [ 8.35391830e-10  2.85141185e-10  9.47232920e-10]
+ [ 9.47232920e-10  8.35391830e-10  2.85141185e-10]
+ [ 6.18654415e-10  8.60358280e-10 -6.84037700e-11]
+ [ 4.34373203e-11  6.84037700e-11  1.52245001e-09]
+ [-6.18654415e-10  8.60358280e-10  8.35391830e-10]
+ [ 6.84037700e-11  2.85141185e-10  8.60358280e-10]
+ [ 8.35391830e-10  6.18654415e-10  4.34373203e-11]
+ [ 2.85141185e-10  4.34373203e-11  9.72199370e-10]
+ [-6.84037700e-11  6.18654415e-10  8.60358280e-10]
+ [ 1.71536790e-10  1.07533239e-09 -1.71536790e-10]
+ [-1.71536790e-10  1.71536790e-10  1.07533239e-09]
+ [ 1.71536790e-10  1.71536790e-10  1.71536790e-10]
+ [ 8.60358280e-10 -6.84037700e-11  6.18654415e-10]
+ [ 8.60358280e-10  6.84037700e-11  2.85141185e-10]
+ [ 2.85141185e-10  9.47232920e-10  8.35391830e-10]
+ [ 6.84037700e-11  1.52245001e-09  4.34373203e-11]
+ [ 4.34373203e-11  8.35391830e-10  6.18654415e-10]
+ [ 1.52245001e-09  4.34373203e-11  6.84037700e-11]
+ [ 1.71536790e-10 -1.71536790e-10  7.32258810e-10]
+ [ 9.72199370e-10  2.85141185e-10  4.34373203e-11]
+ [ 8.35391830e-10 -6.18654415e-10  8.60358280e-10]
+ [ 7.32258810e-10  1.71536790e-10 -1.71536790e-10]
+ [ 4.34373203e-11  9.72199370e-10  2.85141185e-10]
+ [-4.34373203e-11  6.84037700e-11  6.18654415e-10]
+ [ 1.07533239e-09 -1.71536790e-10  1.71536790e-10]
+ [ 6.18654415e-10  4.34373203e-11  8.35391830e-10]
+ [ 8.60358280e-10  8.35391830e-10 -6.18654415e-10]
+ [ 6.18654415e-10 -4.34373203e-11  6.84037700e-11]
+ [ 2.85141185e-10  8.60358280e-10  6.84037700e-11]
+ [ 7.32258810e-10  7.32258810e-10  7.32258810e-10]
+ [ 6.84037700e-11  6.18654415e-10 -4.34373203e-11]
+ [ 5.62453693e-10  1.10904577e-09  5.79712574e-10]
+ [ 3.24083026e-10  3.41341907e-10 -2.05250173e-10]
+ [ 6.98545427e-10 -3.24083026e-10  3.41341907e-10]
+ [ 1.22787863e-09  5.62453693e-10  2.05250173e-10]
+ [ 2.05250173e-10  1.22787863e-09  5.62453693e-10]
+ [ 5.79712574e-10  5.62453693e-10  1.10904577e-09]
+ [-3.41341907e-10  6.98545427e-10  5.79712574e-10]
+ [ 3.41341907e-10  2.05250173e-10  5.79712574e-10]
+ [ 3.24083026e-10  5.62453693e-10  6.98545427e-10]
+ [ 3.41341907e-10 -2.05250173e-10  3.24083026e-10]
+ [ 1.24513751e-09  2.05250173e-10  3.24083026e-10]
+ [ 3.24083026e-10  1.24513751e-09  2.05250173e-10]
+ [ 5.62453693e-10  6.98545427e-10  3.24083026e-10]
+ [ 1.10904577e-09  5.79712574e-10  5.62453693e-10]
+ [ 2.05250173e-10  3.24083026e-10  1.24513751e-09]
+ [ 6.98545427e-10  3.24083026e-10  5.62453693e-10]
+ [ 5.79712574e-10  3.41341907e-10  2.05250173e-10]
+ [-3.24083026e-10  3.41341907e-10  6.98545427e-10]
+ [-2.05250173e-10  3.24083026e-10  3.41341907e-10]
+ [ 5.62453693e-10  2.05250173e-10  1.22787863e-09]
+ [ 5.79712574e-10 -3.41341907e-10  6.98545427e-10]
+ [ 6.98545427e-10  5.79712574e-10 -3.41341907e-10]
+ [ 2.05250173e-10  5.79712574e-10  3.41341907e-10]
+ [ 3.41341907e-10  6.98545427e-10 -3.24083026e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atoms "['C', 'Cs', 'K', 'N', 'Re', 'S']" ;
+    nomad:has_calc_hash "U5Iy_-KFd-CRK-ztY9Dk29A3O_7b" ;
+    nomad:has_calc_id "EZQit6kDie8Bq3fLNuVnoNgEJxc4" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719226" ;
+    nomad:has_formula "C24Cs12K4N24Re24S32" ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:21.270810"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[-9.037956e-10  9.037956e-10  9.037956e-10]
+ [ 9.037956e-10 -9.037956e-10  9.037956e-10]
+ [ 9.037956e-10  9.037956e-10 -9.037956e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_material_type "unavailable"@en ;
+    nomad:has_n_atoms 120 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "['Error reading total dos.']" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-555611#mp-719226']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[-9.037956e-10  9.037956e-10  9.037956e-10]
+ [ 9.037956e-10 -9.037956e-10  9.037956e-10]
+ [ 9.037956e-10  9.037956e-10 -9.037956e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'Cs', 'K', 'K', 'K', 'K', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'Re', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N']" ;
+    ab:has_chemical_composition "CsCsCsCsCsCsCsCsCsCsCsCsKKKKReReReReReReReReReReReReReReReReReReReReReReReReCCCCCCCCCCCCCCCCCCCCCCCCSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNNNNNNNNNN" ;
+    ab:has_chemical_composition_bulk_reduced "C24Cs12K4N24Re24S32" ;
+    ab:has_chemical_composition_reduced "Cs12K4Re24C24S32N24" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "Rlejdc9eoFMweX9aIs-5wKj7deNy" ;
+    ab:has_is_representative true ;
+    ab:has_system_type "unavailable" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method5 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat6 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[3.72271450e-10 3.72271450e-10 7.96442600e-10]
+ [0.00000000e+00 0.00000000e+00 7.96442600e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [3.72271450e-10 3.72271450e-10 0.00000000e+00]
+ [3.72271450e-10 0.00000000e+00 9.40351813e-10]
+ [0.00000000e+00 3.72271450e-10 1.44897599e-09]
+ [0.00000000e+00 3.72271450e-10 6.52533387e-10]
+ [3.72271450e-10 0.00000000e+00 1.43909213e-10]
+ [1.34183755e-10 1.91821055e-10 1.03756400e-09]
+ [6.10359145e-10 5.52721845e-10 1.03756400e-09]
+ [1.91821055e-10 1.34183755e-10 1.35176380e-09]
+ [5.64092505e-10 2.38087695e-10 1.03756400e-09]
+ [1.80450395e-10 5.06455205e-10 1.03756400e-09]
+ [2.38087695e-10 5.64092505e-10 1.35176380e-09]
+ [5.06455205e-10 1.80450395e-10 1.35176380e-09]
+ [5.52721845e-10 6.10359145e-10 1.35176380e-09]
+ [2.38087695e-10 1.80450395e-10 5.55321196e-10]
+ [5.06455205e-10 5.64092505e-10 5.55321196e-10]
+ [1.80450395e-10 2.38087695e-10 2.41121404e-10]
+ [5.52721845e-10 1.34183755e-10 5.55321196e-10]
+ [1.91821055e-10 6.10359145e-10 5.55321196e-10]
+ [1.34183755e-10 5.52721845e-10 2.41121404e-10]
+ [6.10359145e-10 1.91821055e-10 2.41121404e-10]
+ [5.64092505e-10 5.06455205e-10 2.41121404e-10]
+ [1.96556347e-10 8.47364274e-11 9.35267324e-10]
+ [5.47986553e-10 6.59806473e-10 9.35267324e-10]
+ [8.47364274e-11 1.96556347e-10 1.45406048e-09]
+ [4.57007877e-10 1.75715103e-10 9.35267324e-10]
+ [2.87535023e-10 5.68827797e-10 9.35267324e-10]
+ [1.75715103e-10 4.57007877e-10 1.45406048e-09]
+ [5.68827797e-10 2.87535023e-10 1.45406048e-09]
+ [6.59806473e-10 5.47986553e-10 1.45406048e-09]
+ [1.75715103e-10 2.87535023e-10 6.57617876e-10]
+ [5.68827797e-10 4.57007877e-10 6.57617876e-10]
+ [2.87535023e-10 1.75715103e-10 1.38824724e-10]
+ [6.59806473e-10 1.96556347e-10 6.57617876e-10]
+ [8.47364274e-11 5.47986553e-10 6.57617876e-10]
+ [1.96556347e-10 6.59806473e-10 1.38824724e-10]
+ [5.47986553e-10 8.47364274e-11 1.38824724e-10]
+ [1.85157396e-10 2.79077015e-11 5.87126335e-10]
+ [4.57007877e-10 5.68827797e-10 1.38824724e-10]
+ [5.57428846e-10 4.00179152e-10 1.00575887e-09]
+ [3.44363748e-10 1.87114054e-10 1.38356893e-09]
+ [7.16635198e-10 1.85157396e-10 1.00575887e-09]
+ [2.79077015e-11 5.59385504e-10 1.00575887e-09]
+ [1.85157396e-10 7.16635198e-10 1.38356893e-09]
+ [5.59385504e-10 2.79077015e-11 1.38356893e-09]
+ [4.00179152e-10 5.57428846e-10 1.38356893e-09]
+ [5.32573025e-10 5.32573025e-10 3.98221300e-10]
+ [5.84241325e-10 1.60301575e-10 3.98221300e-10]
+ [1.60301575e-10 5.84241325e-10 3.98221300e-10]
+ [2.11969875e-10 2.11969875e-10 3.98221300e-10]
+ [5.84241325e-10 5.84241325e-10 1.19466390e-09]
+ [5.32573025e-10 2.11969875e-10 1.19466390e-09]
+ [2.11969875e-10 5.32573025e-10 1.19466390e-09]
+ [1.60301575e-10 1.60301575e-10 1.19466390e-09]
+ [7.16635198e-10 5.59385504e-10 2.09316265e-10]
+ [5.57428846e-10 3.44363748e-10 2.09316265e-10]
+ [1.87114054e-10 4.00179152e-10 2.09316265e-10]
+ [3.44363748e-10 5.57428846e-10 5.87126335e-10]
+ [4.00179152e-10 1.87114054e-10 5.87126335e-10]
+ [2.79077015e-11 1.85157396e-10 2.09316265e-10]
+ [5.59385504e-10 7.16635198e-10 5.87126335e-10]
+ [1.87114054e-10 3.44363748e-10 1.00575887e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[3.72271450e-10 3.72271450e-10 7.96442600e-10]
+ [0.00000000e+00 0.00000000e+00 7.96442600e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [3.72271450e-10 3.72271450e-10 0.00000000e+00]
+ [3.72271450e-10 0.00000000e+00 9.40351813e-10]
+ [0.00000000e+00 3.72271450e-10 1.44897599e-09]
+ [0.00000000e+00 3.72271450e-10 6.52533387e-10]
+ [3.72271450e-10 0.00000000e+00 1.43909213e-10]
+ [1.34183755e-10 1.91821055e-10 1.03756400e-09]
+ [6.10359145e-10 5.52721845e-10 1.03756400e-09]
+ [1.91821055e-10 1.34183755e-10 1.35176380e-09]
+ [5.64092505e-10 2.38087695e-10 1.03756400e-09]
+ [1.80450395e-10 5.06455205e-10 1.03756400e-09]
+ [2.38087695e-10 5.64092505e-10 1.35176380e-09]
+ [5.06455205e-10 1.80450395e-10 1.35176380e-09]
+ [5.52721845e-10 6.10359145e-10 1.35176380e-09]
+ [2.38087695e-10 1.80450395e-10 5.55321196e-10]
+ [5.06455205e-10 5.64092505e-10 5.55321196e-10]
+ [1.80450395e-10 2.38087695e-10 2.41121404e-10]
+ [5.52721845e-10 1.34183755e-10 5.55321196e-10]
+ [1.91821055e-10 6.10359145e-10 5.55321196e-10]
+ [1.34183755e-10 5.52721845e-10 2.41121404e-10]
+ [6.10359145e-10 1.91821055e-10 2.41121404e-10]
+ [5.64092505e-10 5.06455205e-10 2.41121404e-10]
+ [1.96556347e-10 8.47364274e-11 9.35267324e-10]
+ [5.47986553e-10 6.59806473e-10 9.35267324e-10]
+ [8.47364274e-11 1.96556347e-10 1.45406048e-09]
+ [4.57007877e-10 1.75715103e-10 9.35267324e-10]
+ [2.87535023e-10 5.68827797e-10 9.35267324e-10]
+ [1.75715103e-10 4.57007877e-10 1.45406048e-09]
+ [5.68827797e-10 2.87535023e-10 1.45406048e-09]
+ [6.59806473e-10 5.47986553e-10 1.45406048e-09]
+ [1.75715103e-10 2.87535023e-10 6.57617876e-10]
+ [5.68827797e-10 4.57007877e-10 6.57617876e-10]
+ [2.87535023e-10 1.75715103e-10 1.38824724e-10]
+ [6.59806473e-10 1.96556347e-10 6.57617876e-10]
+ [8.47364274e-11 5.47986553e-10 6.57617876e-10]
+ [1.96556347e-10 6.59806473e-10 1.38824724e-10]
+ [5.47986553e-10 8.47364274e-11 1.38824724e-10]
+ [1.85157396e-10 2.79077015e-11 5.87126335e-10]
+ [4.57007877e-10 5.68827797e-10 1.38824724e-10]
+ [5.57428846e-10 4.00179152e-10 1.00575887e-09]
+ [3.44363748e-10 1.87114054e-10 1.38356893e-09]
+ [7.16635198e-10 1.85157396e-10 1.00575887e-09]
+ [2.79077015e-11 5.59385504e-10 1.00575887e-09]
+ [1.85157396e-10 7.16635198e-10 1.38356893e-09]
+ [5.59385504e-10 2.79077015e-11 1.38356893e-09]
+ [4.00179152e-10 5.57428846e-10 1.38356893e-09]
+ [5.32573025e-10 5.32573025e-10 3.98221300e-10]
+ [5.84241325e-10 1.60301575e-10 3.98221300e-10]
+ [1.60301575e-10 5.84241325e-10 3.98221300e-10]
+ [2.11969875e-10 2.11969875e-10 3.98221300e-10]
+ [5.84241325e-10 5.84241325e-10 1.19466390e-09]
+ [5.32573025e-10 2.11969875e-10 1.19466390e-09]
+ [2.11969875e-10 5.32573025e-10 1.19466390e-09]
+ [1.60301575e-10 1.60301575e-10 1.19466390e-09]
+ [7.16635198e-10 5.59385504e-10 2.09316265e-10]
+ [5.57428846e-10 3.44363748e-10 2.09316265e-10]
+ [1.87114054e-10 4.00179152e-10 2.09316265e-10]
+ [3.44363748e-10 5.57428846e-10 5.87126335e-10]
+ [4.00179152e-10 1.87114054e-10 5.87126335e-10]
+ [2.79077015e-11 1.85157396e-10 2.09316265e-10]
+ [5.59385504e-10 7.16635198e-10 5.87126335e-10]
+ [1.87114054e-10 3.44363748e-10 1.00575887e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "7.247964270962674e+28 / meter ** 3" ;
+    nomad:has_atoms "['Cu', 'O', 'Si', 'Sr']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "JDf8kJMvvkG8zWRIgiqyaJJS6-Uf" ;
+    nomad:has_calc_id "Foo2UxjBrWe4_1Oy9H7zaiERk1FP" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719275" ;
+    nomad:has_formula "Cu4O40Si16Sr4" ;
+    nomad:has_formula_reduced "CuO10Si4Sr" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:19.409862"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[7.4454290e-10 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 7.4454290e-10 0.0000000e+00]
+ [0.0000000e+00 0.0000000e+00 1.5928852e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "3185.668815656834 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"silicate\"]}" ;
+    nomad:has_material_id "B0UH6ef1peUPoQcD38ipviv0JiiO" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 64 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-14862#mp-719275']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[7.4454290e-10 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 7.4454290e-10 0.0000000e+00]
+ [0.0000000e+00 0.0000000e+00 1.5928852e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Cu O Si Sr" ;
+    nomad:has_species_and_counts "Cu O10 Si4 Sr" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Sr', 'Sr', 'Sr', 'Sr', 'Cu', 'Cu', 'Cu', 'Cu', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'Si', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "SrSrSrSrCuCuCuCuSiSiSiSiSiSiSiSiSiSiSiSiSiSiSiSiOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "Cu4O40Si16Sr4" ;
+    ab:has_chemical_composition_reduced "Sr4Cu4Si16O40" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "_-KMQp1edz7tKzNCBqX5Po0QHMnS" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method6 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat7 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[ 3.60971080e-10 -4.83962085e-10 -4.45952911e-11]
+ [ 7.57177536e-11 -4.55778445e-10 -1.96217787e-10]
+ [ 4.16704646e-10 -2.42647546e-11 -5.50772013e-10]
+ [ 1.31451320e-10  3.91888509e-12 -7.02394509e-10]
+ [ 4.13486631e-10 -1.42270538e-10 -1.67646174e-10]
+ [ 7.89357685e-11 -3.37772662e-10 -5.79343626e-10]
+ [ 3.55460487e-10 -3.69112116e-10 -4.17300623e-10]
+ [ 1.36961913e-10 -1.10931084e-10 -3.29689177e-10]
+ [ 4.03268948e-10 -3.52897858e-10 -2.35259209e-10]
+ [ 1.57361253e-10 -3.39620399e-10 -3.75484134e-10]
+ [ 4.63640704e-10 -2.07382516e-10 -5.59495360e-12]
+ [ 2.17586733e-10 -1.64646696e-10 -1.50747771e-10]
+ [ 3.35061147e-10 -1.40422801e-10 -3.71505666e-10]
+ [ 8.91534516e-11 -1.27145342e-10 -5.11730591e-10]
+ [-3.24864530e-11 -1.51948921e-10 -2.54627160e-10]
+ [ 4.16811130e-10  3.46994596e-11 -1.44169778e-10]
+ [ 2.87816962e-11 -2.72660684e-10 -7.41394846e-10]
+ [ 5.24908853e-10 -3.28094279e-10 -4.92362640e-10]
+ [ 1.44116425e-10  6.36777315e-11 -3.11374481e-10]
+ [ 7.56112696e-11 -5.14742660e-10 -6.02820022e-10]
+ [ 2.74835667e-10 -3.15396504e-10 -5.96242029e-10]
+ [ 3.48305975e-10 -5.43720931e-10 -4.35615319e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[ 3.60971080e-10 -4.83962085e-10 -4.45952911e-11]
+ [ 7.57177536e-11 -4.55778445e-10 -1.96217787e-10]
+ [ 4.16704646e-10 -2.42647546e-11 -5.50772013e-10]
+ [ 1.31451320e-10  3.91888509e-12 -7.02394509e-10]
+ [ 4.13486631e-10 -1.42270538e-10 -1.67646174e-10]
+ [ 7.89357685e-11 -3.37772662e-10 -5.79343626e-10]
+ [ 3.55460487e-10 -3.69112116e-10 -4.17300623e-10]
+ [ 1.36961913e-10 -1.10931084e-10 -3.29689177e-10]
+ [ 4.03268948e-10 -3.52897858e-10 -2.35259209e-10]
+ [ 1.57361253e-10 -3.39620399e-10 -3.75484134e-10]
+ [ 4.63640704e-10 -2.07382516e-10 -5.59495360e-12]
+ [ 2.17586733e-10 -1.64646696e-10 -1.50747771e-10]
+ [ 3.35061147e-10 -1.40422801e-10 -3.71505666e-10]
+ [ 8.91534516e-11 -1.27145342e-10 -5.11730591e-10]
+ [-3.24864530e-11 -1.51948921e-10 -2.54627160e-10]
+ [ 4.16811130e-10  3.46994596e-11 -1.44169778e-10]
+ [ 2.87816962e-11 -2.72660684e-10 -7.41394846e-10]
+ [ 5.24908853e-10 -3.28094279e-10 -4.92362640e-10]
+ [ 1.44116425e-10  6.36777315e-11 -3.11374481e-10]
+ [ 7.56112696e-11 -5.14742660e-10 -6.02820022e-10]
+ [ 2.74835667e-10 -3.15396504e-10 -5.96242029e-10]
+ [ 3.48305975e-10 -5.43720931e-10 -4.35615319e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "6.726627857898587e+28 / meter ** 3" ;
+    nomad:has_atoms "['Ag', 'O', 'W']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "VtDTS-K2zZBQ3Q5d0l9Lb5U1YEMn" ;
+    nomad:has_calc_id "G3x3tS__5J_QqmIvEUQdgCotzU1h" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-718512" ;
+    nomad:has_formula "Ag4O14W4" ;
+    nomad:has_formula_reduced "Ag2O7W2" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.272578"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[ 6.210845e-10  0.000000e+00  0.000000e+00]
+ [-1.635661e-10 -7.049526e-10  0.000000e+00]
+ [ 3.490400e-11  2.249094e-10 -7.469898e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "7061.486275168495 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"oxide\"]}" ;
+    nomad:has_material_id "ZvtuLYTw1PJeNYkGUkB7r1NyT5v9" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 22 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-32537#mp-718512']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[ 6.210845e-10  0.000000e+00  0.000000e+00]
+ [-1.635661e-10 -7.049526e-10  0.000000e+00]
+ [ 3.490400e-11  2.249094e-10 -7.469898e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "Ag O W" ;
+    nomad:has_species_and_counts "Ag2 O7 W2" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['Ag', 'Ag', 'Ag', 'Ag', 'W', 'W', 'W', 'W', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "AgAgAgAgWWWWOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "Ag4O14W4" ;
+    ab:has_chemical_composition_reduced "Ag4W4O14" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "Fw8YK2NW2HxQxyNeCLWtYL5NMqtd" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method7 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat8 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[9.65177908e-10 7.93631248e-10 1.39162529e-09]
+ [3.26773192e-10 3.85219452e-10 3.46470067e-11]
+ [1.28016851e-09 3.88325174e-10 4.30483211e-10]
+ [9.59300823e-10 2.49900719e-10 6.85065685e-10]
+ [9.72748742e-10 3.88511898e-10 1.39162529e-09]
+ [3.19202358e-10 7.90338802e-10 3.46470067e-11]
+ [9.78625827e-10 6.55020069e-10 6.85065685e-10]
+ [6.57758144e-10 7.93444524e-10 4.30483211e-10]
+ [1.17825940e-11 7.90525526e-10 9.95789089e-10]
+ [6.34192956e-10 3.85406176e-10 9.95789089e-10]
+ [3.32650277e-10 9.28949981e-10 7.41206615e-10]
+ [3.13325273e-10 5.23830631e-10 7.41206615e-10]
+ [6.29383022e-10 3.78301849e-10 3.18420996e-10]
+ [1.27535857e-09 3.95429501e-10 1.10785130e-09]
+ [1.65925280e-11 7.83421199e-10 3.18420996e-10]
+ [6.62568078e-10 8.00548851e-10 1.10785130e-09]
+ [3.54117337e-10 9.22902197e-10 1.10495454e-09]
+ [9.37833763e-10 2.55948503e-10 3.21317755e-10]
+ [9.63645654e-10 9.03626989e-10 9.84130740e-10]
+ [3.28305446e-10 2.75223711e-10 4.42141560e-10]
+ [1.24925212e-09 2.10209507e-10 8.39332723e-11]
+ [3.17670104e-10 6.80343061e-10 4.42141560e-10]
+ [4.26989839e-11 9.68641193e-10 1.34233903e-09]
+ [6.88674534e-10 6.15328857e-10 8.39332723e-11]
+ [1.00009289e-09 6.61067853e-10 3.21317755e-10]
+ [2.91858213e-10 5.17782847e-10 1.10495454e-09]
+ [6.81894374e-10 7.99120597e-10 7.70707631e-10]
+ [3.59188245e-11 7.84849453e-10 6.55564669e-10]
+ [6.03276566e-10 5.63521843e-10 1.34233903e-09]
+ [1.25603228e-09 3.94001247e-10 7.70707631e-10]
+ [6.10056726e-10 3.79730103e-10 6.55564669e-10]
+ [9.74280996e-10 4.98507639e-10 9.84130740e-10]
+ [7.15892068e-10 4.50460400e-10 5.51686404e-10]
+ [8.16859338e-10 2.30760319e-10 2.11915538e-10]
+ [1.20412685e-09 9.92348762e-10 1.24462226e-09]
+ [2.23227187e-10 6.26894039e-10 3.18341125e-10]
+ [5.58151298e-10 5.91621288e-10 1.81650040e-10]
+ [1.22203458e-09 8.55579750e-10 5.51686404e-10]
+ [8.78242519e-11 1.86501938e-10 1.81650040e-10]
+ [7.33799802e-10 5.87229412e-10 1.24462226e-09]
+ [8.69202737e-10 9.57076011e-10 1.10793118e-09]
+ [4.22748363e-10 2.21774689e-10 3.18341125e-10]
+ [1.12106731e-09 6.35879669e-10 2.11915538e-10]
+ [5.76059032e-10 7.28390300e-10 8.74585896e-10]
+ [1.70883788e-10 5.42971031e-10 1.21435676e-09]
+ [6.99165177e-11 3.23270950e-10 8.74585896e-10]
+ [4.75091762e-10 9.48090381e-10 1.21435676e-09]
+ [1.06872391e-09 5.51956661e-10 1.10793118e-09]
+ [3.87803670e-10 7.17585845e-10 5.30387880e-10]
+ [1.36008860e-10 9.49993368e-10 1.41272984e-09]
+ [9.13917164e-10 6.79010393e-10 4.00461605e-10]
+ [7.57132439e-10 8.48919584e-10 6.93403673e-10]
+ [9.04147430e-10 4.61264855e-10 8.95884420e-10]
+ [1.11156889e-10 7.35050466e-10 7.32868627e-10]
+ [2.58171880e-10 3.12466495e-10 5.30387880e-10]
+ [1.15594224e-09 2.28857332e-10 1.35424555e-11]
+ [5.34818661e-10 3.29931116e-10 7.32868627e-10]
+ [2.67941614e-10 9.04959657e-10 1.02581069e-09]
+ [5.09966690e-10 5.44874018e-10 1.41272984e-09]
+ [7.81984410e-10 6.33976682e-10 1.35424555e-11]
+ [1.03377922e-09 8.66384205e-10 8.95884420e-10]
+ [1.02400949e-09 2.73891043e-10 4.00461605e-10]
+ [3.78033936e-10 4.99840307e-10 1.02581069e-09]
+ [1.18079421e-09 4.43800234e-10 6.93403673e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[9.65177908e-10 7.93631248e-10 1.39162529e-09]
+ [3.26773192e-10 3.85219452e-10 3.46470067e-11]
+ [1.28016851e-09 3.88325174e-10 4.30483211e-10]
+ [9.59300823e-10 2.49900719e-10 6.85065685e-10]
+ [9.72748742e-10 3.88511898e-10 1.39162529e-09]
+ [3.19202358e-10 7.90338802e-10 3.46470067e-11]
+ [9.78625827e-10 6.55020069e-10 6.85065685e-10]
+ [6.57758144e-10 7.93444524e-10 4.30483211e-10]
+ [1.17825940e-11 7.90525526e-10 9.95789089e-10]
+ [6.34192956e-10 3.85406176e-10 9.95789089e-10]
+ [3.32650277e-10 9.28949981e-10 7.41206615e-10]
+ [3.13325273e-10 5.23830631e-10 7.41206615e-10]
+ [6.29383022e-10 3.78301849e-10 3.18420996e-10]
+ [1.27535857e-09 3.95429501e-10 1.10785130e-09]
+ [1.65925280e-11 7.83421199e-10 3.18420996e-10]
+ [6.62568078e-10 8.00548851e-10 1.10785130e-09]
+ [3.54117337e-10 9.22902197e-10 1.10495454e-09]
+ [9.37833763e-10 2.55948503e-10 3.21317755e-10]
+ [9.63645654e-10 9.03626989e-10 9.84130740e-10]
+ [3.28305446e-10 2.75223711e-10 4.42141560e-10]
+ [1.24925212e-09 2.10209507e-10 8.39332723e-11]
+ [3.17670104e-10 6.80343061e-10 4.42141560e-10]
+ [4.26989839e-11 9.68641193e-10 1.34233903e-09]
+ [6.88674534e-10 6.15328857e-10 8.39332723e-11]
+ [1.00009289e-09 6.61067853e-10 3.21317755e-10]
+ [2.91858213e-10 5.17782847e-10 1.10495454e-09]
+ [6.81894374e-10 7.99120597e-10 7.70707631e-10]
+ [3.59188245e-11 7.84849453e-10 6.55564669e-10]
+ [6.03276566e-10 5.63521843e-10 1.34233903e-09]
+ [1.25603228e-09 3.94001247e-10 7.70707631e-10]
+ [6.10056726e-10 3.79730103e-10 6.55564669e-10]
+ [9.74280996e-10 4.98507639e-10 9.84130740e-10]
+ [7.15892068e-10 4.50460400e-10 5.51686404e-10]
+ [8.16859338e-10 2.30760319e-10 2.11915538e-10]
+ [1.20412685e-09 9.92348762e-10 1.24462226e-09]
+ [2.23227187e-10 6.26894039e-10 3.18341125e-10]
+ [5.58151298e-10 5.91621288e-10 1.81650040e-10]
+ [1.22203458e-09 8.55579750e-10 5.51686404e-10]
+ [8.78242519e-11 1.86501938e-10 1.81650040e-10]
+ [7.33799802e-10 5.87229412e-10 1.24462226e-09]
+ [8.69202737e-10 9.57076011e-10 1.10793118e-09]
+ [4.22748363e-10 2.21774689e-10 3.18341125e-10]
+ [1.12106731e-09 6.35879669e-10 2.11915538e-10]
+ [5.76059032e-10 7.28390300e-10 8.74585896e-10]
+ [1.70883788e-10 5.42971031e-10 1.21435676e-09]
+ [6.99165177e-11 3.23270950e-10 8.74585896e-10]
+ [4.75091762e-10 9.48090381e-10 1.21435676e-09]
+ [1.06872391e-09 5.51956661e-10 1.10793118e-09]
+ [3.87803670e-10 7.17585845e-10 5.30387880e-10]
+ [1.36008860e-10 9.49993368e-10 1.41272984e-09]
+ [9.13917164e-10 6.79010393e-10 4.00461605e-10]
+ [7.57132439e-10 8.48919584e-10 6.93403673e-10]
+ [9.04147430e-10 4.61264855e-10 8.95884420e-10]
+ [1.11156889e-10 7.35050466e-10 7.32868627e-10]
+ [2.58171880e-10 3.12466495e-10 5.30387880e-10]
+ [1.15594224e-09 2.28857332e-10 1.35424555e-11]
+ [5.34818661e-10 3.29931116e-10 7.32868627e-10]
+ [2.67941614e-10 9.04959657e-10 1.02581069e-09]
+ [5.09966690e-10 5.44874018e-10 1.41272984e-09]
+ [7.81984410e-10 6.33976682e-10 1.35424555e-11]
+ [1.03377922e-09 8.66384205e-10 8.95884420e-10]
+ [1.02400949e-09 2.73891043e-10 4.00461605e-10]
+ [3.78033936e-10 4.99840307e-10 1.02581069e-09]
+ [1.18079421e-09 4.43800234e-10 6.93403673e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "4.286654362958518e+28 / meter ** 3" ;
+    nomad:has_atoms "['Ag', 'C', 'K', 'N', 'S']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "O6mdfXOD0UQiUaXE0pXIQULMNBFC" ;
+    nomad:has_calc_id "GUlTqVksU3yyazcfXtrzae2QWi-G" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719754" ;
+    nomad:has_formula "C16Ag4K12N16S16" ;
+    nomad:has_formula_reduced "C4AgK3N4S4" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.785179"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[1.2919511e-09 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 8.1023870e-10 0.0000000e+00]
+ [0.0000000e+00 3.6861200e-10 1.4262723e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "2035.3155505191914 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"thiocyanate\"]}" ;
+    nomad:has_material_id "t3coIpeuE2iI82K_nI0ym8GF080x" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 64 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-557393#mp-719754']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[1.2919511e-09 0.0000000e+00 0.0000000e+00]
+ [0.0000000e+00 8.1023870e-10 0.0000000e+00]
+ [0.0000000e+00 3.6861200e-10 1.4262723e-09]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "C Ag K N S" ;
+    nomad:has_species_and_counts "C4 Ag K3 N4 S4" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'Ag', 'Ag', 'Ag', 'Ag', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'C', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'S', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N', 'N']" ;
+    ab:has_chemical_composition "KKKKKKKKKKKKAgAgAgAgCCCCCCCCCCCCCCCCSSSSSSSSSSSSSSSSNNNNNNNNNNNNNNNN" ;
+    ab:has_chemical_composition_bulk_reduced "C16Ag4K12N16S16" ;
+    ab:has_chemical_composition_reduced "K12Ag4C16S16N16" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "05uD2q7FkIdd_VNvbH6sdzpnSwF3" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method8 ;
+    sosa:isSampleOf ab:materials .
+
+ab:mat9 a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atom_positions [ nomad:array """[[-3.23443046e-27  3.23443046e-27  5.18890405e-10]
+ [ 0.00000000e+00  3.98391000e-10  0.00000000e+00]
+ [ 3.98391000e-10  0.00000000e+00  4.45060250e-10]
+ [-2.43428853e-10  2.43428853e-10  1.10765705e-09]
+ [ 1.54962147e-10  1.54962147e-10 -2.17536549e-10]
+ [ 3.14511301e-27 -3.14511301e-27  1.26135060e-09]
+ [ 3.98391000e-10  0.00000000e+00  0.00000000e+00]
+ [ 2.43428853e-10  2.43428853e-10  6.72583951e-10]
+ [ 2.43428853e-10 -2.43428853e-10  1.10765705e-09]
+ [ 0.00000000e+00  3.98391000e-10  4.45060250e-10]
+ [ 0.00000000e+00  0.00000000e+00  8.90120500e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 1.94017612e-10  1.94017612e-10  1.10996157e-09]
+ [ 1.94017612e-10 -1.94017612e-10  6.70279429e-10]
+ [-1.94017612e-10  1.94017612e-10  6.70279429e-10]
+ [ 2.04373388e-10  2.04373388e-10  2.19841071e-10]
+ [ 1.57816220e-10  1.57816220e-10  3.79198454e-10]
+ [-2.82236917e-10  2.82236917e-10  7.89088263e-10]
+ [ 2.22228476e-10  2.50376792e-11  1.09250809e-09]
+ [ 3.73353321e-10  1.76162524e-10  2.02387588e-10]
+ [ 2.40574780e-10  2.40574780e-10 -5.10922046e-10]
+ [ 1.76162524e-10  3.73353321e-10  2.02387588e-10]
+ [ 2.22228476e-10 -2.50376792e-11  6.87732912e-10]
+ [ 1.16154083e-10  1.16154083e-10  1.01032237e-10]
+ [ 1.57816220e-10 -1.57816220e-10  1.40104255e-09]
+ [ 2.82236917e-10 -2.82236917e-10  7.89088263e-10]
+ [-2.50376792e-11  2.22228476e-10  6.87732912e-10]
+ [-1.57816220e-10  1.57816220e-10  1.40104255e-09]
+ [ 2.50376792e-11  2.22228476e-10  1.09250809e-09]
+ [ 2.82236917e-10  2.82236917e-10  9.91152737e-10]
+ [ 4.23428679e-10  1.76162524e-10 -2.02387588e-10]
+ [ 1.76162524e-10  4.23428679e-10 -2.02387588e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atom_species [ nomad:array """[[-3.23443046e-27  3.23443046e-27  5.18890405e-10]
+ [ 0.00000000e+00  3.98391000e-10  0.00000000e+00]
+ [ 3.98391000e-10  0.00000000e+00  4.45060250e-10]
+ [-2.43428853e-10  2.43428853e-10  1.10765705e-09]
+ [ 1.54962147e-10  1.54962147e-10 -2.17536549e-10]
+ [ 3.14511301e-27 -3.14511301e-27  1.26135060e-09]
+ [ 3.98391000e-10  0.00000000e+00  0.00000000e+00]
+ [ 2.43428853e-10  2.43428853e-10  6.72583951e-10]
+ [ 2.43428853e-10 -2.43428853e-10  1.10765705e-09]
+ [ 0.00000000e+00  3.98391000e-10  4.45060250e-10]
+ [ 0.00000000e+00  0.00000000e+00  8.90120500e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 1.94017612e-10  1.94017612e-10  1.10996157e-09]
+ [ 1.94017612e-10 -1.94017612e-10  6.70279429e-10]
+ [-1.94017612e-10  1.94017612e-10  6.70279429e-10]
+ [ 2.04373388e-10  2.04373388e-10  2.19841071e-10]
+ [ 1.57816220e-10  1.57816220e-10  3.79198454e-10]
+ [-2.82236917e-10  2.82236917e-10  7.89088263e-10]
+ [ 2.22228476e-10  2.50376792e-11  1.09250809e-09]
+ [ 3.73353321e-10  1.76162524e-10  2.02387588e-10]
+ [ 2.40574780e-10  2.40574780e-10 -5.10922046e-10]
+ [ 1.76162524e-10  3.73353321e-10  2.02387588e-10]
+ [ 2.22228476e-10 -2.50376792e-11  6.87732912e-10]
+ [ 1.16154083e-10  1.16154083e-10  1.01032237e-10]
+ [ 1.57816220e-10 -1.57816220e-10  1.40104255e-09]
+ [ 2.82236917e-10 -2.82236917e-10  7.89088263e-10]
+ [-2.50376792e-11  2.22228476e-10  6.87732912e-10]
+ [-1.57816220e-10  1.57816220e-10  1.40104255e-09]
+ [ 2.50376792e-11  2.22228476e-10  1.09250809e-09]
+ [ 2.82236917e-10  2.82236917e-10  9.91152737e-10]
+ [ 4.23428679e-10  1.76162524e-10 -2.02387588e-10]
+ [ 1.76162524e-10  4.23428679e-10 -2.02387588e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_atomic_density "5.662681643544259e+28 / meter ** 3" ;
+    nomad:has_atoms "['K', 'Li', 'Mn', 'O']" ;
+    nomad:has_bulk [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_calc_hash "UmYEKEcVD0n-n0yaCKoy-E6-MiQN" ;
+    nomad:has_calc_id "GqJoTiQCHajsdgveVYw80JyxDuQ0" ;
+    nomad:has_coauthors "[]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_electronic_dos [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_energies [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_external_db "Materials Project" ;
+    nomad:has_external_id "mp-719072" ;
+    nomad:has_formula "K11LiMn4O16" ;
+    nomad:has_formula_reduced "K11LiMn4O16" ;
+    nomad:has_idealized_structure [ ab:reference "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    nomad:has_last_processing [ a time:Instant ;
+            time:inXSDDateTime "2021-03-01T07:10:18.275677"^^xsd:dateTime ] ;
+    nomad:has_lattice_vectors [ nomad:array """[[-3.983910e-10  3.983910e-10  8.901205e-10]
+ [ 3.983910e-10 -3.983910e-10  8.901205e-10]
+ [ 3.983910e-10  3.983910e-10 -8.901205e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_license "CC BY 4.0" ;
+    nomad:has_mass_density "2682.1322428401313 kilogram / meter ** 3" ;
+    nomad:has_material_classification "{\"material_class_springer\": [], \"compound_class_springer\": [\"oxide\"]}" ;
+    nomad:has_material_id "l7TxMswnAHNgy7IXKt8fO2bedOJF" ;
+    nomad:has_material_type "bulk"@en ;
+    nomad:has_n_atoms 32 ;
+    nomad:has_nomad_commit "e086c4b7" ;
+    nomad:has_nomad_version "0.10.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_processing_errors "[]" ;
+    nomad:has_published true ;
+    nomad:has_references "['https://materialsproject.org/tasks/mp-560465#mp-719072']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_simulation_cell [ nomad:array """[[-3.983910e-10  3.983910e-10  8.901205e-10]
+ [ 3.983910e-10 -3.983910e-10  8.901205e-10]
+ [ 3.983910e-10  3.983910e-10 -8.901205e-10]]""" ;
+            qudt:unit qudt_unit:meter ] ;
+    nomad:has_species "K Li Mn O" ;
+    nomad:has_species_and_counts "K11 Li Mn4 O16" ;
+    nomad:has_upload_id "--s-ovA5Q3mXroJn8i8bWQ" ;
+    nomad:has_upload_name "block_2013-12-30-16-48-34-186682" ;
+    nomad:has_upload_time [ a time:Instant ;
+            time:inXSDDateTime "2019-11-13T01:01:21"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    ab:has_atom_labels "['K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'K', 'Li', 'Mn', 'Mn', 'Mn', 'Mn', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O', 'O']" ;
+    ab:has_chemical_composition "KKKKKKKKKKKLiMnMnMnMnOOOOOOOOOOOOOOOO" ;
+    ab:has_chemical_composition_bulk_reduced "K11LiMn4O16" ;
+    ab:has_chemical_composition_reduced "K11LiMn4O16" ;
+    ab:has_configuration_periodic_dimensions "[True, True, True]" ;
+    ab:has_configuration_raw_gid "jeY4LUXnbgTOycXcKV4wLS9mznYA" ;
+    ab:has_is_representative true ;
+    ab:has_section_springer_material [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_section_symmetry [ ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ] ;
+    ab:has_system_type "bulk" ;
+    rdfs:comment "Materials Project VASP Calculations"@en ;
+    sosa:isResultOf ab:method9 ;
+    sosa:isSampleOf ab:materials .
+
+ab:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample ab:mat1,
+        ab:mat10,
+        ab:mat2,
+        ab:mat3,
+        ab:mat4,
+        ab:mat5,
+        ab:mat6,
+        ab:mat7,
+        ab:mat8,
+        ab:mat9 .
+

@@ -1,0 +1,1400 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+############# observations #########################
+
+
+ab:mat10ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 7.59526573e-11 -6.00882568e-11 -7.08017876e-13]
+ [ 6.70030268e-13 -1.01597385e-11  2.23077942e-11]
+ [-4.21095438e-11  8.91239592e-12  1.42838213e-11]
+ [-6.55322287e-13  1.01367633e-11 -2.22982933e-11]
+ [ 4.21310611e-11 -8.88836327e-12 -1.42905824e-11]
+ [-7.59834191e-11  6.00810951e-11  7.19088917e-13]
+ [-1.94281541e-12 -1.63720182e-11  6.12583905e-11]
+ [-1.24800187e-10 -1.62743174e-11 -8.21134751e-12]
+ [-5.05002871e-12  2.56085825e-11  2.14640720e-11]
+ [ 9.83840915e-11 -7.21189691e-11  3.81380524e-12]
+ [ 5.11108766e-12 -2.55647309e-11 -2.14579196e-11]
+ [ 1.24811034e-10  1.61866303e-11  8.17640404e-12]
+ [-5.81585312e-12  2.52294274e-11 -2.57349462e-11]
+ [ 5.87354750e-12 -2.52724298e-11  2.56256457e-11]
+ [-9.83414256e-11  7.20451408e-11 -3.81122573e-12]
+ [ 6.62051429e-13 -3.58298285e-11  3.92664814e-11]
+ [-7.88879731e-13  3.58317031e-11 -3.92448200e-11]
+ [ 1.89096897e-12  1.64053915e-11 -6.13082021e-11]
+ [ 6.25717748e-11  3.67556623e-11 -8.75210295e-11]
+ [-8.44462443e-12  2.79471836e-11  6.78038588e-11]
+ [ 1.47700979e-11 -9.97972914e-11 -1.15093400e-10]
+ [-7.71716574e-11  2.10392068e-11 -1.21591107e-11]
+ [-2.35756607e-11  7.46363571e-11 -8.90252010e-11]
+ [-4.02498333e-11 -2.32088904e-11  2.30485926e-11]
+ [ 3.02180126e-12 -1.03281865e-10 -7.32342763e-11]
+ [-3.04435670e-11  1.24257882e-10 -1.06565943e-10]
+ [ 3.48786643e-11 -2.33339403e-11  3.77597945e-11]
+ [-4.75596521e-11 -1.65754626e-11 -7.97549269e-11]
+ [ 6.43987848e-11 -3.11630565e-11 -4.49668496e-12]
+ [-4.99656087e-11  1.60259480e-11  7.79753733e-12]
+ [-6.25596142e-11 -3.66363643e-11  8.75679573e-11]
+ [ 8.34395967e-12 -2.79728505e-11 -6.77709661e-11]
+ [-1.47943869e-11  9.96572452e-11  1.15058136e-10]
+ [ 7.71994231e-11 -2.09874725e-11  1.21469823e-11]
+ [ 2.35613853e-11 -7.46755944e-11  8.91560187e-11]
+ [ 4.00850334e-11  2.31902891e-11 -2.30880222e-11]
+ [-3.05692097e-12  1.03277379e-10  7.33595024e-11]
+ [ 3.04288591e-11 -1.24186313e-10  1.06558333e-10]
+ [-3.47912175e-11  2.33829509e-11 -3.78259323e-11]
+ [ 4.75646188e-11  1.65034447e-11  7.97528120e-11]
+ [-6.42769714e-11  3.12964698e-11  4.47801960e-12]
+ [ 4.99461743e-11 -1.59851406e-11 -7.84276678e-12]
+ [ 6.72724969e-11 -1.29586129e-11  2.29784974e-11]
+ [ 5.11269464e-11  6.57154696e-11  4.32565421e-11]
+ [ 3.45554733e-11  2.78187531e-12  1.35489397e-10]
+ [ 8.73920062e-12  8.28909153e-11  6.19342206e-11]
+ [ 6.82354211e-12  1.06615242e-11  1.11471055e-10]
+ [ 1.09439719e-11 -5.92954677e-11  3.47523487e-11]
+ [-2.57895964e-12 -3.29006812e-11  1.15564071e-10]
+ [-2.88712870e-11  2.40608638e-11  1.39649993e-10]
+ [ 4.70815946e-11 -9.11547020e-11  7.10747665e-11]
+ [-4.03372801e-11  2.19228392e-11  6.06539373e-11]
+ [ 6.34513858e-11 -4.33156624e-11 -3.27347918e-11]
+ [-3.87274771e-11  3.42179908e-11  1.79778638e-12]
+ [-6.72845773e-11  1.29034980e-11 -2.29765107e-11]
+ [-5.11036508e-11 -6.56308907e-11 -4.32883934e-11]
+ [-3.45694443e-11 -2.88518366e-12 -1.35559011e-10]
+ [-8.79820879e-12 -8.29028515e-11 -6.19319776e-11]
+ [-6.81979302e-12 -1.06711212e-11 -1.11521363e-10]
+ [-1.09730995e-11  5.92303553e-11 -3.46773028e-11]
+ [ 2.53856877e-12  3.29595772e-11 -1.15348771e-10]
+ [ 2.88802913e-11 -2.40842236e-11 -1.39648856e-10]
+ [-4.71458259e-11  9.11856241e-11 -7.11278306e-11]
+ [ 4.03481269e-11 -2.20280862e-11 -6.06167988e-11]
+ [-6.33830049e-11  4.33867350e-11  3.27035333e-11]
+ [ 3.89510609e-11 -3.41240552e-11 -1.85387858e-12]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-8.739317675463375e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[6.02402393e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[7.22854032e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-8.739317675463375e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat10ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[ 6.67432200e+07  2.32420310e+08 -1.78970100e+06]
+ [ 2.32420253e+08  3.17906510e+07  5.54683040e+07]
+ [-1.78977100e+06  5.54682360e+07  1.28099513e+08]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat10 .
+
+ab:mat1ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 4.81141654e-11  2.34471501e-11  3.32302168e-11]
+ [-4.83600194e-11 -2.27877903e-11 -3.32946884e-11]
+ [ 1.55731569e-14 -1.79972501e-13  1.67747894e-14]
+ [ 1.25947105e-13 -9.23334394e-14  6.63301126e-14]
+ [ 7.54304759e-14 -1.49034470e-13  7.71608267e-14]
+ [ 4.41399663e-14 -8.58125805e-14 -6.79483110e-14]
+ [-1.12439875e-10  1.41011315e-10  2.22413039e-11]
+ [ 1.12424654e-10 -1.41163521e-10 -2.22691497e-11]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-3.783452533398772e-18"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[1.74412948e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[3.7534192e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-3.783452533398772e-18"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat1ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[ 1.02075748e+09  2.62266721e+08 -3.88532096e+08]
+ [ 2.62266720e+08  2.36975271e+09 -6.81007290e+08]
+ [-3.88532300e+08 -6.81007877e+08  1.86481859e+09]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat1 .
+
+ab:mat2ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[-9.71079258e-14  1.17366488e-11 -6.58432112e-12]
+ [ 8.63573206e-15 -1.17196657e-11  6.72037796e-12]
+ [ 1.46275218e-10 -1.53425252e-10 -1.17808000e-10]
+ [-1.46194821e-10  1.53350045e-10  1.17844882e-10]
+ [ 2.86274998e-11 -1.10280958e-10  1.21411247e-10]
+ [-2.87154273e-11  1.10287527e-10 -1.21374509e-10]
+ [-2.70759536e-10  2.71267890e-11 -3.09371977e-11]
+ [ 2.70884666e-10 -2.70166394e-11  3.08068606e-11]
+ [-1.93741399e-10  1.63245521e-10  5.99491238e-11]
+ [-1.83509883e-10  5.54714246e-11 -3.48890464e-11]
+ [ 3.59605021e-11  8.83445964e-11 -7.07822090e-11]
+ [ 2.90436492e-11 -6.64860044e-11  9.69594521e-11]
+ [ 1.93736112e-10 -1.63503920e-10 -6.02381564e-11]
+ [ 1.83426586e-10 -5.53547221e-11  3.50782956e-11]
+ [-3.59119882e-11 -8.83337336e-11  7.07218230e-11]
+ [-2.88962650e-11  6.66270601e-11 -9.69985933e-11]
+ [-6.57166392e-12  5.68607841e-11 -1.05305927e-10]
+ [ 6.48013157e-12 -5.68407569e-11  1.05348513e-10]
+ [ 4.69551348e-11 -7.15897541e-11  1.28702240e-10]
+ [-4.68788071e-11  7.15319957e-11 -1.28771646e-10]
+ [-6.74969779e-12 -8.93244556e-11  7.98118522e-11]
+ [ 6.65718811e-12  8.92728655e-11 -7.97641715e-11]
+ [ 2.18073079e-10 -1.40968504e-10 -1.63424756e-10]
+ [-2.18101822e-10  1.40989125e-10  1.63523867e-10]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-3.505545637917753e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[4.1089422e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[8.40277557e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-3.505545637917753e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat2ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[ 2.05293352e+08  8.50158760e+07  5.04988460e+07]
+ [ 8.50148960e+07  5.20620694e+08 -4.31651320e+07]
+ [ 5.04984190e+07 -4.31647310e+07  7.26192884e+08]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat2 .
+
+ab:mat3ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[-4.39803895e-12  6.64283261e-12 -8.01291793e-12]
+ [-4.35050237e-12 -6.68684440e-12  7.97398504e-12]
+ [ 4.41764959e-12  5.94452392e-12  5.75218262e-12]
+ [ 4.39018828e-12 -5.91486763e-12 -5.64414785e-12]
+ [ 1.89967680e-11 -3.91876383e-13 -4.31161754e-13]
+ [ 1.89200077e-11  4.70447125e-13  9.89904833e-13]
+ [-1.89583799e-11 -1.21312008e-12  3.93478560e-13]
+ [-1.89381284e-11  1.16290787e-12 -9.16797514e-13]
+ [-2.12721633e-11  2.20064248e-11 -1.06732041e-11]
+ [-2.13099266e-11 -2.19910118e-11  1.03555085e-11]
+ [ 2.13643365e-11  2.15208211e-11  1.15751494e-11]
+ [ 2.12786040e-11 -2.15121052e-11 -1.12037008e-11]
+ [-7.16477369e-13  3.22265013e-12 -9.02674326e-12]
+ [-7.08322290e-13 -3.28960509e-12  8.69949869e-12]
+ [ 7.28093150e-13  3.75154465e-12  1.03718827e-11]
+ [ 6.44715878e-13 -3.80047513e-12 -9.92665384e-12]
+ [ 6.18744594e-13  1.01262370e-12 -1.64026518e-11]
+ [ 4.15540532e-13 -8.13024533e-13  1.59226717e-11]
+ [-2.19506210e-12  2.49436471e-12  6.84906478e-12]
+ [-1.87313675e-12 -2.00949800e-12 -6.31997799e-12]
+ [-1.78943423e-11  3.46795939e-11  9.22041438e-12]
+ [-1.81192559e-11 -3.49207535e-11 -8.97327863e-12]
+ [ 1.97226502e-11  3.34608982e-11 -1.80091863e-11]
+ [ 1.99768675e-11 -3.34752858e-11  1.72161410e-11]
+ [ 6.93399617e-12  1.25452193e-11 -7.81681151e-12]
+ [ 6.92590518e-12 -1.23386026e-11  8.17932000e-12]
+ [-6.74187917e-12  1.25424155e-11  5.22370465e-12]
+ [-7.10852127e-12 -1.19788338e-11 -5.62192566e-12]
+ [-2.90774231e-12 -4.74446158e-12 -5.07015205e-12]
+ [-2.87718880e-12  4.83153988e-12  5.42695678e-12]
+ [ 2.92527012e-12 -4.14375749e-12  2.19982056e-12]
+ [ 2.92672810e-12  4.06012387e-12 -2.38988678e-12]
+ [ 2.09573516e-11  2.98954624e-11 -1.17482486e-11]
+ [ 2.12631270e-11 -3.01548068e-11  1.26553209e-11]
+ [-2.13678933e-11  3.07115311e-11  1.03443573e-11]
+ [-2.12462080e-11 -3.03856484e-11 -1.07827769e-11]
+ [-2.18963232e-11 -1.56340556e-11 -3.96657278e-12]
+ [-2.17406237e-11  1.53049525e-11  3.89856038e-12]
+ [ 2.21508129e-11 -1.66529759e-11  1.05778906e-12]
+ [ 2.20859729e-11  1.66197948e-11 -7.49257903e-13]
+ [ 7.79388437e-12  2.96836066e-11 -1.06717941e-11]
+ [ 7.57698169e-12 -2.99618566e-11  1.02540426e-11]
+ [-6.86010378e-12  3.08094561e-11  7.91534538e-12]
+ [-6.94450645e-12 -3.10287781e-11 -7.68040220e-12]
+ [ 2.20374750e-11 -2.26054947e-11  1.13709680e-11]
+ [ 2.22671951e-11  2.22526793e-11 -1.20112138e-11]
+ [-2.29279167e-11 -2.20127534e-11 -1.41133016e-11]
+ [-2.31236706e-11  2.18390774e-11  1.44073811e-11]
+ [-2.97206970e-12  8.96137446e-12  2.16934716e-12]
+ [-2.98366946e-12 -8.92223328e-12 -1.76327549e-12]
+ [ 2.49260232e-12  8.87208515e-12  6.31510738e-12]
+ [ 2.62064828e-12 -8.71624143e-12 -6.81192633e-12]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-5.1174157563424674e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[9.23815047e-20]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[7.99902706e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-5.1174157563424674e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat3ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[-56470234.           -173640.           -307516.        ]
+ [  -173071.         -81985849.           -617185.        ]
+ [  -306676.           -617267.         -51936333.99999999]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat3 .
+
+ab:mat4ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 7.33186469e-12  2.97044509e-11 -1.88383128e-11]
+ [-6.43371651e-12 -1.91420214e-11 -1.48028143e-11]
+ [-3.48297178e-13 -1.73983565e-11 -4.07556886e-12]
+ [-6.43996500e-12  1.91486383e-11  1.48038077e-11]
+ [ 6.43132927e-12  1.90960549e-11  1.48010199e-11]
+ [-1.59416575e-12  1.64837540e-11 -1.32258239e-11]
+ [ 6.44429088e-12 -1.91401949e-11 -1.48332557e-11]
+ [ 1.58359139e-12 -1.64737724e-11  1.32371353e-11]
+ [-3.41279645e-13  1.73416875e-11  3.98172937e-12]
+ [-7.37762286e-12  2.97366547e-11 -1.88639316e-11]
+ [-7.35315762e-12 -2.97177971e-11  1.88064134e-11]
+ [ 7.35304547e-12 -2.97539422e-11  1.88270655e-11]
+ [ 1.57956992e-12  1.64909157e-11 -1.32466202e-11]
+ [-1.62071382e-12 -1.64942643e-11  1.32612160e-11]
+ [ 3.02282666e-13 -1.73620992e-11 -3.99584455e-12]
+ [ 3.56724628e-13  1.73974913e-11  4.05853772e-12]
+ [ 1.36799769e-11  8.93620426e-12  3.06402182e-11]
+ [ 1.36829890e-11 -8.95446908e-12 -3.06939071e-11]
+ [-3.02633542e-11 -1.19854188e-11  1.35636589e-11]
+ [ 6.08918445e-12 -8.09204944e-12  1.70459097e-11]
+ [-3.02468678e-11  1.19493858e-11 -1.35471404e-11]
+ [ 1.89830374e-11  1.56034380e-12 -2.65318368e-11]
+ [ 3.01992031e-11  1.19989251e-11 -1.35941483e-11]
+ [-1.89932432e-11  1.58839791e-12 -2.65825457e-11]
+ [-1.36668230e-11  8.93730977e-12  3.06435347e-11]
+ [-1.36757311e-11 -8.94131521e-12 -3.06594764e-11]
+ [-1.90319198e-11 -1.55566545e-12  2.65445741e-11]
+ [-6.08144594e-12  8.12383662e-12 -1.70002957e-11]
+ [ 1.89811468e-11 -1.58488915e-12  2.65235535e-11]
+ [ 6.10363608e-12  8.07048414e-12 -1.70517737e-11]
+ [-6.11017296e-12 -8.10148626e-12  1.70219892e-11]
+ [ 3.02463711e-11 -1.19655838e-11  1.36082795e-11]
+ [ 4.27630557e-12  2.43160265e-11 -2.46295244e-11]
+ [ 4.98554110e-12 -8.78856369e-12 -1.27540790e-11]
+ [-5.01870615e-12 -8.66796785e-12 -1.28027371e-11]
+ [-4.91289841e-12  8.74758001e-12  1.27672489e-11]
+ [ 1.72426570e-11 -5.47127299e-13 -1.51095831e-11]
+ [-4.09426626e-12  2.43223230e-11 -2.45578911e-11]
+ [ 1.12410315e-12  2.66671085e-11  4.19159368e-11]
+ [ 1.23999820e-11 -2.48311263e-11 -3.44169971e-12]
+ [-3.95897846e-14  3.24122576e-11 -9.13849509e-12]
+ [ 1.15097165e-12 -2.67631911e-11 -4.18027270e-11]
+ [-1.24561222e-11 -2.48393294e-11 -3.32610267e-12]
+ [ 8.73817523e-12  5.70692113e-12 -3.62149117e-11]
+ [-1.24871244e-11  2.47780782e-11  3.42905854e-12]
+ [-3.06809616e-11  5.09916746e-12  5.16408766e-12]
+ [ 4.16436149e-12 -2.43507457e-11  2.46310625e-11]
+ [-8.67405612e-12 -5.63214754e-12  3.62745447e-11]
+ [-1.17428332e-12 -2.66784520e-11 -4.18741841e-11]
+ [ 1.76367604e-13  3.24268054e-11 -9.21762659e-12]
+ [-1.22604965e-12  2.65973498e-11  4.17688410e-11]
+ [-1.71855874e-11  6.04805658e-13  1.50339283e-11]
+ [-4.65432312e-14 -3.24426990e-11  9.22844128e-12]
+ [ 1.13685487e-11 -1.77397323e-11 -4.92752628e-12]
+ [ 8.83098932e-12 -5.54744046e-12  3.61637061e-11]
+ [ 3.07037285e-11 -5.05848820e-12 -5.24629534e-12]
+ [ 1.73099003e-11  5.79475245e-13  1.51479873e-11]
+ [ 5.00819587e-12  8.56057395e-12  1.28847365e-11]
+ [-1.14660892e-11  1.77224608e-11  5.02094920e-12]
+ [-7.12438282e-12  1.42137421e-11 -2.15035496e-11]
+ [-1.13995508e-11 -1.77469901e-11 -5.04501389e-12]
+ [-1.42593720e-15 -3.23834024e-11  9.12790470e-12]
+ [-4.19247969e-12 -2.42737931e-11  2.45916009e-11]
+ [ 1.24393314e-11  2.48638107e-11  3.45929161e-12]
+ [ 7.18786105e-12 -1.42505601e-11  2.13945375e-11]
+ [ 1.14324435e-11  1.77232459e-11  4.97318832e-12]
+ [-1.72891682e-11 -5.11414782e-13 -1.52093987e-11]
+ [-8.78269972e-12  5.66777995e-12 -3.62499673e-11]
+ [ 3.05913839e-11  5.09706861e-12  5.32476996e-12]
+ [-3.06266157e-11 -5.09107647e-12 -5.15950544e-12]
+ [ 7.16994872e-12  1.42197342e-11 -2.12215505e-11]
+ [-7.19201069e-12 -1.40832928e-11  2.13052001e-11]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-7.686066257485111e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[1.50155994e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[8.29430822e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-7.686066257485111e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat4ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[-3.2271556e+07 -1.0930000e+03 -1.1359000e+04]
+ [-7.2800000e+02 -1.5103937e+07  8.4738350e+06]
+ [-1.1272000e+04  8.4739140e+06 -6.2703872e+07]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat4 .
+
+ab:mat5ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 1.61407280e-11 -3.82776020e-13  2.65096146e-13]
+ [-4.20074692e-13 -1.63117122e-11  2.12000012e-13]
+ [-4.26002745e-13 -1.64031645e-11 -1.34150250e-13]
+ [ 3.40142099e-13  1.63922216e-11 -1.94167786e-13]
+ [ 1.60270856e-11 -3.82920216e-13 -1.99967666e-13]
+ [-1.62770251e-11  3.93654799e-13 -2.15140278e-13]
+ [ 3.32067129e-13  1.62469042e-11  1.66081630e-13]
+ [-8.92412385e-15 -7.61194119e-14 -1.65509973e-11]
+ [-1.59668437e-11  2.69149653e-13  1.82616093e-13]
+ [ 1.92421414e-14  1.73115185e-13  1.61906037e-11]
+ [ 6.24047799e-14 -1.47416272e-13 -1.62075547e-11]
+ [-6.96305965e-14  1.14603695e-13  1.65792117e-11]
+ [ 2.64565825e-12  1.55236496e-12  9.69957734e-13]
+ [-1.08110073e-12 -1.85017756e-12 -1.40204875e-12]
+ [-4.98565325e-13 -6.96466183e-13  1.06022437e-12]
+ [ 9.60360696e-13 -3.29888169e-13 -1.04931354e-12]
+ [ 1.36887408e-11  9.72425086e-12 -3.34764714e-11]
+ [-3.52244942e-11  1.30595981e-11 -1.09052954e-11]
+ [ 3.22208776e-11  1.45300438e-11  9.03879163e-12]
+ [-1.35107550e-11 -9.09252864e-12 -3.19672050e-11]
+ [-1.38987381e-11 -1.02802222e-11  3.31937353e-11]
+ [ 1.47302037e-11 -1.18364804e-11  3.43676341e-11]
+ [-3.19136282e-11 -1.49360834e-11 -8.85032760e-12]
+ [ 3.43467577e-11 -1.32351326e-11  1.09125212e-11]
+ [-3.46675135e-11  1.45377342e-11  1.08416249e-11]
+ [-1.03124099e-11 -3.22095823e-11  1.30749950e-11]
+ [-3.22240019e-11 -1.53147899e-11  9.66114112e-12]
+ [-1.06144362e-11  3.46144013e-11  1.39195824e-11]
+ [ 1.33107713e-11 -1.05672521e-11 -3.29565170e-11]
+ [-9.80184428e-12 -3.22105756e-11 -1.41484694e-11]
+ [ 9.05274659e-12  3.14388552e-11  1.37138629e-11]
+ [ 1.39586114e-11  9.81991683e-12  3.19596587e-11]
+ [-1.17873577e-11  3.57682569e-11 -1.36184533e-11]
+ [-1.42789026e-11  1.10674837e-11  3.30467997e-11]
+ [ 3.48475501e-11 -1.46556544e-11 -1.03544030e-11]
+ [-1.46433337e-11  1.19825509e-11 -3.45424155e-11]
+ [ 9.12329043e-12  3.21459759e-11 -1.36758753e-11]
+ [ 3.22211179e-11  1.44255818e-11 -9.92091804e-12]
+ [ 1.10383561e-11 -3.49097466e-11 -1.42175552e-11]
+ [ 1.21450917e-11 -3.63342418e-11  1.45727257e-11]
+ [ 4.56200570e-12  7.39564734e-13 -4.21052019e-13]
+ [-4.95662181e-12  1.87722230e-12  4.33805345e-13]
+ [-2.99038258e-12 -9.73482523e-14 -4.42872063e-12]
+ [ 1.09188338e-13 -5.14982829e-12  3.55740891e-12]
+ [-1.78322259e-14 -4.36855890e-12  1.59754634e-12]
+ [-4.24390956e-12 -1.34603666e-12 -1.76495778e-13]
+ [-1.37306538e-13  5.34136851e-12 -3.54156338e-12]
+ [-1.61956025e-12 -5.59319863e-14 -4.68261756e-12]
+ [ 6.63781779e-14  4.45022184e-12 -1.51058020e-12]
+ [ 2.00464340e-13  4.24416590e-12  1.91407236e-12]
+ [ 4.39555557e-12  1.43631931e-12  1.32804421e-13]
+ [ 1.66653607e-12  1.29952547e-13  4.72592440e-12]
+ [ 4.81237785e-12 -1.81760530e-12 -3.33204675e-13]
+ [-7.56419632e-13 -3.71688957e-13  4.42357764e-12]
+ [ 2.97857454e-12  2.20860049e-13  4.39531525e-12]
+ [-3.11653797e-12 -1.39902064e-13  4.81753686e-12]
+ [-3.27917492e-13  4.89873517e-12  3.33563562e-12]
+ [ 5.42894348e-12 -2.30997021e-12  2.62436533e-13]
+ [ 9.86716502e-13  4.23759698e-13 -4.40097093e-12]
+ [-5.35711790e-12  2.44259839e-12 -2.02627279e-13]
+ [-1.10822558e-13 -4.21426929e-12 -1.83719992e-12]
+ [ 3.18637685e-12  2.48529639e-13 -4.78736787e-12]
+ [ 3.07553827e-13 -5.01760065e-12 -3.30114076e-12]
+ [-4.47279651e-12 -8.00912078e-13  3.65520577e-13]
+ [-1.10684450e-11 -1.05042545e-11  1.06286475e-11]
+ [ 9.46870369e-12  2.11253238e-11  1.98470432e-11]
+ [ 2.10101433e-11  9.39444280e-12  2.13186744e-11]
+ [-2.16853326e-11 -2.03680069e-11  1.03117049e-11]
+ [ 2.06584495e-11 -9.93041895e-12 -2.15237210e-11]
+ [ 2.24399097e-11 -2.05076046e-11  1.07670435e-11]
+ [-1.02743742e-11  2.24568928e-11 -1.99990096e-11]
+ [ 1.02208135e-11 -2.20352159e-11  1.99123479e-11]
+ [ 2.19619323e-11  2.03518890e-11 -1.02882971e-11]
+ [ 1.02107999e-11 -2.25244245e-11 -1.97928736e-11]
+ [ 1.09876152e-11  1.06604187e-11 -1.04400553e-11]
+ [-1.09523032e-11  1.07313791e-11  1.05653135e-11]
+ [ 1.13204033e-11  1.08869825e-11  1.06969483e-11]
+ [-2.04632563e-11  9.92606103e-12 -2.16328292e-11]
+ [-2.14725154e-11 -8.93748600e-12  2.16423301e-11]
+ [ 2.14602908e-11  2.10362427e-11  1.07195550e-11]
+ [-9.60442407e-12 -2.15141240e-11  2.04619746e-11]
+ [ 2.10986315e-11  9.31859576e-12 -2.18692464e-11]
+ [-2.19077147e-11  2.05809362e-11 -1.06482421e-11]
+ [ 1.10642633e-11 -1.05426908e-11 -1.11783704e-11]
+ [-9.98671944e-12  2.20019547e-11  2.00182197e-11]
+ [ 9.55243344e-12  2.20566210e-11 -2.02830595e-11]
+ [-1.09227911e-11  1.05571424e-11 -1.07064172e-11]
+ [ 2.05734861e-11 -9.60171639e-12  2.15794287e-11]
+ [-2.10148857e-11 -9.23100476e-12 -2.12043271e-11]
+ [ 1.13930460e-11 -1.04845478e-11  1.07126016e-11]
+ [-2.18869505e-11  2.07882578e-11  1.04236971e-11]
+ [-2.06889069e-11  1.00703210e-11  2.15593694e-11]
+ [-2.18172878e-11 -2.03248283e-11 -1.06542343e-11]
+ [ 2.15982863e-11 -2.06428283e-11 -1.05474012e-11]
+ [-1.15510687e-11 -1.07363458e-11 -1.05024761e-11]
+ [-9.60218102e-12 -2.14796291e-11 -1.99003476e-11]
+ [ 7.87176617e-12  9.86924785e-13  1.59761524e-11]
+ [-1.61729637e-11 -7.39910804e-12  6.67466786e-13]
+ [ 6.08010011e-13  1.74146827e-11 -7.25002551e-12]
+ [-1.71687486e-11  7.08184503e-12  8.89272119e-13]
+ [-7.62203490e-13 -1.73786818e-11  7.36885895e-12]
+ [ 1.62042062e-11  7.58182027e-12 -6.67851308e-13]
+ [ 8.00059720e-12  1.38759712e-12  1.66875829e-11]
+ [-6.99970143e-12 -1.44048497e-12  1.72015932e-11]
+ [-1.74037558e-11  7.02121866e-12  1.24444264e-12]
+ [-7.76932300e-12 -1.02268537e-12 -1.57790526e-11]
+ [-7.85825982e-12 -1.23407655e-12 -1.66793157e-11]
+ [-1.65191941e-11 -7.71377553e-12 -1.15943114e-12]
+ [ 6.88035529e-12  1.61515426e-12 -1.70948562e-11]
+ [ 1.92709806e-13  1.64499160e-11  7.89371599e-12]
+ [-1.69095324e-12 -1.70250654e-11 -8.13902526e-12]
+ [ 1.80437133e-13 -1.69480167e-11  7.09849164e-12]
+ [ 1.74898087e-11 -7.21684443e-12 -1.18189366e-12]
+ [ 1.72795070e-11 -7.20949044e-12 -6.72193207e-13]
+ [-2.05431088e-13 -1.63186977e-11 -7.66248986e-12]
+ [ 7.14152611e-12  1.42846864e-12 -1.68017540e-11]
+ [ 1.63351361e-11  7.53103127e-12  9.81990081e-13]
+ [ 1.41792632e-12  1.68037888e-11  8.03592519e-12]
+ [-9.60184457e-14  1.73021458e-11 -7.27610894e-12]
+ [-7.25510441e-12 -1.13333169e-12  1.66448368e-11]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-1.4775846555020459e-16"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[1.05519353e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[4.55883339e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-1.4775846555020459e-16"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat5ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[-66793591.           -462013.           -209985.        ]
+ [  -461364.         -67902026.           -158936.        ]
+ [  -209702.           -159026.         -65936346.99999999]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat5 .
+
+ab:mat6ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 4.65752748e-14 -9.17566558e-14  5.55062399e-11]
+ [-6.51605237e-14 -3.12424444e-14 -5.55116072e-11]
+ [-4.54697729e-14 -1.76239430e-15 -5.53911235e-11]
+ [-2.75253946e-14 -1.05102787e-14  5.53565005e-11]
+ [ 2.82623958e-14 -1.95273288e-13  1.20658000e-11]
+ [ 4.65736726e-13 -1.53344326e-13 -1.22252967e-11]
+ [-5.78545983e-14 -1.27324977e-13 -1.15808051e-11]
+ [ 3.68692887e-13  5.38747915e-13  1.18925406e-11]
+ [-2.25109021e-11 -7.78902977e-12  8.69688714e-12]
+ [ 2.24782017e-11  7.80389797e-12  8.69618218e-12]
+ [ 2.54026067e-11  1.12046300e-11 -7.94391219e-13]
+ [ 2.62199571e-11 -1.05799574e-11  1.81856661e-12]
+ [-2.62460245e-11  1.05767370e-11  1.82465488e-12]
+ [ 2.31158039e-11 -6.92241243e-12 -9.82877687e-12]
+ [-2.31526380e-11  6.92435106e-12 -9.82240020e-12]
+ [-2.54400335e-11 -1.12044057e-11 -7.96538135e-13]
+ [ 2.24741963e-11  7.79311532e-12 -8.70172571e-12]
+ [-2.24961141e-11 -7.78108298e-12 -8.71395032e-12]
+ [-2.53298999e-11 -1.12051908e-11  7.04749436e-13]
+ [-2.62482996e-11  1.05803259e-11 -1.82398197e-12]
+ [ 2.62139810e-11 -1.05742536e-11 -1.81968813e-12]
+ [-2.31406216e-11  6.80354695e-12  9.89569978e-12]
+ [ 2.31247281e-11 -6.81348044e-12  9.88669555e-12]
+ [ 2.52813059e-11  1.12075780e-11  7.07809593e-13]
+ [-2.08425877e-11 -3.16704178e-11 -1.11793477e-12]
+ [ 2.08220317e-11  3.16653870e-11 -1.09649764e-12]
+ [ 8.99894550e-12  2.27207873e-12  1.23418710e-11]
+ [ 1.21233181e-11 -6.78941575e-12 -1.23063027e-11]
+ [-1.21356869e-11  6.76221079e-12 -1.23087060e-11]
+ [ 1.64231116e-11 -2.86164769e-11  1.15898253e-12]
+ [-1.63965315e-11  2.86700216e-11  1.22787613e-12]
+ [-9.01048117e-12 -2.28766791e-12  1.23296624e-11]
+ [ 2.07982074e-11  3.16492530e-11  1.07265726e-12]
+ [-2.08051768e-11 -3.16305396e-11  1.09281264e-12]
+ [-9.09573299e-12 -2.32097716e-12 -1.22062628e-11]
+ [-1.21333638e-11  6.78976823e-12  1.23209786e-11]
+ [ 1.20891597e-11 -6.79829181e-12  1.23221162e-11]
+ [-1.64747978e-11  2.87081534e-11 -1.30798496e-12]
+ [ 1.64654731e-11 -2.87438980e-11 -1.28803786e-12]
+ [-3.04582911e-11 -2.09387022e-11  2.62267663e-11]
+ [ 9.06673359e-12  2.32961289e-12 -1.22379378e-11]
+ [-3.04515619e-11 -2.09183386e-11 -2.61948189e-11]
+ [-2.09695762e-11 -2.01155359e-11 -3.48185507e-11]
+ [-2.27552821e-11  2.37054370e-11  3.38493620e-11]
+ [ 2.26948801e-11 -2.36874606e-11  3.38350545e-11]
+ [-2.68433480e-11  1.90970963e-11  2.71548752e-11]
+ [ 2.68413292e-11 -1.90791680e-11  2.71690865e-11]
+ [ 2.09234175e-11  2.01451922e-11 -3.48367194e-11]
+ [ 1.93039854e-12 -5.67473340e-12 -6.80963522e-12]
+ [-2.24702069e-12 -5.39390388e-12  6.80015033e-12]
+ [ 2.21595448e-12  5.37701694e-12  6.78508987e-12]
+ [-1.94701311e-12  5.67138485e-12 -6.78215789e-12]
+ [-1.94241486e-12  5.66116296e-12  6.81559531e-12]
+ [ 2.21332691e-12  5.39433647e-12 -6.77901762e-12]
+ [-2.24364009e-12 -5.38747915e-12 -6.78912736e-12]
+ [ 1.92937315e-12 -5.64767263e-12  6.82022560e-12]
+ [-2.09673331e-11 -2.01301798e-11  3.48548400e-11]
+ [-2.68837709e-11  1.91264322e-11 -2.71832818e-11]
+ [ 2.68813356e-11 -1.91223146e-11 -2.71983743e-11]
+ [-2.27490016e-11  2.37383136e-11 -3.38913550e-11]
+ [ 2.26907625e-11 -2.37110606e-11 -3.39170860e-11]
+ [ 2.09831626e-11  2.01229220e-11  3.48396353e-11]
+ [ 3.04154008e-11  2.09077482e-11  2.62039353e-11]
+ [ 3.03867699e-11  2.09188192e-11 -2.61937775e-11]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-7.578085510527979e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[4.28710424e-19 2.86421117e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[9.52285726e-19 5.66417505e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-7.578085510527979e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat6ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[ 2.99319138e+08  6.45596700e+06 -3.97760000e+04]
+ [ 6.45709300e+06  3.25812681e+08 -1.90340000e+04]
+ [-4.00310000e+04 -1.87360000e+04  4.39472184e+08]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat6 .
+
+ab:mat7ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[-4.61793288e-11  2.82980282e-11 -1.22330191e-11]
+ [ 5.27091119e-11 -4.89973493e-11  9.00670004e-12]
+ [-5.27196382e-11  4.90451902e-11 -8.96933728e-12]
+ [ 4.62375199e-11 -2.82920521e-11  1.22564430e-11]
+ [ 3.78304184e-11  2.44920737e-11 -6.23791451e-12]
+ [-3.77743102e-11 -2.44377118e-11  6.19552091e-12]
+ [ 4.82240747e-12  8.48161869e-12 -1.87027846e-11]
+ [-4.75945795e-12 -8.55307576e-12  1.85881329e-11]
+ [ 1.64592407e-11  2.36184067e-11  1.90208487e-11]
+ [ 6.10813820e-13  5.98717386e-12  1.67436911e-11]
+ [ 3.96978034e-11  3.45317931e-11  2.37262973e-11]
+ [ 3.64996986e-11  5.95090058e-12  9.99636454e-12]
+ [-6.36096167e-13 -6.08221498e-12 -1.66412479e-11]
+ [-1.65063607e-11 -2.36320413e-11 -1.90736084e-11]
+ [ 2.92404926e-11  1.25407973e-11  5.94526092e-12]
+ [ 1.53127231e-11 -2.03258536e-12 -3.10203346e-11]
+ [-3.97627556e-11 -3.45231734e-11 -2.36687471e-11]
+ [-2.92541912e-11 -1.25936210e-11 -5.98171044e-12]
+ [ 2.71001609e-11 -1.65520868e-11 -2.56242518e-11]
+ [-1.53251880e-11  2.06275435e-12  3.09882110e-11]
+ [-3.64452566e-11 -5.89298190e-12 -9.93336696e-12]
+ [-2.71577912e-11  1.65801730e-11  2.56188845e-11]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-2.2642208529066268e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[1.71000312e-19]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[4.84161757e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-2.2642208529066268e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat7ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[-48891604.  -9518234. -15165600.]
+ [ -9517895. -28409204.   3813216.]
+ [-15165795.   3812918. -69170969.]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat7 .
+
+ab:mat8ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[-4.54201054e-12  1.32441688e-11  1.52554933e-11]
+ [ 4.29282401e-12 -1.30189989e-11 -1.54573195e-11]
+ [-1.80297743e-12 -3.51956390e-11  1.50875371e-12]
+ [-5.76469562e-12 -2.64198927e-13  8.69565346e-12]
+ [ 4.56855861e-12  1.33984585e-11  1.56042872e-11]
+ [-4.71884277e-12 -1.34073345e-11 -1.56273105e-11]
+ [ 5.99810071e-12 -3.02010296e-13  8.81352560e-12]
+ [ 1.92555997e-12 -3.52068382e-11  1.60299374e-12]
+ [ 2.02624075e-12  3.48588134e-11 -1.64311225e-12]
+ [-1.94997714e-12  3.50861142e-11 -1.60331418e-12]
+ [ 5.77280263e-12  3.82279345e-14 -8.66697450e-12]
+ [-5.84860161e-12  3.67363080e-13 -8.78978134e-12]
+ [ 3.42643097e-12 -1.08455342e-11  1.83058934e-11]
+ [ 3.44963049e-12  1.08764402e-11 -1.82882054e-11]
+ [-3.41407819e-12 -1.08928785e-11  1.82921788e-11]
+ [-3.44706701e-12  1.09093489e-11 -1.82905286e-11]
+ [ 2.88294862e-11 -2.37460201e-12 -2.44030247e-11]
+ [-2.88262178e-11  2.37027613e-12  2.43768932e-11]
+ [ 6.72363038e-12 -3.35920524e-11 -1.17395808e-11]
+ [-6.74652548e-12  3.35800681e-11  1.17937984e-11]
+ [-1.08394780e-11  2.43513224e-12  1.19219726e-11]
+ [ 6.73074404e-12  3.35964424e-11  1.18070324e-11]
+ [ 1.08709287e-11 -2.40630909e-12 -1.18808287e-11]
+ [ 1.07657778e-11  2.41970328e-12  1.19713997e-11]
+ [ 2.87219321e-11  2.38956634e-12  2.44964476e-11]
+ [-2.88359430e-11 -2.40174288e-12 -2.44283551e-11]
+ [ 2.03145423e-11  8.04765312e-12 -1.90183333e-11]
+ [ 2.03147345e-11 -8.07351225e-12  1.89952780e-11]
+ [-1.08418972e-11 -2.40547595e-12 -1.19210593e-11]
+ [-2.03429489e-11  8.13104642e-12 -1.89711492e-11]
+ [-2.02775480e-11 -8.00817549e-12  1.89681371e-11]
+ [-6.78041152e-12 -3.35875343e-11 -1.17861881e-11]
+ [ 9.48366802e-12  1.49942905e-12 -3.40866283e-12]
+ [-1.16386116e-11  1.29072471e-11  1.91770610e-11]
+ [ 2.51009809e-12  8.87623479e-12 -2.17296808e-12]
+ [-6.42653876e-12  2.21374828e-11 -5.12084491e-12]
+ [ 2.50418606e-12 -8.87202107e-12  2.01172503e-12]
+ [-9.32425144e-12  1.60594175e-12 -3.28643278e-12]
+ [-2.40494724e-12 -8.85912355e-12  2.13709535e-12]
+ [-2.55741036e-12  8.84566526e-12 -2.16058326e-12]
+ [-6.58302335e-12 -2.21814305e-11  4.96226147e-12]
+ [ 6.58896743e-12  2.21416165e-11 -4.93975089e-12]
+ [ 1.17241839e-11  1.29351090e-11  1.91737925e-11]
+ [-9.22693524e-12 -1.53453274e-12  3.48042432e-12]
+ [-1.16884073e-11 -1.28306150e-11 -1.91810664e-11]
+ [ 9.23875930e-12 -1.58697198e-12  3.36042129e-12]
+ [ 1.16361122e-11 -1.28618094e-11 -1.91808421e-11]
+ [ 6.40173707e-12 -2.21287990e-11  5.15726239e-12]
+ [-2.85346056e-12  1.01594661e-11  6.94543571e-14]
+ [ 3.31899541e-11  2.66363468e-12 -7.08373560e-12]
+ [-4.63033854e-12 -2.46837741e-12  2.19208045e-11]
+ [ 3.12280248e-13 -1.68938311e-11 -3.64946998e-12]
+ [ 2.81396691e-12 -1.01277911e-11 -3.74108244e-14]
+ [ 2.89497296e-13  1.68241364e-11  3.61978165e-12]
+ [ 2.79341098e-12  1.02128667e-11  1.01754238e-13]
+ [-3.32642631e-11 -2.60967337e-12  7.07046957e-12]
+ [-2.69678371e-13  1.69098368e-11  3.63440952e-12]
+ [-4.55798424e-12  2.47595570e-12 -2.19279982e-11]
+ [-3.32509330e-11  2.66953069e-12 -7.13154455e-12]
+ [ 3.32516540e-11 -2.69548595e-12  7.17206359e-12]
+ [-2.81906183e-12 -1.01941052e-11 -4.19770278e-15]
+ [ 4.66194948e-12 -2.42806665e-12  2.19081152e-11]
+ [ 4.68665505e-12  2.46432390e-12 -2.19616439e-11]
+ [-3.43955280e-13 -1.68217972e-11 -3.60443280e-12]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-6.24289771290069e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[-8.71103436e-20]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[4.84930802e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-6.24289771290069e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat8ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[-6.0450820e+06  1.7506000e+04  2.0290000e+03]
+ [ 1.8196000e+04  1.1501299e+07  2.7221528e+07]
+ [ 1.8710000e+03  2.7221509e+07 -3.7662710e+06]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat8 .
+
+ab:mat9ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[ 7.25834081e-13  7.70134264e-13  8.60064920e-11]
+ [ 9.71896368e-13 -4.40117921e-13 -7.62475860e-13]
+ [ 6.25537823e-13 -8.01280578e-13  2.14856693e-12]
+ [ 1.36047387e-11 -1.44105534e-11 -2.47751142e-11]
+ [ 1.41148397e-11  1.56875363e-11  2.41707892e-11]
+ [-4.16293555e-13 -9.71864324e-13 -8.42639326e-11]
+ [-1.48577850e-12  1.65200433e-13 -5.27981288e-13]
+ [-1.32478218e-11 -1.50704419e-11  2.47643636e-11]
+ [-1.30210657e-11  1.47088787e-11 -2.52114510e-11]
+ [-8.55562323e-15  1.22616180e-12  2.08894994e-12]
+ [ 6.80909048e-13  8.09019091e-13  8.79274537e-13]
+ [-2.72193788e-13 -9.87581677e-14 -1.92632901e-12]
+ [ 2.43259904e-10  2.36322047e-10  2.22650930e-10]
+ [ 2.37257093e-10 -2.34103881e-10 -2.18283140e-10]
+ [-2.41356278e-10  2.28776051e-10 -2.17412710e-10]
+ [-2.37629519e-10 -2.30442331e-10  2.17714752e-10]
+ [-2.00347430e-10 -2.02722032e-10 -2.38395488e-10]
+ [ 2.92386197e-10 -2.88111445e-10  4.19746261e-10]
+ [-9.09341945e-11 -1.03443557e-10  2.28623492e-10]
+ [ 9.86641360e-11  9.23043279e-11  2.23542958e-10]
+ [ 1.95173729e-10  1.95786033e-10 -2.46120767e-10]
+ [ 9.49853782e-11  9.75020452e-11  2.23892040e-10]
+ [-8.96165324e-11  9.85483627e-11 -2.29933512e-10]
+ [ 2.90314759e-10  2.85725980e-10 -4.16011251e-10]
+ [-1.91573958e-10  1.98836769e-10  2.33026802e-10]
+ [-2.92695048e-10  2.87395673e-10  4.18266299e-10]
+ [ 9.79450471e-11 -8.76428911e-11 -2.27661689e-10]
+ [ 1.96245681e-10 -1.91817537e-10  2.34556336e-10]
+ [-1.03980847e-10 -8.74146770e-11  2.24610104e-10]
+ [-2.91373925e-10 -2.86555283e-10 -4.09730062e-10]
+ [-9.72342093e-11  8.45632673e-11 -2.22005701e-10]
+ [ 8.82379715e-11 -9.50808199e-11 -2.23666790e-10]]"""^^xsd:float ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue "-2.715376337807252e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[ 8.00287229e-20 -8.13425077e-20]"^^xsd:float ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[2.90458602e-19 4.51861876e-19]"^^xsd:float ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue "0.0"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue "-2.715376337807252e-17"^^xsd:float ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_dos_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_eigenvalues_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0section_scf_iteration_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "section_scf_iteration_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "section_scf_iteration"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0single_configuration_calculation_to_system_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_calculation_to_system_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_calculation_to_system_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0single_configuration_to_calculation_method_ref_calc a sosa:Observation ;
+    sosa:hasResult [ rdfs:label "single_configuration_to_calculation_method_ref_calc"@en ;
+            ab:refernce "https://nomad-lab.eu/prod/rae/gui/search" ;
+            dc:title "single_configuration_to_calculation_method_ref"@en ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
+ab:mat9ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[ 8.34211135e+08 -1.66225000e+05 -2.58469200e+06]
+ [-1.64475000e+05  8.34823859e+08 -3.56141800e+06]
+ [-2.58545600e+06 -3.55926600e+06  1.50851634e+09]]"""^^xsd:float ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest ab:mat9 .
+
