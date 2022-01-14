@@ -1,0 +1,213 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:Li2MnRh a matvoc:Formula ;
+    rdfs:label "Li2MnRh" .
+
+matvoc:mat_Li2MnRh_2nUxmIhmdaddbfLmgiSBaIxnaVGU a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Li', 'Mn', 'Rh']" ;
+    nomad:has_bulk [ nomad:has_point_group "mmm" ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_crystal_system "orthorhombic" ],
+        [ nomad:has_space_group_international_short_symbol "Cmmm" ],
+        [ nomad:has_space_group_number 65 ],
+        [ nomad:has_bravais_lattice "oS" ] ;
+    nomad:has_calc_hash "WsMZWVu8xMyEbRMAOIZL9NSb3i7x" ;
+    nomad:has_calc_id "2nUxmIhmdaddbfLmgiSBaIxnaVGU" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F218054C0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F218054F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805550>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F218055B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805610>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805670>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F218056D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805730>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805790>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F218057F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805850>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F218058B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805910>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F21805970>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:Li2MnRh ;
+    nomad:has_formula_reduced "Li2MnRh" ;
+    nomad:has_idealized_structure [ nomad:has_number_of_atoms 8 ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh', 'Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "l" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Rh" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[ 1.37647268e-10 -2.24184325e-10  0.00000000e+00]
+ [ 1.37647268e-10  2.24184325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.00601266e-10]]""" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[3 7]" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Mn" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "d" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 1.111643e-28 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.483687e-10 ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.5        0.         0.73690962]
+ [0.5        0.         0.26309038]
+ [0.         0.         0.        ]
+ [0.         0.         0.5       ]
+ [0.         0.5        0.73690962]
+ [0.         0.5        0.26309038]
+ [0.5        0.5        0.        ]
+ [0.5        0.5        0.5       ]]""" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[2.75294536e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.48368650e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 9.00601266e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Li" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 9.006013e-10 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[2 6]" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[0 1 4 5]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 2.752945e-10 ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:05:22.125150"^^xsd:dateTime ] ;
+    nomad:has_material_id "kSbYIF9YTtG1i_6vuV7DDC1sZLde" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Li Mn Rh" ;
+    nomad:has_species_and_counts "Li2 Mn Rh" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.94626199e-10]
+ [0.00000000e+00 0.00000000e+00 4.65122600e-10]
+ [1.38067504e-10 0.00000000e+00 2.26624800e-10]
+ [1.38067504e-10 0.00000000e+00 6.79874399e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.38067504e-10 -2.24154394e-10  0.00000000e+00]
+ [ 1.38067504e-10  2.24154394e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.06499199e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.94626199e-10]
+ [0.00000000e+00 0.00000000e+00 4.65122600e-10]
+ [1.38067504e-10 0.00000000e+00 2.26624800e-10]
+ [1.38067504e-10 0.00000000e+00 6.79874399e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Li2MnRh" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.38067504e-10 -2.24154394e-10  0.00000000e+00]
+ [ 1.38067504e-10  2.24154394e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.06499199e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_chemical_composition "LiLiMnRh" ],
+        [ nomad:has_configuration_raw_gid "QT0Yf2kizUHZY3IGT3C8-NAN8TVA" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Li2MnRh" ] ;
+    matvoc:section_system_1 [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.94626199e-10]
+ [0.00000000e+00 0.00000000e+00 4.65122600e-10]
+ [1.38067504e-10 0.00000000e+00 2.26624800e-10]
+ [1.38067504e-10 0.00000000e+00 6.79874399e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.94626199e-10]
+ [0.00000000e+00 0.00000000e+00 4.65122600e-10]
+ [1.38067504e-10 0.00000000e+00 2.26624800e-10]
+ [1.38067504e-10 0.00000000e+00 6.79874399e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Li2MnRh" ],
+        [ nomad:has_configuration_raw_gid "QT0Yf2kizUHZY3IGT3C8-NAN8TVA" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.38067504e-10 -2.24154394e-10  0.00000000e+00]
+ [ 1.38067504e-10  2.24154394e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.06499199e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Li2MnRh" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.38067504e-10 -2.24154394e-10  0.00000000e+00]
+ [ 1.38067504e-10  2.24154394e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.06499199e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiLiMnRh" ] ;
+    matvoc:section_system_2 [ nomad:has_configuration_raw_gid "5JEnMBkimJSDx_2j6vBIOpFzv5J3" ],
+        [ nomad:has_chemical_composition_reduced "Li2MnRh" ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.92032279e-10]
+ [0.00000000e+00 0.00000000e+00 4.63769565e-10]
+ [1.37880020e-10 0.00000000e+00 2.25966974e-10]
+ [1.37880020e-10 0.00000000e+00 6.77900922e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Li2MnRh" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.92032279e-10]
+ [0.00000000e+00 0.00000000e+00 4.63769565e-10]
+ [1.37880020e-10 0.00000000e+00 2.25966974e-10]
+ [1.37880020e-10 0.00000000e+00 6.77900922e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.37880020e-10 -2.24167747e-10  0.00000000e+00]
+ [ 1.37880020e-10  2.24167747e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.03867896e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiLiMnRh" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.37880020e-10 -2.24167747e-10  0.00000000e+00]
+ [ 1.37880020e-10  2.24167747e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.03867896e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_3 [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_raw_gid "NoGrosLaeS1EIFEAc3k9VZcnyTMe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.37647268e-10 -2.24184325e-10  0.00000000e+00]
+ [ 1.37647268e-10  2.24184325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.00601266e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.88812053e-10]
+ [0.00000000e+00 0.00000000e+00 4.62089846e-10]
+ [1.37647268e-10 0.00000000e+00 2.25150316e-10]
+ [1.37647268e-10 0.00000000e+00 6.75450949e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.37647268e-10 -2.24184325e-10  0.00000000e+00]
+ [ 1.37647268e-10  2.24184325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.00601266e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.88812053e-10]
+ [0.00000000e+00 0.00000000e+00 4.62089846e-10]
+ [1.37647268e-10 0.00000000e+00 2.25150316e-10]
+ [1.37647268e-10 0.00000000e+00 6.75450949e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_chemical_composition_bulk_reduced "Li2MnRh" ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_chemical_composition_reduced "Li2MnRh" ],
+        [ nomad:has_chemical_composition "LiLiMnRh" ] ;
+    matvoc:section_system_4 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.37647268e-10 -2.24184325e-10  0.00000000e+00]
+ [ 1.37647268e-10  2.24184325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.00601266e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.88812053e-10]
+ [0.00000000e+00 0.00000000e+00 4.62089846e-10]
+ [1.37647268e-10 0.00000000e+00 2.25150316e-10]
+ [1.37647268e-10 0.00000000e+00 6.75450949e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiLiMnRh" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Li2MnRh" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.37647268e-10 -2.24184325e-10  0.00000000e+00]
+ [ 1.37647268e-10  2.24184325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.00601266e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Li', 'Mn', 'Rh']" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_chemical_composition_reduced "Li2MnRh" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.88812053e-10]
+ [0.00000000e+00 0.00000000e+00 4.62089846e-10]
+ [1.37647268e-10 0.00000000e+00 2.25150316e-10]
+ [1.37647268e-10 0.00000000e+00 6.75450949e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "NoGrosLaeS1EIFEAc3k9VZcnyTMe" ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_Li2MnRh_2nUxmIhmdaddbfLmgiSBaIxnaVGU ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_Li2MnRh_2nUxmIhmdaddbfLmgiSBaIxnaVGU .
+

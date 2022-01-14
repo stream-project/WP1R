@@ -1,0 +1,405 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:LiSeW2 a matvoc:Formula ;
+    rdfs:label "LiSeW2" .
+
+matvoc:mat_LiSeW2_1t3mAQl4VHLGeYxaJ-B55b_g6Agp a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Li', 'Se', 'W']" ;
+    nomad:has_bulk [ nomad:has_point_group "mmm" ],
+        [ nomad:has_crystal_system "orthorhombic" ],
+        [ nomad:has_bravais_lattice "oS" ],
+        [ nomad:has_space_group_international_short_symbol "Cmmm" ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_space_group_number 65 ] ;
+    nomad:has_calc_hash "Uk-d4n3p8-bziTnkXw5sFAMKDTNj" ;
+    nomad:has_calc_id "1t3mAQl4VHLGeYxaJ-B55b_g6Agp" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD580>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD5B0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD610>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD670>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD6D0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD730>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD790>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD7F0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD850>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD8B0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD910>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD970>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DD9D0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198BA5DDA30>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:LiSeW2 ;
+    nomad:has_formula_reduced "LiSeW2" ;
+    nomad:has_idealized_structure [ nomad:has_lattice_parameters [ nomad:has_b 4.60324e-10 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[1 5]" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 1.331154e-28 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "l" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W', 'Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3 6 7]" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "W" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "d" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.05779296e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.60324014e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 9.45706722e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[0 4]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[ 1.52889648e-10 -2.30162007e-10  0.00000000e+00]
+ [ 1.52889648e-10  2.30162007e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45706722e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Se" ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.        ]
+ [0.         0.         0.5       ]
+ [0.5        0.         0.74235625]
+ [0.5        0.         0.25764375]
+ [0.5        0.5        0.        ]
+ [0.5        0.5        0.5       ]
+ [0.         0.5        0.74235625]
+ [0.         0.5        0.25764375]]""" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 9.457067e-10 ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.057793e-10 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Li" ] ],
+        [ nomad:has_number_of_atoms 8 ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:06:30.214162"^^xsd:dateTime ] ;
+    nomad:has_material_id "gdxskdEw-T_7zPnGjL-cVrZPVz7Y" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Li Se W" ;
+    nomad:has_species_and_counts "Li Se W2" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_atom_positions [ nomad:array """[[1.68184479e-10 0.00000000e+00 2.37848771e-10]
+ [1.68184479e-10 0.00000000e+00 7.13546314e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.75697543e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.68184479e-10 -2.37848771e-10  0.00000000e+00]
+ [ 1.68184479e-10  2.37848771e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.51395085e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "w__vDaifVtoXEa4mxuTR0A2YFWwi" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.68184479e-10 0.00000000e+00 2.37848771e-10]
+ [1.68184479e-10 0.00000000e+00 7.13546314e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.75697543e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.68184479e-10 -2.37848771e-10  0.00000000e+00]
+ [ 1.68184479e-10  2.37848771e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.51395085e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_1 [ nomad:has_simulation_cell [ nomad:array """[[ 1.68184479e-10 -2.37848771e-10  0.00000000e+00]
+ [ 1.68184479e-10  2.37848771e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.51395085e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.68184479e-10 0.00000000e+00 2.37848771e-10]
+ [1.68184479e-10 0.00000000e+00 7.13546314e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.75697543e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "w__vDaifVtoXEa4mxuTR0A2YFWwi" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.68184479e-10 0.00000000e+00 2.37848771e-10]
+ [1.68184479e-10 0.00000000e+00 7.13546314e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.75697543e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.68184479e-10 -2.37848771e-10  0.00000000e+00]
+ [ 1.68184479e-10  2.37848771e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.51395085e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ] ;
+    matvoc:section_system_10 [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.52909089e-10  0.00000000e+00  2.36429819e-10]
+ [ 1.52909089e-10  0.00000000e+00  7.09289456e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.29264939e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80152287e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.52909089e-10  0.00000000e+00  2.36429819e-10]
+ [ 1.52909089e-10  0.00000000e+00  7.09289456e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.29264939e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80152287e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "6EYls2MyA0ZoxsqlTvK1x711RDbp" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.52909089e-10 -2.30267315e-10  0.00000000e+00]
+ [ 1.52909089e-10  2.30267315e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45719275e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.52909089e-10 -2.30267315e-10  0.00000000e+00]
+ [ 1.52909089e-10  2.30267315e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45719275e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ] ;
+    matvoc:section_system_11 [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.52889648e-10 -2.30162007e-10  0.00000000e+00]
+ [ 1.52889648e-10  2.30162007e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45706722e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_configuration_raw_gid "1EVnWZkpaUt5T8sioYPEfcZhka0W" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.52889648e-10 -2.30162007e-10  0.00000000e+00]
+ [ 1.52889648e-10  2.30162007e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45706722e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.52889648e-10  0.00000000e+00  2.36426681e-10]
+ [ 1.52889648e-10  0.00000000e+00  7.09280042e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.22874576e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80082107e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.52889648e-10  0.00000000e+00  2.36426681e-10]
+ [ 1.52889648e-10  0.00000000e+00  7.09280042e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.22874576e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80082107e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_12 [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.52889648e-10 -2.30162007e-10  0.00000000e+00]
+ [ 1.52889648e-10  2.30162007e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45706722e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.52889648e-10 -2.30162007e-10  0.00000000e+00]
+ [ 1.52889648e-10  2.30162007e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45706722e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "1EVnWZkpaUt5T8sioYPEfcZhka0W" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.52889648e-10  0.00000000e+00  2.36426681e-10]
+ [ 1.52889648e-10  0.00000000e+00  7.09280042e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.22874576e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80082107e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.52889648e-10  0.00000000e+00  2.36426681e-10]
+ [ 1.52889648e-10  0.00000000e+00  7.09280042e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.22874576e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.80082107e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_2 [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_configuration_raw_gid "uibDmPrFGjE3TFgb1t8BE7_Twvm9" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.47939031e-10 -2.12305310e-10  0.00000000e+00]
+ [ 1.47939031e-10  2.12305310e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  8.97184883e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.47939031e-10 -2.12305310e-10  0.00000000e+00]
+ [ 1.47939031e-10  2.12305310e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  8.97184883e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.47939031e-10  0.00000000e+00  2.24296221e-10]
+ [ 1.47939031e-10  0.00000000e+00  6.72888662e-10]
+ [ 0.00000000e+00  0.00000000e+00 -3.87096698e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.52463408e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.47939031e-10  0.00000000e+00  2.24296221e-10]
+ [ 1.47939031e-10  0.00000000e+00  6.72888662e-10]
+ [ 0.00000000e+00  0.00000000e+00 -3.87096698e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.52463408e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_3 [ nomad:has_simulation_cell [ nomad:array """[[ 1.57874780e-10 -2.24841136e-10  0.00000000e+00]
+ [ 1.57874780e-10  2.24841136e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.23789331e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "oX8HgeplruLZeH1fksgGIOS8jo2y" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.57874780e-10  0.00000000e+00  2.30947333e-10]
+ [ 1.57874780e-10  0.00000000e+00  6.92841998e-10]
+ [ 0.00000000e+00  0.00000000e+00 -1.91149565e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.63806161e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.57874780e-10 -2.24841136e-10  0.00000000e+00]
+ [ 1.57874780e-10  2.24841136e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.23789331e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.57874780e-10  0.00000000e+00  2.30947333e-10]
+ [ 1.57874780e-10  0.00000000e+00  6.92841998e-10]
+ [ 0.00000000e+00  0.00000000e+00 -1.91149565e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.63806161e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ] ;
+    matvoc:section_system_4 [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.55719668e-10 -2.26994451e-10  0.00000000e+00]
+ [ 1.55719668e-10  2.26994451e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.30260631e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.55719668e-10  0.00000000e+00  2.32565158e-10]
+ [ 1.55719668e-10  0.00000000e+00  6.97695473e-10]
+ [ 0.00000000e+00  0.00000000e+00 -2.97140130e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.68101717e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "lqudwaexafeRscB57NfDqExTvEP4" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.55719668e-10  0.00000000e+00  2.32565158e-10]
+ [ 1.55719668e-10  0.00000000e+00  6.97695473e-10]
+ [ 0.00000000e+00  0.00000000e+00 -2.97140130e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.68101717e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.55719668e-10 -2.26994451e-10  0.00000000e+00]
+ [ 1.55719668e-10  2.26994451e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.30260631e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ] ;
+    matvoc:section_system_5 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.53024609e-10 -2.29687263e-10  0.00000000e+00]
+ [ 1.53024609e-10  2.29687263e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.38353268e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.53024609e-10 -2.29687263e-10  0.00000000e+00]
+ [ 1.53024609e-10  2.29687263e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.38353268e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "M_iJnnR4fRvch5t8p_Tv6HXU3CcP" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.53024609e-10  0.00000000e+00  2.34588317e-10]
+ [ 1.53024609e-10  0.00000000e+00  7.03764951e-10]
+ [ 0.00000000e+00  0.00000000e+00 -4.30815814e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.73484792e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.53024609e-10  0.00000000e+00  2.34588317e-10]
+ [ 1.53024609e-10  0.00000000e+00  7.03764951e-10]
+ [ 0.00000000e+00  0.00000000e+00 -4.30815814e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.73484792e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.53132891e-10  0.00000000e+00  2.35717026e-10]
+ [ 1.53132891e-10  0.00000000e+00  7.07151079e-10]
+ [ 0.00000000e+00  0.00000000e+00 -5.06773692e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.76501789e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.53132891e-10 -2.29297659e-10  0.00000000e+00]
+ [ 1.53132891e-10  2.29297659e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.42868105e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.53132891e-10 -2.29297659e-10  0.00000000e+00]
+ [ 1.53132891e-10  2.29297659e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.42868105e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_configuration_raw_gid "ta1AIL6YNoxXF4mIIVGoIKx6e-_t" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.53132891e-10  0.00000000e+00  2.35717026e-10]
+ [ 1.53132891e-10  0.00000000e+00  7.07151079e-10]
+ [ 0.00000000e+00  0.00000000e+00 -5.06773692e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.76501789e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_7 [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.53230538e-10 -2.28946321e-10  0.00000000e+00]
+ [ 1.53230538e-10  2.28946321e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.46939498e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.53230538e-10  0.00000000e+00  2.36734874e-10]
+ [ 1.53230538e-10  0.00000000e+00  7.10204623e-10]
+ [ 0.00000000e+00  0.00000000e+00 -5.75557402e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79225323e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.53230538e-10 -2.28946321e-10  0.00000000e+00]
+ [ 1.53230538e-10  2.28946321e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.46939498e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_configuration_raw_gid "X6wcQfRu_dAXtxVQIxmhGbUl9NFJ" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.53230538e-10  0.00000000e+00  2.36734874e-10]
+ [ 1.53230538e-10  0.00000000e+00  7.10204623e-10]
+ [ 0.00000000e+00  0.00000000e+00 -5.75557402e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79225323e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_8 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.52960948e-10 -2.29300121e-10  0.00000000e+00]
+ [ 1.52960948e-10  2.29300121e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.46165511e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.52960948e-10  0.00000000e+00  2.36541378e-10]
+ [ 1.52960948e-10  0.00000000e+00  7.09624133e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.40609875e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79488854e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "ktF8A9-zoyg6M4OkZHhOykbvQAcF" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.52960948e-10 -2.29300121e-10  0.00000000e+00]
+ [ 1.52960948e-10  2.29300121e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.46165511e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.52960948e-10  0.00000000e+00  2.36541378e-10]
+ [ 1.52960948e-10  0.00000000e+00  7.09624133e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.40609875e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79488854e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_9 [ nomad:has_chemical_composition "LiSeWW" ],
+        [ nomad:has_atom_labels "['Li', 'Se', 'W', 'W']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "LiSeW2" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.52775467e-10  0.00000000e+00  2.36408249e-10]
+ [ 1.52775467e-10  0.00000000e+00  7.09224746e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.85340894e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79669906e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.52775467e-10  0.00000000e+00  2.36408249e-10]
+ [ 1.52775467e-10  0.00000000e+00  7.09224746e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.85340894e-12]
+ [ 0.00000000e+00  0.00000000e+00  4.79669906e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "LiSeW2" ],
+        [ nomad:has_configuration_raw_gid "2rc1cmTTgibISmtZMHnWFKUL4wfH" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.52775467e-10 -2.29543541e-10  0.00000000e+00]
+ [ 1.52775467e-10  2.29543541e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45632995e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.52775467e-10 -2.29543541e-10  0.00000000e+00]
+ [ 1.52775467e-10  2.29543541e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.45632995e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_LiSeW2_1t3mAQl4VHLGeYxaJ-B55b_g6Agp ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_LiSeW2_1t3mAQl4VHLGeYxaJ-B55b_g6Agp .
+

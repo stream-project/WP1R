@@ -1,0 +1,194 @@
+@prefix dc: <http://purl.org/dc/elements/1.1/> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:mat9ob0atom_forces_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "atom_forces_calc"@en ;
+            nomad:array """[[0. 0. 0.]
+ [0. 0. 0.]
+ [0. 0. 0.]]""" ;
+            dc:title "atom_forces"@en ;
+            qudt:unit qudt_unit:newton ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0energy_free_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_free_calc"@en ;
+            dc:title "energy_free"@en ;
+            qudt:numericValue -2.14626e-18 ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0energy_reference_highest_occupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_highest_occupied_calc"@en ;
+            nomad:array "[3.73146938e-19 3.04990344e-19]" ;
+            dc:title "energy_reference_highest_occupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0energy_reference_lowest_unoccupied_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_reference_lowest_unoccupied_calc"@en ;
+            nomad:array "[2.85555941e-19 2.71600983e-19]" ;
+            dc:title "energy_reference_lowest_unoccupied"@en ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0energy_total_T0_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_T0_calc"@en ;
+            dc:title "energy_total_T0"@en ;
+            qudt:numericValue 0e+00 ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0energy_total_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "energy_total_calc"@en ;
+            dc:title "energy_total"@en ;
+            qudt:numericValue -2.14626e-18 ;
+            qudt:unit qudt_unit:joule ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0section_dos_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "section_dos_calc"@en ;
+            nomad:has_section_dos [ nomad:has_section_dos_fingerprint [ nomad:has_indices "[  0 145]" ] ],
+                [ nomad:has_section_dos_fingerprint [ nomad:has_grid_id "dg_cut:56:-2.0:7.0:(-10.0, 5.0)" ] ],
+                [ nomad:has_dos_values_normalized [ nomad:array """[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]""" ] ],
+                [ nomad:has_dos_energies_normalized [ nomad:array """[-5.17967684e-18 -5.17727358e-18 -5.17487031e-18 ...  6.83184139e-18
+  6.83424465e-18  6.83664791e-18]""" ;
+                            qudt:unit qudt_unit:joule ] ],
+                [ nomad:has_dos_values_lm [ nomad:array """[[[[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]
+
+  [[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]]
+
+
+ [[[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]
+
+  [[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]]
+
+
+ [[[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]
+
+  [[0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]
+   ...
+   [0. 0. 0.]
+   [0. 0. 0.]
+   [0. 0. 0.]]]]""" ] ],
+                [ nomad:has_dos_integrated_values [ nomad:array """[[ 7.  7.  7. ... 76. 76. 76.]
+ [ 7.  7.  7. ... 76. 76. 76.]]""" ] ],
+                [ nomad:has_section_dos_fingerprint [ nomad:has_filling_factor "0.2915024630541872" ] ],
+                [ nomad:has_dos_values [ nomad:array """[[0. 0. 0. ... 0. 0. 0.]
+ [0. 0. 0. ... 0. 0. 0.]]""" ] ],
+                [ nomad:has_section_dos_fingerprint [ nomad:has_bins "00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000008000000000000080000000000000800000000000008000000000000080000000000000c0000000000000800000000000008000000000000080000000000000800000000000008000000000000080000000000000c0000000000000c0000000000000c0000000000000c0000000000000c0000000000000c0000000000000c0000000000000c0000000000000c0000000000000e0000000000000e0000000000000e0000000000000e0000000000000e0000000000000e0000000000000f0000000000000f0000000000000f0000000000000f8000000000000f8000000000000f8000000000000f8000000000000f8000000000000fc000000000000fc000000000000fc000000000000fe000000000000ffe00000000000ff000000000000c0000000000000ff000000000000ffff0000000000fffc0000000000ffc00000000000ffc00000000000ff800000000000ffc00000000000ffe00000000000fffc0000000000ffffc000000000ffffffc0000000ffffffff000000ffffffc0000000ffffe000000000ffffc000000000ffff0000000000fffc0000000000ffff0000000000fffffe00000000fffffffffff000fffffffffffe00fffffe00000000fff00000000000fffe0000000000fffffffc000000fffffffffffff0fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffc000fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff80000fffffff0000000fffffc00000000ffffe000000000ffff8000000000ffff0000000000fff80000000000ffc00000000000ffc00000000000fffe0000000000ffffff80000000fffffe00000000fffc0000000000fffffff8000000ffffffff000000ffffffff000000ffffffff800000ffffffff000000ffffff00000000ffffc000000000fffc0000000000fff00000000000ffffc000000000ffffffffffe000fffffffffffffffffffffffff800ffffffe0000000ffffffc0000000ffffc000000000fff80000000000ffffffe0000000fffffff8000000ffffe000000000fffff800000000fff00000000000fffe0000000000fffe0000000000ffc00000000000ffc00000000000" ] ],
+                [ nomad:has_dos_energies [ nomad:array """[-4.80652990e-18 -4.80412664e-18 -4.80172337e-18 ...  7.20498832e-18
+  7.20739159e-18  7.20979485e-18]""" ;
+                            qudt:unit qudt_unit:joule ] ],
+                [ nomad:has_dos_lm [ nomad:array """[[ 0  0]
+ [ 1 -1]
+ [ 2 -1]]""" ] ],
+                [ nomad:has_dos_m_kind "polynomial" ],
+                [ nomad:has_section_dos_fingerprint [ nomad:has_stepsize "0.05" ] ] ;
+            dc:title "section_dos"@en ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0section_eigenvalues_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "section_eigenvalues_calc"@en ;
+            nomad:has_section_eigenvalues [ nomad:has_eigenvalues_values [ nomad:array """[[[-9.65607825e-18 -9.65606222e-18 -9.65606222e-18 ...  6.26518355e-18
+    6.26521560e-18  6.54261646e-18]
+  [-9.65606222e-18 -9.65604620e-18 -9.65604620e-18 ...  6.33675278e-18
+    6.37103936e-18  6.54513188e-18]
+  [-9.65606222e-18 -9.65606222e-18 -9.65604620e-18 ...  6.39366210e-18
+    6.39366210e-18  6.55367148e-18]
+  ...
+  [-9.65611029e-18 -9.65611029e-18 -9.65607825e-18 ...  6.32923857e-18
+    6.43587945e-18  6.52566543e-18]
+  [-9.65612631e-18 -9.65611029e-18 -9.65611029e-18 ...  6.34575702e-18
+    6.39459136e-18  6.52439971e-18]
+  [-9.65612631e-18 -9.65611029e-18 -9.65609427e-18 ...  6.31262400e-18
+    6.38600369e-18  6.52201247e-18]]
+
+ [[-9.60296609e-18 -9.60295007e-18 -9.60295007e-18 ...  6.38018779e-18
+    6.38021984e-18  6.62927819e-18]
+  [-9.60295007e-18 -9.60293405e-18 -9.60293405e-18 ...  6.44957806e-18
+    6.46862794e-18  6.63262674e-18]
+  [-9.60296609e-18 -9.60295007e-18 -9.60293405e-18 ...  6.49802788e-18
+    6.49804391e-18  6.64111828e-18]
+  ...
+  [-9.60299813e-18 -9.60299813e-18 -9.60296609e-18 ...  6.45106809e-18
+    6.53620775e-18  6.60936314e-18]
+  [-9.60303018e-18 -9.60301416e-18 -9.60299813e-18 ...  6.46122589e-18
+    6.47593387e-18  6.60792118e-18]
+  [-9.60301416e-18 -9.60299813e-18 -9.60298211e-18 ...  6.42894203e-18
+    6.48729330e-18  6.60575824e-18]]]""" ;
+                            qudt:unit qudt_unit:joule ] ],
+                [ nomad:has_eigenvalues_occupation [ nomad:array """[[[1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  ...
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]]
+
+ [[1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  ...
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]]]""" ] ] ;
+            dc:title "section_eigenvalues"@en ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+
+matvoc:mat9ob0stress_tensor_calc a sosa:Observation ;
+    sosa:hasResult [ a qudt:QuantityValue ;
+            rdfs:label "stress_tensor_calc"@en ;
+            nomad:array """[[4.48275676e+10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.48275676e+10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.48275676e+10]]""" ;
+            dc:title "stress_tensor"@en ;
+            qudt:unit qudt_unit:pascal ] ;
+    sosa:hasfeatureOfInterest matvoc:mat_NiSrW_-73JUA3NYjKlnAXEHuJELrhC0FiH .
+

@@ -1,0 +1,405 @@
+@prefix ab: <http://learningsparql.com/ns/data#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix nomad: <http://https://nomad-coe.eu/ontology#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
+@prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix time1: <http://www.w3.org/2006/time#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+matvoc:SbSi2Ta a matvoc:Formula ;
+    rdfs:label "SbSi2Ta" .
+
+matvoc:mat_SbSi2Ta_1X0oaWotsX8yNehkugLUX_bIszuU a sosa:Sample ;
+    rdfs:label "material"@en ;
+    nomad:has_atoms "['Sb', 'Si', 'Ta']" ;
+    nomad:has_bulk [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_space_group_number 71 ],
+        [ nomad:has_bravais_lattice "oI" ],
+        [ nomad:has_space_group_international_short_symbol "Immm" ],
+        [ nomad:has_point_group "mmm" ],
+        [ nomad:has_crystal_system "orthorhombic" ] ;
+    nomad:has_calc_hash "_QUHAMR37M-E54VZsR3S5jZ5R_8R" ;
+    nomad:has_calc_id "1X0oaWotsX8yNehkugLUX_bIszuU" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x00000198B9CA4FA0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CA4FD0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8070>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB80D0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8130>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8190>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB81F0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8250>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB82B0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8310>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8370>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB83D0>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8430>, <nomad.metainfo.metainfo.MProxy object at 0x00000198B9CB8490>]" ;
+    nomad:has_datasets "[]" ;
+    nomad:has_domain "dft" ;
+    nomad:has_formula matvoc:SbSi2Ta ;
+    nomad:has_formula_reduced "SbSi2Ta" ;
+    nomad:has_idealized_structure [ nomad:has_wyckoff_sets1 [ nomad:has_element "Ta" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 1.399454e-28 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[3 7]" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[0 4]" ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.        ]
+ [0.5        0.         0.75136957]
+ [0.5        0.         0.24863043]
+ [0.5        0.5        0.        ]
+ [0.5        0.5        0.5       ]
+ [0.         0.5        0.25136957]
+ [0.         0.5        0.74863043]
+ [0.         0.         0.5       ]]""" ] ],
+        [ nomad:has_number_of_atoms 8 ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Si" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta', 'Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.492323e-10 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "j" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "c" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Sb" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[1 2 5 6]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 8.432081e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[-1.74616145e-10  2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10 -2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10  2.37618039e-10 -4.21604060e-10]]""" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.49232290e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.75236078e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 8.43208120e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.752361e-10 ] ] ;
+    nomad:has_last_processing [ a time1:Instant ;
+            time1:inXSDDateTime "2020-09-21T23:21:13.804035"^^xsd:dateTime ] ;
+    nomad:has_material_id "y4sdekPJtnkDd8cxz-EZpoZi87Ha" ;
+    nomad:has_material_type "bulk" ;
+    nomad:has_n_atoms 4 ;
+    nomad:has_nomad_commit "4d71fee0" ;
+    nomad:has_nomad_version "1.0.0" ;
+    nomad:has_parser_name "parsers/vasp" ;
+    nomad:has_processed true ;
+    nomad:has_published true ;
+    nomad:has_references "['http://www.sciencedirect.com/science/article/pii/S0927025614003322', 'http://aflowlib.org', 'http://www.sciencedirect.com/science/article/pii/S0927025612000687']" ;
+    nomad:has_shared_with "[]" ;
+    nomad:has_species "Sb Si Ta" ;
+    nomad:has_species_and_counts "Sb Si2 Ta" ;
+    nomad:has_upload_id "-19NlAwxTCCXb6YT9Plifw" ;
+    nomad:has_upload_name "AFLOWLIB__191202215550924112" ;
+    nomad:has_upload_time [ a time1:Instant ;
+            time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
+    nomad:has_with_embargo false ;
+    matvoc:section_system_0 [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.69342467e-10  2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10 -2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10  2.39486413e-10 -4.78972826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.69342467e-10  0.00000000e+00  2.39486413e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.78972826e-10]
+ [-1.29246971e-26  2.39486413e-10  2.39486413e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "uYczgb2weleyHnNlUE3tggz3OCGf" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.69342467e-10  0.00000000e+00  2.39486413e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.78972826e-10]
+ [-1.29246971e-26  2.39486413e-10  2.39486413e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.69342467e-10  2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10 -2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10  2.39486413e-10 -4.78972826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ] ;
+    matvoc:section_system_1 [ nomad:has_lattice_vectors [ nomad:array """[[-1.69342467e-10  2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10 -2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10  2.39486413e-10 -4.78972826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.69342467e-10  0.00000000e+00  2.39486413e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.78972826e-10]
+ [-1.29246971e-26  2.39486413e-10  2.39486413e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "uYczgb2weleyHnNlUE3tggz3OCGf" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.69342467e-10  0.00000000e+00  2.39486413e-10]
+ [ 0.00000000e+00  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.78972826e-10]
+ [-1.29246971e-26  2.39486413e-10  2.39486413e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.69342467e-10  2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10 -2.39486413e-10  4.78972826e-10]
+ [ 1.69342467e-10  2.39486413e-10 -4.78972826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ] ;
+    matvoc:section_system_10 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "qvkhCg5WN99zC4xkOx4eGFSKQAFO" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74506335e-10  0.00000000e+00  2.10839653e-10]
+ [ 9.77063392e-30 -1.87247071e-29  9.85253698e-13]
+ [ 6.17277417e-27  3.15954151e-27  4.20694052e-10]
+ [-1.29246971e-26  2.37791361e-10  2.10839653e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74506335e-10  2.37791361e-10  4.21679306e-10]
+ [ 1.74506335e-10 -2.37791361e-10  4.21679306e-10]
+ [ 1.74506335e-10  2.37791361e-10 -4.21679306e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.74506335e-10  0.00000000e+00  2.10839653e-10]
+ [ 9.77063392e-30 -1.87247071e-29  9.85253698e-13]
+ [ 6.17277417e-27  3.15954151e-27  4.20694052e-10]
+ [-1.29246971e-26  2.37791361e-10  2.10839653e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.74506335e-10  2.37791361e-10  4.21679306e-10]
+ [ 1.74506335e-10 -2.37791361e-10  4.21679306e-10]
+ [ 1.74506335e-10  2.37791361e-10 -4.21679306e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_11 [ nomad:has_simulation_cell [ nomad:array """[[-1.74616145e-10  2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10 -2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10  2.37618039e-10 -4.21604060e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74616145e-10  2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10 -2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10  2.37618039e-10 -4.21604060e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.74616145e-10  0.00000000e+00  2.10802030e-10]
+ [-2.83432091e-30 -1.79736869e-29  1.15483254e-12]
+ [-1.68857539e-27  1.13132085e-26  4.20449227e-10]
+ [ 1.29246971e-26  2.37618039e-10  2.10802030e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_is_representative true ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74616145e-10  0.00000000e+00  2.10802030e-10]
+ [-2.83432091e-30 -1.79736869e-29  1.15483254e-12]
+ [-1.68857539e-27  1.13132085e-26  4.20449227e-10]
+ [ 1.29246971e-26  2.37618039e-10  2.10802030e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "6HwvcA_Rt1B5zy0z42c5knflgCjj" ] ;
+    matvoc:section_system_12 [ nomad:has_configuration_raw_gid "6HwvcA_Rt1B5zy0z42c5knflgCjj" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74616145e-10  2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10 -2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10  2.37618039e-10 -4.21604060e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.74616145e-10  2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10 -2.37618039e-10  4.21604060e-10]
+ [ 1.74616145e-10  2.37618039e-10 -4.21604060e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.74616145e-10  0.00000000e+00  2.10802030e-10]
+ [-2.83432091e-30 -1.79736869e-29  1.15483254e-12]
+ [-1.68857539e-27  1.13132085e-26  4.20449227e-10]
+ [ 1.29246971e-26  2.37618039e-10  2.10802030e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74616145e-10  0.00000000e+00  2.10802030e-10]
+ [-2.83432091e-30 -1.79736869e-29  1.15483254e-12]
+ [-1.68857539e-27  1.13132085e-26  4.20449227e-10]
+ [ 1.29246971e-26  2.37618039e-10  2.10802030e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_system_type "bulk" ] ;
+    matvoc:section_system_2 [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.65398507e-10  2.28844597e-10  4.35770043e-10]
+ [ 1.65398507e-10 -2.28844597e-10  4.35770043e-10]
+ [ 1.65398507e-10  2.28844597e-10 -4.35770043e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.65398507e-10  2.28844597e-10  4.35770043e-10]
+ [ 1.65398507e-10 -2.28844597e-10  4.35770043e-10]
+ [ 1.65398507e-10  2.28844597e-10 -4.35770043e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.65398507e-10  0.00000000e+00  2.17885022e-10]
+ [-1.27953716e-29 -1.31577137e-29 -1.60705020e-12]
+ [ 2.91318293e-27 -2.51551886e-27  4.37377093e-10]
+ [ 0.00000000e+00  2.28844597e-10  2.17885022e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "tulhPHEhwRohLAS9rTsivKzhIu7m" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.65398507e-10  0.00000000e+00  2.17885022e-10]
+ [-1.27953716e-29 -1.31577137e-29 -1.60705020e-12]
+ [ 2.91318293e-27 -2.51551886e-27  4.37377093e-10]
+ [ 0.00000000e+00  2.28844597e-10  2.17885022e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ] ;
+    matvoc:section_system_3 [ nomad:has_configuration_raw_gid "EpSwRv9CBipiKmODKvDztYfxI3Eu" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.66375257e-10  2.31480122e-10  4.46469531e-10]
+ [ 1.66375257e-10 -2.31480122e-10  4.46469531e-10]
+ [ 1.66375257e-10  2.31480122e-10 -4.46469531e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.66375257e-10  0.00000000e+00  2.23234765e-10]
+ [ 1.18563956e-29 -2.31181499e-29 -1.19830636e-12]
+ [ 4.87219687e-27  7.83470389e-28  4.47667837e-10]
+ [-1.29246971e-26  2.31480122e-10  2.23234765e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.66375257e-10  0.00000000e+00  2.23234765e-10]
+ [ 1.18563956e-29 -2.31181499e-29 -1.19830636e-12]
+ [ 4.87219687e-27  7.83470389e-28  4.47667837e-10]
+ [-1.29246971e-26  2.31480122e-10  2.23234765e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.66375257e-10  2.31480122e-10  4.46469531e-10]
+ [ 1.66375257e-10 -2.31480122e-10  4.46469531e-10]
+ [ 1.66375257e-10  2.31480122e-10 -4.46469531e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_4 [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.72383496e-10  0.00000000e+00  2.11720679e-10]
+ [ 1.54841169e-29 -2.26286121e-29 -1.88677847e-12]
+ [ 4.65114536e-28 -5.42927566e-27  4.25328135e-10]
+ [-1.29246971e-26  2.34450057e-10  2.11720679e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.72383496e-10  2.34450057e-10  4.23441357e-10]
+ [ 1.72383496e-10 -2.34450057e-10  4.23441357e-10]
+ [ 1.72383496e-10  2.34450057e-10 -4.23441357e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.72383496e-10  2.34450057e-10  4.23441357e-10]
+ [ 1.72383496e-10 -2.34450057e-10  4.23441357e-10]
+ [ 1.72383496e-10  2.34450057e-10 -4.23441357e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.72383496e-10  0.00000000e+00  2.11720679e-10]
+ [ 1.54841169e-29 -2.26286121e-29 -1.88677847e-12]
+ [ 4.65114536e-28 -5.42927566e-27  4.25328135e-10]
+ [-1.29246971e-26  2.34450057e-10  2.11720679e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "UHUqrVEsrJnXh3HlWt9Pndbffvwm" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ] ;
+    matvoc:section_system_5 [ nomad:has_lattice_vectors [ nomad:array """[[-1.73155228e-10  2.34831533e-10  4.20483485e-10]
+ [ 1.73155228e-10 -2.34831533e-10  4.20483485e-10]
+ [ 1.73155228e-10  2.34831533e-10 -4.20483485e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.73155228e-10  0.00000000e+00  2.10241743e-10]
+ [-5.15163404e-30 -4.18449160e-29 -1.97449794e-12]
+ [ 6.33851834e-27 -4.33822639e-27  4.22457983e-10]
+ [ 0.00000000e+00  2.34831533e-10  2.10241743e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.73155228e-10  0.00000000e+00  2.10241743e-10]
+ [-5.15163404e-30 -4.18449160e-29 -1.97449794e-12]
+ [ 6.33851834e-27 -4.33822639e-27  4.22457983e-10]
+ [ 0.00000000e+00  2.34831533e-10  2.10241743e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "Y0ILC-MZ4YlmZOsDef-Spb9ypCZF" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.73155228e-10  2.34831533e-10  4.20483485e-10]
+ [ 1.73155228e-10 -2.34831533e-10  4.20483485e-10]
+ [ 1.73155228e-10  2.34831533e-10 -4.20483485e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ] ;
+    matvoc:section_system_6 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_raw_gid "CVs-hU1Y8QIFfKDNlWCseRw5At6G" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.76062170e-10  0.00000000e+00  2.13008913e-10]
+ [-1.09855664e-29  7.46309156e-30 -6.62542923e-13]
+ [ 2.64911500e-28 -6.40158757e-27  4.26680369e-10]
+ [ 1.29246971e-26  2.39184202e-10  2.13008913e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.76062170e-10  0.00000000e+00  2.13008913e-10]
+ [-1.09855664e-29  7.46309156e-30 -6.62542923e-13]
+ [ 2.64911500e-28 -6.40158757e-27  4.26680369e-10]
+ [ 1.29246971e-26  2.39184202e-10  2.13008913e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.76062170e-10  2.39184202e-10  4.26017826e-10]
+ [ 1.76062170e-10 -2.39184202e-10  4.26017826e-10]
+ [ 1.76062170e-10  2.39184202e-10 -4.26017826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.76062170e-10  2.39184202e-10  4.26017826e-10]
+ [ 1.76062170e-10 -2.39184202e-10  4.26017826e-10]
+ [ 1.76062170e-10  2.39184202e-10 -4.26017826e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_atom_species [ nomad:array """[[ 1.74721022e-10  0.00000000e+00  2.11732249e-10]
+ [ 1.53667007e-29  2.44345568e-29 -1.26417704e-12]
+ [ 3.53473209e-27 -6.38416698e-27  4.24728676e-10]
+ [-1.29246971e-26  2.37176052e-10  2.11732249e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_raw_gid "Z0IlDftZ_h8nODNwjW-MNr2sEq9a" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74721022e-10  0.00000000e+00  2.11732249e-10]
+ [ 1.53667007e-29  2.44345568e-29 -1.26417704e-12]
+ [ 3.53473209e-27 -6.38416698e-27  4.24728676e-10]
+ [-1.29246971e-26  2.37176052e-10  2.11732249e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.74721022e-10  2.37176052e-10  4.23464499e-10]
+ [ 1.74721022e-10 -2.37176052e-10  4.23464499e-10]
+ [ 1.74721022e-10  2.37176052e-10 -4.23464499e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74721022e-10  2.37176052e-10  4.23464499e-10]
+ [ 1.74721022e-10 -2.37176052e-10  4.23464499e-10]
+ [ 1.74721022e-10  2.37176052e-10 -4.23464499e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ] ;
+    matvoc:section_system_8 [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_raw_gid "A7OVcGR4KmZVN1uOJSynvnDLyIjs" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.74457053e-10  0.00000000e+00  2.11349171e-10]
+ [-4.92574122e-30  2.18974423e-30 -4.06086297e-13]
+ [-2.66445546e-27  9.71545676e-27  4.23104428e-10]
+ [-1.29246971e-26  2.37728187e-10  2.11349171e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.74457053e-10  2.37728187e-10  4.22698342e-10]
+ [ 1.74457053e-10 -2.37728187e-10  4.22698342e-10]
+ [ 1.74457053e-10  2.37728187e-10 -4.22698342e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74457053e-10  2.37728187e-10  4.22698342e-10]
+ [ 1.74457053e-10 -2.37728187e-10  4.22698342e-10]
+ [ 1.74457053e-10  2.37728187e-10 -4.22698342e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74457053e-10  0.00000000e+00  2.11349171e-10]
+ [-4.92574122e-30  2.18974423e-30 -4.06086297e-13]
+ [-2.66445546e-27  9.71545676e-27  4.23104428e-10]
+ [-1.29246971e-26  2.37728187e-10  2.11349171e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_9 [ nomad:has_atom_species [ nomad:array """[[ 1.74182430e-10  0.00000000e+00  2.10950630e-10]
+ [ 6.15639413e-30  8.09708624e-30  4.84958621e-13]
+ [ 2.21923446e-27 -6.01472608e-27  4.21416300e-10]
+ [-1.29246971e-26  2.38302609e-10  2.10950630e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "9z3ZhJEC3w5KRJ9-_cKJukLDVshS" ],
+        [ nomad:has_atom_labels "['Sb', 'Si', 'Si', 'Ta']" ],
+        [ nomad:has_chemical_composition "SbSiSiTa" ],
+        [ nomad:has_chemical_composition_reduced "SbSi2Ta" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "SbSi2Ta" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[-1.74182430e-10  2.38302609e-10  4.21901259e-10]
+ [ 1.74182430e-10 -2.38302609e-10  4.21901259e-10]
+ [ 1.74182430e-10  2.38302609e-10 -4.21901259e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[-1.74182430e-10  2.38302609e-10  4.21901259e-10]
+ [ 1.74182430e-10 -2.38302609e-10  4.21901259e-10]
+ [ 1.74182430e-10  2.38302609e-10 -4.21901259e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.74182430e-10  0.00000000e+00  2.10950630e-10]
+ [ 6.15639413e-30  8.09708624e-30  4.84958621e-13]
+ [ 2.21923446e-27 -6.01472608e-27  4.21416300e-10]
+ [-1.29246971e-26  2.38302609e-10  2.10950630e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    rdfs:comment ""@en ;
+    sosa:isResultOf matvoc:method_SbSi2Ta_1X0oaWotsX8yNehkugLUX_bIszuU ;
+    sosa:isSampleOf matvoc:materials .
+
+matvoc:materials a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_SbSi2Ta_1X0oaWotsX8yNehkugLUX_bIszuU .
+
