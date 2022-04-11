@@ -82,7 +82,7 @@ for each_section in config1.sections():
         
         config.add_section(dataset)
         
-     #   names = 'file' + str(x)
+    
         names = each_key
         
         config.set(dataset,'name', names)
