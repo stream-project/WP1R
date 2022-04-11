@@ -76,9 +76,6 @@ for each_section in config.sections():
     for each_key, each_val in config.items(each_section):
         
         query = each_val
-    
-       
-        print(query)
             
   
         # query = 'select * from materials_dataset' 
