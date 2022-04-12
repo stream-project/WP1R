@@ -17,13 +17,16 @@
 ## store_to_graph
     1. Contains python script to store generated rdf files into the graph database. 
     
+   Go the graph database instance to see the files in it "http://194.95.157.29:7201/"
+    
 ## Query
-    1. Contains script to query the rdf files store in th egraph database. 
+    1. Contains script to query the rdf files store in the graph database. 
+    2. We can also see the result of the query inside this folder. 
     
 ## We have used jenkins pipeline for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created four jobs for that, one job for each step. 
     1. In the Jobs folder, there are config files for each job. 
     
-# Steps to run jenkins jobs: 
+## Steps to create jenkins jobs: 
      1. Install jenkins and create four freestyle jobs:
             - db_to_csv
             - rdf_map
@@ -33,6 +36,12 @@
      
      3. Copy the contents of the above folders (db_to_csv, rdf_map, store_to_graph, query) respectively. 
  
- # Inside the automate folder there are two files:
-     1. 
+ ## Inside the automate folder there are two files:
+     1. automate.py, is a python script to run our jenkins pipeline from any IDE'S or terminal.  
+     2. jobs.properties is a config file, where we can specify the jobs and their order of execution. 
+     
+ ## Steps to run complete jenkins pipeline
+     1. create a folder "automate" on your pc and copy automate.py and jobs.properties into it, please change the username and password of your jenkins instance inside the automate.py file 
+On the terminal run <mark> "python automate.py" </mark> and you can see the results whether the job is success or failure on your terminal. Go to the jenkins workspace to check the outputs.
+     
     
