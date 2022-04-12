@@ -48,9 +48,12 @@ for i_path in dirs:
         rdf = open(a,'r',encoding='utf-8').read()
         
         
+        # response = requests.post('http://localhost:7200/repositories/observation/statements', data=rdf.encode('utf-8'), headers = headers)
+       
+        # data = open(r'C:\Users\GuptaR\Desktop\rml_rdf\SDM-RDFizer\exam\output\sam.nt').read()
     
     
-        response = requests.post('//http://194.95.157.32:7200//repositories/Hybrid/statements', data=rdf.encode('utf-8'), headers = headers)
+        response = requests.post('http://localhost:7200/repositories/Hybrid/statements', data=rdf.encode('utf-8'), headers = headers)
     
         print(response)
 

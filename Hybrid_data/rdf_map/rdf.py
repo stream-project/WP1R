@@ -82,7 +82,7 @@ for each_section in config1.sections():
         
         config.add_section(dataset)
         
-    
+     #   names = 'file' + str(x)
         names = each_key
         
         config.set(dataset,'name', names)
@@ -93,6 +93,21 @@ for each_section in config1.sections():
         x+=1
 
         
+
+
+# for x in range(1,int(number)+1):
+#     dataset =  'dataset' + str(x)
+    
+#     config.add_section(dataset)
+    
+#  #   names = 'file' + str(x)
+#     names = 'materials_dataset'
+    
+#     config.set(dataset,'name', names)
+        
+#     mappings = '${default:main_directory}/' + 'rml' + str(x) + '.ttl'
+        
+#     config.set(dataset,'mapping', mappings)
 
 
 ## write the file to the directory
