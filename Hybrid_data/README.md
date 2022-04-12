@@ -14,12 +14,12 @@
     
  For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
-## store_to_graph
+## store_to_graph Folder
     1. Contains python script to store generated rdf files into the graph database. 
     
    Go the graph database instance to see the files in it "http://194.95.157.29:7201/"
     
-## Query
+## Query Folder
     1. Contains script to query the rdf files store in the graph database. 
     2. We can also see the result of the query inside this folder. 
     
