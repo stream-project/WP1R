@@ -1,10 +1,6 @@
-# This Folder contains four sub-folder: 
-  
-     1 db_to_csv : which contains script to transform hybrid database into csv files, we can also the the generated csv files in the folder.
-     2 rdf_map :   It contains folders, scripts and mapping rules to convert csv files into rdf transfomation.
-     3 store_to_graph: It contains script to store rdf files into Graph Database(GraphDB)
-     4 Query: Contains query to run against the rdf files. 
-       
+# Steps to transform [Hybrid data](https://materials.hybrid3.duke.edu/) into RDF by using [SDM-RDFIzer](https://github.com/SDM-TIB/SDM-RDFizer) and [RML](https://rml.io/specs/rml/#overview-0) mapping rules 
+ 
+   
 ## Db_to_csv Folder:
      1. Contains python script that will connect to the mysql workbench and then will transform its tables into csv format, there is also a separate config file 
         to add the table names and querties that we want. 
@@ -19,4 +15,8 @@
  For detailed information on SDM-RDFizer please visit [SDM-RDFizer](https://github.com/SDM-TIB/SDM-RDFizer)
 
 ## store_to_graph
-    1. 
+    1. Contains python script to store generated rdf files into the graph database. 
+    
+## Query
+    1. Contains script to query the rdf files store in th egraph database. 
+    
