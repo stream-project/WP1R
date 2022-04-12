@@ -20,3 +20,19 @@
 ## Query
     1. Contains script to query the rdf files store in th egraph database. 
     
+## We have used jenkins pipeline for the above steps, our pipeline will transform the database tables into csv and then will create rdf transformations of those csv file, will store it into the graph databse and will query the rdf files stored in the database. We have created four jobs for that, one job for each step. 
+    1. In the Jobs folder, there are config files for each job. 
+    
+# Steps to run jenkins jobs: 
+     1. Install jenkins and create four freestyle jobs:
+            - db_to_csv
+            - rdf_map
+            - store_to_graph
+            - query 
+     2. After installing jenkins; go the .jenkins folder in your directory where jenkins has been installed, now go the workspace folder inside the .jenkins folder, there you will see workspace has already been created for the 4 freestyle projects that you have created. 
+     
+     3. Copy the contents of the above folders (db_to_csv, rdf_map, store_to_graph, query) respectively. 
+ 
+ # Inside the automate folder there are two files:
+     1. 
+    
