@@ -43,5 +43,6 @@
  ## Steps to run complete jenkins pipeline
      1. create a folder "automate" on your pc and copy automate.py and jobs.properties into it, please change the username and password of your jenkins instance inside the automate.py file 
 On the terminal run <mark> "python automate.py" </mark> and you can see the results whether the job is success or failure on your terminal. Go to the jenkins workspace to check the outputs.
+
      
     
