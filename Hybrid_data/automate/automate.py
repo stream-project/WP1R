@@ -9,10 +9,9 @@ from jenkinsapi.jenkins import Jenkins
 
 # Jenkins Authentication URL
 
-
-JENKINS_URL = 'http://localhost:8080'
-JENKINS_USERNAME = "your_name"
-JENKINS_PASSWORD = "your_password"
+JENKINS_URL = ""
+JENKINS_USERNAME = ""
+JENKINS_PASSWORD = ""
 
 
 import configparser
@@ -39,18 +38,29 @@ for each_section in config.sections():
         
         print(each_key, each_val)
         
+        print(each_val)
         
-        build_number = server_build.get_job_info(each_val)['nextBuildNumber']
+        # build_number = server_build.get_job_info(each_val)['nextBuildNumber']['lastCompletedBuild']['number']
+        build_number = server_build.get_job_info(each_val)['lastCompletedBuild']['number']
+
+        job_instance = server.get_job(each_val)
     
         server_build.build_job(each_val)
-        
-    
-        time.sleep(30)
+        build_info = server_build.get_build_info(each_val,build_number)
         
         
-        job_instance = server.get_job(each_val)
+        duration = build_info['duration']
+        print(duration)
+        
+            
+       
+        print((duration/1000))
+        time.sleep((duration/1000) + 10)
         
         latestBuild = job_instance.get_last_build()
+                    
+       
+        # time.sleep(20)
         
         if (latestBuild.get_status()) == 'SUCCESS':
             print('job is success', build_number)
@@ -61,7 +71,6 @@ for each_section in config.sections():
         
         
         
-
 
 
 
