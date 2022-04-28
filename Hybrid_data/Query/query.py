@@ -1,11 +1,6 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Tue Mar 29 15:34:52 2022
 
-@author: GuptaR
-"""
 
-# -*- coding: utf-8 -*-
 
 # import libraries
 
@@ -70,10 +65,6 @@ for result in results_query1["results"]["bindings"]:
     
     
     
-# with open('query1.txt', 'w') as f:
-#     for s in query1:
-#         f.write(str(s)[1:-1]+'\n')   
-
 
 
     

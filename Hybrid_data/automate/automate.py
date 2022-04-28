@@ -9,6 +9,7 @@ from jenkinsapi.jenkins import Jenkins
 
 # Jenkins Authentication URL
 
+
 JENKINS_URL = 'http://localhost:8080'
 JENKINS_USERNAME = "your_name"
 JENKINS_PASSWORD = "your_password"
