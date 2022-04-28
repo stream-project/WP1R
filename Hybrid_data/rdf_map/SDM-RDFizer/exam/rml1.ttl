@@ -15,7 +15,6 @@
 
 
 
-
 <TripleMap1>
     a rr:TriplesMap;
 
@@ -32,11 +31,11 @@
         rr:objectMap [ rr:template hybrid3:Hybrid_Database ]
     ] ;
 
-    rr:predicateObjectMap [
-        rr:predicate  sosa:hasSample;
-        rr:objectMap [ rr:template "http://example.com/ns/system/{system_id}" ];
+    # rr:predicateObjectMap [
+    #     rr:predicate  sosa:hasSample;
+    #     rr:objectMap [ rr:template "http://example.com/ns/system/{system_id}" ];
 
-    ] ;
+    # ] ;
 
     rr:predicateObjectMap [
         rr:predicate  hybrid3:has_created;
@@ -107,6 +106,50 @@
             rr:parent "id";
         ];
     ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  hybrid3:has_reference;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap6>;
+        rr:joinCondition [
+            rr:child "reference_id";
+            rr:parent "reference_id";
+        ];
+    ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  hybrid3:has_synthesis;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap7>;
+        rr:joinCondition [
+            rr:child "id";
+            rr:parent "dataset_id";
+        ];
+    ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  sosa:hasSample;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap8>;
+        rr:joinCondition [
+            rr:child "system_id";
+            rr:parent "id";
+        ];
+    ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  sosa:hasObservation;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap9>;
+        rr:joinCondition [
+            rr:child "id";
+            rr:parent "dataset_id";
+        ];
+    ] ;
     ].
 
 
@@ -175,4 +218,52 @@ rml:referenceFormulation ql:CSV
 rr:subjectMap [
     rr:template "http://example.com/ns/reference/{id}";
     rr:class hybrid3:Reference
+].
+
+<TripleMap6>
+a rr:TriplesMap;
+
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_author_references.csv";
+rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+    rr:template "http://example.com/ns/reference/{reference_id}";
+    rr:class hybrid3:Reference
+].
+
+<TripleMap7>
+a rr:TriplesMap;
+
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_synthesismethod.csv";
+rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+    rr:template "http://example.com/ns/synthesis/{dataset_id}";
+    rr:class hybrid3:Synthesis
+].
+
+<TripleMap8>
+a rr:TriplesMap;
+
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_system.csv";
+rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+    rr:template "http://example.com/ns/system/{id}";
+    rr:class sosa:Sample
+].
+
+<TripleMap9>
+a rr:TriplesMap;
+
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_observation.csv";
+rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+    rr:template "http://example.com/ns/observation/{dataset_id}";
+    rr:class sosa:Observation
 ].

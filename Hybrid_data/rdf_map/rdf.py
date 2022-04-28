@@ -39,7 +39,7 @@ config.set('default','main_directory', main )
 
 config.add_section('datasets')
 
-number = str(6)
+number = str(9)
 
 output_folder = '${default:main_directory}/output' 
 

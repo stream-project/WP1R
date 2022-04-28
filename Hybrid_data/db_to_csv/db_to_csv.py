@@ -1,10 +1,17 @@
 # -*- coding: utf-8 -*-
+"""
+Created on Mon Apr 11 14:54:40 2022
+
+@author: GuptaR
+"""
 
 
 
 
+import re
+import io
 
-import os 
+import os
 
 import sys
 
@@ -21,6 +28,12 @@ from pathlib import Path
 import pickle
 
 import configparser
+
+import unidecode
+
+import numpy as np
+
+import time
 
 
 
@@ -81,18 +94,58 @@ for each_section in config.sections():
         
         results = pd.read_sql_query(query, mydb)
         
+        def remove_accents(a):
+            return unidecode.unidecode(a.encode().decode('utf-8'))
+        
         if each_key == 'materials_dataset':
             
             results['secondary_property_id'] =  results['secondary_property_id'].astype('Int64')
             results.to_csv(each_key + ".csv", index=False)
             
-        else:
-            
-            
+        elif each_key == 'materials_author':
+
+
+          
+            results['first_name'] = results['first_name'].apply(remove_accents)
+            results['last_name'] = results['last_name'].apply(remove_accents)
+            results['institution'] = results['institution'].apply(remove_accents)
+            # unidecode.unidecode(u)
             results.to_csv(each_key + ".csv", index=False)
             
+        elif each_key == 'materials_experimentaldetails':
+            
+            # results['method'].dtype == np.object_
+            # results['method'] = results['method'].str.replace('\n','')
+          
+            results.to_csv(each_key+".csv", index=False)
+            # time.sleep(10)
+            with open(each_key+".csv",'r') as f:
+                data = f.read()
+                # print(data)
+           
+            result =  pd.read_csv(io.StringIO(re.sub('"\s*\n','"',data)))
+            for col in result.columns:
+                if result[col].dtype == np.object_:
+                    result[col] = result[col].str.replace('\n','')
+            result.to_csv(each_key+".csv", index=False)
 
-        
+            
+        elif each_key == 'materials_system':
+     
+            
+            results['compound_name'] = results['compound_name'].apply(remove_accents)
+            results['description'] = results['description'].apply(remove_accents)
+            results['iupac'] = results['iupac'].apply(remove_accents)
+            results.to_csv(each_key + ".csv", index=False)
+        elif each_key == 'materials_reference':
+            
+   
+            results['title'] = results['title'].apply(remove_accents)
+            results.to_csv(each_key + ".csv", index=False)
 
+            
+        else:
+            results.to_csv(each_key + ".csv", index=False)
+            
 
 
