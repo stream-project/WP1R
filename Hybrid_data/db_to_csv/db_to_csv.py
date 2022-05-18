@@ -6,8 +6,6 @@ Created on Mon Apr 11 14:54:40 2022
 """
 
 
-
-
 import re
 import io
 
@@ -15,11 +13,8 @@ import os
 
 import sys
 
-# import pypyodbc as podbc
-
 import pandas as pd 
 
-import mysql.connector
 
 from rdflib import Graph
 
@@ -35,6 +30,8 @@ import numpy as np
 
 import time
 
+import mysql.connector
+
 
 
 
@@ -46,14 +43,9 @@ config = configparser.ConfigParser()
 
 config.readfp(open('./tables.properties'))
 
-
-
-
-
 ''' taking tables name '''
 
 table1 = config.get('TABLES','materials_dataset')
-
 
 # ''' taking queries '''
 
@@ -78,8 +70,6 @@ database = mycursor.fetchone()
 
 print(database)
 
-
-# i = 0
     
 for each_section in config.sections(): 
     for each_key, each_val in config.items(each_section):

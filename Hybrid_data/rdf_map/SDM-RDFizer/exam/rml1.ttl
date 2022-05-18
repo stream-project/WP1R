@@ -23,7 +23,7 @@
     ];
     
 
-    rr:subjectMap [ rr:template "http://example.com/ns/{id}"; 
+    rr:subjectMap [ rr:template "https://materials.hybrid3.duke.edu/materials/{id}"; 
     rr:class sosa:FeatureOfInterest ];
 
     rr:predicateObjectMap [
@@ -150,6 +150,17 @@
             rr:parent "dataset_id";
         ];
     ] ;
+    ];
+
+    rr:predicateObjectMap [
+    rr:predicate  sosa:hasObservation;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap10>;
+        rr:joinCondition [
+            rr:child "id";
+            rr:parent "dataset_id";
+        ];
+    ] ;
     ].
 
 
@@ -163,7 +174,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "http://example.com/ns/property/{id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/property/{id}";
         rr:class ssn:Property
     ];
 
@@ -190,7 +201,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "http://example.com/ns/experiment/{dataset_id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/experiment/{dataset_id}";
         rr:class sosa:Procedure
     ].
 
@@ -204,7 +215,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "http://example.com/ns/computation/{dataset_id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/computation/{dataset_id}";
         rr:class sosa:Procedure
     ].
 
@@ -216,7 +227,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "http://example.com/ns/reference/{id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/reference/{id}";
     rr:class hybrid3:Reference
 ].
 
@@ -228,7 +239,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "http://example.com/ns/reference/{reference_id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/reference/{reference_id}";
     rr:class hybrid3:Reference
 ].
 
@@ -240,7 +251,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "http://example.com/ns/synthesis/{dataset_id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/synthesis/{dataset_id}";
     rr:class hybrid3:Synthesis
 ].
 
@@ -252,18 +263,30 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "http://example.com/ns/system/{id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/system/{id}";
     rr:class sosa:Sample
 ].
 
 <TripleMap9>
 a rr:TriplesMap;
 
-rml:logicalSource [ rml:source "../../../db_to_csv/materials_observation.csv";
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_multi.csv";
 rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "http://example.com/ns/observation/{dataset_id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/observation/{dataset_id}";
+    rr:class sosa:Observation
+].
+
+<TripleMap10>
+a rr:TriplesMap;
+
+rml:logicalSource [ rml:source "../../../db_to_csv/materials_scalar.csv";
+rml:referenceFormulation ql:CSV
+];
+
+rr:subjectMap [
+    rr:template "https://materials.hybrid3.duke.edu/materials/observation/{dataset_id}";
     rr:class sosa:Observation
 ].
