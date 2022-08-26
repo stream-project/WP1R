@@ -11,51 +11,55 @@
 matvoc:MgNaSn2 a matvoc:Formula ;
     rdfs:label "MgNaSn2" .
 
+matvoc:mat_MgNaSn2 a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 .
+
 matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Mg', 'Na', 'Sn']" ;
-    nomad:has_bulk [ nomad:has_space_group_international_short_symbol "P4/mmm" ],
+    nomad:has_bulk [ nomad:has_crystal_system "tetragonal" ],
+        [ nomad:has_space_group_international_short_symbol "P4/mmm" ],
+        [ nomad:has_point_group "4/mmm" ],
         [ nomad:has_bravais_lattice "tP" ],
-        [ nomad:has_space_group_number 123 ],
-        [ nomad:has_crystal_system "tetragonal" ],
         [ nomad:has_has_free_wyckoff_parameters false ],
-        [ nomad:has_point_group "4/mmm" ] ;
+        [ nomad:has_space_group_number 123 ] ;
     nomad:has_calc_hash "0bTb0KC9EgBRbGJSqW5Nu7isjL6s" ;
     nomad:has_calc_id "0qNleDBNqRlRg6tcQAVytpSEKqO8" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA640>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA670>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA6D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA730>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA790>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA7F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA850>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA8B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA910>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA970>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CA9D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CAA30>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CAA90>, <nomad.metainfo.metainfo.MProxy object at 0x0000024A811CAAF0>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D250>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D280>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D2E0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D340>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D3A0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D400>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D460>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D4C0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D520>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D580>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D5E0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D640>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D6A0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC335D700>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:MgNaSn2 ;
     nomad:has_formula_reduced "MgNaSn2" ;
-    nomad:has_idealized_structure [ nomad:has_lattice_vectors_primitive [ nomad:array """[[4.71680831e-10 0.00000000e+00 0.00000000e+00]
+    nomad:has_idealized_structure [ nomad:has_number_of_atoms 4 ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Na" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.716808e-10 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "e" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 4.716808e-10 ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[4.71680831e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 4.71680831e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.49018155e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "e" ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_wyckoff_sets2 [ nomad:has_element "Sn" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 4.490182e-10 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
         [ nomad:has_atom_positions [ nomad:array """[[0.5 0.5 0. ]
  [0.  0.  0. ]
  [0.  0.5 0.5]
  [0.5 0.  0.5]]""" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
-        [ nomad:has_number_of_atoms 4 ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 4.716808e-10 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[4.71680831e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 4.71680831e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.49018155e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Mg" ] ],
         [ nomad:has_cell_volume [ nomad:numericValue 9.989882e-29 ;
                     qudt:unit ab:M3 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Na" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_c 4.490182e-10 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_a 4.716808e-10 ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[4.71680831e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.71680831e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.49018155e-10]]""" ] ],
         [ nomad:has_periodicity "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Mg" ] ],
         [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "c" ] ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:06:58.931711"^^xsd:dateTime ] ;
@@ -77,78 +81,92 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
     matvoc:section_system_0 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_configuration_raw_gid "qwE-dDEVAPNJ4MIoOF3fiVVpHI9d" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.54543016e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.96060564e-10 0.00000000e+00 2.77271508e-10]
  [0.00000000e+00 2.77271508e-10 2.77271508e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.96060564e-10 2.77271508e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.54543016e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.54543016e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[1.96060564e-10 0.00000000e+00 2.77271508e-10]
  [0.00000000e+00 2.77271508e-10 2.77271508e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.96060564e-10 2.77271508e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "qwE-dDEVAPNJ4MIoOF3fiVVpHI9d" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.54543016e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_1 [ nomad:has_chemical_composition "MgNaSnSn" ],
+    matvoc:section_system_1 [ nomad:has_lattice_vectors [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.54543016e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_simulation_cell [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.54543016e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "qwE-dDEVAPNJ4MIoOF3fiVVpHI9d" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.96060564e-10 0.00000000e+00 2.77271508e-10]
  [0.00000000e+00 2.77271508e-10 2.77271508e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.96060564e-10 2.77271508e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.92121127e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.54543016e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.54543016e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.96060564e-10 0.00000000e+00 2.77271508e-10]
  [0.00000000e+00 2.77271508e-10 2.77271508e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.96060564e-10 2.77271508e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
-    matvoc:section_system_10 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_configuration_raw_gid "8wMIYFU1NhcH8QXO7TOUh6A7REsC" ],
+        [ nomad:has_configuration_raw_gid "qwE-dDEVAPNJ4MIoOF3fiVVpHI9d" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ] ;
+    matvoc:section_system_10 [ nomad:has_atom_positions [ nomad:array """[[2.29975072e-10 0.00000000e+00 2.27869040e-10]
+ [0.00000000e+00 2.60710565e-10 2.27869040e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.29975072e-10 2.60710565e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[4.59950144e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.21421131e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.55738081e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.29975072e-10 0.00000000e+00 2.27869040e-10]
- [0.00000000e+00 2.60710565e-10 2.27869040e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.29975072e-10 2.60710565e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "8wMIYFU1NhcH8QXO7TOUh6A7REsC" ],
         [ nomad:has_atom_species [ nomad:array """[[2.29975072e-10 0.00000000e+00 2.27869040e-10]
  [0.00000000e+00 2.60710565e-10 2.27869040e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.29975072e-10 2.60710565e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_simulation_cell [ nomad:array """[[4.59950144e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.21421131e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.55738081e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_11 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[4.64068620e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.18617151e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.53785425e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_11 [ nomad:has_atom_positions [ nomad:array """[[2.32034310e-10 0.00000000e+00 2.26892712e-10]
+        [ nomad:has_lattice_vectors [ nomad:array """[[4.64068620e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.18617151e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.53785425e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_raw_gid "O9G7-friHl1Cb1GZScUkSgelAV22" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.32034310e-10 0.00000000e+00 2.26892712e-10]
  [0.00000000e+00 2.59308576e-10 2.26892712e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.32034310e-10 2.59308576e-10 0.00000000e+00]]""" ;
@@ -157,94 +175,93 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
  [0.00000000e+00 2.59308576e-10 2.26892712e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.32034310e-10 2.59308576e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_raw_gid "O9G7-friHl1Cb1GZScUkSgelAV22" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[4.64068620e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.18617151e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.53785425e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[4.64068620e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.18617151e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.53785425e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_12 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[4.76424049e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.10205209e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.47927456e-10]]""" ;
+    matvoc:section_system_12 [ nomad:has_configuration_raw_gid "3yG2zoG4BcAKlMWkiMdTfNhmIz5b" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.38212024e-10 0.00000000e+00 2.23963728e-10]
+ [0.00000000e+00 2.55102605e-10 2.23963728e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.38212024e-10 2.55102605e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[2.38212024e-10 0.00000000e+00 2.23963728e-10]
  [0.00000000e+00 2.55102605e-10 2.23963728e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.38212024e-10 2.55102605e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[2.38212024e-10 0.00000000e+00 2.23963728e-10]
- [0.00000000e+00 2.55102605e-10 2.23963728e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.38212024e-10 2.55102605e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[4.76424049e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.10205209e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.47927456e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "3yG2zoG4BcAKlMWkiMdTfNhmIz5b" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
-    matvoc:section_system_13 [ nomad:has_atom_positions [ nomad:array """[[2.50567453e-10 0.00000000e+00 2.18105759e-10]
- [0.00000000e+00 2.46690663e-10 2.18105759e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.50567453e-10 2.46690663e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[4.76424049e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.10205209e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.47927456e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_13 [ nomad:has_simulation_cell [ nomad:array """[[5.01134905e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.93381326e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.36211518e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "z_jPjRsEIl8AhkqD0yRs5nGQAMtG" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_atom_species [ nomad:array """[[2.50567453e-10 0.00000000e+00 2.18105759e-10]
  [0.00000000e+00 2.46690663e-10 2.18105759e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.50567453e-10 2.46690663e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_raw_gid "z_jPjRsEIl8AhkqD0yRs5nGQAMtG" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[5.01134905e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 4.93381326e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.36211518e-10]]""" ;
+        [ nomad:has_atom_positions [ nomad:array """[[2.50567453e-10 0.00000000e+00 2.18105759e-10]
+ [0.00000000e+00 2.46690663e-10 2.18105759e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.50567453e-10 2.46690663e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[5.01134905e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 4.93381326e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.36211518e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_14 [ nomad:has_atom_positions [ nomad:array """[[2.42871832e-10 0.00000000e+00 2.21754415e-10]
+    matvoc:section_system_14 [ nomad:has_simulation_cell [ nomad:array """[[4.85743664e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.03860139e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.43508830e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.42871832e-10 0.00000000e+00 2.21754415e-10]
  [0.00000000e+00 2.51930070e-10 2.21754415e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.42871832e-10 2.51930070e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_configuration_raw_gid "_mKPrSVZbPGmFUpQTPqD04ApGFDa" ],
         [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[4.85743664e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.03860139e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.43508830e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[2.42871832e-10 0.00000000e+00 2.21754415e-10]
  [0.00000000e+00 2.51930070e-10 2.21754415e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.42871832e-10 2.51930070e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[4.85743664e-10 0.00000000e+00 0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[4.85743664e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.03860139e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.43508830e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_15 [ nomad:has_atom_species [ nomad:array """[[2.41767603e-10 0.00000000e+00 2.21233343e-10]
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_15 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[4.83535207e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.01496815e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.42466686e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "dFATxYfu272ctVY99Lo--TPTssvh" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.41767603e-10 0.00000000e+00 2.21233343e-10]
+ [0.00000000e+00 2.50748407e-10 2.21233343e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.41767603e-10 2.50748407e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.41767603e-10 0.00000000e+00 2.21233343e-10]
  [0.00000000e+00 2.50748407e-10 2.21233343e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.41767603e-10 2.50748407e-10 0.00000000e+00]]""" ;
@@ -254,21 +271,14 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
         [ nomad:has_lattice_vectors [ nomad:array """[[4.83535207e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.01496815e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.42466686e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[4.83535207e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.01496815e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.42466686e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_16 [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.38454917e-10 0.00000000e+00 2.19670127e-10]
+ [0.00000000e+00 2.47203420e-10 2.19670127e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.38454917e-10 2.47203420e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.41767603e-10 0.00000000e+00 2.21233343e-10]
- [0.00000000e+00 2.50748407e-10 2.21233343e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.41767603e-10 2.50748407e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "dFATxYfu272ctVY99Lo--TPTssvh" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
-    matvoc:section_system_16 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.76909834e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.94406841e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.39340254e-10]]""" ;
@@ -282,54 +292,41 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.38454917e-10 2.47203420e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "TgrOcYDn4CsviyXtUfgFHpyRF6m_" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.38454917e-10 0.00000000e+00 2.19670127e-10]
- [0.00000000e+00 2.47203420e-10 2.19670127e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.38454917e-10 2.47203420e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_17 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_raw_gid "TgrOcYDn4CsviyXtUfgFHpyRF6m_" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
+    matvoc:section_system_17 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.63659089e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.80226895e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.33087391e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.31829545e-10 0.00000000e+00 2.16543696e-10]
  [0.00000000e+00 2.40113448e-10 2.16543696e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.31829545e-10 2.40113448e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.63659089e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.80226895e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.33087391e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.63659089e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.80226895e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.33087391e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_raw_gid "5dWJMvorkeWVmjmmls75JxyKlzeA" ],
         [ nomad:has_atom_species [ nomad:array """[[2.31829545e-10 0.00000000e+00 2.16543696e-10]
  [0.00000000e+00 2.40113448e-10 2.16543696e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.31829545e-10 2.40113448e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_raw_gid "5dWJMvorkeWVmjmmls75JxyKlzeA" ] ;
-    matvoc:section_system_18 [ nomad:has_simulation_cell [ nomad:array """[[ 4.70354153e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.63659089e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.80226895e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.33087391e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_18 [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.70354153e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.87391447e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.36246709e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "6rFOMQ2n8FEOn034P_JEoUXRMHpU" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.35177077e-10 0.00000000e+00 2.18123354e-10]
- [0.00000000e+00 2.43695724e-10 2.18123354e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.35177077e-10 2.43695724e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.70354153e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.70354153e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.87391447e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.36246709e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -339,8 +336,15 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.35177077e-10 2.43695724e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ] ;
-    matvoc:section_system_19 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.35177077e-10 0.00000000e+00 2.18123354e-10]
+ [0.00000000e+00 2.43695724e-10 2.18123354e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.35177077e-10 2.43695724e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_raw_gid "6rFOMQ2n8FEOn034P_JEoUXRMHpU" ] ;
+    matvoc:section_system_19 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.35129817e-10 0.00000000e+00 2.18649692e-10]
  [0.00000000e+00 2.43150193e-10 2.18649692e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
@@ -351,254 +355,247 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.35129817e-10 2.43150193e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.70259633e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.86300385e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.37299384e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_configuration_raw_gid "1-_-IIlyoIyInDuCaMEEpHibAwgW" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.70259633e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.86300385e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.37299384e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_2 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.81043232e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.41341407e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.28710221e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.81043232e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.41341407e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.28710221e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_raw_gid "1W5UZz7BeQMkSqSCi7-_sJED-Xdp" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ] ;
+    matvoc:section_system_2 [ nomad:has_configuration_raw_gid "1W5UZz7BeQMkSqSCi7-_sJED-Xdp" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.90521616e-10 0.00000000e+00 2.64355111e-10]
  [0.00000000e+00 2.70670704e-10 2.64355111e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.90521616e-10 2.70670704e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.81043232e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.41341407e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.28710221e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.81043232e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.41341407e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.28710221e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_atom_species [ nomad:array """[[1.90521616e-10 0.00000000e+00 2.64355111e-10]
  [0.00000000e+00 2.70670704e-10 2.64355111e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.90521616e-10 2.70670704e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_20 [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69976071e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
+    matvoc:section_system_20 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69976071e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.83027198e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.40457408e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "ZgFEsgFuUMV7MNy1EuAjYMze_hEC" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69976071e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.83027198e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.40457408e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[2.34988035e-10 0.00000000e+00 2.20228704e-10]
  [0.00000000e+00 2.41513599e-10 2.20228704e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34988035e-10 2.41513599e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69976071e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.83027198e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.40457408e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.34988035e-10 0.00000000e+00 2.20228704e-10]
  [0.00000000e+00 2.41513599e-10 2.20228704e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34988035e-10 2.41513599e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
-    matvoc:section_system_21 [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69408948e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.76480824e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.46773456e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_raw_gid "pdnGJK_zaCxRevVTQKa9_RjVsGpv" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.34704474e-10 0.00000000e+00 2.23386728e-10]
- [0.00000000e+00 2.38240412e-10 2.23386728e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.34704474e-10 2.38240412e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
+    matvoc:section_system_21 [ nomad:has_configuration_raw_gid "pdnGJK_zaCxRevVTQKa9_RjVsGpv" ],
         [ nomad:has_atom_species [ nomad:array """[[2.34704474e-10 0.00000000e+00 2.23386728e-10]
  [0.00000000e+00 2.38240412e-10 2.23386728e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34704474e-10 2.38240412e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69408948e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.76480824e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.46773456e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.34704474e-10 0.00000000e+00 2.23386728e-10]
+ [0.00000000e+00 2.38240412e-10 2.23386728e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.34704474e-10 2.38240412e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69408948e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.76480824e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.46773456e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_22 [ nomad:has_simulation_cell [ nomad:array """[[ 4.68274702e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.63388076e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.59405552e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.68274702e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.63388076e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.59405552e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
+    matvoc:section_system_22 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_atom_species [ nomad:array """[[2.34137351e-10 0.00000000e+00 2.29702776e-10]
  [0.00000000e+00 2.31694038e-10 2.29702776e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34137351e-10 2.31694038e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_raw_gid "xGZjSr72O-8RYjvqRqMAVnJIiIpP" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.68274702e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.63388076e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.59405552e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[2.34137351e-10 0.00000000e+00 2.29702776e-10]
  [0.00000000e+00 2.31694038e-10 2.29702776e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34137351e-10 2.31694038e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_23 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.68274702e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.63388076e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.59405552e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "xGZjSr72O-8RYjvqRqMAVnJIiIpP" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
+    matvoc:section_system_23 [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.74154267e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.49018155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.34603698e-10 0.00000000e+00 2.24509078e-10]
+ [0.00000000e+00 2.37077134e-10 2.24509078e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.34603698e-10 2.37077134e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_raw_gid "5PX9LpJ64HCDUhSvvmZh0mmQwAq3" ],
+        [ nomad:has_is_representative true ],
         [ nomad:has_atom_species [ nomad:array """[[2.34603698e-10 0.00000000e+00 2.24509078e-10]
  [0.00000000e+00 2.37077134e-10 2.24509078e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34603698e-10 2.37077134e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.74154267e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.49018155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
+    matvoc:section_system_24 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.74154267e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.49018155e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[2.34603698e-10 0.00000000e+00 2.24509078e-10]
  [0.00000000e+00 2.37077134e-10 2.24509078e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34603698e-10 2.37077134e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "5PX9LpJ64HCDUhSvvmZh0mmQwAq3" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_is_representative true ],
         [ nomad:has_system_type "bulk" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ] ;
-    matvoc:section_system_24 [ nomad:has_system_type "bulk" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_configuration_raw_gid "5PX9LpJ64HCDUhSvvmZh0mmQwAq3" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.34603698e-10 0.00000000e+00 2.24509078e-10]
- [0.00000000e+00 2.37077134e-10 2.24509078e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.34603698e-10 2.37077134e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.74154267e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.49018155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_raw_gid "5PX9LpJ64HCDUhSvvmZh0mmQwAq3" ],
         [ nomad:has_atom_species [ nomad:array """[[2.34603698e-10 0.00000000e+00 2.24509078e-10]
  [0.00000000e+00 2.37077134e-10 2.24509078e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.34603698e-10 2.37077134e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.69207395e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.74154267e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.49018155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_3 [ nomad:has_simulation_cell [ nomad:array """[[3.72970790e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.31721420e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.09885912e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.86485395e-10 0.00000000e+00 2.54942956e-10]
+    matvoc:section_system_3 [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.86485395e-10 0.00000000e+00 2.54942956e-10]
  [0.00000000e+00 2.65860710e-10 2.54942956e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.86485395e-10 2.65860710e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "h0VlP5jr4ZyUf275J4XIDeokSK6w" ],
         [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.72970790e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.31721420e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.09885912e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.72970790e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.31721420e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.09885912e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "h0VlP5jr4ZyUf275J4XIDeokSK6w" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.86485395e-10 0.00000000e+00 2.54942956e-10]
+        [ nomad:has_atom_positions [ nomad:array """[[1.86485395e-10 0.00000000e+00 2.54942956e-10]
  [0.00000000e+00 2.65860710e-10 2.54942956e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.86485395e-10 2.65860710e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_4 [ nomad:has_atom_species [ nomad:array """[[1.87168282e-10 0.00000000e+00 2.56535395e-10]
+    matvoc:section_system_4 [ nomad:has_atom_positions [ nomad:array """[[1.87168282e-10 0.00000000e+00 2.56535395e-10]
  [0.00000000e+00 2.66674511e-10 2.56535395e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.87168282e-10 2.66674511e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[3.74336563e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.33349022e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.13070789e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "tt1l9RHNqk89G29rcFUXFUcYHY7s" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.74336563e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.33349022e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.13070789e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.87168282e-10 0.00000000e+00 2.56535395e-10]
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.87168282e-10 0.00000000e+00 2.56535395e-10]
  [0.00000000e+00 2.66674511e-10 2.56535395e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.87168282e-10 2.66674511e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ] ;
-    matvoc:section_system_5 [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_configuration_raw_gid "GPMMW9J64jWfC5b59jSSLCl70b2n" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.78619509e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.35781582e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.04341616e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_5 [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
         [ nomad:has_atom_species [ nomad:array """[[1.89309755e-10 0.00000000e+00 2.52170808e-10]
  [0.00000000e+00 2.67890791e-10 2.52170808e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.89309755e-10 2.67890791e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.78619509e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.35781582e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.04341616e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[1.89309755e-10 0.00000000e+00 2.52170808e-10]
  [0.00000000e+00 2.67890791e-10 2.52170808e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.89309755e-10 2.67890791e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "GPMMW9J64jWfC5b59jSSLCl70b2n" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.78619509e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.35781582e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.04341616e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
-    matvoc:section_system_6 [ nomad:has_atom_species [ nomad:array """[[1.95734173e-10 0.00000000e+00 2.39077048e-10]
- [0.00000000e+00 2.71539630e-10 2.39077048e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.95734173e-10 2.71539630e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_configuration_raw_gid "MHTWoaB-yd_4FwtOFvErpjj2y5ab" ],
         [ nomad:has_simulation_cell [ nomad:array """[[3.91468346e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.43079260e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.78154096e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.91468346e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.43079260e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.78154096e-10]]""" ;
+        [ nomad:has_atom_species [ nomad:array """[[1.95734173e-10 0.00000000e+00 2.39077048e-10]
+ [0.00000000e+00 2.71539630e-10 2.39077048e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.95734173e-10 2.71539630e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.95734173e-10 0.00000000e+00 2.39077048e-10]
@@ -606,11 +603,30 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.95734173e-10 2.71539630e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "MHTWoaB-yd_4FwtOFvErpjj2y5ab" ] ;
-    matvoc:section_system_7 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_configuration_raw_gid "GCpNO3itL6K5yiTdkrT0d77tKG7t" ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.91468346e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.43079260e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.78154096e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ] ;
+    matvoc:section_system_7 [ nomad:has_configuration_raw_gid "GCpNO3itL6K5yiTdkrT0d77tKG7t" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[4.01180205e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.40007777e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.74975132e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
         [ nomad:has_atom_species [ nomad:array """[[2.00590103e-10 0.00000000e+00 2.37487566e-10]
+ [0.00000000e+00 2.70003889e-10 2.37487566e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.00590103e-10 2.70003889e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.00590103e-10 0.00000000e+00 2.37487566e-10]
  [0.00000000e+00 2.70003889e-10 2.37487566e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.00590103e-10 2.70003889e-10 0.00000000e+00]]""" ;
@@ -618,22 +634,23 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
         [ nomad:has_simulation_cell [ nomad:array """[[4.01180205e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.40007777e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.74975132e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.00590103e-10 0.00000000e+00 2.37487566e-10]
- [0.00000000e+00 2.70003889e-10 2.37487566e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.00590103e-10 2.70003889e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[4.01180205e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.40007777e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.74975132e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_8 [ nomad:has_lattice_vectors [ nomad:array """[[4.30315784e-10 0.00000000e+00 0.00000000e+00]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_8 [ nomad:has_chemical_composition "MgNaSnSn" ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[4.30315784e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.30793326e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.65438239e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.15157892e-10 0.00000000e+00 2.32719120e-10]
+ [0.00000000e+00 2.65396663e-10 2.32719120e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.15157892e-10 2.65396663e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[2.15157892e-10 0.00000000e+00 2.32719120e-10]
+ [0.00000000e+00 2.65396663e-10 2.32719120e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.15157892e-10 2.65396663e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[4.30315784e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.30793326e-10 0.00000000e+00]
@@ -641,49 +658,32 @@ matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 a sosa:Sample ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "xBIEZ2yKUGl__YMZTu8_wuKVC4SO" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "MgNaSnSn" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.15157892e-10 0.00000000e+00 2.32719120e-10]
- [0.00000000e+00 2.65396663e-10 2.32719120e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.15157892e-10 2.65396663e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.15157892e-10 0.00000000e+00 2.32719120e-10]
- [0.00000000e+00 2.65396663e-10 2.32719120e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.15157892e-10 2.65396663e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
-    matvoc:section_system_9 [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
-        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.44293471e-10 0.00000000e+00 2.23182227e-10]
+        [ nomad:has_chemical_composition_reduced "MgNaSn2" ] ;
+    matvoc:section_system_9 [ nomad:has_atom_positions [ nomad:array """[[2.44293471e-10 0.00000000e+00 2.23182227e-10]
  [0.00000000e+00 2.56182213e-10 2.23182227e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.44293471e-10 2.56182213e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.44293471e-10 0.00000000e+00 2.23182227e-10]
- [0.00000000e+00 2.56182213e-10 2.23182227e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.44293471e-10 2.56182213e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "dfWhFbG9hnKJnGNrGIhZwYBBiwWs" ],
         [ nomad:has_chemical_composition "MgNaSnSn" ],
         [ nomad:has_simulation_cell [ nomad:array """[[4.88586942e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.12364426e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.46364454e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "MgNaSn2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.44293471e-10 0.00000000e+00 2.23182227e-10]
+ [0.00000000e+00 2.56182213e-10 2.23182227e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.44293471e-10 2.56182213e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[4.88586942e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.12364426e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.46364454e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_reduced "MgNaSn2" ],
-        [ nomad:has_configuration_raw_gid "dfWhFbG9hnKJnGNrGIhZwYBBiwWs" ] ;
+        [ nomad:has_atom_labels "['Mg', 'Na', 'Sn', 'Sn']" ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_MgNaSn2_0qNleDBNqRlRg6tcQAVytpSEKqO8 .
+    sosa:isSampleOf matvoc:mat_MgNaSn2 .
 

@@ -11,55 +11,59 @@
 matvoc:NiSrV2 a matvoc:Formula ;
     rdfs:label "NiSrV2" .
 
+matvoc:mat_NiSrV2 a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_NiSrV2_2iDtybqRu75bOVTMBW51TEBzlmXe .
+
 matvoc:mat_NiSrV2_2iDtybqRu75bOVTMBW51TEBzlmXe a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Ni', 'Sr', 'V']" ;
-    nomad:has_bulk [ nomad:has_crystal_system "tetragonal" ],
-        [ nomad:has_point_group "4mm" ],
-        [ nomad:has_space_group_international_short_symbol "P4mm" ],
-        [ nomad:has_bravais_lattice "tP" ],
+    nomad:has_bulk [ nomad:has_space_group_international_short_symbol "P4mm" ],
+        [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_crystal_system "tetragonal" ],
         [ nomad:has_space_group_number 99 ],
-        [ nomad:has_has_free_wyckoff_parameters true ] ;
+        [ nomad:has_bravais_lattice "tP" ],
+        [ nomad:has_point_group "4mm" ] ;
     nomad:has_calc_hash "xpH0FTJ4dUT2oXLcTjTKaoMHiiIf" ;
     nomad:has_calc_id "2iDtybqRu75bOVTMBW51TEBzlmXe" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F226898B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226898E0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689940>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226899A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689A00>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689A60>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689AC0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689B20>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689B80>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689BE0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689C40>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689CA0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689D00>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22689D60>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651430>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651460>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC6514C0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651520>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651580>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC6515E0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651640>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC6516A0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651700>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651760>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC6517C0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651820>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC651880>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC6518E0>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:NiSrV2 ;
     nomad:has_formula_reduced "NiSrV2" ;
-    nomad:has_idealized_structure [ nomad:has_periodicity "[True, True, True]" ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_element "V" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[1]" ] ],
+    nomad:has_idealized_structure [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.14915374e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.14915374e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.59273035e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.14915374e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.14915374e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.59273035e-10]]""" ] ],
         [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Ni" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[3]" ] ],
         [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[2]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_a 3.149154e-10 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "V" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "V" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.41997357]
  [0.5        0.5        0.72793832]
  [0.         0.         0.09353696]
  [0.5        0.5        0.25855116]]""" ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.14915374e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.14915374e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 7.59273035e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Sr" ] ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 3.149154e-10 ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_number_of_atoms 4 ],
         [ nomad:has_cell_volume [ nomad:numericValue 7.529839e-29 ;
                     qudt:unit ab:M3 ] ],
-        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.14915374e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.14915374e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 7.59273035e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_element "V" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[3]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 3.149154e-10 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.149154e-10 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Ni" ] ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
         [ nomad:has_lattice_parameters [ nomad:has_c 7.59273e-10 ] ],
-        [ nomad:has_number_of_atoms 4 ] ;
+        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Sr" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[2]" ] ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:15:21.496781"^^xsd:dateTime ] ;
     nomad:has_material_id "LqHyxwuYdlod83ACxPSDhmz50tXQ" ;
@@ -79,134 +83,130 @@ matvoc:mat_NiSrV2_2iDtybqRu75bOVTMBW51TEBzlmXe a sosa:Sample ;
     nomad:has_upload_time [ a time1:Instant ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
-    matvoc:section_system_0 [ nomad:has_chemical_composition_reduced "NiSrV2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
- [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
- [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
- [2.20400108e-10 0.00000000e+00 5.52171585e-10]
- [0.00000000e+00 0.00000000e+00 7.15285069e-11]
- [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "Ij_tci4sd83tzxouZ-czrppWk2a2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
- [2.20400108e-10 0.00000000e+00 5.52171585e-10]
- [0.00000000e+00 0.00000000e+00 7.15285069e-11]
- [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+    matvoc:section_system_0 [ nomad:has_configuration_raw_gid "Ij_tci4sd83tzxouZ-czrppWk2a2" ],
         [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
-        [ nomad:has_chemical_composition "NiSrVV" ] ;
-    matvoc:section_system_1 [ nomad:has_chemical_composition "NiSrVV" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
- [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_reduced "NiSrV2" ],
-        [ nomad:has_configuration_raw_gid "Ij_tci4sd83tzxouZ-czrppWk2a2" ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
- [2.20400108e-10 0.00000000e+00 5.52171585e-10]
- [0.00000000e+00 0.00000000e+00 7.15285069e-11]
- [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
+ [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
  [2.20400108e-10 0.00000000e+00 5.52171585e-10]
  [0.00000000e+00 0.00000000e+00 7.15285069e-11]
  [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
+ [2.20400108e-10 0.00000000e+00 5.52171585e-10]
+ [0.00000000e+00 0.00000000e+00 7.15285069e-11]
+ [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "NiSrVV" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
  [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_2 [ nomad:has_configuration_raw_gid "0EnYCqsDzN5kkj3vh7wojILSma2C" ],
-        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
+    matvoc:section_system_1 [ nomad:has_chemical_composition_reduced "NiSrV2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
+ [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.20400108e-10 -2.23430806e-10  0.00000000e+00]
+ [ 2.20400108e-10  2.23430806e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.58725278e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
+ [2.20400108e-10 0.00000000e+00 5.52171585e-10]
+ [0.00000000e+00 0.00000000e+00 7.15285069e-11]
+ [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "NiSrVV" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18271976e-10]
+ [2.20400108e-10 0.00000000e+00 5.52171585e-10]
+ [0.00000000e+00 0.00000000e+00 7.15285069e-11]
+ [2.20400108e-10 0.00000000e+00 1.96115841e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "Ij_tci4sd83tzxouZ-czrppWk2a2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_2 [ nomad:has_lattice_vectors [ nomad:array """[[ 2.22099349e-10 -2.23817351e-10  0.00000000e+00]
+ [ 2.22099349e-10  2.23817351e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59476009e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.19097863e-10]
+ [2.22099349e-10 0.00000000e+00 5.52901178e-10]
+ [0.00000000e+00 0.00000000e+00 7.08317705e-11]
+ [2.22099349e-10 0.00000000e+00 1.96383203e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.19097863e-10]
  [2.22099349e-10 0.00000000e+00 5.52901178e-10]
  [0.00000000e+00 0.00000000e+00 7.08317705e-11]
  [2.22099349e-10 0.00000000e+00 1.96383203e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
+        [ nomad:has_configuration_raw_gid "0EnYCqsDzN5kkj3vh7wojILSma2C" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "NiSrVV" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 2.22099349e-10 -2.23817351e-10  0.00000000e+00]
  [ 2.22099349e-10  2.23817351e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  7.59476009e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.19097863e-10]
- [2.22099349e-10 0.00000000e+00 5.52901178e-10]
- [0.00000000e+00 0.00000000e+00 7.08317705e-11]
- [2.22099349e-10 0.00000000e+00 1.96383203e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.22099349e-10 -2.23817351e-10  0.00000000e+00]
- [ 2.22099349e-10  2.23817351e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.59476009e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_3 [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
- [2.21639927e-10 0.00000000e+00 5.52703938e-10]
- [0.00000000e+00 0.00000000e+00 7.10200915e-11]
- [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
- [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
- [2.21639927e-10 0.00000000e+00 5.52703938e-10]
- [0.00000000e+00 0.00000000e+00 7.10200915e-11]
- [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
- [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+    matvoc:section_system_3 [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
         [ nomad:has_system_type "bulk" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
-        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
-        [ nomad:has_is_representative true ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
         [ nomad:has_chemical_composition "NiSrVV" ],
-        [ nomad:has_configuration_raw_gid "EW2M69M5ctLQ-asfLiiPglJCQMo-" ] ;
-    matvoc:section_system_4 [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
  [2.21639927e-10 0.00000000e+00 5.52703938e-10]
  [0.00000000e+00 0.00000000e+00 7.10200915e-11]
  [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
+ [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
+ [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
  [2.21639927e-10 0.00000000e+00 5.52703938e-10]
  [0.00000000e+00 0.00000000e+00 7.10200915e-11]
  [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
+        [ nomad:has_configuration_raw_gid "EW2M69M5ctLQ-asfLiiPglJCQMo-" ],
+        [ nomad:has_is_representative true ] ;
+    matvoc:section_system_4 [ nomad:has_lattice_vectors [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
+ [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "NiSrVV" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
  [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 2.21639927e-10 -2.23712842e-10  0.00000000e+00]
- [ 2.21639927e-10  2.23712842e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  7.59273035e-10]]""" ;
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
+ [2.21639927e-10 0.00000000e+00 5.52703938e-10]
+ [0.00000000e+00 0.00000000e+00 7.10200915e-11]
+ [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NiSrV2" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.18874607e-10]
+ [2.21639927e-10 0.00000000e+00 5.52703938e-10]
+ [0.00000000e+00 0.00000000e+00 7.10200915e-11]
+ [2.21639927e-10 0.00000000e+00 1.96310924e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "EW2M69M5ctLQ-asfLiiPglJCQMo-" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_atom_labels "['Ni', 'Sr', 'V', 'V']" ],
         [ nomad:has_chemical_composition_bulk_reduced "NiSrV2" ],
-        [ nomad:has_configuration_raw_gid "EW2M69M5ctLQ-asfLiiPglJCQMo-" ] ;
+        [ nomad:has_chemical_composition "NiSrVV" ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_NiSrV2_2iDtybqRu75bOVTMBW51TEBzlmXe ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_NiSrV2_2iDtybqRu75bOVTMBW51TEBzlmXe .
+    sosa:isSampleOf matvoc:mat_NiSrV2 .
 

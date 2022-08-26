@@ -11,52 +11,56 @@
 matvoc:NaOsTa2 a matvoc:Formula ;
     rdfs:label "NaOsTa2" .
 
+matvoc:mat_NaOsTa2 a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a .
+
 matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Na', 'Os', 'Ta']" ;
     nomad:has_bulk [ nomad:has_point_group "4/mmm" ],
-        [ nomad:has_space_group_international_short_symbol "P4/mmm" ],
         [ nomad:has_space_group_number 123 ],
         [ nomad:has_bravais_lattice "tP" ],
-        [ nomad:has_crystal_system "tetragonal" ],
-        [ nomad:has_has_free_wyckoff_parameters false ] ;
+        [ nomad:has_has_free_wyckoff_parameters false ],
+        [ nomad:has_space_group_international_short_symbol "P4/mmm" ],
+        [ nomad:has_crystal_system "tetragonal" ] ;
     nomad:has_calc_hash "kNNtd_zZvdphGsAxPw7yu9bVl3dR" ;
     nomad:has_calc_id "1z2drfbXj0lKnOuUG98Zriy2RA_a" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5280>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A52B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5310>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5370>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A53D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5430>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5490>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A54F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5550>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A55B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5610>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5670>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A56D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F113A5730>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0760>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0790>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A07F0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0850>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A08B0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0910>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0970>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A09D0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0A30>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0A90>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0AF0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0B50>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0BB0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC18A0C10>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:NaOsTa2 ;
     nomad:has_formula_reduced "NaOsTa2" ;
-    nomad:has_idealized_structure [ nomad:has_number_of_atoms 4 ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[0]" ] ],
+    nomad:has_idealized_structure [ nomad:has_wyckoff_sets1 [ nomad:has_element "Os" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
         [ nomad:has_wyckoff_sets2 [ nomad:has_element "Ta" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[1]" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Na" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_number_of_atoms 4 ],
         [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Os" ] ],
-        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[4.58832513e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 4.58832513e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 3.24103181e-10]]""" ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.  0.  0. ]
  [0.5 0.5 0. ]
  [0.5 0.  0.5]
  [0.  0.5 0.5]]""" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "e" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_a 4.588325e-10 ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_lattice_parameters [ nomad:has_c 3.241032e-10 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 4.588325e-10 ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "c" ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[4.58832513e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.58832513e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.24103181e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[1]" ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[4.58832513e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 4.58832513e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 3.24103181e-10]]""" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 3.241032e-10 ] ],
         [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 4.588325e-10 ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 4.588325e-10 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Na" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "e" ] ],
         [ nomad:has_cell_volume [ nomad:numericValue 6.823256e-29 ;
                     qudt:unit ab:M3 ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "c" ] ],
-        [ nomad:has_periodicity "[True, True, True]" ] ;
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[0]" ] ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:12:00.400451"^^xsd:dateTime ] ;
     nomad:has_material_id "1sRt9CBaebrZCeSbLt_vBjKSsK_V" ;
@@ -76,20 +80,34 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
     nomad:has_upload_time [ a time1:Instant ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
-    matvoc:section_system_0 [ nomad:has_simulation_cell [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.06246097e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_raw_gid "qh-GUhnAOulepNNEmKfZe5gXpYj5" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.78985024e-10 0.00000000e+00 2.53123049e-10]
+    matvoc:section_system_0 [ nomad:has_atom_species [ nomad:array """[[1.78985024e-10 0.00000000e+00 2.53123049e-10]
  [0.00000000e+00 2.53123049e-10 2.53123049e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.78985024e-10 2.53123049e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "qh-GUhnAOulepNNEmKfZe5gXpYj5" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.78985024e-10 0.00000000e+00 2.53123049e-10]
+ [0.00000000e+00 2.53123049e-10 2.53123049e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.78985024e-10 2.53123049e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.06246097e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.06246097e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
+    matvoc:section_system_1 [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 5.06246097e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
@@ -99,32 +117,25 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.78985024e-10 2.53123049e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_1 [ nomad:has_atom_positions [ nomad:array """[[1.78985024e-10 0.00000000e+00 2.53123049e-10]
- [0.00000000e+00 2.53123049e-10 2.53123049e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.78985024e-10 2.53123049e-10 0.00000000e+00]]""" ;
+        [ nomad:has_simulation_cell [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.06246097e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "qh-GUhnAOulepNNEmKfZe5gXpYj5" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_species [ nomad:array """[[1.78985024e-10 0.00000000e+00 2.53123049e-10]
  [0.00000000e+00 2.53123049e-10 2.53123049e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.78985024e-10 2.53123049e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.06246097e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
+        [ nomad:has_configuration_raw_gid "qh-GUhnAOulepNNEmKfZe5gXpYj5" ] ;
+    matvoc:section_system_10 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.42893429e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.56569647e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.40956096e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.57970048e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.06246097e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.06246097e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_10 [ nomad:has_atom_species [ nomad:array """[[1.71446715e-10 0.00000000e+00 2.20478048e-10]
+        [ nomad:has_configuration_raw_gid "1tMCv8rRpziU0fimR85Tfn_msTnj" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.71446715e-10 0.00000000e+00 2.20478048e-10]
  [0.00000000e+00 2.28284824e-10 2.20478048e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.71446715e-10 2.28284824e-10 0.00000000e+00]]""" ;
@@ -133,70 +144,73 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.56569647e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.40956096e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.42893429e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.56569647e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.40956096e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "1tMCv8rRpziU0fimR85Tfn_msTnj" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.71446715e-10 0.00000000e+00 2.20478048e-10]
  [0.00000000e+00 2.28284824e-10 2.20478048e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.71446715e-10 2.28284824e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_11 [ nomad:has_simulation_cell [ nomad:array """[[ 3.44560105e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.56800451e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.38529598e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "u8TOe-qmuKWFSo0i6iWoQMoRf9Ne" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.72280052e-10 0.00000000e+00 2.19264799e-10]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_11 [ nomad:has_atom_species [ nomad:array """[[1.72280052e-10 0.00000000e+00 2.19264799e-10]
  [0.00000000e+00 2.28400225e-10 2.19264799e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.72280052e-10 2.28400225e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_raw_gid "u8TOe-qmuKWFSo0i6iWoQMoRf9Ne" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.72280052e-10 0.00000000e+00 2.19264799e-10]
  [0.00000000e+00 2.28400225e-10 2.19264799e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.72280052e-10 2.28400225e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.44560105e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.56800451e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.38529598e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.44560105e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.56800451e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.38529598e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_12 [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.48492854e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.57345064e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.32803947e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.48492854e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_12 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.48492854e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.57345064e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.32803947e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.74246427e-10 0.00000000e+00 2.16401974e-10]
- [0.00000000e+00 2.28672532e-10 2.16401974e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.74246427e-10 2.28672532e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "1f8wgKMebituszZRgk_VgHD_G9cU" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.48492854e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.57345064e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.32803947e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.74246427e-10 0.00000000e+00 2.16401974e-10]
  [0.00000000e+00 2.28672532e-10 2.16401974e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.74246427e-10 2.28672532e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "1f8wgKMebituszZRgk_VgHD_G9cU" ] ;
-    matvoc:section_system_13 [ nomad:has_atom_positions [ nomad:array """[[1.75129548e-10 0.00000000e+00 2.15664239e-10]
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.74246427e-10 0.00000000e+00 2.16401974e-10]
+ [0.00000000e+00 2.28672532e-10 2.16401974e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.74246427e-10 2.28672532e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_13 [ nomad:has_simulation_cell [ nomad:array """[[ 3.50259095e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.56429784e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.31328478e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.75129548e-10 0.00000000e+00 2.15664239e-10]
+ [0.00000000e+00 2.28214892e-10 2.15664239e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.75129548e-10 2.28214892e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.75129548e-10 0.00000000e+00 2.15664239e-10]
  [0.00000000e+00 2.28214892e-10 2.15664239e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.75129548e-10 2.28214892e-10 0.00000000e+00]]""" ;
@@ -207,59 +221,40 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_configuration_raw_gid "_LpbuoNPQDxVaNtWTZX8qH30IP0c" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.75129548e-10 0.00000000e+00 2.15664239e-10]
- [0.00000000e+00 2.28214892e-10 2.15664239e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.75129548e-10 2.28214892e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.50259095e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.56429784e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.31328478e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_14 [ nomad:has_atom_species [ nomad:array """[[1.77778909e-10 0.00000000e+00 2.13451036e-10]
- [0.00000000e+00 2.26841972e-10 2.13451036e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.77778909e-10 2.26841972e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
+    matvoc:section_system_14 [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.77778909e-10 0.00000000e+00 2.13451036e-10]
  [0.00000000e+00 2.26841972e-10 2.13451036e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.77778909e-10 2.26841972e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.55557817e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.53683944e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.26902071e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.55557817e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.53683944e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.26902071e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "7XdenadHcFTaFh_mQPtQjGvPGEo-" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.55557817e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.53683944e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.26902071e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_15 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "82Bs13Qy4CX3nDc4kcVH4V-qkVFn" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.83077631e-10 0.00000000e+00 2.09024628e-10]
- [0.00000000e+00 2.24096132e-10 2.09024628e-10]
+        [ nomad:has_atom_species [ nomad:array """[[1.77778909e-10 0.00000000e+00 2.13451036e-10]
+ [0.00000000e+00 2.26841972e-10 2.13451036e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.83077631e-10 2.24096132e-10 0.00000000e+00]]""" ;
+ [1.77778909e-10 2.26841972e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[1.83077631e-10 0.00000000e+00 2.09024628e-10]
- [0.00000000e+00 2.24096132e-10 2.09024628e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.83077631e-10 2.24096132e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_15 [ nomad:has_atom_species [ nomad:array """[[1.83077631e-10 0.00000000e+00 2.09024628e-10]
+ [0.00000000e+00 2.24096132e-10 2.09024628e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.83077631e-10 2.24096132e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.66155262e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.48192265e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.18049256e-10]]""" ;
@@ -267,108 +262,127 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.66155262e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.48192265e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.18049256e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_16 [ nomad:has_atom_positions [ nomad:array """[[1.93675076e-10 0.00000000e+00 2.00171813e-10]
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_raw_gid "82Bs13Qy4CX3nDc4kcVH4V-qkVFn" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.83077631e-10 0.00000000e+00 2.09024628e-10]
+ [0.00000000e+00 2.24096132e-10 2.09024628e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.83077631e-10 2.24096132e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_16 [ nomad:has_configuration_raw_gid "-nZbwGPzf27Foi4RWBv3EyJYy8pa" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.87350152e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.37208905e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.00343627e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.93675076e-10 0.00000000e+00 2.00171813e-10]
  [0.00000000e+00 2.18604452e-10 2.00171813e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.93675076e-10 2.18604452e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[1.93675076e-10 0.00000000e+00 2.00171813e-10]
  [0.00000000e+00 2.18604452e-10 2.00171813e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.93675076e-10 2.18604452e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.87350152e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.37208905e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.00343627e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "-nZbwGPzf27Foi4RWBv3EyJYy8pa" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.87350152e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.37208905e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.00343627e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_17 [ nomad:has_atom_species [ nomad:array """[[2.14869966e-10 0.00000000e+00 1.82466185e-10]
- [0.00000000e+00 2.07621093e-10 1.82466185e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.14869966e-10 2.07621093e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.29739932e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.15242186e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.64932369e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+    matvoc:section_system_17 [ nomad:has_configuration_raw_gid "M7hzcblnT1v79agut95ZPhwj0CNU" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.14869966e-10 0.00000000e+00 1.82466185e-10]
  [0.00000000e+00 2.07621093e-10 1.82466185e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.14869966e-10 2.07621093e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "M7hzcblnT1v79agut95ZPhwj0CNU" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.29739932e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.15242186e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.64932369e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.29739932e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.15242186e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.64932369e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_18 [ nomad:has_atom_positions [ nomad:array """[[2.11789761e-10 0.00000000e+00 1.85039304e-10]
- [0.00000000e+00 2.09217280e-10 1.85039304e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.11789761e-10 2.09217280e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.14869966e-10 0.00000000e+00 1.82466185e-10]
+ [0.00000000e+00 2.07621093e-10 1.82466185e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.14869966e-10 2.07621093e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_18 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.23579521e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.18434559e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.70078607e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_raw_gid "AeYPe7yukMV3Ev9qnwEuBcGbIiAI" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.11789761e-10 0.00000000e+00 1.85039304e-10]
+ [0.00000000e+00 2.09217280e-10 1.85039304e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.11789761e-10 2.09217280e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.23579521e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.18434559e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.70078607e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[2.11789761e-10 0.00000000e+00 1.85039304e-10]
  [0.00000000e+00 2.09217280e-10 1.85039304e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.11789761e-10 2.09217280e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.23579521e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.18434559e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.70078607e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_19 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.27916256e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.16187229e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.66455818e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.27916256e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.16187229e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.66455818e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.13958128e-10 0.00000000e+00 1.83227909e-10]
+        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
+    matvoc:section_system_19 [ nomad:has_atom_positions [ nomad:array """[[2.13958128e-10 0.00000000e+00 1.83227909e-10]
  [0.00000000e+00 2.08093615e-10 1.83227909e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.13958128e-10 2.08093615e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.27916256e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.16187229e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.66455818e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "isc8LWFwA8uCvuPMBvR4GagRMzPi" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_species [ nomad:array """[[2.13958128e-10 0.00000000e+00 1.83227909e-10]
  [0.00000000e+00 2.08093615e-10 1.83227909e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.13958128e-10 2.08093615e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_2 [ nomad:has_simulation_cell [ nomad:array """[[2.99240738e-10 0.00000000e+00 0.00000000e+00]
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "isc8LWFwA8uCvuPMBvR4GagRMzPi" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.27916256e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.16187229e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.66455818e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_2 [ nomad:has_atom_species [ nomad:array """[[1.49620369e-10 0.00000000e+00 2.07436310e-10]
+ [0.00000000e+00 2.11022469e-10 2.07436310e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.49620369e-10 2.11022469e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[2.99240738e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 4.22044938e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.14872620e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[1.49620369e-10 0.00000000e+00 2.07436310e-10]
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.49620369e-10 0.00000000e+00 2.07436310e-10]
  [0.00000000e+00 2.11022469e-10 2.07436310e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.49620369e-10 2.11022469e-10 0.00000000e+00]]""" ;
@@ -377,97 +391,93 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 4.22044938e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.14872620e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "6NIJkw7f1LJOzTh4S3NPAmI1NRZP" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.49620369e-10 0.00000000e+00 2.07436310e-10]
- [0.00000000e+00 2.11022469e-10 2.07436310e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.49620369e-10 2.11022469e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_20 [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_configuration_raw_gid "5J-Te3ixWj8QGL92fC62NJ7QWHHK" ],
+        [ nomad:has_configuration_raw_gid "6NIJkw7f1LJOzTh4S3NPAmI1NRZP" ] ;
+    matvoc:section_system_20 [ nomad:has_configuration_raw_gid "5J-Te3ixWj8QGL92fC62NJ7QWHHK" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.29966896e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.18679051e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.67698155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.14983448e-10 0.00000000e+00 1.83849077e-10]
  [0.00000000e+00 2.09339525e-10 1.83849077e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.14983448e-10 2.09339525e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_species [ nomad:array """[[2.14983448e-10 0.00000000e+00 1.83849077e-10]
  [0.00000000e+00 2.09339525e-10 1.83849077e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.14983448e-10 2.09339525e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.29966896e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.18679051e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.67698155e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
+    matvoc:section_system_21 [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "MTiwHZ7ymrAWZfeGQQX8XFXXiBW1" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
-    matvoc:section_system_21 [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.16568596e-10 0.00000000e+00 1.84809405e-10]
  [0.00000000e+00 2.11265708e-10 1.84809405e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.16568596e-10 2.11265708e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.33137191e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.22531416e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.69618810e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "MTiwHZ7ymrAWZfeGQQX8XFXXiBW1" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.33137191e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.22531416e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.69618810e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[2.16568596e-10 0.00000000e+00 1.84809405e-10]
  [0.00000000e+00 2.11265708e-10 1.84809405e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.16568596e-10 2.11265708e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.33137191e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.22531416e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.69618810e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_22 [ nomad:has_atom_positions [ nomad:array """[[2.19738890e-10 0.00000000e+00 1.86730061e-10]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.33137191e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.22531416e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.69618810e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_22 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.39477780e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.30236144e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.73460122e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.19738890e-10 0.00000000e+00 1.86730061e-10]
  [0.00000000e+00 2.15118072e-10 1.86730061e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.19738890e-10 2.15118072e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.39477780e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.30236144e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.73460122e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[2.19738890e-10 0.00000000e+00 1.86730061e-10]
  [0.00000000e+00 2.15118072e-10 1.86730061e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.19738890e-10 2.15118072e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.39477780e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.30236144e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.73460122e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_configuration_raw_gid "pQPFvyzvPe123gZ4JJLmLIHjY1CG" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_23 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
+    matvoc:section_system_23 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.17818244e-10 0.00000000e+00 1.85566478e-10]
+ [0.00000000e+00 2.12784211e-10 1.85566478e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.17818244e-10 2.12784211e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "vZLlz-YvXLsWZDsCxn7JeSR9AceN" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_species [ nomad:array """[[2.17818244e-10 0.00000000e+00 1.85566478e-10]
  [0.00000000e+00 2.12784211e-10 1.85566478e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.17818244e-10 2.12784211e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35636488e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.25568421e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.71132956e-10]]""" ;
@@ -476,46 +486,35 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.25568421e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.71132956e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
+    matvoc:section_system_24 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_raw_gid "vZLlz-YvXLsWZDsCxn7JeSR9AceN" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.17818244e-10 0.00000000e+00 1.85566478e-10]
- [0.00000000e+00 2.12784211e-10 1.85566478e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.17818244e-10 2.12784211e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_24 [ nomad:has_configuration_raw_gid "V_xrxm8OIzwIXw-wDTrKMpfmtLil" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35655867e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.26283623e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.70438701e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.35655867e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.26283623e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.70438701e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.17827934e-10 0.00000000e+00 1.85219351e-10]
- [0.00000000e+00 2.13141811e-10 1.85219351e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.17827934e-10 2.13141811e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "V_xrxm8OIzwIXw-wDTrKMpfmtLil" ],
         [ nomad:has_atom_species [ nomad:array """[[2.17827934e-10 0.00000000e+00 1.85219351e-10]
  [0.00000000e+00 2.13141811e-10 1.85219351e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.17827934e-10 2.13141811e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
-    matvoc:section_system_25 [ nomad:has_configuration_raw_gid "rQHHYy2EWzpdLHkDiB_eTGWaJp32" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.17827934e-10 0.00000000e+00 1.85219351e-10]
+ [0.00000000e+00 2.13141811e-10 1.85219351e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.17827934e-10 2.13141811e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.35655867e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.26283623e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.70438701e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_25 [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35714004e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.28429228e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.68355937e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.17857002e-10 0.00000000e+00 1.84177969e-10]
  [0.00000000e+00 2.14214614e-10 1.84177969e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
@@ -525,53 +524,45 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.28429228e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.68355937e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[2.17857002e-10 0.00000000e+00 1.84177969e-10]
  [0.00000000e+00 2.14214614e-10 1.84177969e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.17857002e-10 2.14214614e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_26 [ nomad:has_chemical_composition "NaOsTaTa" ],
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35714004e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.28429228e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.68355937e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "rQHHYy2EWzpdLHkDiB_eTGWaJp32" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_26 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_species [ nomad:array """[[2.17915139e-10 0.00000000e+00 1.82095205e-10]
  [0.00000000e+00 2.16360218e-10 1.82095205e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.17915139e-10 2.16360218e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "HuxWaAvfnFYAACfUVpByLBHmnNo9" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35830278e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.32720437e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.64190409e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[2.17915139e-10 0.00000000e+00 1.82095205e-10]
  [0.00000000e+00 2.16360218e-10 1.82095205e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.17915139e-10 2.16360218e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.35830278e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.32720437e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.64190409e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.35830278e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.32720437e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.64190409e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "HuxWaAvfnFYAACfUVpByLBHmnNo9" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_27 [ nomad:has_configuration_raw_gid "IlhBb2HMV_VcDRQdoeMkAIW9LMSh" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.36062826e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.41302857e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.55859352e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_27 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.18031413e-10 0.00000000e+00 1.77929676e-10]
- [0.00000000e+00 2.20651429e-10 1.77929676e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.18031413e-10 2.20651429e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.18031413e-10 0.00000000e+00 1.77929676e-10]
  [0.00000000e+00 2.20651429e-10 1.77929676e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.18031413e-10 2.20651429e-10 0.00000000e+00]]""" ;
@@ -579,62 +570,77 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.36062826e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.41302857e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.55859352e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_28 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "0B2Seqy-pbLZOe3LOMtfwYGSIYwN" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.36527922e-10  0.00000000e+00  0.00000000e+00]
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.36062826e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.41302857e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.55859352e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "IlhBb2HMV_VcDRQdoeMkAIW9LMSh" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.18031413e-10 0.00000000e+00 1.77929676e-10]
+ [0.00000000e+00 2.20651429e-10 1.77929676e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.18031413e-10 2.20651429e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_28 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.36527922e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.58467696e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.39197237e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.18263961e-10 0.00000000e+00 1.69598619e-10]
  [0.00000000e+00 2.29233848e-10 1.69598619e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.18263961e-10 2.29233848e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.36527922e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.58467696e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.39197237e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "0B2Seqy-pbLZOe3LOMtfwYGSIYwN" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[2.18263961e-10 0.00000000e+00 1.69598619e-10]
  [0.00000000e+00 2.29233848e-10 1.69598619e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.18263961e-10 2.29233848e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_29 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.18729023e-10 0.00000000e+00 1.68975412e-10]
- [0.00000000e+00 2.29862211e-10 1.68975412e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.18729023e-10 2.29862211e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.37458047e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.59724421e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.37950824e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
+    matvoc:section_system_29 [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.18729023e-10 0.00000000e+00 1.68975412e-10]
  [0.00000000e+00 2.29862211e-10 1.68975412e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.18729023e-10 2.29862211e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.37458047e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.59724421e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.37950824e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "EXfraFM8giApWpURgiacDSoBjzbe" ] ;
-    matvoc:section_system_3 [ nomad:has_simulation_cell [ nomad:array """[[3.28314054e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 4.63727820e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.60106081e-10]]""" ;
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.37458047e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.59724421e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.37950824e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "AiD-qVtd6LCJSIpWsRDQXSOCgfib" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.18729023e-10 0.00000000e+00 1.68975412e-10]
+ [0.00000000e+00 2.29862211e-10 1.68975412e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.18729023e-10 2.29862211e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "EXfraFM8giApWpURgiacDSoBjzbe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
+    matvoc:section_system_3 [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_raw_gid "AiD-qVtd6LCJSIpWsRDQXSOCgfib" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.64157027e-10 0.00000000e+00 2.30053040e-10]
+ [0.00000000e+00 2.31863910e-10 2.30053040e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.64157027e-10 2.31863910e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.64157027e-10 0.00000000e+00 2.30053040e-10]
  [0.00000000e+00 2.31863910e-10 2.30053040e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
@@ -645,44 +651,51 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 4.60106081e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.64157027e-10 0.00000000e+00 2.30053040e-10]
- [0.00000000e+00 2.31863910e-10 2.30053040e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.64157027e-10 2.31863910e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_30 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.40248422e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.63494596e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.34211583e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[2.20124211e-10 0.00000000e+00 1.67105792e-10]
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.28314054e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.63727820e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.60106081e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_30 [ nomad:has_atom_positions [ nomad:array """[[2.20124211e-10 0.00000000e+00 1.67105792e-10]
  [0.00000000e+00 2.31747298e-10 1.67105792e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.20124211e-10 2.31747298e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.40248422e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.63494596e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.34211583e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.40248422e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.63494596e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.34211583e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "M4OVIDBZ0-fX0Da4AopbK3tJb6av" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.20124211e-10 0.00000000e+00 1.67105792e-10]
+        [ nomad:has_atom_species [ nomad:array """[[2.20124211e-10 0.00000000e+00 1.67105792e-10]
  [0.00000000e+00 2.31747298e-10 1.67105792e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.20124211e-10 2.31747298e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_31 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.45829173e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "M4OVIDBZ0-fX0Da4AopbK3tJb6av" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_31 [ nomad:has_configuration_raw_gid "mtApajd6IIhBv7IbstamBnxAhTPG" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.45829173e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.71034947e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.26733101e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.45829173e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.22914587e-10 0.00000000e+00 1.63366551e-10]
+ [0.00000000e+00 2.35517473e-10 1.63366551e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.22914587e-10 2.35517473e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.45829173e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.71034947e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.26733101e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -690,79 +703,57 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 2.35517473e-10 1.63366551e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.22914587e-10 2.35517473e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_32 [ nomad:has_atom_species [ nomad:array """[[2.22042602e-10 0.00000000e+00 1.64535053e-10]
+ [0.00000000e+00 2.34339304e-10 1.64535053e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.22042602e-10 2.34339304e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.22914587e-10 0.00000000e+00 1.63366551e-10]
- [0.00000000e+00 2.35517473e-10 1.63366551e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.22914587e-10 2.35517473e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_raw_gid "mtApajd6IIhBv7IbstamBnxAhTPG" ] ;
-    matvoc:section_system_32 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.22042602e-10 0.00000000e+00 1.64535053e-10]
  [0.00000000e+00 2.34339304e-10 1.64535053e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.22042602e-10 2.34339304e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[2.22042602e-10 0.00000000e+00 1.64535053e-10]
- [0.00000000e+00 2.34339304e-10 1.64535053e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.22042602e-10 2.34339304e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.44085204e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.68678608e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.29070106e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.44085204e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.68678608e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.29070106e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_raw_gid "FrZE2RJQRu7dJ4cXY5u34ehN55AF" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ] ;
-    matvoc:section_system_33 [ nomad:has_atom_species [ nomad:array """[[2.23149598e-10 0.00000000e+00 1.64163249e-10]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.44085204e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.68678608e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.29070106e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_33 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.23149598e-10 0.00000000e+00 1.64163249e-10]
  [0.00000000e+00 2.33828233e-10 1.64163249e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.23149598e-10 2.33828233e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.46299195e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.67656466e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.28326498e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "R2ZGeykU-iy89Syz3HGFEbE44AJT" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.46299195e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.67656466e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.28326498e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[2.23149598e-10 0.00000000e+00 1.64163249e-10]
  [0.00000000e+00 2.33828233e-10 1.64163249e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.23149598e-10 2.33828233e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.46299195e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.67656466e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.28326498e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "R2ZGeykU-iy89Syz3HGFEbE44AJT" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.46299195e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.67656466e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.28326498e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
-    matvoc:section_system_34 [ nomad:has_simulation_cell [ nomad:array """[[ 4.52941168e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.64590039e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.26095675e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_34 [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.26470584e-10 0.00000000e+00 1.63047838e-10]
- [0.00000000e+00 2.32295020e-10 1.63047838e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.26470584e-10 2.32295020e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[2.26470584e-10 0.00000000e+00 1.63047838e-10]
  [0.00000000e+00 2.32295020e-10 1.63047838e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.26470584e-10 2.32295020e-10 0.00000000e+00]]""" ;
@@ -771,43 +762,57 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.64590039e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.26095675e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "9peyfzngZFKfdwyl5vLR_U6Zz0fS" ] ;
-    matvoc:section_system_35 [ nomad:has_atom_positions [ nomad:array """[[2.33112557e-10 0.00000000e+00 1.60817014e-10]
- [0.00000000e+00 2.29228592e-10 1.60817014e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.33112557e-10 2.29228592e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.66225113e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.58457184e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.21634028e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "VB58-4jNxofquWmqs5rIXMI0_VMQ" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[2.26470584e-10 0.00000000e+00 1.63047838e-10]
+ [0.00000000e+00 2.32295020e-10 1.63047838e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.26470584e-10 2.32295020e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "9peyfzngZFKfdwyl5vLR_U6Zz0fS" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.52941168e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.64590039e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.26095675e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ] ;
+    matvoc:section_system_35 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.66225113e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.58457184e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.21634028e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.33112557e-10 0.00000000e+00 1.60817014e-10]
+ [0.00000000e+00 2.29228592e-10 1.60817014e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [2.33112557e-10 2.29228592e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_atom_species [ nomad:array """[[2.33112557e-10 0.00000000e+00 1.60817014e-10]
  [0.00000000e+00 2.29228592e-10 1.60817014e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.33112557e-10 2.29228592e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
-    matvoc:section_system_36 [ nomad:has_atom_species [ nomad:array """[[2.28850846e-10 0.00000000e+00 1.62248385e-10]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.66225113e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.58457184e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.21634028e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "VB58-4jNxofquWmqs5rIXMI0_VMQ" ] ;
+    matvoc:section_system_36 [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[2.28850846e-10 0.00000000e+00 1.62248385e-10]
  [0.00000000e+00 2.31196114e-10 1.62248385e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.28850846e-10 2.31196114e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "pIE_XRCxCUPTxJS48d72jp-74pot" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_atom_positions [ nomad:array """[[2.28850846e-10 0.00000000e+00 1.62248385e-10]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.57701691e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.62392228e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24496770e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[2.28850846e-10 0.00000000e+00 1.62248385e-10]
  [0.00000000e+00 2.31196114e-10 1.62248385e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.28850846e-10 2.31196114e-10 0.00000000e+00]]""" ;
@@ -816,17 +821,17 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.62392228e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.24496770e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.57701691e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.62392228e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.24496770e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_37 [ nomad:has_atom_positions [ nomad:array """[[2.28546552e-10 0.00000000e+00 1.62087783e-10]
- [0.00000000e+00 2.30509310e-10 1.62087783e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.28546552e-10 2.30509310e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "BfzOgOBBj7OIp4JgmfYI0s2_E7n2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "pIE_XRCxCUPTxJS48d72jp-74pot" ] ;
+    matvoc:section_system_37 [ nomad:has_lattice_vectors [ nomad:array """[[ 4.57093103e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.61018619e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24175566e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "BfzOgOBBj7OIp4JgmfYI0s2_E7n2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.57093103e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.61018619e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.24175566e-10]]""" ;
@@ -837,28 +842,18 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [2.28546552e-10 2.30509310e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.57093103e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.61018619e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.24175566e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_38 [ nomad:has_atom_species [ nomad:array """[[2.28477978e-10 0.00000000e+00 1.62051590e-10]
- [0.00000000e+00 2.30354535e-10 1.62051590e-10]
+        [ nomad:has_atom_positions [ nomad:array """[[2.28546552e-10 0.00000000e+00 1.62087783e-10]
+ [0.00000000e+00 2.30509310e-10 1.62087783e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [2.28477978e-10 2.30354535e-10 0.00000000e+00]]""" ;
+ [2.28546552e-10 2.30509310e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_38 [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_configuration_raw_gid "ziAchE2SEidh3IYroMaKroNUpdcl" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_is_representative true ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
@@ -868,88 +863,106 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.28477978e-10 2.30354535e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
-    matvoc:section_system_39 [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_atom_species [ nomad:array """[[2.28477978e-10 0.00000000e+00 1.62051590e-10]
  [0.00000000e+00 2.30354535e-10 1.62051590e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.28477978e-10 2.30354535e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_configuration_raw_gid "ziAchE2SEidh3IYroMaKroNUpdcl" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_system_type "bulk" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_39 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[2.28477978e-10 0.00000000e+00 1.62051590e-10]
  [0.00000000e+00 2.30354535e-10 1.62051590e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [2.28477978e-10 2.30354535e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "ziAchE2SEidh3IYroMaKroNUpdcl" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_4 [ nomad:has_configuration_raw_gid "vsuEPiMm37zR94Z39XxqQliQUQH_" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.63581718e-10 0.00000000e+00 2.29157951e-10]
- [0.00000000e+00 2.31039080e-10 2.29157951e-10]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[2.28477978e-10 0.00000000e+00 1.62051590e-10]
+ [0.00000000e+00 2.30354535e-10 1.62051590e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.63581718e-10 2.31039080e-10 0.00000000e+00]]""" ;
+ [2.28477978e-10 2.30354535e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "ziAchE2SEidh3IYroMaKroNUpdcl" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 4.56955956e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.60709070e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  3.24103181e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_4 [ nomad:has_simulation_cell [ nomad:array """[[3.27163436e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 4.62078160e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 4.58315902e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.63581718e-10 0.00000000e+00 2.29157951e-10]
  [0.00000000e+00 2.31039080e-10 2.29157951e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.63581718e-10 2.31039080e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_configuration_raw_gid "vsuEPiMm37zR94Z39XxqQliQUQH_" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.27163436e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 4.62078160e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 4.58315902e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.27163436e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 4.62078160e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 4.58315902e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ] ;
-    matvoc:section_system_5 [ nomad:has_atom_positions [ nomad:array """[[1.65380404e-10 0.00000000e+00 2.25310593e-10]
- [0.00000000e+00 2.32014495e-10 2.25310593e-10]
+        [ nomad:has_atom_positions [ nomad:array """[[1.63581718e-10 0.00000000e+00 2.29157951e-10]
+ [0.00000000e+00 2.31039080e-10 2.29157951e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.65380404e-10 2.32014495e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "nprVzRdWtrJNBOMieYiAcxGWeYaB" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+ [1.63581718e-10 2.31039080e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_5 [ nomad:has_configuration_raw_gid "nprVzRdWtrJNBOMieYiAcxGWeYaB" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.30760807e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.64028989e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.50621186e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.30760807e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.64028989e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.50621186e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
         [ nomad:has_atom_species [ nomad:array """[[1.65380404e-10 0.00000000e+00 2.25310593e-10]
  [0.00000000e+00 2.32014495e-10 2.25310593e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.65380404e-10 2.32014495e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_6 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.65380404e-10 0.00000000e+00 2.25310593e-10]
+ [0.00000000e+00 2.32014495e-10 2.25310593e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.65380404e-10 2.32014495e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.33730627e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.30760807e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.64028989e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.50621186e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_chemical_composition "NaOsTaTa" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.33730627e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.65639502e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.44268792e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.33730627e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.66865314e-10 0.00000000e+00 2.22134396e-10]
+ [0.00000000e+00 2.32819751e-10 2.22134396e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.66865314e-10 2.32819751e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "lIUrmalW7e_t6Yb5mDS7PbSSMYfK" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.33730627e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.65639502e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.44268792e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -957,42 +970,39 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [0.00000000e+00 2.32819751e-10 2.22134396e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.66865314e-10 2.32819751e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37247986e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.60832531e-10 -0.00000000e+00]
+ [ 0.00000000e+00 -0.00000000e+00  4.42588995e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "9C6t51qeLVg-msDY1Py_45A9jW8f" ],
         [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.66865314e-10 0.00000000e+00 2.22134396e-10]
- [0.00000000e+00 2.32819751e-10 2.22134396e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.66865314e-10 2.32819751e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_raw_gid "lIUrmalW7e_t6Yb5mDS7PbSSMYfK" ] ;
-    matvoc:section_system_7 [ nomad:has_atom_positions [ nomad:array """[[1.68623993e-10 0.00000000e+00 2.21294498e-10]
- [0.00000000e+00 2.30416265e-10 2.21294498e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.68623993e-10 2.30416265e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[1.68623993e-10 0.00000000e+00 2.21294498e-10]
  [0.00000000e+00 2.30416265e-10 2.21294498e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.68623993e-10 2.30416265e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.37247986e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.60832531e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.42588995e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37247986e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.60832531e-10 -0.00000000e+00]
- [ 0.00000000e+00 -0.00000000e+00  4.42588995e-10]]""" ;
+        [ nomad:has_atom_positions [ nomad:array """[[1.68623993e-10 0.00000000e+00 2.21294498e-10]
+ [0.00000000e+00 2.30416265e-10 2.21294498e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.68623993e-10 2.30416265e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_8 [ nomad:has_atom_species [ nomad:array """[[1.70201405e-10 0.00000000e+00 2.20541168e-10]
+ [0.00000000e+00 2.28260509e-10 2.20541168e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.70201405e-10 2.28260509e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "9C6t51qeLVg-msDY1Py_45A9jW8f" ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
-    matvoc:section_system_8 [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.70201405e-10 0.00000000e+00 2.20541168e-10]
+        [ nomad:has_configuration_raw_gid "gdtKnkLz5tbHlt9WHCsdSRsC-o5R" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.70201405e-10 0.00000000e+00 2.20541168e-10]
  [0.00000000e+00 2.28260509e-10 2.20541168e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.70201405e-10 2.28260509e-10 0.00000000e+00]]""" ;
@@ -1001,49 +1011,39 @@ matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a a sosa:Sample ;
  [ 0.00000000e+00  4.56521018e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.41082335e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.40402809e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.56521018e-10 -0.00000000e+00]
  [ 0.00000000e+00 -0.00000000e+00  4.41082335e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "gdtKnkLz5tbHlt9WHCsdSRsC-o5R" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.70201405e-10 0.00000000e+00 2.20541168e-10]
- [0.00000000e+00 2.28260509e-10 2.20541168e-10]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_9 [ nomad:has_atom_positions [ nomad:array """[[1.72856490e-10 0.00000000e+00 2.20406592e-10]
+ [0.00000000e+00 2.28312349e-10 2.20406592e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.70201405e-10 2.28260509e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_9 [ nomad:has_simulation_cell [ nomad:array """[[ 3.45712980e-10  0.00000000e+00  0.00000000e+00]
+ [1.72856490e-10 2.28312349e-10 0.00000000e+00]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.45712980e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  4.56624698e-10 -0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.40813184e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.45712980e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  4.56624698e-10 -0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.40813184e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "NaOsTaTa" ],
         [ nomad:has_configuration_raw_gid "yXV7h_iG-ZARm5G_L4tV6OozKnW7" ],
-        [ nomad:has_chemical_composition_reduced "NaOsTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.45712980e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  4.56624698e-10 -0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.40813184e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Na', 'Os', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
         [ nomad:has_atom_species [ nomad:array """[[1.72856490e-10 0.00000000e+00 2.20406592e-10]
  [0.00000000e+00 2.28312349e-10 2.20406592e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.72856490e-10 2.28312349e-10 0.00000000e+00]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.72856490e-10 0.00000000e+00 2.20406592e-10]
- [0.00000000e+00 2.28312349e-10 2.20406592e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.72856490e-10 2.28312349e-10 0.00000000e+00]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
+        [ nomad:has_chemical_composition_bulk_reduced "NaOsTa2" ],
+        [ nomad:has_chemical_composition_reduced "NaOsTa2" ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_NaOsTa2_1z2drfbXj0lKnOuUG98Zriy2RA_a .
+    sosa:isSampleOf matvoc:mat_NaOsTa2 .
 

@@ -11,35 +11,27 @@
 matvoc:Pb2SiTe a matvoc:Formula ;
     rdfs:label "Pb2SiTe" .
 
+matvoc:mat_Pb2SiTe a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H .
+
 matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Pb', 'Si', 'Te']" ;
-    nomad:has_bulk [ nomad:has_space_group_number 35 ],
-        [ nomad:has_point_group "mm2" ],
+    nomad:has_bulk [ nomad:has_crystal_system "orthorhombic" ],
         [ nomad:has_has_free_wyckoff_parameters true ],
-        [ nomad:has_space_group_international_short_symbol "Cmm2" ],
-        [ nomad:has_crystal_system "orthorhombic" ],
-        [ nomad:has_bravais_lattice "oS" ] ;
+        [ nomad:has_point_group "mm2" ],
+        [ nomad:has_bravais_lattice "oS" ],
+        [ nomad:has_space_group_number 35 ],
+        [ nomad:has_space_group_international_short_symbol "Cmm2" ] ;
     nomad:has_calc_hash "iVHJpWXajigJXkhsjwOBV7Qy4LFp" ;
     nomad:has_calc_id "2harEuGCdgqMb6l3Ns3En6eg1i0H" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F22658FD0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653040>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226530A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653100>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653160>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226531C0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653220>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653280>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226532E0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653340>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226533A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653400>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F22653460>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F226534C0>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EB50>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EB80>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EBE0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EC40>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61ECA0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61ED00>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61ED60>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EDC0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EE20>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EE80>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EEE0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EF40>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61EFA0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDC61B040>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:Pb2SiTe ;
     nomad:has_formula_reduced "Pb2SiTe" ;
-    nomad:has_idealized_structure [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0 4]" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Te" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[1 5]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
-        [ nomad:has_periodicity "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.76539566e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 5.98083196e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 1.01940669e-09]]""" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_c 1.019407e-09 ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Pb" ] ],
+    nomad:has_idealized_structure [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te', 'Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.99714469]
  [0.5        0.         0.72213208]
  [0.         0.         0.48285989]
@@ -48,21 +40,33 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [0.         0.5        0.72213208]
  [0.5        0.5        0.48285989]
  [0.         0.5        0.29786333]]""" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 2.295724e-28 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.76539566e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 5.98083196e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 1.01940669e-09]]""" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Pb" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[3 7]" ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 5.980832e-10 ] ],
         [ nomad:has_lattice_vectors_primitive [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
  [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ] ],
-        [ nomad:has_number_of_atoms 8 ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 5.980832e-10 ] ],
         [ nomad:has_wyckoff_sets0 [ nomad:has_element "Si" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Pb" ] ],
-        [ nomad:has_cell_volume [ nomad:numericValue 2.295724e-28 ;
-                    qudt:unit ab:M3 ] ],
         [ nomad:has_lattice_parameters [ nomad:has_a 3.765396e-10 ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te', 'Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[3 7]" ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Pb" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0 4]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 1.019407e-09 ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[1 5]" ] ],
+        [ nomad:has_number_of_atoms 8 ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Te" ] ],
         [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[2 6]" ] ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:17:59.790686"^^xsd:dateTime ] ;
@@ -83,79 +87,80 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
     nomad:has_upload_time [ a time1:Instant ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
-    matvoc:section_system_0 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
- [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+    matvoc:section_system_0 [ nomad:has_configuration_raw_gid "e3pDXReEdcZeRgsn9o2KdYlssCeo" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.90823250e-10 0.00000000e+00 2.69864829e-10]
- [0.00000000e+00 0.00000000e+00 5.39729657e-10]
- [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.90823250e-10 0.00000000e+00 2.69864829e-10]
- [0.00000000e+00 0.00000000e+00 5.39729657e-10]
- [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
- [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "e3pDXReEdcZeRgsn9o2KdYlssCeo" ] ;
-    matvoc:section_system_1 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
  [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.90823250e-10 0.00000000e+00 2.69864829e-10]
+ [0.00000000e+00 0.00000000e+00 5.39729657e-10]
+ [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.90823250e-10 0.00000000e+00 2.69864829e-10]
+ [0.00000000e+00 0.00000000e+00 5.39729657e-10]
+ [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
+ [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_1 [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.90823250e-10 0.00000000e+00 2.69864829e-10]
+ [0.00000000e+00 0.00000000e+00 5.39729657e-10]
+ [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
+ [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.90823250e-10 0.00000000e+00 2.69864829e-10]
  [0.00000000e+00 0.00000000e+00 5.39729657e-10]
  [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "e3pDXReEdcZeRgsn9o2KdYlssCeo" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.90823250e-10 0.00000000e+00 2.69864829e-10]
- [0.00000000e+00 0.00000000e+00 5.39729657e-10]
- [1.90823250e-10 0.00000000e+00 8.09594486e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90823250e-10 -2.69864828e-10  0.00000000e+00]
  [ 1.90823250e-10  2.69864828e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.07945931e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_10 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.16489060e-12]
- [ 1.91241193e-10  0.00000000e+00  2.95083300e-10]
- [ 0.00000000e+00  0.00000000e+00  5.18907050e-10]
- [ 1.91241193e-10  0.00000000e+00  7.13663920e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91241193e-10 -2.89388325e-10  0.00000000e+00]
- [ 1.91241193e-10  2.89388325e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01365959e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_raw_gid "e3pDXReEdcZeRgsn9o2KdYlssCeo" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ] ;
+    matvoc:section_system_10 [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_raw_gid "NIK22n7EZYsVDnY7kpjPOKJYi7Bs" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91241193e-10 -2.89388325e-10  0.00000000e+00]
  [ 1.91241193e-10  2.89388325e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01365959e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "NIK22n7EZYsVDnY7kpjPOKJYi7Bs" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.16489060e-12]
+ [ 1.91241193e-10  0.00000000e+00  2.95083300e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.18907050e-10]
+ [ 1.91241193e-10  0.00000000e+00  7.13663920e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91241193e-10 -2.89388325e-10  0.00000000e+00]
+ [ 1.91241193e-10  2.89388325e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01365959e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.16489060e-12]
  [ 1.91241193e-10  0.00000000e+00  2.95083300e-10]
  [ 0.00000000e+00  0.00000000e+00  5.18907050e-10]
  [ 1.91241193e-10  0.00000000e+00  7.13663920e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ] ;
-    matvoc:section_system_11 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.01751373e-12]
+    matvoc:section_system_11 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.01751373e-12]
  [ 1.91174837e-10  0.00000000e+00  2.93549640e-10]
  [ 0.00000000e+00  0.00000000e+00  5.16433102e-10]
  [ 1.91174837e-10  0.00000000e+00  7.06013079e-10]]""" ;
@@ -164,103 +169,95 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 1.91174837e-10  2.91297117e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00598555e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "lbjqnDW7t6H-cAs_EcjHe7UwIQL_" ],
         [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_configuration_raw_gid "lbjqnDW7t6H-cAs_EcjHe7UwIQL_" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91174837e-10 -2.91297117e-10  0.00000000e+00]
+ [ 1.91174837e-10  2.91297117e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00598555e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.01751373e-12]
  [ 1.91174837e-10  0.00000000e+00  2.93549640e-10]
  [ 0.00000000e+00  0.00000000e+00  5.16433102e-10]
  [ 1.91174837e-10  0.00000000e+00  7.06013079e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91174837e-10 -2.91297117e-10  0.00000000e+00]
- [ 1.91174837e-10  2.91297117e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00598555e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_12 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "nTkhT7vX2crUONa7-7vmOKbcHE09" ],
+    matvoc:section_system_12 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91408162e-10 -2.96325776e-10  0.00000000e+00]
+ [ 1.91408162e-10  2.96325776e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.98977366e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.91408162e-10 -2.96325776e-10  0.00000000e+00]
  [ 1.91408162e-10  2.96325776e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  9.98977366e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91408162e-10 -2.96325776e-10  0.00000000e+00]
- [ 1.91408162e-10  2.96325776e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  9.98977366e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.70665820e-12]
  [ 1.91408162e-10  0.00000000e+00  2.89813523e-10]
  [ 0.00000000e+00  0.00000000e+00  5.15735501e-10]
  [ 1.91408162e-10  0.00000000e+00  6.98623672e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "nTkhT7vX2crUONa7-7vmOKbcHE09" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.70665820e-12]
  [ 1.91408162e-10  0.00000000e+00  2.89813523e-10]
  [ 0.00000000e+00  0.00000000e+00  5.15735501e-10]
  [ 1.91408162e-10  0.00000000e+00  6.98623672e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_13 [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91447187e-10 -2.97166850e-10  0.00000000e+00]
- [ 1.91447187e-10  2.97166850e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  9.97805205e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91447187e-10 -2.97166850e-10  0.00000000e+00]
- [ 1.91447187e-10  2.97166850e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  9.97805205e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_raw_gid "W6Is3ztNhYNDD2HQYMNwyKVXdh4D" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.48765922e-12]
+    matvoc:section_system_13 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.48765922e-12]
  [ 1.91447187e-10  0.00000000e+00  2.89188973e-10]
  [ 0.00000000e+00  0.00000000e+00  5.15618244e-10]
  [ 1.91447187e-10  0.00000000e+00  6.97388239e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -5.48765922e-12]
  [ 1.91447187e-10  0.00000000e+00  2.89188973e-10]
  [ 0.00000000e+00  0.00000000e+00  5.15618244e-10]
  [ 1.91447187e-10  0.00000000e+00  6.97388239e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_14 [ nomad:has_simulation_cell [ nomad:array """[[ 1.92021308e-10 -2.98608915e-10  0.00000000e+00]
- [ 1.92021308e-10  2.98608915e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00334115e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91447187e-10 -2.97166850e-10  0.00000000e+00]
+ [ 1.91447187e-10  2.97166850e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.97805205e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91447187e-10 -2.97166850e-10  0.00000000e+00]
+ [ 1.91447187e-10  2.97166850e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  9.97805205e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "W6Is3ztNhYNDD2HQYMNwyKVXdh4D" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
+    matvoc:section_system_14 [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.92021308e-10 -2.98608915e-10  0.00000000e+00]
  [ 1.92021308e-10  2.98608915e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00334115e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "LTrdcyrPtn72WNR5ZtdwbJiyFYGY" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.10129743e-12]
- [ 1.92021308e-10  0.00000000e+00  2.88273037e-10]
- [ 0.00000000e+00  0.00000000e+00  5.18537825e-10]
- [ 1.92021308e-10  0.00000000e+00  7.02302165e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.10129743e-12]
  [ 1.92021308e-10  0.00000000e+00  2.88273037e-10]
  [ 0.00000000e+00  0.00000000e+00  5.18537825e-10]
  [ 1.92021308e-10  0.00000000e+00  7.02302165e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_15 [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_raw_gid "9LOLDEISwl09yI_VasXR9ri88ttt" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.92411369e-10 -2.99588663e-10  0.00000000e+00]
- [ 1.92411369e-10  2.99588663e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00710231e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "LTrdcyrPtn72WNR5ZtdwbJiyFYGY" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.92021308e-10 -2.98608915e-10  0.00000000e+00]
+ [ 1.92021308e-10  2.98608915e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00334115e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.10129743e-12]
+ [ 1.92021308e-10  0.00000000e+00  2.88273037e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.18537825e-10]
+ [ 1.92021308e-10  0.00000000e+00  7.02302165e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_15 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -3.15580545e-12]
  [ 1.92411369e-10  0.00000000e+00  2.87644362e-10]
  [ 0.00000000e+00  0.00000000e+00  5.20521544e-10]
@@ -271,43 +268,43 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 0.00000000e+00  0.00000000e+00  5.20521544e-10]
  [ 1.92411369e-10  0.00000000e+00  7.05643365e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.92411369e-10 -2.99588663e-10  0.00000000e+00]
  [ 1.92411369e-10  2.99588663e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00710231e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_16 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.25052485e-12]
- [ 1.93191492e-10  0.00000000e+00  2.86361567e-10]
- [ 0.00000000e+00  0.00000000e+00  5.24489594e-10]
- [ 1.93191492e-10  0.00000000e+00  7.12336305e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.93191492e-10 -3.01548160e-10  0.00000000e+00]
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_configuration_raw_gid "9LOLDEISwl09yI_VasXR9ri88ttt" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.92411369e-10 -2.99588663e-10  0.00000000e+00]
+ [ 1.92411369e-10  2.99588663e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00710231e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_16 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.93191492e-10 -3.01548160e-10  0.00000000e+00]
  [ 1.93191492e-10  3.01548160e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01462463e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.25052485e-12]
  [ 1.93191492e-10  0.00000000e+00  2.86361567e-10]
  [ 0.00000000e+00  0.00000000e+00  5.24489594e-10]
  [ 1.93191492e-10  0.00000000e+00  7.12336305e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.93191492e-10 -3.01548160e-10  0.00000000e+00]
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.25052485e-12]
+ [ 1.93191492e-10  0.00000000e+00  2.86361567e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.24489594e-10]
+ [ 1.93191492e-10  0.00000000e+00  7.12336305e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_raw_gid "1Sk0LeQiUoXzHmxTVlXgERkspvOe" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.93191492e-10 -3.01548160e-10  0.00000000e+00]
  [ 1.93191492e-10  3.01548160e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01462463e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "1Sk0LeQiUoXzHmxTVlXgERkspvOe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ] ;
-    matvoc:section_system_17 [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_configuration_raw_gid "UaaCP1DmG-hxdku0QstepX-pmBYB" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
+    matvoc:section_system_17 [ nomad:has_configuration_raw_gid "UaaCP1DmG-hxdku0QstepX-pmBYB" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.62170801e-13]
- [ 1.90843362e-10  0.00000000e+00  2.83195239e-10]
- [ 0.00000000e+00  0.00000000e+00  5.20268310e-10]
- [ 1.90843362e-10  0.00000000e+00  7.05193958e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.62170801e-13]
  [ 1.90843362e-10  0.00000000e+00  2.83195239e-10]
  [ 0.00000000e+00  0.00000000e+00  5.20268310e-10]
  [ 1.90843362e-10  0.00000000e+00  7.05193958e-10]]""" ;
@@ -317,92 +314,100 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 1.90843362e-10  2.99740666e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00533022e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90843362e-10 -2.99740666e-10  0.00000000e+00]
  [ 1.90843362e-10  2.99740666e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00533022e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_18 [ nomad:has_simulation_cell [ nomad:array """[[ 1.90054153e-10 -2.99133165e-10  0.00000000e+00]
- [ 1.90054153e-10  2.99133165e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00220636e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.65033771e-13]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.62170801e-13]
+ [ 1.90843362e-10  0.00000000e+00  2.83195239e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.20268310e-10]
+ [ 1.90843362e-10  0.00000000e+00  7.05193958e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ] ;
+    matvoc:section_system_18 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.65033771e-13]
  [ 1.90054153e-10  0.00000000e+00  2.82131602e-10]
  [ 0.00000000e+00  0.00000000e+00  5.18848915e-10]
  [ 1.90054153e-10  0.00000000e+00  7.02794050e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90054153e-10 -2.99133165e-10  0.00000000e+00]
+ [ 1.90054153e-10  2.99133165e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00220636e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90054153e-10 -2.99133165e-10  0.00000000e+00]
  [ 1.90054153e-10  2.99133165e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00220636e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.65033771e-13]
  [ 1.90054153e-10  0.00000000e+00  2.82131602e-10]
  [ 0.00000000e+00  0.00000000e+00  5.18848915e-10]
  [ 1.90054153e-10  0.00000000e+00  7.02794050e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_configuration_raw_gid "O7S8cDpWMqXMHSDPm91VHGXhNoGl" ] ;
-    matvoc:section_system_19 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.89490577e-10 -2.98420265e-10  0.00000000e+00]
+        [ nomad:has_configuration_raw_gid "O7S8cDpWMqXMHSDPm91VHGXhNoGl" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ] ;
+    matvoc:section_system_19 [ nomad:has_simulation_cell [ nomad:array """[[ 1.89490577e-10 -2.98420265e-10  0.00000000e+00]
  [ 1.89490577e-10  2.98420265e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00413118e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_raw_gid "D2ebG4xuu55trquXp-KLQ8ITtSdq" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.97090800e-14]
  [1.89490577e-10 0.00000000e+00 2.82026108e-10]
  [0.00000000e+00 0.00000000e+00 5.19488644e-10]
  [1.89490577e-10 0.00000000e+00 7.04592305e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.89490577e-10 -2.98420265e-10  0.00000000e+00]
+ [ 1.89490577e-10  2.98420265e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00413118e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 8.97090800e-14]
  [1.89490577e-10 0.00000000e+00 2.82026108e-10]
  [0.00000000e+00 0.00000000e+00 5.19488644e-10]
  [1.89490577e-10 0.00000000e+00 7.04592305e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "D2ebG4xuu55trquXp-KLQ8ITtSdq" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.89490577e-10 -2.98420265e-10  0.00000000e+00]
- [ 1.89490577e-10  2.98420265e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00413118e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_2 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90540480e-10 -2.69691449e-10  0.00000000e+00]
- [ 1.90540480e-10  2.69691449e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.07793641e-09]]""" ;
+        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
+    matvoc:section_system_2 [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.03835459e-12]
+ [ 1.90540480e-10  0.00000000e+00  2.74100205e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.39033692e-10]
+ [ 1.90540480e-10  0.00000000e+00  8.04809080e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "5-oC-hwwbdQdMwnmTxNi49MBmSOz" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.03835459e-12]
  [ 1.90540480e-10  0.00000000e+00  2.74100205e-10]
  [ 0.00000000e+00  0.00000000e+00  5.39033692e-10]
  [ 1.90540480e-10  0.00000000e+00  8.04809080e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90540480e-10 -2.69691449e-10  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.90540480e-10 -2.69691449e-10  0.00000000e+00]
  [ 1.90540480e-10  2.69691449e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.07793641e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "5-oC-hwwbdQdMwnmTxNi49MBmSOz" ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.03835459e-12]
- [ 1.90540480e-10  0.00000000e+00  2.74100205e-10]
- [ 0.00000000e+00  0.00000000e+00  5.39033692e-10]
- [ 1.90540480e-10  0.00000000e+00  8.04809080e-10]]""" ;
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.90540480e-10 -2.69691449e-10  0.00000000e+00]
+ [ 1.90540480e-10  2.69691449e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.07793641e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_20 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 1.76353767e-12]
- [1.87799848e-10 0.00000000e+00 2.81698492e-10]
- [0.00000000e+00 0.00000000e+00 5.21401673e-10]
- [1.87799848e-10 0.00000000e+00 7.09994800e-10]]""" ;
+    matvoc:section_system_20 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87799848e-10 -2.96281563e-10  0.00000000e+00]
+ [ 1.87799848e-10  2.96281563e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.00990567e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_configuration_raw_gid "fQdPie6Fty8IoAcaCNKE-ncG_beq" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 1.76353767e-12]
  [1.87799848e-10 0.00000000e+00 2.81698492e-10]
@@ -413,96 +418,96 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 1.87799848e-10  2.96281563e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.00990567e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87799848e-10 -2.96281563e-10  0.00000000e+00]
- [ 1.87799848e-10  2.96281563e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.00990567e-09]]""" ;
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 1.76353767e-12]
+ [1.87799848e-10 0.00000000e+00 2.81698492e-10]
+ [0.00000000e+00 0.00000000e+00 5.21401673e-10]
+ [1.87799848e-10 0.00000000e+00 7.09994800e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_21 [ nomad:has_configuration_raw_gid "nZ3PawEqj5tXO4LOa2CUp7kNucPP" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87924654e-10 -2.97068438e-10  0.00000000e+00]
+ [ 1.87924654e-10  2.97068438e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01757159e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
-    matvoc:section_system_21 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.87924654e-10 -2.97068438e-10  0.00000000e+00]
  [ 1.87924654e-10  2.97068438e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01757159e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.33771808e-12]
  [1.87924654e-10 0.00000000e+00 2.83158923e-10]
  [0.00000000e+00 0.00000000e+00 5.25155660e-10]
  [1.87924654e-10 0.00000000e+00 7.15705078e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "nZ3PawEqj5tXO4LOa2CUp7kNucPP" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87924654e-10 -2.97068438e-10  0.00000000e+00]
- [ 1.87924654e-10  2.97068438e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01757159e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.33771808e-12]
  [1.87924654e-10 0.00000000e+00 2.83158923e-10]
  [0.00000000e+00 0.00000000e+00 5.25155660e-10]
  [1.87924654e-10 0.00000000e+00 7.15705078e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
-    matvoc:section_system_22 [ nomad:has_simulation_cell [ nomad:array """[[ 1.87967887e-10 -2.97341008e-10  0.00000000e+00]
- [ 1.87967887e-10  2.97341008e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.02022704e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ] ;
+    matvoc:section_system_22 [ nomad:has_configuration_raw_gid "DN0p_TZKM8Psi7RtUkDcKn2LLQTA" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87967887e-10 -2.97341008e-10  0.00000000e+00]
  [ 1.87967887e-10  2.97341008e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.02022704e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.87967887e-10 -2.97341008e-10  0.00000000e+00]
+ [ 1.87967887e-10  2.97341008e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.02022704e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.53711079e-12]
  [1.87967887e-10 0.00000000e+00 2.83664200e-10]
  [0.00000000e+00 0.00000000e+00 5.26455851e-10]
  [1.87967887e-10 0.00000000e+00 7.17683391e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.53711079e-12]
  [1.87967887e-10 0.00000000e+00 2.83664200e-10]
  [0.00000000e+00 0.00000000e+00 5.26455851e-10]
  [1.87967887e-10 0.00000000e+00 7.17683391e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "DN0p_TZKM8Psi7RtUkDcKn2LLQTA" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ] ;
-    matvoc:section_system_23 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87631119e-10 -2.97791963e-10  0.00000000e+00]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_23 [ nomad:has_simulation_cell [ nomad:array """[[ 1.87631119e-10 -2.97791963e-10  0.00000000e+00]
  [ 1.87631119e-10  2.97791963e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01716949e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.69186785e-12]
  [1.87631119e-10 0.00000000e+00 2.82755154e-10]
  [0.00000000e+00 0.00000000e+00 5.25859862e-10]
  [1.87631119e-10 0.00000000e+00 7.14447347e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.69186785e-12]
  [1.87631119e-10 0.00000000e+00 2.82755154e-10]
  [0.00000000e+00 0.00000000e+00 5.25859862e-10]
  [1.87631119e-10 0.00000000e+00 7.14447347e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_configuration_raw_gid "fmIxXqTkvs3SStw2rL2HfyfbEYp3" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.87631119e-10 -2.97791963e-10  0.00000000e+00]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87631119e-10 -2.97791963e-10  0.00000000e+00]
  [ 1.87631119e-10  2.97791963e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01716949e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ] ;
-    matvoc:section_system_24 [ nomad:has_configuration_raw_gid "FbFwF3NK1jELYjLxGsQgv0S4qv_S" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.73747914e-12]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_24 [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.73747914e-12]
  [1.87531772e-10 0.00000000e+00 2.82487001e-10]
  [0.00000000e+00 0.00000000e+00 5.25683790e-10]
  [1.87531772e-10 0.00000000e+00 7.13492993e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87531772e-10 -2.97924994e-10  0.00000000e+00]
+ [ 1.87531772e-10  2.97924994e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01626751e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.73747914e-12]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.73747914e-12]
  [1.87531772e-10 0.00000000e+00 2.82487001e-10]
  [0.00000000e+00 0.00000000e+00 5.25683790e-10]
  [1.87531772e-10 0.00000000e+00 7.13492993e-10]]""" ;
@@ -511,88 +516,93 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 1.87531772e-10  2.97924994e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01626751e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87531772e-10 -2.97924994e-10  0.00000000e+00]
- [ 1.87531772e-10  2.97924994e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01626751e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_25 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.88385417e-10 -2.99216550e-10  0.00000000e+00]
- [ 1.88385417e-10  2.99216550e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01989855e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_raw_gid "uL3IJmeCltDiodcRyeJAieEHtqsz" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.93785857e-12]
+        [ nomad:has_configuration_raw_gid "FbFwF3NK1jELYjLxGsQgv0S4qv_S" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ] ;
+    matvoc:section_system_25 [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.93785857e-12]
  [1.88385417e-10 0.00000000e+00 2.83381606e-10]
  [0.00000000e+00 0.00000000e+00 5.27409917e-10]
  [1.88385417e-10 0.00000000e+00 7.16118452e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88385417e-10 -2.99216550e-10  0.00000000e+00]
- [ 1.88385417e-10  2.99216550e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01989855e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.93785857e-12]
  [1.88385417e-10 0.00000000e+00 2.83381606e-10]
  [0.00000000e+00 0.00000000e+00 5.27409917e-10]
  [1.88385417e-10 0.00000000e+00 7.16118452e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_26 [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
- [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_is_representative true ],
-        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.91072213e-12]
- [1.88269783e-10 0.00000000e+00 2.83260418e-10]
- [0.00000000e+00 0.00000000e+00 5.27176090e-10]
- [1.88269783e-10 0.00000000e+00 7.15762822e-10]]""" ;
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.88385417e-10 -2.99216550e-10  0.00000000e+00]
+ [ 1.88385417e-10  2.99216550e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01989855e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "74jPsntNmBNuM8zrg3QFWQOor3dO" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88385417e-10 -2.99216550e-10  0.00000000e+00]
+ [ 1.88385417e-10  2.99216550e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01989855e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
- [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "uL3IJmeCltDiodcRyeJAieEHtqsz" ] ;
+    matvoc:section_system_26 [ nomad:has_is_representative true ],
         [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.91072213e-12]
  [1.88269783e-10 0.00000000e+00 2.83260418e-10]
  [0.00000000e+00 0.00000000e+00 5.27176090e-10]
  [1.88269783e-10 0.00000000e+00 7.15762822e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_27 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_configuration_raw_gid "74jPsntNmBNuM8zrg3QFWQOor3dO" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.91072213e-12]
  [1.88269783e-10 0.00000000e+00 2.83260418e-10]
  [0.00000000e+00 0.00000000e+00 5.27176090e-10]
  [1.88269783e-10 0.00000000e+00 7.15762822e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
  [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_raw_gid "74jPsntNmBNuM8zrg3QFWQOor3dO" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
  [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
+    matvoc:section_system_27 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_raw_gid "74jPsntNmBNuM8zrg3QFWQOor3dO" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
+ [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.91072213e-12]
+ [1.88269783e-10 0.00000000e+00 2.83260418e-10]
+ [0.00000000e+00 0.00000000e+00 5.27176090e-10]
+ [1.88269783e-10 0.00000000e+00 7.15762822e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88269783e-10 -2.99041598e-10  0.00000000e+00]
+ [ 1.88269783e-10  2.99041598e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.01940669e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_system_type "bulk" ],
         [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 2.91072213e-12]
  [1.88269783e-10 0.00000000e+00 2.83260418e-10]
  [0.00000000e+00 0.00000000e+00 5.27176090e-10]
  [1.88269783e-10 0.00000000e+00 7.15762822e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_3 [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.89692167e-10 -2.69171310e-10  0.00000000e+00]
+    matvoc:section_system_3 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.14020470e-12]
+ [ 1.89692167e-10  0.00000000e+00  2.86747556e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.36944966e-10]
+ [ 1.89692167e-10  0.00000000e+00  7.90499259e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "CYFjuQki8RlWbSNZ6OmeFdKtoJUl" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.89692167e-10 -2.69171310e-10  0.00000000e+00]
  [ 1.89692167e-10  2.69171310e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.07336772e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -601,70 +611,71 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 0.00000000e+00  0.00000000e+00  5.36944966e-10]
  [ 1.89692167e-10  0.00000000e+00  7.90499259e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.89692167e-10 -2.69171310e-10  0.00000000e+00]
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.89692167e-10 -2.69171310e-10  0.00000000e+00]
  [ 1.89692167e-10  2.69171310e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.07336772e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "CYFjuQki8RlWbSNZ6OmeFdKtoJUl" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -4.14020470e-12]
- [ 1.89692167e-10  0.00000000e+00  2.86747556e-10]
- [ 0.00000000e+00  0.00000000e+00  5.36944966e-10]
- [ 1.89692167e-10  0.00000000e+00  7.90499259e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ] ;
-    matvoc:section_system_4 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02907880e-11]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_4 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02907880e-11]
  [ 1.87995543e-10  0.00000000e+00  3.11806139e-10]
  [ 0.00000000e+00  0.00000000e+00  5.32764172e-10]
  [ 1.87995543e-10  0.00000000e+00  7.62065962e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_raw_gid "5rbwGO-hj_I13FUsmM8n6F4RGJkd" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.87995543e-10 -2.68131032e-10  0.00000000e+00]
  [ 1.87995543e-10  2.68131032e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06423032e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.87995543e-10 -2.68131032e-10  0.00000000e+00]
  [ 1.87995543e-10  2.68131032e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06423032e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "5rbwGO-hj_I13FUsmM8n6F4RGJkd" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02907880e-11]
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -1.02907880e-11]
  [ 1.87995543e-10  0.00000000e+00  3.11806139e-10]
  [ 0.00000000e+00  0.00000000e+00  5.32764172e-10]
  [ 1.87995543e-10  0.00000000e+00  7.62065962e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_5 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+    matvoc:section_system_5 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88610631e-10 -2.68508170e-10  0.00000000e+00]
+ [ 1.88610631e-10  2.68508170e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.06754296e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "ASOgh4HJJP0xcrBbHZE9SegjxhMo" ],
         [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.05393908e-12]
  [ 1.88610631e-10  0.00000000e+00  3.02690202e-10]
  [ 0.00000000e+00  0.00000000e+00  5.34279417e-10]
  [ 1.88610631e-10  0.00000000e+00  7.72398760e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.05393908e-12]
  [ 1.88610631e-10  0.00000000e+00  3.02690202e-10]
  [ 0.00000000e+00  0.00000000e+00  5.34279417e-10]
  [ 1.88610631e-10  0.00000000e+00  7.72398760e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.88610631e-10 -2.68508170e-10  0.00000000e+00]
- [ 1.88610631e-10  2.68508170e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.06754296e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_raw_gid "ASOgh4HJJP0xcrBbHZE9SegjxhMo" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.88610631e-10 -2.68508170e-10  0.00000000e+00]
  [ 1.88610631e-10  2.68508170e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06754296e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_6 [ nomad:has_configuration_raw_gid "nvMPI5YJlJt0GSrQgdwXEIZbgksn" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+    matvoc:section_system_6 [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.11867948e-12]
+ [ 1.92371327e-10  0.00000000e+00  3.05338331e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.34720040e-10]
+ [ 1.92371327e-10  0.00000000e+00  7.60178843e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "nvMPI5YJlJt0GSrQgdwXEIZbgksn" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.92371327e-10 -2.79242588e-10  0.00000000e+00]
  [ 1.92371327e-10  2.79242588e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06141236e-09]]""" ;
@@ -674,95 +685,84 @@ matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H a sosa:Sample ;
  [ 0.00000000e+00  0.00000000e+00  5.34720040e-10]
  [ 1.92371327e-10  0.00000000e+00  7.60178843e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 1.92371327e-10 -2.79242588e-10  0.00000000e+00]
  [ 1.92371327e-10  2.79242588e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06141236e-09]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91664074e-10 -2.77223827e-10  0.00000000e+00]
+ [ 1.91664074e-10  2.77223827e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  1.06256531e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.11867948e-12]
- [ 1.92371327e-10  0.00000000e+00  3.05338331e-10]
- [ 0.00000000e+00  0.00000000e+00  5.34720040e-10]
- [ 1.92371327e-10  0.00000000e+00  7.60178843e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
-    matvoc:section_system_7 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "p8f2xJ4vVjrHzvh_SNAaQiffndrA" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.10648076e-12]
  [ 1.91664074e-10  0.00000000e+00  3.04839415e-10]
  [ 0.00000000e+00  0.00000000e+00  5.34636451e-10]
  [ 1.91664074e-10  0.00000000e+00  7.62478580e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "p8f2xJ4vVjrHzvh_SNAaQiffndrA" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -8.10648076e-12]
  [ 1.91664074e-10  0.00000000e+00  3.04839415e-10]
  [ 0.00000000e+00  0.00000000e+00  5.34636451e-10]
  [ 1.91664074e-10  0.00000000e+00  7.62478580e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91664074e-10 -2.77223827e-10  0.00000000e+00]
- [ 1.91664074e-10  2.77223827e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  1.06256531e-09]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 1.91664074e-10 -2.77223827e-10  0.00000000e+00]
  [ 1.91664074e-10  2.77223827e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.06256531e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ] ;
-    matvoc:section_system_8 [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91527877e-10 -2.81141651e-10  0.00000000e+00]
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ] ;
+    matvoc:section_system_8 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.79654674e-12]
+ [ 1.91527877e-10  0.00000000e+00  3.01747467e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.29674767e-10]
+ [ 1.91527877e-10  0.00000000e+00  7.46595642e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91527877e-10 -2.81141651e-10  0.00000000e+00]
  [ 1.91527877e-10  2.81141651e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.04681423e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.79654674e-12]
  [ 1.91527877e-10  0.00000000e+00  3.01747467e-10]
  [ 0.00000000e+00  0.00000000e+00  5.29674767e-10]
  [ 1.91527877e-10  0.00000000e+00  7.46595642e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "PbPbSiTe" ],
-        [ nomad:has_configuration_raw_gid "TTWDwv5faqOXRHPvrIhw6DLXdPh3" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91527877e-10 -2.81141651e-10  0.00000000e+00]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91527877e-10 -2.81141651e-10  0.00000000e+00]
  [ 1.91527877e-10  2.81141651e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  1.04681423e-09]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -7.79654674e-12]
- [ 1.91527877e-10  0.00000000e+00  3.01747467e-10]
- [ 0.00000000e+00  0.00000000e+00  5.29674767e-10]
- [ 1.91527877e-10  0.00000000e+00  7.46595642e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_9 [ nomad:has_simulation_cell [ nomad:array """[[ 1.91119284e-10 -2.92895123e-10  0.00000000e+00]
+        [ nomad:has_configuration_raw_gid "TTWDwv5faqOXRHPvrIhw6DLXdPh3" ],
+        [ nomad:has_chemical_composition "PbPbSiTe" ] ;
+    matvoc:section_system_9 [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91119284e-10 -2.92895123e-10  0.00000000e+00]
  [ 1.91119284e-10  2.92895123e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  9.99560976e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.89282256e-12]
- [ 1.91119284e-10  0.00000000e+00  2.92275508e-10]
- [ 0.00000000e+00  0.00000000e+00  5.14382345e-10]
- [ 1.91119284e-10  0.00000000e+00  6.99576444e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_configuration_raw_gid "jm-fhHuZPPJrtR5db5ic7FNOZlAZ" ],
-        [ nomad:has_chemical_composition_reduced "Pb2SiTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
         [ nomad:has_chemical_composition "PbPbSiTe" ],
+        [ nomad:has_atom_labels "['Pb', 'Pb', 'Si', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.89282256e-12]
  [ 1.91119284e-10  0.00000000e+00  2.92275508e-10]
  [ 0.00000000e+00  0.00000000e+00  5.14382345e-10]
  [ 1.91119284e-10  0.00000000e+00  6.99576444e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 1.91119284e-10 -2.92895123e-10  0.00000000e+00]
+        [ nomad:has_simulation_cell [ nomad:array """[[ 1.91119284e-10 -2.92895123e-10  0.00000000e+00]
  [ 1.91119284e-10  2.92895123e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  9.99560976e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "Pb2SiTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00 -6.89282256e-12]
+ [ 1.91119284e-10  0.00000000e+00  2.92275508e-10]
+ [ 0.00000000e+00  0.00000000e+00  5.14382345e-10]
+ [ 1.91119284e-10  0.00000000e+00  6.99576444e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_Pb2SiTe_2harEuGCdgqMb6l3Ns3En6eg1i0H .
+    sosa:isSampleOf matvoc:mat_Pb2SiTe .
 

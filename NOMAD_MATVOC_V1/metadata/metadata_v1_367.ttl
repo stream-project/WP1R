@@ -11,55 +11,59 @@
 matvoc:IrSiTe2 a matvoc:Formula ;
     rdfs:label "IrSiTe2" .
 
+matvoc:mat_IrSiTe2 a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli .
+
 matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Ir', 'Si', 'Te']" ;
-    nomad:has_bulk [ nomad:has_crystal_system "tetragonal" ],
-        [ nomad:has_point_group "4mm" ],
-        [ nomad:has_has_free_wyckoff_parameters true ],
+    nomad:has_bulk [ nomad:has_bravais_lattice "tP" ],
         [ nomad:has_space_group_number 99 ],
-        [ nomad:has_bravais_lattice "tP" ],
-        [ nomad:has_space_group_international_short_symbol "P4mm" ] ;
+        [ nomad:has_space_group_international_short_symbol "P4mm" ],
+        [ nomad:has_point_group "4mm" ],
+        [ nomad:has_crystal_system "tetragonal" ],
+        [ nomad:has_has_free_wyckoff_parameters true ] ;
     nomad:has_calc_hash "ffVSnf0ItsMCP0eN4mqYE7J_kHUz" ;
     nomad:has_calc_id "2_5x6lajq4MxdR1bBmbBDzwGdjli" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F610>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F7F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F880>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F8E0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F940>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2F9A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FA00>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FA60>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FAC0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FB20>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FB80>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FBE0>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FC40>, <nomad.metainfo.metainfo.MProxy object at 0x0000021F28B2FCA0>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D460>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D640>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D6D0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D730>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D790>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D7F0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D850>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D8B0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D910>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D970>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1D9D0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1DA30>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1DA90>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFDDE1DAF0>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:IrSiTe2 ;
     nomad:has_formula_reduced "IrSiTe2" ;
-    nomad:has_idealized_structure [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
-        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.39490872e-10 0.00000000e+00 0.00000000e+00]
+    nomad:has_idealized_structure [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.39490872e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.39490872e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 7.81242896e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[3]" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2]" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Ir" ] ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_cell_volume [ nomad:numericValue 9.004141e-29 ;
-                    qudt:unit ab:M3 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 3.394909e-10 ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Te" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_c 7.812429e-10 ] ],
-        [ nomad:has_periodicity "[True, True, True]" ],
-        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Te" ] ],
-        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[0]" ] ],
         [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
         [ nomad:has_atom_positions [ nomad:array """[[0.5        0.5        0.57624881]
  [0.         0.         0.6805304 ]
  [0.5        0.5        0.91750568]
  [0.         0.         0.32571511]]""" ] ],
-        [ nomad:has_number_of_atoms 4 ],
-        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Si" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_a 3.394909e-10 ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_element "Te" ] ],
+        [ nomad:has_cell_volume [ nomad:numericValue 9.004141e-29 ;
+                    qudt:unit ab:M3 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[3]" ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.39490872e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.39490872e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 7.81242896e-10]]""" ] ] ;
+ [0.00000000e+00 0.00000000e+00 7.81242896e-10]]""" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.394909e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_c 7.812429e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_number_of_atoms 4 ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 3.394909e-10 ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Si" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2]" ] ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_wyckoff_sets3 [ nomad:has_element "Ir" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Te" ] ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:01:04.706642"^^xsd:dateTime ] ;
     nomad:has_material_id "0ioAbklNhHZ-_zFC1GIicPK7Oygv" ;
@@ -79,9 +83,18 @@ matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
     nomad:has_upload_time [ a time1:Instant ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
-    matvoc:section_system_0 [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_configuration_raw_gid "1aRo6luDkZ0JIy9AsgQXwWr6qA1r" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
+    matvoc:section_system_0 [ nomad:has_configuration_raw_gid "1aRo6luDkZ0JIy9AsgQXwWr6qA1r" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
+ [1.77563371e-10 1.77563371e-10 5.32690114e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.55126743e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -90,104 +103,89 @@ matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
- [1.77563371e-10 1.77563371e-10 5.32690114e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.55126743e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_1 [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
- [1.77563371e-10 1.77563371e-10 5.32690114e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_configuration_raw_gid "1aRo6luDkZ0JIy9AsgQXwWr6qA1r" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.55126743e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
- [1.77563371e-10 1.77563371e-10 5.32690114e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.55126743e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_10 [ nomad:has_simulation_cell [ nomad:array """[[ 3.46799418e-10  0.00000000e+00  0.00000000e+00]
+    matvoc:section_system_1 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
+ [1.77563371e-10 1.77563371e-10 5.32690114e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.55126743e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.55126743e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.55126743e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 7.10253485e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "1aRo6luDkZ0JIy9AsgQXwWr6qA1r" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[0.00000000e+00 0.00000000e+00 3.55126743e-10]
+ [1.77563371e-10 1.77563371e-10 5.32690114e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [1.77563371e-10 1.77563371e-10 1.77563371e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_10 [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.46799418e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.46799418e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.10735329e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_raw_gid "w_ikL5in3e_9bvoRpQDWQbLoBugq" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.92827944e-10]
  [ 1.73399709e-10  1.73399709e-10  5.00368674e-10]
  [ 0.00000000e+00  0.00000000e+00 -5.36315193e-11]
  [ 1.73399709e-10  1.73399709e-10  2.26537888e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.46799418e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.46799418e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.10735329e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_configuration_raw_gid "w_ikL5in3e_9bvoRpQDWQbLoBugq" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.92827944e-10]
  [ 1.73399709e-10  1.73399709e-10  5.00368674e-10]
  [ 0.00000000e+00  0.00000000e+00 -5.36315193e-11]
  [ 1.73399709e-10  1.73399709e-10  2.26537888e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_11 [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.28067363e-10]
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ] ;
+    matvoc:section_system_11 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.28067363e-10]
  [ 1.71662305e-10  1.71662305e-10  5.22723267e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.42864162e-11]
  [ 1.71662305e-10  1.71662305e-10  2.40134605e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_configuration_raw_gid "LUStGcGzNjZ6iAHPQGov5iMG5GB5" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.43324609e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.43324609e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.51092541e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.28067363e-10]
- [ 1.71662305e-10  1.71662305e-10  5.22723267e-10]
- [ 0.00000000e+00  0.00000000e+00 -6.42864162e-11]
- [ 1.71662305e-10  1.71662305e-10  2.40134605e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.43324609e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.43324609e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.51092541e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ] ;
-    matvoc:section_system_12 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.40221709e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.40221709e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.67921190e-10]]""" ;
+        [ nomad:has_configuration_raw_gid "LUStGcGzNjZ6iAHPQGov5iMG5GB5" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.28067363e-10]
+ [ 1.71662305e-10  1.71662305e-10  5.22723267e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.42864162e-11]
+ [ 1.71662305e-10  1.71662305e-10  2.40134605e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ] ;
+    matvoc:section_system_12 [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.40221709e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.40221709e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.67921190e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_raw_gid "3VLHLHPAyHOLSiES_GWGpqLJQaBR" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.39330961e-10]
  [ 1.70110855e-10  1.70110855e-10  5.31411109e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.52582960e-11]
@@ -198,192 +196,184 @@ matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
  [ 0.00000000e+00  0.00000000e+00 -6.52582960e-11]
  [ 1.70110855e-10  1.70110855e-10  2.46398004e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "3VLHLHPAyHOLSiES_GWGpqLJQaBR" ] ;
-    matvoc:section_system_13 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36921007e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.36921007e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.85822626e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.36921007e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.36921007e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.85822626e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.40221709e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.40221709e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.67921190e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_13 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36921007e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.36921007e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.85822626e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51353154e-10]
  [ 1.68460503e-10  1.68460503e-10  5.40579439e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.62807595e-11]
  [ 1.68460503e-10  1.68460503e-10  2.53082106e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51353154e-10]
  [ 1.68460503e-10  1.68460503e-10  5.40579439e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.62807595e-11]
  [ 1.68460503e-10  1.68460503e-10  2.53082106e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "lQ9HqdxOTf0m9ZrrVt9e745FmpWf" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.36921007e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.36921007e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.85822626e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
     matvoc:section_system_14 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37020774e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.37020774e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.84815312e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51218231e-10]
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51218231e-10]
  [ 1.68510387e-10  1.68510387e-10  5.38866844e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.60271008e-11]
  [ 1.68510387e-10  1.68510387e-10  2.53164993e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_configuration_raw_gid "5n_zOQ-Jfuo2741il_Ms5uQs6J6e" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.37020774e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.37020774e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.84815312e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51218231e-10]
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51218231e-10]
  [ 1.68510387e-10  1.68510387e-10  5.38866844e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.60271008e-11]
  [ 1.68510387e-10  1.68510387e-10  2.53164993e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_15 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+    matvoc:section_system_15 [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37275206e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.37275206e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.82246388e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.37275206e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.37275206e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.82246388e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50870446e-10]
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50870446e-10]
  [ 1.68637603e-10  1.68637603e-10  5.34507791e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.53816159e-11]
  [ 1.68637603e-10  1.68637603e-10  2.53372961e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "GKGo9EMPiuopFFWqMcgHh453UI0H" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50870446e-10]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.37275206e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.37275206e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.82246388e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50870446e-10]
  [ 1.68637603e-10  1.68637603e-10  5.34507791e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.53816159e-11]
  [ 1.68637603e-10  1.68637603e-10  2.53372961e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_16 [ nomad:has_chemical_composition "IrSiTeTe" ],
+    matvoc:section_system_16 [ nomad:has_simulation_cell [ nomad:array """[[ 3.37800029e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.37800029e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.82233499e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50972960e-10]
  [ 1.68900015e-10  1.68900015e-10  5.33927899e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.51711816e-11]
  [ 1.68900015e-10  1.68900015e-10  2.53620571e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37800029e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.37800029e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.82233499e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50972960e-10]
  [ 1.68900015e-10  1.68900015e-10  5.33927899e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.51711816e-11]
  [ 1.68900015e-10  1.68900015e-10  2.53620571e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.37800029e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.37800029e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.37800029e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.82233499e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_configuration_raw_gid "JbC5dXZyPOeKBKiGqNY0UXidFSHS" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ] ;
-    matvoc:section_system_17 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51280494e-10]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ] ;
+    matvoc:section_system_17 [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51280494e-10]
  [ 1.69687250e-10  1.69687250e-10  5.32188310e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.45399045e-11]
  [ 1.69687250e-10  1.69687250e-10  2.54363353e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_configuration_raw_gid "TFoNlyeYxEJYE4weFWeWZcK-huRu" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51280494e-10]
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51280494e-10]
  [ 1.69687250e-10  1.69687250e-10  5.32188310e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.45399045e-11]
  [ 1.69687250e-10  1.69687250e-10  2.54363353e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.3937450e-10  0.0000000e+00  0.0000000e+00]
- [ 0.0000000e+00  3.3937450e-10 -0.0000000e+00]
- [-0.0000000e+00  0.0000000e+00  7.8219483e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.3937450e-10  0.0000000e+00  0.0000000e+00]
  [ 0.0000000e+00  3.3937450e-10 -0.0000000e+00]
  [-0.0000000e+00  0.0000000e+00  7.8219483e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.3937450e-10  0.0000000e+00  0.0000000e+00]
+ [ 0.0000000e+00  3.3937450e-10 -0.0000000e+00]
+ [-0.0000000e+00  0.0000000e+00  7.8219483e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_configuration_raw_gid "TFoNlyeYxEJYE4weFWeWZcK-huRu" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_18 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51007850e-10]
+    matvoc:section_system_18 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39403593e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.39403593e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.81956846e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "RHAubswhPS1HKHK_skgGlyfj-3NA" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51007850e-10]
  [ 1.69701796e-10  1.69701796e-10  5.32056137e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.45169526e-11]
  [ 1.69701796e-10  1.69701796e-10  2.54388234e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39403593e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.39403593e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.81956846e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.39403593e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.39403593e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.81956846e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_configuration_raw_gid "RHAubswhPS1HKHK_skgGlyfj-3NA" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51007850e-10]
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.51007850e-10]
  [ 1.69701796e-10  1.69701796e-10  5.32056137e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.45169526e-11]
  [ 1.69701796e-10  1.69701796e-10  2.54388234e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_19 [ nomad:has_simulation_cell [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
+    matvoc:section_system_19 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_raw_gid "Y0kCD-q9xxce36qGQ72BKMPF4oIB" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.39490872e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.81242896e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50190289e-10]
- [ 1.69745436e-10  1.69745436e-10  5.31659541e-10]
- [ 0.00000000e+00  0.00000000e+00 -6.44481015e-11]
- [ 1.69745436e-10  1.69745436e-10  2.54462616e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50190289e-10]
  [ 1.69745436e-10  1.69745436e-10  5.31659541e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.44481015e-11]
  [ 1.69745436e-10  1.69745436e-10  2.54462616e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "Y0kCD-q9xxce36qGQ72BKMPF4oIB" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_is_representative true ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.39490872e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.81242896e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_2 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39608499e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.39608499e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.80254492e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "c2_Mc6s2a4oJ9MU_LjdaqK3TBg1w" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.42073638e-10]
- [ 1.69804250e-10  1.69804250e-10  5.01360139e-10]
- [ 0.00000000e+00  0.00000000e+00 -7.72340543e-12]
- [ 1.69804250e-10  1.69804250e-10  1.84671367e-10]]""" ;
+        [ nomad:has_is_representative true ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50190289e-10]
+ [ 1.69745436e-10  1.69745436e-10  5.31659541e-10]
+ [ 0.00000000e+00  0.00000000e+00 -6.44481015e-11]
+ [ 1.69745436e-10  1.69745436e-10  2.54462616e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.42073638e-10]
+        [ nomad:has_system_type "bulk" ] ;
+    matvoc:section_system_2 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.42073638e-10]
  [ 1.69804250e-10  1.69804250e-10  5.01360139e-10]
  [ 0.00000000e+00  0.00000000e+00 -7.72340543e-12]
  [ 1.69804250e-10  1.69804250e-10  1.84671367e-10]]""" ;
@@ -392,107 +382,131 @@ matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
  [ 0.00000000e+00  3.39608499e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.80254492e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_20 [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.39490872e-10 -0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.81242896e-10]]""" ;
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.42073638e-10]
+ [ 1.69804250e-10  1.69804250e-10  5.01360139e-10]
+ [ 0.00000000e+00  0.00000000e+00 -7.72340543e-12]
+ [ 1.69804250e-10  1.69804250e-10  1.84671367e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39608499e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.39608499e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.80254492e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_raw_gid "c2_Mc6s2a4oJ9MU_LjdaqK3TBg1w" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_20 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "Y0kCD-q9xxce36qGQ72BKMPF4oIB" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50190289e-10]
  [ 1.69745436e-10  1.69745436e-10  5.31659541e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.44481015e-11]
  [ 1.69745436e-10  1.69745436e-10  2.54462616e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.39490872e-10 -0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.81242896e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  4.50190289e-10]
  [ 1.69745436e-10  1.69745436e-10  5.31659541e-10]
  [ 0.00000000e+00  0.00000000e+00 -6.44481015e-11]
  [ 1.69745436e-10  1.69745436e-10  2.54462616e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.39490872e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.39490872e-10 -0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.81242896e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_configuration_raw_gid "Y0kCD-q9xxce36qGQ72BKMPF4oIB" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ] ;
-    matvoc:section_system_3 [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.33871439e-10  0.00000000e+00  0.00000000e+00]
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_3 [ nomad:has_simulation_cell [ nomad:array """[[ 3.33871439e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.33871439e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.69163933e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_configuration_raw_gid "cn1pKTdIWFGbGAje2AO_tdCj2PGu" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.33871439e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.33871439e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.69163933e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.37235690e-10]
  [ 1.66935720e-10  1.66935720e-10  4.89833085e-10]
  [ 0.00000000e+00  0.00000000e+00 -1.05301242e-11]
  [ 1.66935720e-10  1.66935720e-10  1.87207249e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.33871439e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.33871439e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.69163933e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.37235690e-10]
  [ 1.66935720e-10  1.66935720e-10  4.89833085e-10]
  [ 0.00000000e+00  0.00000000e+00 -1.05301242e-11]
  [ 1.66935720e-10  1.66935720e-10  1.87207249e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ] ;
-    matvoc:section_system_4 [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.44717198e-10]
- [ 1.67468473e-10  1.67468473e-10  4.85997165e-10]
- [ 0.00000000e+00  0.00000000e+00 -1.96851854e-11]
- [ 1.67468473e-10  1.67468473e-10  2.01343685e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.34936945e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.34936945e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.74915242e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ] ;
+    matvoc:section_system_4 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.44717198e-10]
  [ 1.67468473e-10  1.67468473e-10  4.85997165e-10]
  [ 0.00000000e+00  0.00000000e+00 -1.96851854e-11]
  [ 1.67468473e-10  1.67468473e-10  2.01343685e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.44717198e-10]
+ [ 1.67468473e-10  1.67468473e-10  4.85997165e-10]
+ [ 0.00000000e+00  0.00000000e+00 -1.96851854e-11]
+ [ 1.67468473e-10  1.67468473e-10  2.01343685e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_raw_gid "7Zm9ZBkyomk68Zy3n2TdBVrSXJfK" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.34936945e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.34936945e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.74915242e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "7Zm9ZBkyomk68Zy3n2TdBVrSXJfK" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.34936945e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.34936945e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.74915242e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_5 [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "2PJPTmlXYDvytTsOr1dIeiXzwL4U" ],
         [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_5 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36104814e-10  0.00000000e+00  0.00000000e+00]
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.36104814e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.36104814e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.81219085e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.52963982e-10]
- [ 1.68052407e-10  1.68052407e-10  4.81711058e-10]
- [ 0.00000000e+00  0.00000000e+00 -2.98117889e-11]
- [ 1.68052407e-10  1.68052407e-10  2.16965377e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.36104814e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.36104814e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.81219085e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.52963982e-10]
  [ 1.68052407e-10  1.68052407e-10  4.81711058e-10]
  [ 0.00000000e+00  0.00000000e+00 -2.98117889e-11]
  [ 1.68052407e-10  1.68052407e-10  2.16965377e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "2PJPTmlXYDvytTsOr1dIeiXzwL4U" ] ;
-    matvoc:section_system_6 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.52963982e-10]
+ [ 1.68052407e-10  1.68052407e-10  4.81711058e-10]
+ [ 0.00000000e+00  0.00000000e+00 -2.98117889e-11]
+ [ 1.68052407e-10  1.68052407e-10  2.16965377e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "pk_kyEV2f-wudriRP_EKyqEdBbMc" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.49913576e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.49913576e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.06336403e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.71885106e-10]
+ [ 1.74956788e-10  1.74956788e-10  4.99236599e-10]
+ [ 0.00000000e+00  0.00000000e+00 -3.62227248e-11]
+ [ 1.74956788e-10  1.74956788e-10  2.24605624e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.49913576e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.49913576e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.06336403e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
@@ -501,96 +515,82 @@ matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli a sosa:Sample ;
  [ 0.00000000e+00  0.00000000e+00 -3.62227248e-11]
  [ 1.74956788e-10  1.74956788e-10  2.24605624e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "pk_kyEV2f-wudriRP_EKyqEdBbMc" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.49913576e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.49913576e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.06336403e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.71885106e-10]
- [ 1.74956788e-10  1.74956788e-10  4.99236599e-10]
- [ 0.00000000e+00  0.00000000e+00 -3.62227248e-11]
- [ 1.74956788e-10  1.74956788e-10  2.24605624e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ] ;
-    matvoc:section_system_7 [ nomad:has_configuration_raw_gid "-YCUNVYxXLso2MAzUSiaQUPiQvAn" ],
         [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ] ;
+    matvoc:section_system_7 [ nomad:has_configuration_raw_gid "-YCUNVYxXLso2MAzUSiaQUPiQvAn" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.48028754e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.48028754e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.02908023e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.69306252e-10]
  [ 1.74014377e-10  1.74014377e-10  4.96844301e-10]
  [ 0.00000000e+00  0.00000000e+00 -3.53510650e-11]
  [ 1.74014377e-10  1.74014377e-10  2.23562540e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.48028754e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.48028754e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.02908023e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
         [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.69306252e-10]
  [ 1.74014377e-10  1.74014377e-10  4.96844301e-10]
  [ 0.00000000e+00  0.00000000e+00 -3.53510650e-11]
  [ 1.74014377e-10  1.74014377e-10  2.23562540e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_8 [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.72324950e-10]
- [ 1.74005494e-10  1.74005494e-10  4.95835326e-10]
- [ 0.00000000e+00  0.00000000e+00 -3.90845347e-11]
- [ 1.74005494e-10  1.74005494e-10  2.23176882e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.48010987e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.48010987e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  7.01501749e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_chemical_composition "IrSiTeTe" ] ;
+    matvoc:section_system_8 [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
         [ nomad:has_configuration_raw_gid "s_PsEvD-PKZcu9onTtXoxVCg41Dp" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.72324950e-10]
  [ 1.74005494e-10  1.74005494e-10  4.95835326e-10]
  [ 0.00000000e+00  0.00000000e+00 -3.90845347e-11]
  [ 1.74005494e-10  1.74005494e-10  2.23176882e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.48010987e-10  0.00000000e+00  0.00000000e+00]
  [ 0.00000000e+00  3.48010987e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  7.01501749e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_9 [ nomad:has_simulation_cell [ nomad:array """[[ 3.47957688e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.47957688e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.97282925e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "_PDbRXH1i_71EQEBPd8bT6-iCF8F" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.81313121e-10]
- [ 1.73978844e-10  1.73978844e-10  4.92808654e-10]
- [ 0.00000000e+00  0.00000000e+00 -5.02161756e-11]
- [ 1.73978844e-10  1.73978844e-10  2.22018788e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
-        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.47957688e-10  0.00000000e+00  0.00000000e+00]
- [ 0.00000000e+00  3.47957688e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.97282925e-10]]""" ;
+        [ nomad:has_chemical_composition "IrSiTeTe" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.48010987e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.48010987e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  7.01501749e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.81313121e-10]
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.72324950e-10]
+ [ 1.74005494e-10  1.74005494e-10  4.95835326e-10]
+ [ 0.00000000e+00  0.00000000e+00 -3.90845347e-11]
+ [ 1.74005494e-10  1.74005494e-10  2.23176882e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ] ;
+    matvoc:section_system_9 [ nomad:has_atom_positions [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.81313121e-10]
  [ 1.73978844e-10  1.73978844e-10  4.92808654e-10]
  [ 0.00000000e+00  0.00000000e+00 -5.02161756e-11]
  [ 1.73978844e-10  1.73978844e-10  2.22018788e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
         [ nomad:has_chemical_composition "IrSiTeTe" ],
-        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ] ;
+        [ nomad:has_atom_species [ nomad:array """[[ 0.00000000e+00  0.00000000e+00  3.81313121e-10]
+ [ 1.73978844e-10  1.73978844e-10  4.92808654e-10]
+ [ 0.00000000e+00  0.00000000e+00 -5.02161756e-11]
+ [ 1.73978844e-10  1.73978844e-10  2.22018788e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "IrSiTe2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.47957688e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.47957688e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.97282925e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "_PDbRXH1i_71EQEBPd8bT6-iCF8F" ],
+        [ nomad:has_chemical_composition_bulk_reduced "IrSiTe2" ],
+        [ nomad:has_atom_labels "['Ir', 'Si', 'Te', 'Te']" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.47957688e-10  0.00000000e+00  0.00000000e+00]
+ [ 0.00000000e+00  3.47957688e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.97282925e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_IrSiTe2_2_5x6lajq4MxdR1bBmbBDzwGdjli .
+    sosa:isSampleOf matvoc:mat_IrSiTe2 .
 

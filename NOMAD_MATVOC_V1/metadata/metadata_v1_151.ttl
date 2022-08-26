@@ -11,52 +11,56 @@
 matvoc:NiSiTa2 a matvoc:Formula ;
     rdfs:label "NiSiTa2" .
 
+matvoc:mat_NiSiTa2 a sosa:FeatureOfInterest ;
+    rdfs:label "calculating energy levels of materials"@en ;
+    sosa:hasSample matvoc:mat_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 .
+
 matvoc:mat_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 a sosa:Sample ;
     rdfs:label "material"@en ;
     nomad:has_atoms "['Ni', 'Si', 'Ta']" ;
-    nomad:has_bulk [ nomad:has_bravais_lattice "tP" ],
-        [ nomad:has_crystal_system "tetragonal" ],
-        [ nomad:has_space_group_international_short_symbol "P4/mmm" ],
+    nomad:has_bulk [ nomad:has_has_free_wyckoff_parameters true ],
+        [ nomad:has_bravais_lattice "tP" ],
         [ nomad:has_point_group "4/mmm" ],
+        [ nomad:has_crystal_system "tetragonal" ],
         [ nomad:has_space_group_number 123 ],
-        [ nomad:has_has_free_wyckoff_parameters true ] ;
+        [ nomad:has_space_group_international_short_symbol "P4/mmm" ] ;
     nomad:has_calc_hash "FeB7A2ekv8zY8kLzHiyej0jhOZID" ;
     nomad:has_calc_id "0NYhcpPG9W2N6_Zeqwoco8KHbaE8" ;
-    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x0000024AF59510A0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF59511C0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951250>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF59512B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951310>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951370>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF59513D0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951430>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951490>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF59514F0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951550>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF59515B0>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951610>, <nomad.metainfo.metainfo.MProxy object at 0x0000024AF5951670>]" ;
+    nomad:has_coauthors "[<nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87C70>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87D90>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87E20>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87E80>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87EE0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87F40>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B87FA0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E040>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E0A0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E100>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E160>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E1C0>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E220>, <nomad.metainfo.metainfo.MProxy object at 0x000001DFC0B8E280>]" ;
     nomad:has_datasets "[]" ;
     nomad:has_domain "dft" ;
     nomad:has_formula matvoc:NiSiTa2 ;
     nomad:has_formula_reduced "NiSiTa2" ;
-    nomad:has_idealized_structure [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+    nomad:has_idealized_structure [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
         [ nomad:has_atom_positions [ nomad:array """[[0.         0.         0.5       ]
  [0.         0.         0.        ]
  [0.5        0.5        0.25119426]
  [0.5        0.5        0.74880574]]""" ] ],
         [ nomad:has_lattice_parameters [ nomad:has_c 5.404285e-10 ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Si" ] ],
-        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_b 3.311599e-10 ] ],
-        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.31159899e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.31159899e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 5.40428464e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "h" ] ],
-        [ nomad:has_periodicity "[True, True, True]" ],
-        [ nomad:has_number_of_atoms 4 ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.31159899e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.31159899e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 5.40428464e-10]]""" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "b" ] ],
-        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
-        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Ni" ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_beta 1.570796e+00 ] ],
         [ nomad:has_wyckoff_sets2 [ nomad:has_element "Ta" ] ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_indices "[0]" ] ],
+        [ nomad:has_wyckoff_sets1 [ nomad:has_element "Ni" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_a 3.311599e-10 ] ],
         [ nomad:has_cell_volume [ nomad:numericValue 5.92671e-29 ;
                     qudt:unit ab:M3 ] ],
-        [ nomad:has_lattice_parameters [ nomad:has_a 3.311599e-10 ] ] ;
+        [ nomad:has_wyckoff_sets1 [ nomad:has_wyckoff_letter "b" ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_b 3.311599e-10 ] ],
+        [ nomad:has_lattice_parameters [ nomad:has_gamma 1.570796e+00 ] ],
+        [ nomad:has_lattice_vectors_primitive [ nomad:array """[[3.31159899e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.31159899e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 5.40428464e-10]]""" ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_indices "[2 3]" ] ],
+        [ nomad:has_periodicity "[True, True, True]" ],
+        [ nomad:has_lattice_parameters [ nomad:has_alpha 1.570796e+00 ] ],
+        [ nomad:has_wyckoff_sets2 [ nomad:has_wyckoff_letter "h" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_element "Si" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_indices "[1]" ] ],
+        [ nomad:has_wyckoff_sets0 [ nomad:has_wyckoff_letter "a" ] ],
+        [ nomad:has_number_of_atoms 4 ] ;
     nomad:has_last_processing [ a time1:Instant ;
             time1:inXSDDateTime "2020-09-21T23:15:11.500459"^^xsd:dateTime ] ;
     nomad:has_material_id "4PLuu0rg1DXTdcy7oXGmuNA3aam8" ;
@@ -76,39 +80,15 @@ matvoc:mat_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 a sosa:Sample ;
     nomad:has_upload_time [ a time1:Instant ;
             time1:inXSDDateTime "2019-12-02T22:35:04.510001+00:00"^^xsd:dateTime ] ;
     nomad:has_with_embargo false ;
-    matvoc:section_system_0 [ nomad:has_atom_positions [ nomad:array """[[1.59162232e-10 1.59162232e-10 1.59162232e-10]
- [1.59162232e-10 1.59162232e-10 4.77486697e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
+    matvoc:section_system_0 [ nomad:has_chemical_composition "NiSiTaTa" ],
         [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.18324465e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 3.18324465e-10 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "72BH-_rwIVer9PW7GpJ5YvVRTlFl" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.59162232e-10 1.59162232e-10 1.59162232e-10]
- [1.59162232e-10 1.59162232e-10 4.77486697e-10]
- [0.00000000e+00 0.00000000e+00 0.00000000e+00]
- [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ] ;
-    matvoc:section_system_1 [ nomad:has_chemical_composition "NiSiTaTa" ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.59162232e-10 1.59162232e-10 1.59162232e-10]
  [1.59162232e-10 1.59162232e-10 4.77486697e-10]
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_raw_gid "72BH-_rwIVer9PW7GpJ5YvVRTlFl" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.18324465e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
@@ -118,236 +98,256 @@ matvoc:mat_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 a sosa:Sample ;
  [0.00000000e+00 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.18324465e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+    matvoc:section_system_1 [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 3.18324465e-10 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "72BH-_rwIVer9PW7GpJ5YvVRTlFl" ],
         [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.59162232e-10 1.59162232e-10 1.59162232e-10]
+ [1.59162232e-10 1.59162232e-10 4.77486697e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[1.59162232e-10 1.59162232e-10 1.59162232e-10]
+ [1.59162232e-10 1.59162232e-10 4.77486697e-10]
+ [0.00000000e+00 0.00000000e+00 0.00000000e+00]
+ [0.00000000e+00 0.00000000e+00 3.18324465e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[3.18324465e-10 0.00000000e+00 0.00000000e+00]
  [0.00000000e+00 3.18324465e-10 0.00000000e+00]
  [0.00000000e+00 0.00000000e+00 6.36648930e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_10 [ nomad:has_chemical_composition "NiSiTaTa" ],
+    matvoc:section_system_10 [ nomad:has_atom_positions [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
+ [1.65579949e-10 1.65579949e-10 4.05321348e-10]
+ [0.00000000e+00 0.00000000e+00 6.45412097e-13]
+ [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_configuration_raw_gid "oT47hLaoTAhtEn3FA1Wt6BZ9Y8KE" ],
         [ nomad:has_atom_species [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
  [1.65579949e-10 1.65579949e-10 4.05321348e-10]
  [0.00000000e+00 0.00000000e+00 6.45412097e-13]
  [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_configuration_raw_gid "oT47hLaoTAhtEn3FA1Wt6BZ9Y8KE" ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
- [1.65579949e-10 1.65579949e-10 4.05321348e-10]
- [0.00000000e+00 0.00000000e+00 6.45412097e-13]
- [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_2 [ nomad:has_simulation_cell [ nomad:array """[[ 3.01942985e-10  0.00000000e+00 -0.00000000e+00]
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_system_type "bulk" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ] ;
+    matvoc:section_system_2 [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.01942985e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.01942985e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  5.92684639e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.01942985e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.01942985e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  5.92684639e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "qOQqMMEZE2nrYRJ2pEUnMuMiKjK0" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 1.50971493e-10  1.50971493e-10  1.48171160e-10]
- [ 1.50971493e-10  1.50971493e-10  4.44513479e-10]
- [ 0.00000000e+00  0.00000000e+00 -3.85333918e-13]
- [ 0.00000000e+00  0.00000000e+00  2.96727653e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[ 1.50971493e-10  1.50971493e-10  1.48171160e-10]
  [ 1.50971493e-10  1.50971493e-10  4.44513479e-10]
  [ 0.00000000e+00  0.00000000e+00 -3.85333918e-13]
  [ 0.00000000e+00  0.00000000e+00  2.96727653e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_3 [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_species [ nomad:array """[[ 1.56295356e-10  1.56295356e-10  1.55315199e-10]
- [ 1.56295356e-10  1.56295356e-10  4.65945598e-10]
- [ 0.00000000e+00  0.00000000e+00 -1.21903794e-13]
- [ 0.00000000e+00  0.00000000e+00  3.10752303e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.50971493e-10  1.50971493e-10  1.48171160e-10]
+ [ 1.50971493e-10  1.50971493e-10  4.44513479e-10]
+ [ 0.00000000e+00  0.00000000e+00 -3.85333918e-13]
+ [ 0.00000000e+00  0.00000000e+00  2.96727653e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_configuration_raw_gid "qOQqMMEZE2nrYRJ2pEUnMuMiKjK0" ] ;
+    matvoc:section_system_3 [ nomad:has_chemical_composition "NiSiTaTa" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.12590712e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.12590712e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.21260798e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 1.56295356e-10  1.56295356e-10  1.55315199e-10]
  [ 1.56295356e-10  1.56295356e-10  4.65945598e-10]
  [ 0.00000000e+00  0.00000000e+00 -1.21903794e-13]
  [ 0.00000000e+00  0.00000000e+00  3.10752303e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_species [ nomad:array """[[ 1.56295356e-10  1.56295356e-10  1.55315199e-10]
+ [ 1.56295356e-10  1.56295356e-10  4.65945598e-10]
+ [ 0.00000000e+00  0.00000000e+00 -1.21903794e-13]
+ [ 0.00000000e+00  0.00000000e+00  3.10752303e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.12590712e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.12590712e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.21260798e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "bjjxQDnmnDJypE2l8pJMzyFfcq5l" ] ;
-    matvoc:section_system_4 [ nomad:has_atom_species [ nomad:array """[[ 1.55969557e-10  1.55969557e-10  1.54878013e-10]
- [ 1.55969557e-10  1.55969557e-10  4.64634038e-10]
- [ 0.00000000e+00  0.00000000e+00 -1.37977724e-13]
- [ 0.00000000e+00  0.00000000e+00  3.09894003e-10]]""" ;
+        [ nomad:has_configuration_raw_gid "bjjxQDnmnDJypE2l8pJMzyFfcq5l" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ] ;
+    matvoc:section_system_4 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.11939114e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.11939114e-10  0.00000000e+00]
+ [-0.00000000e+00  0.00000000e+00  6.19512051e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_raw_gid "4amlOSJsN6AGd7VbnjP7fRmUc60d" ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.11939114e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.11939114e-10  0.00000000e+00]
  [-0.00000000e+00  0.00000000e+00  6.19512051e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_atom_positions [ nomad:array """[[ 1.55969557e-10  1.55969557e-10  1.54878013e-10]
+        [ nomad:has_atom_species [ nomad:array """[[ 1.55969557e-10  1.55969557e-10  1.54878013e-10]
  [ 1.55969557e-10  1.55969557e-10  4.64634038e-10]
  [ 0.00000000e+00  0.00000000e+00 -1.37977724e-13]
  [ 0.00000000e+00  0.00000000e+00  3.09894003e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.11939114e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.11939114e-10  0.00000000e+00]
- [-0.00000000e+00  0.00000000e+00  6.19512051e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ] ;
-    matvoc:section_system_5 [ nomad:has_chemical_composition "NiSiTaTa" ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[ 1.55969557e-10  1.55969557e-10  1.54878013e-10]
+ [ 1.55969557e-10  1.55969557e-10  4.64634038e-10]
+ [ 0.00000000e+00  0.00000000e+00 -1.37977724e-13]
+ [ 0.00000000e+00  0.00000000e+00  3.09894003e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_5 [ nomad:has_simulation_cell [ nomad:array """[[ 3.13682952e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.13682952e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  6.12337059e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "yG5WRD3kPxr-eUohbwAezZLCQBdS" ],
         [ nomad:has_atom_positions [ nomad:array """[[ 1.56841476e-10  1.56841476e-10  1.53084265e-10]
  [ 1.56841476e-10  1.56841476e-10  4.59252794e-10]
  [ 0.00000000e+00  0.00000000e+00 -4.17246472e-14]
  [ 0.00000000e+00  0.00000000e+00  3.06210254e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "yG5WRD3kPxr-eUohbwAezZLCQBdS" ],
         [ nomad:has_atom_species [ nomad:array """[[ 1.56841476e-10  1.56841476e-10  1.53084265e-10]
  [ 1.56841476e-10  1.56841476e-10  4.59252794e-10]
  [ 0.00000000e+00  0.00000000e+00 -4.17246472e-14]
  [ 0.00000000e+00  0.00000000e+00  3.06210254e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
         [ nomad:has_lattice_vectors [ nomad:array """[[ 3.13682952e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.13682952e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  6.12337059e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_6 [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.18914467e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.18914467e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.90812080e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.13682952e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.13682952e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  6.12337059e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
-    matvoc:section_system_6 [ nomad:has_atom_positions [ nomad:array """[[1.59457234e-10 1.59457234e-10 1.47703020e-10]
- [1.59457234e-10 1.59457234e-10 4.43109060e-10]
- [0.00000000e+00 0.00000000e+00 2.36921552e-13]
- [0.00000000e+00 0.00000000e+00 2.95169118e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_configuration_raw_gid "7VdwPEvYpj9oHui2aqGJOZGEkCxZ" ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.18914467e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.18914467e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.90812080e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_species [ nomad:array """[[1.59457234e-10 1.59457234e-10 1.47703020e-10]
  [1.59457234e-10 1.59457234e-10 4.43109060e-10]
  [0.00000000e+00 0.00000000e+00 2.36921552e-13]
  [0.00000000e+00 0.00000000e+00 2.95169118e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.18914467e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.18914467e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.90812080e-10]]""" ;
+        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.59457234e-10 1.59457234e-10 1.47703020e-10]
+ [1.59457234e-10 1.59457234e-10 4.43109060e-10]
+ [0.00000000e+00 0.00000000e+00 2.36921552e-13]
+ [0.00000000e+00 0.00000000e+00 2.95169118e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ] ;
+    matvoc:section_system_7 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.29377497e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.29377497e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.47762123e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_raw_gid "EkkXp_ciyQePfqqGl5zxCBCxGDwf" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.29377497e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.29377497e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.47762123e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.18914467e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.18914467e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.90812080e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_7 [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_atom_species [ nomad:array """[[1.64688749e-10 1.64688749e-10 1.36940531e-10]
  [1.64688749e-10 1.64688749e-10 4.10821592e-10]
  [0.00000000e+00 0.00000000e+00 7.52351276e-13]
  [0.00000000e+00 0.00000000e+00 2.73128710e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.29377497e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.29377497e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.47762123e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.29377497e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.29377497e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.47762123e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
         [ nomad:has_atom_positions [ nomad:array """[[1.64688749e-10 1.64688749e-10 1.36940531e-10]
  [1.64688749e-10 1.64688749e-10 4.10821592e-10]
  [0.00000000e+00 0.00000000e+00 7.52351276e-13]
  [0.00000000e+00 0.00000000e+00 2.73128710e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_raw_gid "EkkXp_ciyQePfqqGl5zxCBCxGDwf" ],
         [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
     matvoc:section_system_8 [ nomad:has_lattice_vectors [ nomad:array """[[ 3.50303557e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.50303557e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  4.61662210e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition "NiSiTaTa" ],
+        [ nomad:has_atom_species [ nomad:array """[[1.75151779e-10 1.75151779e-10 1.15415553e-10]
+ [1.75151779e-10 1.75151779e-10 3.46246658e-10]
+ [0.00000000e+00 0.00000000e+00 1.60258188e-12]
+ [0.00000000e+00 0.00000000e+00 2.29228523e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
+        [ nomad:has_simulation_cell [ nomad:array """[[ 3.50303557e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.50303557e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  4.61662210e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
         [ nomad:has_atom_positions [ nomad:array """[[1.75151779e-10 1.75151779e-10 1.15415553e-10]
  [1.75151779e-10 1.75151779e-10 3.46246658e-10]
  [0.00000000e+00 0.00000000e+00 1.60258188e-12]
  [0.00000000e+00 0.00000000e+00 2.29228523e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_raw_gid "JtpV7VYicTrHT9ceeC2WOckGhojA" ],
-        [ nomad:has_simulation_cell [ nomad:array """[[ 3.50303557e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.50303557e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  4.61662210e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
         [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
-        [ nomad:has_atom_species [ nomad:array """[[1.75151779e-10 1.75151779e-10 1.15415553e-10]
- [1.75151779e-10 1.75151779e-10 3.46246658e-10]
- [0.00000000e+00 0.00000000e+00 1.60258188e-12]
- [0.00000000e+00 0.00000000e+00 2.29228523e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ] ;
-    matvoc:section_system_9 [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
         [ nomad:has_chemical_composition "NiSiTaTa" ],
-        [ nomad:has_atom_positions [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
- [1.65579949e-10 1.65579949e-10 4.05321348e-10]
- [0.00000000e+00 0.00000000e+00 6.45412097e-13]
- [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
- [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
- [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
-                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "JtpV7VYicTrHT9ceeC2WOckGhojA" ] ;
+    matvoc:section_system_9 [ nomad:has_system_type "bulk" ],
+        [ nomad:has_is_representative true ],
         [ nomad:has_atom_species [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
  [1.65579949e-10 1.65579949e-10 4.05321348e-10]
  [0.00000000e+00 0.00000000e+00 6.45412097e-13]
  [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_is_representative true ],
+        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
         [ nomad:has_chemical_composition_reduced "NiSiTa2" ],
-        [ nomad:has_configuration_raw_gid "oT47hLaoTAhtEn3FA1Wt6BZ9Y8KE" ],
+        [ nomad:has_lattice_vectors [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
+ [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
+ [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
         [ nomad:has_simulation_cell [ nomad:array """[[ 3.31159899e-10  0.00000000e+00 -0.00000000e+00]
  [ 0.00000000e+00  3.31159899e-10  0.00000000e+00]
  [ 0.00000000e+00  0.00000000e+00  5.40428464e-10]]""" ;
                     qudt:unit qudt_unit:meter ] ],
-        [ nomad:has_chemical_composition_bulk_reduced "NiSiTa2" ],
-        [ nomad:has_system_type "bulk" ],
-        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ] ;
+        [ nomad:has_configuration_periodic_dimensions "[True, True, True]" ],
+        [ nomad:has_configuration_raw_gid "oT47hLaoTAhtEn3FA1Wt6BZ9Y8KE" ],
+        [ nomad:has_atom_positions [ nomad:array """[[1.65579949e-10 1.65579949e-10 1.35107116e-10]
+ [1.65579949e-10 1.65579949e-10 4.05321348e-10]
+ [0.00000000e+00 0.00000000e+00 6.45412097e-13]
+ [0.00000000e+00 0.00000000e+00 2.69568820e-10]]""" ;
+                    qudt:unit qudt_unit:meter ] ],
+        [ nomad:has_atom_labels "['Ni', 'Si', 'Ta', 'Ta']" ],
+        [ nomad:has_chemical_composition "NiSiTaTa" ] ;
     rdfs:comment ""@en ;
     sosa:isResultOf matvoc:method_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 ;
-    sosa:isSampleOf matvoc:materials .
-
-matvoc:materials a sosa:FeatureOfInterest ;
-    rdfs:label "calculating energy levels of materials"@en ;
-    sosa:hasSample matvoc:mat_NiSiTa2_0NYhcpPG9W2N6_Zeqwoco8KHbaE8 .
+    sosa:isSampleOf matvoc:mat_NiSiTa2 .
 

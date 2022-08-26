@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  8 14:02:02 2021
 
-@author: GuptaR
-"""
 
 
 
@@ -60,7 +56,7 @@ def setup_logger(name, log_file, level=logging.DEBUG):
 
 
 # first file logger
-log_one = setup_logger('first_logger', r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\log1.log')
+log_one = setup_logger('first_logger', 'log1.log')
 
 # results = client.query_archive(query={
 #     'upload_id': ['5TM3DMqGTtKtP5qfQ7havg'],
@@ -94,6 +90,7 @@ log_one = setup_logger('first_logger', r'C:\Users\GuptaR\Desktop\new_py_scripts\
 #     'upload_id': ['-5WEQAwUSa6qNSrtS0YFrg'],
 #     'calc_id': ['-vdV8O_pWTODtfpGutNJxl-hxooX']})
 # print(results)
+
 
 # results = client.query_archive(query={
 #   'upload_id': ['-5WEQAwUSa6qNSrtS0YFrg'],
@@ -150,14 +147,14 @@ from rdflib.namespace import FOAF , XSD, SKOS, RDF, RDFS, OWL, DC, DCTERMS, VOID
 
 
 # un = [] 
-if os.path.isfile(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\un.txt'):
+if os.path.isfile('un.txt'):
     pass
 else:
-    with open(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\un.txt', "wb") as fp:   
+    with open('un.txt', "wb") as fp:   
         un=[]
         pickle.dump(un, fp)
     
-with open(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\un.txt', "rb") as fp:
+with open('un.txt', "rb") as fp:
     v = pickle.load(fp)
 
 un = v
@@ -236,11 +233,11 @@ for i, result in enumerate(results):
                         formula_name = getattr(metadata,'formula')
                         pid_name = getattr(metadata,'calc_id')
             
-            g.add((URIRef(matvoc+'materials'), RDF.type, URIRef(sosa+'FeatureOfInterest')))
-            g.add((URIRef(matvoc+'materials'), RDFS.label, Literal('calculating energy levels of materials',lang ='en')))
+            g.add((URIRef(matvoc+'mat'+'_'+ formula_name), RDF.type, URIRef(sosa+'FeatureOfInterest')))
+            g.add((URIRef(matvoc+'mat'+'_'+ formula_name), RDFS.label, Literal('calculating energy levels of materials',lang ='en')))
             # a = 'mat'+str(i+1)
             a = 'mat'+ '_' + formula_name + '_' + pid_name
-            g.add((URIRef(matvoc+'materials'), URIRef(sosa+'hasSample'), URIRef(matvoc + a)))
+            g.add((URIRef(matvoc+'mat'+'_'+ formula_name), URIRef(sosa+'hasSample'), URIRef(matvoc + a)))
 
             formula1 = []
             try1 = 0
@@ -682,7 +679,7 @@ for i, result in enumerate(results):
                                                                                 
                                                                                 
                                                                     
-                                                        g.add((URIRef(matvoc+a), URIRef(sosa + 'isSampleOf'), URIRef(matvoc + 'materials')))
+                                                        g.add((URIRef(matvoc+a), URIRef(sosa + 'isSampleOf'), URIRef(matvoc+'mat'+'_'+ formula_name)))
                                                         g.add((URIRef(matvoc+a), URIRef(sosa + 'isResultOf'), URIRef(matvoc + m)))
                                     
                                         if att == 'properties':  
@@ -1289,10 +1286,10 @@ for i, result in enumerate(results):
                                                     pass
                                         k+=1
                              
-            with open(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\un.txt', "wb") as fp:   
+            with open('un.txt', "wb") as fp:   
                 pickle.dump(un, fp)
                                         
-            g.serialize(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\metadata_v1_' + str(i) + '.ttl', format='turtle')
+            g.serialize('metadata_v1_' + str(i) + '.ttl', format='turtle')
             # print('saved')
             # print('enter_repo' + str(i))
             
@@ -1303,7 +1300,7 @@ for i, result in enumerate(results):
                 }
                 
             # data = g.serialize(format='turtle').decode('UTF-8')
-            response = requests.post('http://localhost:7200/repositories/metadata_all/statements', data=open(r'C:\Users\GuptaR\Desktop\new_py_scripts\metadata\metadata_v1_' + str(i) + '.ttl','r').read(), headers=headers)
+            response = requests.post('http://localhost:7200/repositories/metadata_all/statements', data=open('metadata_v1_' + str(i) + '.ttl','r').read(), headers=headers)
             # print(response)
             # print('done_repo' + str(i))
             end = time.time()
@@ -1318,22 +1315,7 @@ for i, result in enumerate(results):
             break  
         
 logging.shutdown()   
-     
-# results = ArchiveQuery(
-#     # url='http://nomad-lab.eu/prod/rae/beta/api',
-  
-#     required={
-#         'section_run': {
-#             'section_method': '*',
-#             'section_single_configuration_calculation': '*',
-#             'section_system': '*'},
-#         'section_workflow': '*',
-#         'section_metadata': '*'
-#             },
-#     max=None).clear
-
-# print(results)
-# g.serialize(r'C:\Users\GuptaR\Desktop\meta_fo\form1.ttl', format='turtle')       
+           
         
 print('metadata_success')
 
