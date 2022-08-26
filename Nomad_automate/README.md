@@ -29,13 +29,13 @@
     3. Go to your jenkins local instance and click on manage jenkins there we have "reload configuration from disk" option, click on this option. 
 ## Steps to create jenkins jobs: 
      1. Install jenkins and create four freestyle jobs:
-            - db_to_csv
-            - rdf_map
-            - store_to_graph
+            - nomad_metadata
+            - nomad_method
+            - nomad_observation
             - query 
      2. After installing jenkins; go the .jenkins folder in your directory where jenkins has been installed, now go the workspace folder inside the .jenkins folder, there you will see workspace has already been created for the 4 freestyle projects that you have created. 
      
-     3. Copy the contents of the above folders (db_to_csv, rdf_map, store_to_graph, query) respectively. 
+     3. Copy the contents of the above folders (nomad_metadata, nomad_method, nomad_observation, query) respectively. 
  
  ## Inside the automate folder there are two files:
      1. automate.py, is a python script to run our jenkins pipeline from any IDE'S or terminal.  
