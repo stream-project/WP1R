@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Dec 17 14:48:37 2021
 
-@author: GuptaR
-"""
 
 import time
 import pandas as pd
@@ -97,7 +93,7 @@ with open('un.txt', "rb") as fp:
 
 un = v
 # print(un)
-number = 5
+number = 100
 length = len(un) + number
 # print(length)
 total = 0
@@ -796,7 +792,7 @@ for i, result in enumerate(results):
                 }
                 
             # data = g.serialize(format='turtle').decode('UTF-8')
-            response = requests.post('http://localhost:7200/repositories/method/statements', data=open('method_v1_' + str(i) + '.ttl','r').read(), headers=headers)
+            response = requests.post('http://localhost:7200/repositories/Nomad/statements', data=open('method_v1_' + str(i) + '.ttl','r').read(), headers=headers)
             # print(response)
             # print('done_repo' + str(i))
             end = time.time()

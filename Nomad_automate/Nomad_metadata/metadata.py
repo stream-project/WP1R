@@ -106,7 +106,7 @@ with open('un.txt', "rb") as fp:
 
 un = v
 # print(un)
-number = 5
+number = 100
 length = len(un) + number
 # print(length)
 total = 0
@@ -184,7 +184,7 @@ for i, result in enumerate(results):
                 for att, value in (metadata.__dict__.items()): 
                     
                     
-                    if not att.startswith(('m_','a_','mainfile','dft','encyclopedia','files','uploader')):
+                    if not att.startswith(('m_','a_','mainfile','dft','encyclopedia','files','uploader','coauthors')):
                         
                         
                         c=0
@@ -1236,7 +1236,7 @@ for i, result in enumerate(results):
                 }
                 
             # data = g.serialize(format='turtle').decode('UTF-8')
-            response = requests.post('http://localhost:7200/repositories/metadata/statements', data=open('metadata_v1_' + str(i) + '.ttl','r').read(), headers=headers)
+            response = requests.post('http://localhost:7200/repositories/Nomad/statements', data=open('metadata_v1_' + str(i) + '.ttl','r').read(), headers=headers)
             # print(response)
             # print('done_repo' + str(i))
             end = time.time()
