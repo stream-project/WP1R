@@ -11,6 +11,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix rml: <http://semweb.mmlab.be/ns/rml#>.
 @prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
 @base <http://example.com/> .
 
 
@@ -74,7 +75,9 @@ rr:subjectMap [
 
 rr:predicateObjectMap [
 rr:predicate  hybrid3:has_observed_value ;
-rr:objectMap[rml:reference "value"];
+rr:objectMap[rml:reference "value";
+            rr:datatype xsd:double
+];
 ];
 
 rr:predicateObjectMap [
@@ -88,11 +91,16 @@ rr:objectMap[rml:reference "value_temp"];
 ];
 
 rr:predicateObjectMap [
+rr:predicate  qudt:unit ;
+rr:objectMap[rml:reference "label"];
+];
+
+rr:predicateObjectMap [
 rr:predicate  hybrid3:has_observed_primary_property ;
-rr:objectMap[rr:template "https://materials.hybrid3.duke.edu/materials/property_{primary_property_id}"];
+rr:objectMap[rr:template "https://materials.hybrid3.duke.edu/materials/property/{primary_property_id}"];
 ];
 
 rr:predicateObjectMap [
 rr:predicate  hybrid3:has_observed_secondary_property ;
-rr:objectMap[rr:template "https://materials.hybrid3.duke.edu/materials/property_{secondary_property_id}"];
+rr:objectMap[rr:template "https://materials.hybrid3.duke.edu/materials/property/{secondary_property_id}"];
 ].

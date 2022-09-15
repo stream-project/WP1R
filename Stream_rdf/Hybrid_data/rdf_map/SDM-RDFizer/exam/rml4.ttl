@@ -25,7 +25,36 @@
         rr:class sosa:Procedure
     ];
 
+      rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_method;
+        rr:objectMap [ rml:reference "method" ]
+    ] ;
+
     rr:predicateObjectMap [
-    rr:predicate  hybrid3:has_method ;
-    rr:objectMap[rml:reference "method"];
+    rr:predicate  sosa:hassynthesis;
+    rr:objectMap[
+        rr:parentTriplesMap <TripleMap2>;
+        rr:joinCondition [
+            rr:child "dataset_id";
+            rr:parent "dataset_id";
+        ];
+    ] ;
     ].
+
+  <TripleMap2>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../db_to_csv/materials_synthesismethod.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+        rr:template "https://materials.hybrid3.duke.edu/materials/synthesis/{dataset_id}";
+        rr:class ssn:Synthesis
+    ].
+
+
+  
+
+
+

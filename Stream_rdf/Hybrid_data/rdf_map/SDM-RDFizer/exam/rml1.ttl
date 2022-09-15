@@ -120,17 +120,6 @@
     ];
 
     rr:predicateObjectMap [
-    rr:predicate  hybrid3:has_synthesis;
-    rr:objectMap[
-        rr:parentTriplesMap <TripleMap7>;
-        rr:joinCondition [
-            rr:child "id";
-            rr:parent "dataset_id";
-        ];
-    ] ;
-    ];
-
-    rr:predicateObjectMap [
     rr:predicate  sosa:hasSample;
     rr:objectMap[
         rr:parentTriplesMap <TripleMap8>;
@@ -243,17 +232,17 @@ rr:subjectMap [
     rr:class hybrid3:Reference
 ].
 
-<TripleMap7>
-a rr:TriplesMap;
+# <TripleMap7>
+# a rr:TriplesMap;
 
-rml:logicalSource [ rml:source "../../../db_to_csv/materials_synthesismethod.csv";
-rml:referenceFormulation ql:CSV
-];
+# rml:logicalSource [ rml:source "../../../db_to_csv/materials_synthesismethod.csv";
+# rml:referenceFormulation ql:CSV
+# ];
 
-rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/synthesis/{dataset_id}";
-    rr:class hybrid3:Synthesis
-].
+# rr:subjectMap [
+#     rr:template "https://materials.hybrid3.duke.edu/materials/synthesis/{dataset_id}";
+#     rr:class hybrid3:Synthesis
+# ].
 
 <TripleMap8>
 a rr:TriplesMap;
