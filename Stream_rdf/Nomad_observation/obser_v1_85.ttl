@@ -1,5 +1,5 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc-core/> .
 @prefix nomad: <http://https://nomad-coe.eu/ontology#> .
 @prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
 @prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
@@ -151,14 +151,7 @@ matvoc:mat86ob2energy_total_calc a sosa:Observation ;
 matvoc:mat86ob2section_eigenvalues_calc a sosa:Observation ;
     sosa:hasResult [ a qudt:QuantityValue ;
             rdfs:label "section_eigenvalues_calc"@en ;
-            nomad:has_section_eigenvalues [ nomad:has_eigenvalues_occupation [ nomad:array """[[[1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  ...
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]]]""" ] ],
-                [ nomad:has_eigenvalues_values [ nomad:array """[[[-7.20537285e-18 -6.22785284e-18 -6.22671529e-18 ...  5.97216147e-18
+            nomad:has_section_eigenvalues [ nomad:has_eigenvalues_values [ nomad:array """[[[-7.20537285e-18 -6.22785284e-18 -6.22671529e-18 ...  5.97216147e-18
     5.97216147e-18  6.17400368e-18]
   [-7.20495628e-18 -6.22783682e-18 -6.22684347e-18 ...  5.94445983e-18
     6.00124097e-18  6.02727634e-18]
@@ -171,7 +164,14 @@ matvoc:mat86ob2section_eigenvalues_calc a sosa:Observation ;
     6.07915482e-18  6.15181353e-18]
   [-7.18641910e-18 -6.22974341e-18 -6.22974341e-18 ...  5.94061461e-18
     5.98936885e-18  6.12880628e-18]]]""" ;
-                            qudt:unit qudt_unit:joule ] ] ;
+                            qudt:unit qudt_unit:joule ] ],
+                [ nomad:has_eigenvalues_occupation [ nomad:array """[[[1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  ...
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]]]""" ] ] ;
             dc:title "section_eigenvalues"@en ] ;
     sosa:hasfeatureOfInterest matvoc:mat_Mg2ZnZr_-rbSFrAMa3U7rIXiLk0s_AEta-Ve .
 

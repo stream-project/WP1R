@@ -144,7 +144,7 @@ total = 0
 
 # un = v
 # # print(un)
-# number = 2
+# number = 100
 # length = len(un) + number
 # # print(length)
 # total = 0
@@ -175,7 +175,7 @@ for i, result in enumerate(results):
             dc = Namespace('http://purl.org/dc/elements/1.1/')
             ab = Namespace('http://learningsparql.com/ns/data#')
             cdt = Namespace('http://w3id.org/lindt/custom_datatypes#') 
-            matvoc = Namespace('http://stream-ontology.com/matvoc#') 
+            matvoc = Namespace('http://stream-ontology.com/matvoc-core/') 
             
             
             g.bind('sosa', sosa)

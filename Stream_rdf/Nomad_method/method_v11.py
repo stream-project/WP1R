@@ -126,7 +126,7 @@ for i, result in enumerate(results):
             dc = Namespace('http://purl.org/dc/elements/1.1/')
             ab = Namespace('http://learningsparql.com/ns/data#')
             cdt = Namespace('http://w3id.org/lindt/custom_datatypes#') 
-            matvoc = Namespace('http://stream-ontology.com/matvoc#')
+            matvoc = Namespace('http://stream-ontology.com/matvoc-core/')
             
             
             g.bind('sosa', sosa)
@@ -792,12 +792,12 @@ for i, result in enumerate(results):
                 }
                 
             # data = g.serialize(format='turtle').decode('UTF-8')
-            response = requests.post('http://localhost:7200/repositories/Nomad/statements', data=open('method_v1_' + str(i) + '.ttl','r').read(), headers=headers)
+           # response = requests.post('http://localhost:7200/repositories/Nomad/statements', data=open('method_v1_' + str(i) + '.ttl','r').read(), headers=headers)
             # print(response)
             # print('done_repo' + str(i))
-            end = time.time()
-            tot = end - start
-            total = total + tot 
+          #  end = time.time()
+           # tot = end - start
+            #total = total + tot 
             # print(total)                      
      
         else:

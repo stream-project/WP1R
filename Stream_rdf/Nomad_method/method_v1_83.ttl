@@ -1,4 +1,4 @@
-@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc-core/> .
 @prefix nomad: <http://https://nomad-coe.eu/ontology#> .
 @prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
 @prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
@@ -20,27 +20,27 @@ matvoc:method_K2LaRh_-r8OAQxSsO2UTTea3AMyUEuAqW-S a sosa:Sampling ;
     nomad:has_n_geometries 48 ;
     nomad:has_n_quantities 1389 ;
     nomad:has_n_total_energies 47 ;
-    nomad:has_optimade [ nomad:has_species_0 [ nomad:has_chemical_symbols "['La']" ] ],
-        [ nomad:has_chemical_formula_hill "K2LaRh" ],
-        [ nomad:has_species_2 [ nomad:has_chemical_symbols "['Rh']" ] ],
-        [ nomad:has_species_1 [ nomad:has_concentration "[1.0]" ] ],
-        [ nomad:has_nsites 4 ],
+    nomad:has_optimade [ nomad:has_chemical_formula_reduced "K2LaRh" ],
+        [ nomad:has_chemical_formula_descriptive "K2LaRh" ],
         [ nomad:has_species_0 [ nomad:has_name "La" ] ],
-        [ nomad:has_chemical_formula_reduced "K2LaRh" ],
-        [ nomad:has_species_0 [ nomad:has_concentration "[1.0]" ] ],
+        [ nomad:has_species_1 [ nomad:has_concentration "[1.0]" ] ],
         [ nomad:has_nelements 3 ],
+        [ nomad:has_chemical_formula_hill "K2LaRh" ],
         [ nomad:has_chemical_formula_anonymous "A2BC" ],
+        [ nomad:has_species_0 [ nomad:has_concentration "[1.0]" ] ],
+        [ nomad:has_species_1 [ nomad:has_chemical_symbols "['K']" ] ],
+        [ nomad:has_structure_features "[]" ],
+        [ nomad:has_species_0 [ nomad:has_chemical_symbols "['La']" ] ],
+        [ nomad:has_species_2 [ nomad:has_name "Rh" ] ],
+        [ nomad:has_species_2 [ nomad:has_concentration "[1.0]" ] ],
+        [ nomad:has_species_1 [ nomad:has_name "K" ] ],
         [ nomad:has_cartesian_site_positions [ nomad:array """[[-1.23904236e-17 -2.67747301e-18  1.08066283e+00]
  [ 1.29246971e-16  3.28688116e+00  3.22284711e+00]
  [ 6.29559274e-17  1.32695724e-17  5.57306714e+00]
  [ 1.95713278e+00  0.00000000e+00  3.96119960e+00]]""" ;
                     qudt:unit qudt_unit:angstrom ] ],
-        [ nomad:has_species_1 [ nomad:has_name "K" ] ],
-        [ nomad:has_species_2 [ nomad:has_concentration "[1.0]" ] ],
-        [ nomad:has_structure_features "[]" ],
-        [ nomad:has_chemical_formula_descriptive "K2LaRh" ],
-        [ nomad:has_species_2 [ nomad:has_name "Rh" ] ],
-        [ nomad:has_species_1 [ nomad:has_chemical_symbols "['K']" ] ],
+        [ nomad:has_nsites 4 ],
+        [ nomad:has_species_2 [ nomad:has_chemical_symbols "['Rh']" ] ],
         [ nomad:has_lattice_vectors [ nomad:array """[[-1.95713278  3.28688116  6.91888834]
  [ 1.95713278 -3.28688116  6.91888834]
  [ 1.95713278  3.28688116 -6.91888834]]""" ;
@@ -131,21 +131,21 @@ matvoc:method_K2LaRh_-r8OAQxSsO2UTTea3AMyUEuAqW-S a sosa:Sampling ;
  [-0.46428571  0.46428571  0.46428571]
  [ 0.46428571 -0.46428571  0.46428571]
  [-0.46428571 -0.46428571  0.46428571]]""" ] ] ;
-    nomad:section_method__0 [ nomad:has_section_method_atom_kind_0 [ nomad:has_method_atom_kind_pseudopotential_name " PAW_PBE K_sv 06Sep2000                 " ],
+    nomad:section_method__0 [ nomad:has_section_method_atom_kind_0 [ nomad:has_method_atom_kind_atom_number "19" ],
                 [ nomad:has_method_atom_kind_label "K" ],
-                [ nomad:has_method_atom_kind_explicit_electrons "9.0" ],
                 [ nomad:has_method_atom_kind_mass "39.098 unified_atomic_mass_unit" ],
-                [ nomad:has_method_atom_kind_atom_number "19" ] ;
+                [ nomad:has_method_atom_kind_pseudopotential_name " PAW_PBE K_sv 06Sep2000                 " ],
+                [ nomad:has_method_atom_kind_explicit_electrons "9.0" ] ;
             nomad:has_section_method_atom_kind_1 [ nomad:has_method_atom_kind_pseudopotential_name " PAW_PBE La 06Sep2000                   " ],
-                [ nomad:has_method_atom_kind_label "La" ],
-                [ nomad:has_method_atom_kind_atom_number "57" ],
+                [ nomad:has_method_atom_kind_mass "138.9 unified_atomic_mass_unit" ],
                 [ nomad:has_method_atom_kind_explicit_electrons "11.0" ],
-                [ nomad:has_method_atom_kind_mass "138.9 unified_atomic_mass_unit" ] ;
-            nomad:has_section_method_atom_kind_2 [ nomad:has_method_atom_kind_explicit_electrons "15.0" ],
-                [ nomad:has_method_atom_kind_pseudopotential_name " PAW_PBE Rh_pv 06Sep2000                " ],
+                [ nomad:has_method_atom_kind_label "La" ],
+                [ nomad:has_method_atom_kind_atom_number "57" ] ;
+            nomad:has_section_method_atom_kind_2 [ nomad:has_method_atom_kind_pseudopotential_name " PAW_PBE Rh_pv 06Sep2000                " ],
+                [ nomad:has_method_atom_kind_atom_number "45" ],
+                [ nomad:has_method_atom_kind_explicit_electrons "15.0" ],
                 [ nomad:has_method_atom_kind_label "Rh" ],
-                [ nomad:has_method_atom_kind_mass "102.906 unified_atomic_mass_unit" ],
-                [ nomad:has_method_atom_kind_atom_number "45" ] ],
+                [ nomad:has_method_atom_kind_mass "102.906 unified_atomic_mass_unit" ] ],
         [ nomad:has_section_XC_functionals_0 [ nomad:has_XC_functional_name "GGA_X_PBE" ] ;
             nomad:has_section_XC_functionals_1 [ nomad:has_XC_functional_name "GGA_C_PBE" ] ] ;
     nomad:workflowtype nomad:geometry_optimization ;

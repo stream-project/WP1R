@@ -8,16 +8,7 @@ Created on Wed Dec  8 14:02:02 2021
 
 
 
-import requests
 
-
-files = {
-    'config': open('repo-config.ttl', 'rb'),
-}
-
-response = requests.post('http://localhost:7200/rest/repositories',  files=files)
-
-print(response)
 
 
 
@@ -157,7 +148,7 @@ for i, result in enumerate(results):
             dc = Namespace('http://purl.org/dc/elements/1.1/')
             ab = Namespace('http://learningsparql.com/ns/data#')
             cdt = Namespace('http://w3id.org/lindt/custom_datatypes#') 
-            matvoc = Namespace('http://stream-ontology.com/matvoc#')
+            matvoc = Namespace('http://stream-ontology.com/matvoc-core/')
             
             
             g.bind('sosa', sosa)

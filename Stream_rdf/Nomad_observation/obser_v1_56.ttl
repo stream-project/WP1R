@@ -1,5 +1,5 @@
 @prefix dc: <http://purl.org/dc/elements/1.1/> .
-@prefix matvoc: <http://stream-ontology.com/matvoc#> .
+@prefix matvoc: <http://stream-ontology.com/matvoc-core/> .
 @prefix nomad: <http://https://nomad-coe.eu/ontology#> .
 @prefix qudt: <http://qudt.org/2.1/schema/qudt#> .
 @prefix qudt_unit: <http://qudt.org/2.1/vocab/unit#> .
@@ -601,22 +601,7 @@ matvoc:mat57ob20energy_total_calc a sosa:Observation ;
 matvoc:mat57ob20section_eigenvalues_calc a sosa:Observation ;
     sosa:hasResult [ a qudt:QuantityValue ;
             rdfs:label "section_eigenvalues_calc"@en ;
-            nomad:has_section_eigenvalues [ nomad:has_eigenvalues_occupation [ nomad:array """[[[1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  ...
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]]
-
- [[1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  ...
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]
-  [1. 1. 1. ... 0. 0. 0.]]]""" ] ],
-                [ nomad:has_eigenvalues_values [ nomad:array """[[[-7.40399468e-18 -3.58419730e-18 -3.53552318e-18 ...  5.73601665e-18
+            nomad:has_section_eigenvalues [ nomad:has_eigenvalues_values [ nomad:array """[[[-7.40399468e-18 -3.58419730e-18 -3.53552318e-18 ...  5.73601665e-18
     5.75610795e-18  5.82607500e-18]
   [-7.40365823e-18 -3.58368461e-18 -3.53968884e-18 ...  5.72202965e-18
     5.76761158e-18  5.85766993e-18]
@@ -643,7 +628,22 @@ matvoc:mat57ob20section_eigenvalues_calc a sosa:Observation ;
     6.01423463e-18  6.06029721e-18]
   [-7.39526282e-18 -3.58198630e-18 -3.58192221e-18 ...  5.93335675e-18
     5.96717870e-18  6.02054720e-18]]]""" ;
-                            qudt:unit qudt_unit:joule ] ] ;
+                            qudt:unit qudt_unit:joule ] ],
+                [ nomad:has_eigenvalues_occupation [ nomad:array """[[[1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  ...
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]]
+
+ [[1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  ...
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]
+  [1. 1. 1. ... 0. 0. 0.]]]""" ] ] ;
             dc:title "section_eigenvalues"@en ] ;
     sosa:hasfeatureOfInterest matvoc:mat_InNbSb2_-aYNE1YFLU8q8kFqGUxItQRdmu-j .
 
