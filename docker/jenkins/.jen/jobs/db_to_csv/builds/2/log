@@ -1,0 +1,48 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\db_to_csv
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[db_to_csv] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins1018531622940908281.bat
+
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv>python db_to_csv.py 
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv\db_to_csv.py:44: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\site-packages\pandas\io\sql.py:761: UserWarning: pandas only support SQLAlchemy connectable(engine/connection) ordatabase string URI or sqlite3 DBAPI2 connectionother DBAPI2 objects are not tested, please consider using SQLAlchemy
+  warnings.warn(
+select * from materials_dataset
+('hybrid',)
+select * from materials_dataset
+select * from materials_property
+select * from materials_system
+select co.id, co.dataset_id, co.code, co.level_of_theory, co.k_point_grid, co.level_of_relativity, co.basis_set_definition, co.dataset_id, co.numerical_accuracy, co.xc_functional, c.computational_details_id from   materials_computationaldetails co INNER JOIN materials_comment c on co.id = c.computational_details_id where computational_details_id is NOT NULL
+select id, title, journal, vol, pages_start, pages_end, year, doi_isbn from materials_reference
+select * from materials_author_references
+select * from materials_author
+select sy.id, sy.starting_materials, sy.product, sy.dataset_id, c.synthesis_method_id  from materials_synthesismethod sy INNER JOIN materials_comment c on sy.id = c.synthesis_method_id where synthesis_method_id is NOT NULL
+select o.id, o.subset_id, t.dataset_id, n.id as numerical_id, n.value, n.qualifier, d.primary_property_id, f.value as value_temp, u.label from  materials_datapoint o INNER JOIN materials_subset t on o.subset_id = t.id INNER JOIN materials_numericalvalue n on o.id = n.datapoint_id INNER JOIN materials_dataset d on d.id = t.dataset_id INNER JOIN materials_numericalvaluefixed f on f.subset_id = t.id INNER JOIN  materials_unit u on u.id = f.unit_id where secondary_property_id IS NULL
+select o.id, o.subset_id, t.dataset_id, n.id as numerical_id, n.value, n.qualifier, d.primary_property_id, d.secondary_property_id, f.value as value_temp, u.label from   materials_datapoint o INNER JOIN materials_subset t on o.subset_id = t.id INNER JOIN materials_numericalvalue n on o.id = n.datapoint_id INNER JOIN materials_dataset d on d.id = t.dataset_id INNER JOIN materials_numericalvaluefixed f on f.subset_id = t.id INNER JOIN  materials_unit u on u.id = f.unit_id where secondary_property_id IS NOT NULL
+select e.id, e.method, e.dataset_id, c.experimental_details_id from  materials_experimentaldetails e INNER JOIN materials_comment c on e.id = c.experimental_details_id where experimental_details_id is NOT NULL
+
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv>exit 0 
+Finished: SUCCESS

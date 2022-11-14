@@ -1,0 +1,24 @@
+Started by user unknown or anonymous
+Running as SYSTEM
+Building in workspace C:\Users\GuptaR\.jenkins\workspace\db_to_csv
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[db_to_csv] $ cmd /c call C:\Users\GuptaR\AppData\Local\Temp\jenkins9069570850628261586.bat
+
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv>python db_to_csv.py 
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv\db_to_csv.py:44: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+Traceback (most recent call last):
+  File "C:\Users\GuptaR\.jenkins\workspace\db_to_csv\db_to_csv.py", line 44, in <module>
+    config.readfp(open('./tables.properties'))
+  File "C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\configparser.py", line 763, in readfp
+    self.read_file(fp, source=filename)
+  File "C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\configparser.py", line 718, in read_file
+    self._read(f, source)
+  File "C:\Users\GuptaR\AppData\Local\Programs\Python\Python39\lib\configparser.py", line 1096, in _read
+    raise DuplicateOptionError(sectname, optname,
+configparser.DuplicateOptionError: While reading from './tables.properties' [line 28]: option 'materials_experimentaldetails' in section 'TABLES' already exists
+
+C:\Users\GuptaR\.jenkins\workspace\db_to_csv>exit 1 
+Build step 'Execute Windows batch command' marked build as failure
+Finished: FAILURE

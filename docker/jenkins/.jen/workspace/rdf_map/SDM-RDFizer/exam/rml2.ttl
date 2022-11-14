@@ -1,0 +1,74 @@
+@prefix rr: <http://www.w3.org/ns/r2rml#>.
+@prefix ex: <http://example.com/ns>.
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix hybrid3: <https://materials.hybrid3.duke.edu/materials/> .
+@prefix matonto: <http://matonto.org/ontology/matonto#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix sosa: <http://www.w3.org/ns/sosa/> .
+@prefix ssn: <http://www.w3.org/ns/ssn/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rml: <http://semweb.mmlab.be/ns/rml#>.
+@prefix ql: <http://semweb.mmlab.be/ns/ql#> .
+@prefix ex: <http://example.com/ns/>.
+@base <http://example.com/> .
+
+<TripleMap1>
+    a rr:TriplesMap;
+
+    rml:logicalSource [ rml:source "../../../db_to_csv/materials_system.csv";
+    rml:referenceFormulation ql:CSV
+    ];
+
+    rr:subjectMap [
+        rr:template "https://materials.hybrid3.duke.edu/materials/system/{id}";
+    
+        rr:class sosa:Sample
+    ];
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_compound_name;
+        rr:objectMap [ rml:reference "compound_name" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_group;
+        rr:objectMap [ rml:reference "group" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_formula;
+        rr:objectMap [ rml:reference "formula" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_organic;
+        rr:objectMap [ rml:reference "organic" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_inorganic;
+        rr:objectMap [ rml:reference "inorganic" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_last_update;
+        rr:objectMap [ rml:reference "last_update" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_description;
+        rr:objectMap [ rml:reference "description" ]
+    ] ;
+
+    rr:predicateObjectMap [
+        rr:predicate  hybrid3:has_iupac;
+        rr:objectMap [ rml:reference "iupac" ]
+    ].
+    
+    
+    
+    
+    
+    
+    
