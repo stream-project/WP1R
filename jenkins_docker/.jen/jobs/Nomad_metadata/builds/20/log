@@ -1,0 +1,747 @@
+Started by user [8mha:////4PXRqxyBfWUHAebwTWaf3LlWTKCEl8hOIL+fRcKSQqBOAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL94pKi1MRcAPuW3GnBAAAA[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Nomad_metadata
+[Nomad_metadata] $ /bin/sh -xe /tmp/jenkins139019828168413203.sh
++ pip3 install nomad-lab[all]
+Requirement already satisfied: nomad-lab[all] in /usr/local/lib/python3.9/dist-packages (1.0.8)
+Requirement already satisfied: fastentrypoints==0.12 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.12)
+Requirement already satisfied: python-keycloak==0.26.1 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.26.1)
+Requirement already satisfied: click==7.1.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (7.1.2)
+Requirement already satisfied: aniso8601==7.0.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (7.0.0)
+Requirement already satisfied: memoization==0.4.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.4.0)
+Requirement already satisfied: requests==2.26.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (2.26.0)
+Requirement already satisfied: orjson==3.6.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (3.6.0)
+Requirement already satisfied: Pint==0.17 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.17)
+Requirement already satisfied: wheel in /usr/lib/python3/dist-packages (from nomad-lab[all]) (0.34.2)
+Requirement already satisfied: pytz==2021.1 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (2021.1)
+Requirement already satisfied: elasticsearch-dsl==7.4.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (7.4.0)
+Requirement already satisfied: numpy==1.21.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (1.21.2)
+Requirement already satisfied: docstring-parser==0.12 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.12)
+Requirement already satisfied: httpx==0.22.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.22.0)
+Requirement already satisfied: ase==3.19.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (3.19.0)
+Requirement already satisfied: cython>=0.19 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.29.32)
+Requirement already satisfied: pyyaml==6.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (6.0)
+Requirement already satisfied: pydantic==1.8.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (1.8.2)
+Requirement already satisfied: jmespath==0.10.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.10.0)
+Requirement already satisfied: nptyping==1.4.4 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (1.4.4)
+Requirement already satisfied: pip in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (22.2.2)
+Requirement already satisfied: future==0.18.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (0.18.2)
+Requirement already satisfied: cachetools==4.2.4 in /usr/local/lib/python3.9/dist-packages (from nomad-lab[all]) (4.2.4)
+Collecting gunicorn[eventlet]==20.1.0
+  Downloading gunicorn-20.1.0-py3-none-any.whl (79 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 79.5/79.5 kB 1.2 MB/s eta 0:00:00
+Collecting pytest==3.10.0
+  Downloading pytest-3.10.0-py2.py3-none-any.whl (216 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 216.6/216.6 kB 1.6 MB/s eta 0:00:00
+Collecting names==0.3.0
+  Downloading names-0.3.0.tar.gz (789 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 789.1/789.1 kB 1.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting python-json-logger==2.0.2
+  Downloading python_json_logger-2.0.2-py3-none-any.whl (7.4 kB)
+Collecting pylint-mongoengine==0.3.3
+  Downloading pylint-mongoengine-0.3.3.tar.gz (8.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting uvicorn[standard]==0.13.4
+  Downloading uvicorn-0.13.4-py3-none-any.whl (46 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 46.1/46.1 kB 1.9 MB/s eta 0:00:00
+Collecting devtools==0.8.0
+  Downloading devtools-0.8.0-py3-none-any.whl (14 kB)
+Collecting filelock==3.3.1
+  Downloading filelock-3.3.1-py3-none-any.whl (9.7 kB)
+Collecting celery[redis]==4.4.7
+  Downloading celery-4.4.7-py2.py3-none-any.whl (427 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 427.6/427.6 kB 2.5 MB/s eta 0:00:00
+Collecting python-magic==0.4.24
+  Downloading python_magic-0.4.24-py2.py3-none-any.whl (12 kB)
+Collecting xarray==0.19.0
+  Downloading xarray-0.19.0-py3-none-any.whl (827 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 827.5/827.5 kB 3.0 MB/s eta 0:00:00
+Collecting pytest-timeout==1.4.2
+  Downloading pytest_timeout-1.4.2-py2.py3-none-any.whl (10 kB)
+Collecting mkdocs-material-extensions==1.0.3
+  Downloading mkdocs_material_extensions-1.0.3-py3-none-any.whl (8.1 kB)
+Collecting python-logstash==0.4.6
+  Downloading python-logstash-0.4.6.tar.gz (6.5 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting itsdangerous==1.1.0
+  Downloading itsdangerous-1.1.0-py2.py3-none-any.whl (16 kB)
+Collecting lxml==4.6.3
+  Downloading lxml-4.6.3-cp39-cp39-manylinux2014_x86_64.whl (6.9 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.9/6.9 MB 4.8 MB/s eta 0:00:00
+Collecting fastapi==0.63.0
+  Downloading fastapi-0.63.0-py3-none-any.whl (50 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 50.5/50.5 kB 2.8 MB/s eta 0:00:00
+Collecting bs4==0.0.1
+  Downloading bs4-0.0.1.tar.gz (1.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting jsonschema[format]==4.1.2
+  Downloading jsonschema-4.1.2-py3-none-any.whl (69 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 69.2/69.2 kB 4.9 MB/s eta 0:00:00
+Collecting python-gitlab==2.10.1
+  Downloading python_gitlab-2.10.1-py3-none-any.whl (197 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 197.1/197.1 kB 4.6 MB/s eta 0:00:00
+Collecting mkdocs==1.2.3
+  Downloading mkdocs-1.2.3-py3-none-any.whl (6.4 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.4/6.4 MB 5.9 MB/s eta 0:00:00
+Collecting bcrypt==3.2.0
+  Downloading bcrypt-3.2.0-cp36-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux_2_24_x86_64.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.9/61.9 kB 3.6 MB/s eta 0:00:00
+Collecting essential-generators==1.0
+  Downloading essential_generators-1.0-py3-none-any.whl (9.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 6.1 MB/s eta 0:00:00
+Collecting matid==0.6.1
+  Downloading matid-0.6.1.tar.gz (127 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 127.6/127.6 kB 8.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting basicauth==0.4.1
+  Downloading basicauth-0.4.1-py2.py3-none-any.whl (4.5 kB)
+Collecting unidecode==1.3.2
+  Downloading Unidecode-1.3.2-py3-none-any.whl (235 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 235.7/235.7 kB 4.8 MB/s eta 0:00:00
+Collecting pylint-plugin-utils==0.5
+  Downloading pylint-plugin-utils-0.5.tar.gz (10 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting zipfile37==0.1.3
+  Downloading zipfile37-0.1.3.tar.gz (20 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting asr==0.4.1
+  Downloading asr-0.4.1-py3-none-any.whl (274 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 274.2/274.2 kB 6.2 MB/s eta 0:00:00
+Collecting validators==0.18.2
+  Downloading validators-0.18.2-py3-none-any.whl (19 kB)
+Collecting elasticsearch==7.17.1
+  Downloading elasticsearch-7.17.1-py2.py3-none-any.whl (385 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.8/385.8 kB 5.5 MB/s eta 0:00:00
+Collecting hjson==3.0.2
+  Downloading hjson-3.0.2-py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.2/54.2 kB 10.5 MB/s eta 0:00:00
+Collecting jinja2==2.11.3
+  Downloading Jinja2-2.11.3-py2.py3-none-any.whl (125 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 125.7/125.7 kB 5.8 MB/s eta 0:00:00
+Collecting zipstream-new==1.1.5
+  Downloading zipstream_new-1.1.5-py3-none-any.whl (19 kB)
+Collecting html5lib==1.1
+  Downloading html5lib-1.1-py2.py3-none-any.whl (112 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 112.2/112.2 kB 6.3 MB/s eta 0:00:00
+Collecting netCDF4==1.5.4
+  Downloading netCDF4-1.5.4-cp39-cp39-manylinux1_x86_64.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 6.2 MB/s eta 0:00:00
+Collecting astroid==2.5.1
+  Downloading astroid-2.5.1-py3-none-any.whl (222 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 222.2/222.2 kB 3.0 MB/s eta 0:00:00
+Collecting passlib==1.7.4
+  Downloading passlib-1.7.4-py2.py3-none-any.whl (525 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 525.6/525.6 kB 6.3 MB/s eta 0:00:00
+Collecting pytest-cov==2.7.1
+  Downloading pytest_cov-2.7.1-py2.py3-none-any.whl (17 kB)
+Collecting msgpack==0.5.6
+  Downloading msgpack-0.5.6.tar.gz (138 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 138.3/138.3 kB 6.9 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting bitarray==2.3.5
+  Downloading bitarray-2.3.5.tar.gz (88 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 88.4/88.4 kB 5.5 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting runstats==2.0.0
+  Downloading runstats-2.0.0-cp39-cp39-manylinux2010_x86_64.whl (385 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 385.6/385.6 kB 5.9 MB/s eta 0:00:00
+Collecting panedr==0.2
+  Downloading panedr-0.2-py2.py3-none-any.whl (15.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.7/15.7 MB 6.2 MB/s eta 0:00:00
+Collecting structlog==20.1.0
+  Downloading structlog-20.1.0-py2.py3-none-any.whl (40 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 41.0/41.0 kB 4.9 MB/s eta 0:00:00
+Collecting scipy==1.7.1
+  Downloading scipy-1.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (28.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 28.5/28.5 MB 6.1 MB/s eta 0:00:00
+Collecting m2r==0.2.1
+  Downloading m2r-0.2.1.tar.gz (16 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting flask-cors==3.0.10
+  Downloading Flask_Cors-3.0.10-py2.py3-none-any.whl (14 kB)
+Collecting mypy==0.730
+  Downloading mypy-0.730-py3-none-any.whl (1.7 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.7/1.7 MB 5.9 MB/s eta 0:00:00
+Collecting pylint==2.3.1
+  Downloading pylint-2.3.1-py3-none-any.whl (765 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 765.2/765.2 kB 5.4 MB/s eta 0:00:00
+Collecting h5py==3.4.0
+  Downloading h5py-3.4.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 6.3 MB/s eta 0:00:00
+Collecting mkdocs-macros-plugin==0.6.3
+  Downloading mkdocs_macros_plugin-0.6.3-py3-none-any.whl (19 kB)
+Collecting optimade[mongo]==0.14.0
+  Downloading optimade-0.14.0.tar.gz (119 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 119.1/119.1 kB 4.4 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting inflection==0.5.1
+  Downloading inflection-0.5.1-py2.py3-none-any.whl (9.5 kB)
+Collecting mongoengine==0.19.1
+  Downloading mongoengine-0.19.1.tar.gz (157 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 157.4/157.4 kB 3.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pymongo==3.11.4
+  Downloading pymongo-3.11.4-cp39-cp39-manylinux2014_x86_64.whl (518 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 518.1/518.1 kB 5.6 MB/s eta 0:00:00
+Collecting pyjwt[crypto]==1.7.1
+  Downloading PyJWT-1.7.1-py2.py3-none-any.whl (18 kB)
+Collecting typed-ast==1.4.2
+  Downloading typed_ast-1.4.2-cp39-cp39-manylinux1_x86_64.whl (769 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 769.2/769.2 kB 6.1 MB/s eta 0:00:00
+Collecting setuptools==57.5.0
+  Downloading setuptools-57.5.0-py3-none-any.whl (819 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 819.3/819.3 kB 6.8 MB/s eta 0:00:00
+Collecting parmed==3.0.0
+  Downloading ParmEd-3.0.0.tar.gz (1.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.6/1.6 MB 6.3 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting rdflib==5.0.0
+  Downloading rdflib-5.0.0-py3-none-any.whl (231 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 231.1/231.1 kB 4.4 MB/s eta 0:00:00
+Collecting recommonmark==0.7.1
+  Downloading recommonmark-0.7.1-py2.py3-none-any.whl (10 kB)
+Collecting phonopy==2.11.0
+  Downloading phonopy-2.11.0.tar.gz (3.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.3/3.3 MB 6.1 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting pandas==1.3.2
+  Downloading pandas-1.3.2-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (11.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 11.5/11.5 MB 6.3 MB/s eta 0:00:00
+Collecting tabulate==0.8.9
+  Downloading tabulate-0.8.9-py3-none-any.whl (25 kB)
+Collecting rope==0.21.0
+  Downloading rope-0.21.0.tar.gz (256 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 256.5/256.5 kB 7.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting Werkzeug==0.16.1
+  Downloading Werkzeug-0.16.1-py2.py3-none-any.whl (327 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 327.4/327.4 kB 5.3 MB/s eta 0:00:00
+Collecting pymatgen==2022.0.17
+  Downloading pymatgen-2022.0.17.tar.gz (40.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 40.6/40.6 MB 6.0 MB/s eta 0:00:00
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Installing backend dependencies: started
+  Installing backend dependencies: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Collecting mkdocs-material==8.1.1
+  Downloading mkdocs_material-8.1.1-py2.py3-none-any.whl (4.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.5/4.5 MB 6.1 MB/s eta 0:00:00
+Collecting twine==3.4.2
+  Downloading twine-3.4.2-py3-none-any.whl (34 kB)
+Collecting flask==1.1.4
+  Downloading Flask-1.1.4-py2.py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.6/94.6 kB 7.7 MB/s eta 0:00:00
+Collecting markupsafe==2.0.1
+  Downloading MarkupSafe-2.0.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl (30 kB)
+Collecting mdtraj==1.9.6
+  Downloading mdtraj-1.9.6-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (6.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.0/6.0 MB 6.2 MB/s eta 0:00:00
+Collecting a2wsgi==1.4.0
+  Downloading a2wsgi-1.4.0-py3-none-any.whl (11 kB)
+Collecting bagit==1.8.1
+  Downloading bagit-1.8.1-py2.py3-none-any.whl (35 kB)
+Collecting mdanalysis
+  Downloading MDAnalysis-2.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (6.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.6/6.6 MB 6.3 MB/s eta 0:00:00
+Collecting scikit-learn==0.24.2
+  Downloading scikit_learn-0.24.2-cp39-cp39-manylinux2010_x86_64.whl (23.8 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 23.8/23.8 MB 6.2 MB/s eta 0:00:00
+Collecting pycodestyle==2.8.0
+  Downloading pycodestyle-2.8.0-py2.py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.1/42.1 kB 2.3 MB/s eta 0:00:00
+Collecting cryptography==3.3.2
+  Downloading cryptography-3.3.2-cp36-abi3-manylinux2010_x86_64.whl (2.6 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.6/2.6 MB 6.7 MB/s eta 0:00:00
+Collecting python-multipart==0.0.5
+  Downloading python-multipart-0.0.5.tar.gz (32 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting gitpython==3.1.24
+  Downloading GitPython-3.1.24-py3-none-any.whl (180 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 180.1/180.1 kB 7.0 MB/s eta 0:00:00
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.9/dist-packages (from ase==3.19.0->nomad-lab[all]) (3.5.3)
+Collecting spglib
+  Downloading spglib-2.0.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (514 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 514.8/514.8 kB 6.2 MB/s eta 0:00:00
+Collecting plotly
+  Downloading plotly-5.10.0-py2.py3-none-any.whl (15.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 15.2/15.2 MB 6.0 MB/s eta 0:00:00
+Collecting lazy-object-proxy>=1.4.0
+  Downloading lazy_object_proxy-1.7.1-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (61 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 61.1/61.1 kB 4.8 MB/s eta 0:00:00
+Collecting wrapt<1.13,>=1.11
+  Downloading wrapt-1.12.1.tar.gz (27 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Requirement already satisfied: six in /usr/local/lib/python3.9/dist-packages (from basicauth==0.4.1->nomad-lab[all]) (1.16.0)
+Requirement already satisfied: cffi>=1.1 in /usr/local/lib/python3.9/dist-packages (from bcrypt==3.2.0->nomad-lab[all]) (1.15.1)
+Collecting beautifulsoup4
+  Downloading beautifulsoup4-4.11.1-py3-none-any.whl (128 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 128.2/128.2 kB 6.0 MB/s eta 0:00:00
+Collecting billiard<4.0,>=3.6.3.0
+  Downloading billiard-3.6.4.0-py3-none-any.whl (89 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 89.5/89.5 kB 5.9 MB/s eta 0:00:00
+Collecting kombu<4.7,>=4.6.10
+  Downloading kombu-4.6.11-py2.py3-none-any.whl (184 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 184.4/184.4 kB 5.0 MB/s eta 0:00:00
+Collecting vine==1.3.0
+  Downloading vine-1.3.0-py2.py3-none-any.whl (14 kB)
+Collecting redis>=3.2.0
+  Downloading redis-4.3.4-py3-none-any.whl (246 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 246.2/246.2 kB 4.8 MB/s eta 0:00:00
+Collecting executing<1.0.0,>=0.8.0
+  Downloading executing-0.10.0-py2.py3-none-any.whl (17 kB)
+Collecting asttokens<3.0.0,>=2.0.0
+  Downloading asttokens-2.0.8-py2.py3-none-any.whl (23 kB)
+Requirement already satisfied: certifi in /usr/local/lib/python3.9/dist-packages (from elasticsearch==7.17.1->nomad-lab[all]) (2022.6.15)
+Requirement already satisfied: urllib3<2,>=1.21.1 in /usr/local/lib/python3.9/dist-packages (from elasticsearch==7.17.1->nomad-lab[all]) (1.26.12)
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.9/dist-packages (from elasticsearch-dsl==7.4.0->nomad-lab[all]) (2.8.2)
+Collecting starlette==0.13.6
+  Downloading starlette-0.13.6-py3-none-any.whl (59 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 60.0/60.0 kB 9.0 MB/s eta 0:00:00
+Requirement already satisfied: typing-extensions>=3.7.4.3 in /usr/local/lib/python3.9/dist-packages (from gitpython==3.1.24->nomad-lab[all]) (4.3.0)
+Collecting gitdb<5,>=4.0.1
+  Downloading gitdb-4.0.9-py3-none-any.whl (63 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 63.1/63.1 kB 7.1 MB/s eta 0:00:00
+Collecting eventlet>=0.24.1
+  Downloading eventlet-0.33.1-py2.py3-none-any.whl (226 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 226.8/226.8 kB 4.4 MB/s eta 0:00:00
+Collecting webencodings
+  Downloading webencodings-0.5.1-py2.py3-none-any.whl (11 kB)
+Requirement already satisfied: charset-normalizer in /usr/local/lib/python3.9/dist-packages (from httpx==0.22.0->nomad-lab[all]) (2.0.12)
+Requirement already satisfied: sniffio in /usr/local/lib/python3.9/dist-packages (from httpx==0.22.0->nomad-lab[all]) (1.3.0)
+Requirement already satisfied: httpcore<0.15.0,>=0.14.5 in /usr/local/lib/python3.9/dist-packages (from httpx==0.22.0->nomad-lab[all]) (0.14.7)
+Requirement already satisfied: rfc3986[idna2008]<2,>=1.3 in /usr/local/lib/python3.9/dist-packages (from httpx==0.22.0->nomad-lab[all]) (1.5.0)
+Collecting pyrsistent!=0.17.0,!=0.17.1,!=0.17.2,>=0.14.0
+  Downloading pyrsistent-0.18.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (115 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 115.6/115.6 kB 5.9 MB/s eta 0:00:00
+Collecting attrs>=17.4.0
+  Downloading attrs-22.1.0-py2.py3-none-any.whl (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.8/58.8 kB 6.0 MB/s eta 0:00:00
+Collecting fqdn
+  Downloading fqdn-1.5.1-py3-none-any.whl (9.1 kB)
+Requirement already satisfied: idna in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==4.1.2->nomad-lab[all]) (3.3)
+Collecting isoduration
+  Downloading isoduration-20.11.0-py3-none-any.whl (11 kB)
+Collecting rfc3339-validator
+  Downloading rfc3339_validator-0.1.4-py2.py3-none-any.whl (3.5 kB)
+Collecting webcolors>=1.11
+  Downloading webcolors-1.12-py3-none-any.whl (9.9 kB)
+Collecting rfc3987
+  Downloading rfc3987-1.3.8-py2.py3-none-any.whl (13 kB)
+Collecting jsonpointer>1.13
+  Downloading jsonpointer-2.3-py2.py3-none-any.whl (7.8 kB)
+Collecting uri-template
+  Downloading uri_template-1.2.0-py3-none-any.whl (10 kB)
+Collecting docutils
+  Downloading docutils-0.19-py3-none-any.whl (570 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 570.5/570.5 kB 6.2 MB/s eta 0:00:00
+Collecting mistune
+  Downloading mistune-2.0.4-py2.py3-none-any.whl (24 kB)
+Collecting chronic
+  Downloading chronic-0.3.4.tar.gz (3.6 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting networkx>=2.4
+  Downloading networkx-2.8.6-py3-none-any.whl (2.0 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.0/2.0 MB 6.1 MB/s eta 0:00:00
+Collecting sklearn
+  Downloading sklearn-0.0.tar.gz (1.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting astunparse
+  Downloading astunparse-1.6.3-py2.py3-none-any.whl (12 kB)
+Requirement already satisfied: pyparsing in /usr/local/lib/python3.9/dist-packages (from mdtraj==1.9.6->nomad-lab[all]) (3.0.9)
+Collecting ghp-import>=1.0
+  Downloading ghp_import-2.1.0-py3-none-any.whl (11 kB)
+Collecting mergedeep>=1.3.4
+  Downloading mergedeep-1.3.4-py3-none-any.whl (6.4 kB)
+Collecting pyyaml-env-tag>=0.1
+  Downloading pyyaml_env_tag-0.1-py3-none-any.whl (3.9 kB)
+Requirement already satisfied: packaging>=20.5 in /usr/local/lib/python3.9/dist-packages (from mkdocs==1.2.3->nomad-lab[all]) (21.3)
+Collecting watchdog>=2.0
+  Downloading watchdog-2.1.9-py3-none-manylinux2014_x86_64.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.4/78.4 kB 5.4 MB/s eta 0:00:00
+Collecting importlib-metadata>=3.10
+  Downloading importlib_metadata-4.12.0-py3-none-any.whl (21 kB)
+Collecting Markdown>=3.2.1
+  Downloading Markdown-3.4.1-py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.3/93.3 kB 5.5 MB/s eta 0:00:00
+Collecting termcolor
+  Downloading termcolor-1.1.0.tar.gz (3.9 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting pygments>=2.10
+  Downloading Pygments-2.13.0-py3-none-any.whl (1.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 1.1/1.1 MB 6.1 MB/s eta 0:00:00
+Collecting pymdown-extensions>=9.0
+  Downloading pymdown_extensions-9.5-py3-none-any.whl (217 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 217.5/217.5 kB 7.2 MB/s eta 0:00:00
+Collecting mypy-extensions<0.5.0,>=0.4.0
+  Downloading mypy_extensions-0.4.3-py2.py3-none-any.whl (4.5 kB)
+Collecting cftime
+  Downloading cftime-1.6.1-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (241 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 241.7/241.7 kB 4.3 MB/s eta 0:00:00
+Requirement already satisfied: typish>=1.7.0 in /usr/local/lib/python3.9/dist-packages (from nptyping==1.4.4->nomad-lab[all]) (1.9.3)
+Collecting email_validator~=1.1
+  Downloading email_validator-1.2.1-py2.py3-none-any.whl (22 kB)
+Collecting lark-parser~=0.11.2
+  Downloading lark-parser-0.11.3.tar.gz (229 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 229.9/229.9 kB 4.6 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting mongomock~=3.22
+  Downloading mongomock-3.23.0-py2.py3-none-any.whl (57 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 57.3/57.3 kB 6.0 MB/s eta 0:00:00
+Collecting isort<5,>=4.2.5
+  Downloading isort-4.3.21-py2.py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.3/42.3 kB 2.7 MB/s eta 0:00:00
+Collecting mccabe<0.7,>=0.6
+  Downloading mccabe-0.6.1-py2.py3-none-any.whl (8.6 kB)
+Collecting palettable>=3.1.1
+  Downloading palettable-3.3.0-py2.py3-none-any.whl (111 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 111.8/111.8 kB 5.9 MB/s eta 0:00:00
+Collecting monty>=3.0.2
+  Downloading monty-2022.4.26-py3-none-any.whl (65 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.0/66.0 kB 5.6 MB/s eta 0:00:00
+Collecting uncertainties>=3.1.4
+  Downloading uncertainties-3.1.7-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.4/98.4 kB 4.5 MB/s eta 0:00:00
+Collecting sympy
+  Downloading sympy-1.11.1-py3-none-any.whl (6.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 6.5/6.5 MB 6.2 MB/s eta 0:00:00
+Collecting ruamel.yaml>=0.15.6
+  Downloading ruamel.yaml-0.17.21-py3-none-any.whl (109 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 109.5/109.5 kB 4.9 MB/s eta 0:00:00
+Collecting pluggy>=0.7
+  Downloading pluggy-1.0.0-py2.py3-none-any.whl (13 kB)
+Collecting more-itertools>=4.0.0
+  Downloading more_itertools-8.14.0-py3-none-any.whl (52 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 52.2/52.2 kB 2.6 MB/s eta 0:00:00
+Collecting atomicwrites>=1.0
+  Downloading atomicwrites-1.4.1.tar.gz (14 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting py>=1.5.0
+  Downloading py-1.11.0-py2.py3-none-any.whl (98 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 98.7/98.7 kB 9.1 MB/s eta 0:00:00
+Collecting coverage>=4.4
+  Downloading coverage-6.4.4-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_17_x86_64.manylinux2014_x86_64.whl (212 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 212.1/212.1 kB 6.3 MB/s eta 0:00:00
+Collecting requests-toolbelt>=0.9.1
+  Downloading requests_toolbelt-0.9.1-py2.py3-none-any.whl (54 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 54.3/54.3 kB 4.9 MB/s eta 0:00:00
+Requirement already satisfied: python-jose>=1.4.0 in /usr/local/lib/python3.9/dist-packages (from python-keycloak==0.26.1->nomad-lab[all]) (3.3.0)
+Requirement already satisfied: isodate in /usr/local/lib/python3.9/dist-packages (from rdflib==5.0.0->nomad-lab[all]) (0.6.1)
+Collecting sphinx>=1.3.1
+  Downloading Sphinx-5.1.1-py3-none-any.whl (3.2 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 3.2/3.2 MB 6.2 MB/s eta 0:00:00
+Collecting commonmark>=0.8.1
+  Downloading commonmark-0.9.1-py2.py3-none-any.whl (51 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 51.1/51.1 kB 5.6 MB/s eta 0:00:00
+Collecting joblib>=0.11
+  Downloading joblib-1.1.0-py2.py3-none-any.whl (306 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 307.0/307.0 kB 7.2 MB/s eta 0:00:00
+Collecting threadpoolctl>=2.0.0
+  Downloading threadpoolctl-3.1.0-py3-none-any.whl (14 kB)
+Collecting pkginfo>=1.4.2
+  Downloading pkginfo-1.8.3-py2.py3-none-any.whl (26 kB)
+Collecting keyring>=15.1
+  Downloading keyring-23.9.1-py3-none-any.whl (35 kB)
+Collecting colorama>=0.4.3
+  Downloading colorama-0.4.5-py2.py3-none-any.whl (16 kB)
+Collecting tqdm>=4.14
+  Downloading tqdm-4.64.1-py2.py3-none-any.whl (78 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 78.5/78.5 kB 6.9 MB/s eta 0:00:00
+Collecting readme-renderer>=21.0
+  Downloading readme_renderer-37.1-py3-none-any.whl (14 kB)
+Requirement already satisfied: h11>=0.8 in /usr/local/lib/python3.9/dist-packages (from uvicorn[standard]==0.13.4->nomad-lab[all]) (0.12.0)
+Collecting websockets==8.*
+  Downloading websockets-8.1.tar.gz (58 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 58.9/58.9 kB 3.0 MB/s eta 0:00:00
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting watchgod>=0.6
+  Downloading watchgod-0.8.2-py3-none-any.whl (12 kB)
+Collecting uvloop!=0.15.0,!=0.15.1,>=0.14.0
+  Downloading uvloop-0.16.0-cp39-cp39-manylinux_2_12_x86_64.manylinux2010_x86_64.whl (4.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 4.3/4.3 MB 6.3 MB/s eta 0:00:00
+Collecting python-dotenv>=0.13
+  Downloading python_dotenv-0.21.0-py3-none-any.whl (18 kB)
+Collecting httptools==0.1.*
+  Downloading httptools-0.1.2-cp39-cp39-manylinux1_x86_64.whl (219 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 219.2/219.2 kB 7.3 MB/s eta 0:00:00
+Requirement already satisfied: decorator>=3.4.0 in /usr/local/lib/python3.9/dist-packages (from validators==0.18.2->nomad-lab[all]) (5.1.1)
+Collecting mmtf-python>=1.0.0
+  Downloading mmtf_python-1.1.3-py2.py3-none-any.whl (25 kB)
+Collecting biopython>=1.71
+  Downloading biopython-1.79-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.whl (2.3 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.3/2.3 MB 6.3 MB/s eta 0:00:00
+Collecting gsd>=1.9.3
+  Downloading gsd-2.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (396 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 396.2/396.2 kB 5.4 MB/s eta 0:00:00
+Collecting GridDataFormats>=0.4.0
+  Downloading GridDataFormats-1.0.1-py3-none-any.whl (2.1 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 2.1/2.1 MB 6.3 MB/s eta 0:00:00
+Collecting fasteners
+  Downloading fasteners-0.17.3-py3-none-any.whl (18 kB)
+Requirement already satisfied: pycparser in /usr/local/lib/python3.9/dist-packages (from cffi>=1.1->bcrypt==3.2.0->nomad-lab[all]) (2.21)
+Collecting dnspython>=1.15.0
+  Downloading dnspython-2.2.1-py3-none-any.whl (269 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 269.1/269.1 kB 4.5 MB/s eta 0:00:00
+Collecting greenlet>=0.3
+  Downloading greenlet-1.1.3-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl (154 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 154.1/154.1 kB 5.5 MB/s eta 0:00:00
+Collecting smmap<6,>=3.0.1
+  Downloading smmap-5.0.0-py3-none-any.whl (24 kB)
+Collecting mrcfile
+  Downloading mrcfile-1.4.2-py2.py3-none-any.whl (42 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 42.9/42.9 kB 11.1 MB/s eta 0:00:00
+Requirement already satisfied: anyio==3.* in /usr/local/lib/python3.9/dist-packages (from httpcore<0.15.0,>=0.14.5->httpx==0.22.0->nomad-lab[all]) (3.6.1)
+Collecting zipp>=0.5
+  Downloading zipp-3.8.1-py3-none-any.whl (5.6 kB)
+Collecting jaraco.classes
+  Downloading jaraco.classes-3.2.2-py3-none-any.whl (6.0 kB)
+Collecting SecretStorage>=3.2
+  Downloading SecretStorage-3.3.3-py3-none-any.whl (15 kB)
+Collecting jeepney>=0.4.2
+  Downloading jeepney-0.8.0-py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.4/48.4 kB 8.1 MB/s eta 0:00:00
+Collecting amqp<2.7,>=2.6.0
+  Downloading amqp-2.6.1-py2.py3-none-any.whl (48 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 48.0/48.0 kB 3.8 MB/s eta 0:00:00
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab[all]) (4.37.1)
+Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab[all]) (1.4.4)
+Requirement already satisfied: pillow>=6.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab[all]) (9.2.0)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab[all]) (0.11.0)
+Collecting mmtf-python>=1.0.0
+  Downloading mmtf_python-1.1.2-py2.py3-none-any.whl (21 kB)
+Collecting sentinels
+  Downloading sentinels-1.0.0.tar.gz (4.1 kB)
+  Preparing metadata (setup.py): started
+  Preparing metadata (setup.py): finished with status 'done'
+Collecting tenacity>=6.2.0
+  Downloading tenacity-8.0.1-py3-none-any.whl (24 kB)
+Requirement already satisfied: pyasn1 in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab[all]) (0.4.8)
+Requirement already satisfied: rsa in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab[all]) (4.9)
+Requirement already satisfied: ecdsa!=0.15 in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab[all]) (0.18.0)
+Collecting bleach>=2.1.0
+  Downloading bleach-5.0.1-py3-none-any.whl (160 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 160.9/160.9 kB 5.3 MB/s eta 0:00:00
+Collecting async-timeout>=4.0.2
+  Downloading async_timeout-4.0.2-py3-none-any.whl (5.8 kB)
+Collecting deprecated>=1.2.3
+  Downloading Deprecated-1.2.13-py2.py3-none-any.whl (9.6 kB)
+Collecting ruamel.yaml.clib>=0.2.6
+  Downloading ruamel.yaml.clib-0.2.6-cp39-cp39-manylinux1_x86_64.whl (539 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 539.7/539.7 kB 6.3 MB/s eta 0:00:00
+Collecting sphinxcontrib-jsmath
+  Downloading sphinxcontrib_jsmath-1.0.1-py2.py3-none-any.whl (5.1 kB)
+Collecting sphinxcontrib-devhelp
+  Downloading sphinxcontrib_devhelp-1.0.2-py2.py3-none-any.whl (84 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 84.7/84.7 kB 10.2 MB/s eta 0:00:00
+Collecting sphinxcontrib-applehelp
+  Downloading sphinxcontrib_applehelp-1.0.2-py2.py3-none-any.whl (121 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 121.2/121.2 kB 5.4 MB/s eta 0:00:00
+Collecting imagesize
+  Downloading imagesize-1.4.1-py2.py3-none-any.whl (8.8 kB)
+Collecting sphinxcontrib-serializinghtml>=1.1.5
+  Downloading sphinxcontrib_serializinghtml-1.1.5-py2.py3-none-any.whl (94 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 94.0/94.0 kB 8.3 MB/s eta 0:00:00
+Collecting babel>=1.3
+  Downloading Babel-2.10.3-py3-none-any.whl (9.5 MB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 9.5/9.5 MB 6.3 MB/s eta 0:00:00
+Collecting alabaster<0.8,>=0.7
+  Downloading alabaster-0.7.12-py2.py3-none-any.whl (14 kB)
+Collecting snowballstemmer>=1.1
+  Downloading snowballstemmer-2.2.0-py2.py3-none-any.whl (93 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 93.0/93.0 kB 6.2 MB/s eta 0:00:00
+Collecting sphinxcontrib-htmlhelp>=2.0.0
+  Downloading sphinxcontrib_htmlhelp-2.0.0-py2.py3-none-any.whl (100 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 100.5/100.5 kB 7.2 MB/s eta 0:00:00
+Collecting sphinxcontrib-qthelp
+  Downloading sphinxcontrib_qthelp-1.0.3-py2.py3-none-any.whl (90 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 90.6/90.6 kB 9.3 MB/s eta 0:00:00
+Collecting soupsieve>1.2
+  Downloading soupsieve-2.3.2.post1-py3-none-any.whl (37 kB)
+Collecting arrow>=0.15.0
+  Downloading arrow-1.2.3-py3-none-any.whl (66 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 66.4/66.4 kB 5.2 MB/s eta 0:00:00
+Collecting mpmath>=0.19
+  Downloading mpmath-1.2.1-py3-none-any.whl (532 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 532.6/532.6 kB 5.3 MB/s eta 0:00:00
+Building wheels for collected packages: bitarray, bs4, m2r, matid, mongoengine, msgpack, names, parmed, phonopy, pylint-mongoengine, pylint-plugin-utils, pymatgen, python-logstash, python-multipart, rope, zipfile37, websockets, atomicwrites, lark-parser, wrapt, chronic, optimade, sklearn, termcolor, sentinels
+  Building wheel for bitarray (setup.py): started
+  Building wheel for bitarray (setup.py): finished with status 'done'
+  Created wheel for bitarray: filename=bitarray-2.3.5-cp39-cp39-linux_x86_64.whl size=183803 sha256=249fc5a010b2b753571102a14985a9cad038a07ef061bcbe46185258a8b31c99
+  Stored in directory: /root/.cache/pip/wheels/79/19/d1/d514ec21002344d009e6446fa00193bf8e77ccef76acfb8bc2
+  Building wheel for bs4 (setup.py): started
+  Building wheel for bs4 (setup.py): finished with status 'done'
+  Created wheel for bs4: filename=bs4-0.0.1-py3-none-any.whl size=1272 sha256=f6654322ffe2d7f5276aba82479bd7b8fdda4fafd3dc394e39f48d515ecd7714
+  Stored in directory: /root/.cache/pip/wheels/73/2b/cb/099980278a0c9a3e57ff1a89875ec07bfa0b6fcbebb9a8cad3
+  Building wheel for m2r (setup.py): started
+  Building wheel for m2r (setup.py): finished with status 'done'
+  Created wheel for m2r: filename=m2r-0.2.1-py3-none-any.whl size=10469 sha256=2781998f4513fc7b698a523ff3ee8d0178a0b981bbdee2558b9beb288925e34b
+  Stored in directory: /root/.cache/pip/wheels/af/ee/fd/d49e4360f85519a568e2bba14225c30862a39c37d0916550a6
+  Building wheel for matid (setup.py): started
+  Building wheel for matid (setup.py): finished with status 'done'
+  Created wheel for matid: filename=matid-0.6.1-py2.py3-none-any.whl size=143451 sha256=a71e42f6e993081711967acc3cceb2e04c16c89c0593b7b2db79633338ccf750
+  Stored in directory: /root/.cache/pip/wheels/33/64/77/96b48bd05b2fceedf8ddc6b81e488436c1827a1f5879454c35
+  Building wheel for mongoengine (setup.py): started
+  Building wheel for mongoengine (setup.py): finished with status 'done'
+  Created wheel for mongoengine: filename=mongoengine-0.19.1-py3-none-any.whl size=108303 sha256=f74b58ff74d31c4a79a80b7559f47da1e74b089985a4da6a731d1dcbd6e74acb
+  Stored in directory: /root/.cache/pip/wheels/75/74/9a/e3530e77cc3ff1db60182f8b0275687492a120bc23f8392abb
+  Building wheel for msgpack (setup.py): started
+  Building wheel for msgpack (setup.py): finished with status 'done'
+  Created wheel for msgpack: filename=msgpack-0.5.6-cp39-cp39-linux_x86_64.whl size=13844 sha256=f40b8b915f2375077506b64fde3a30d73b161cd2cc4f436464c8955d3730d34c
+  Stored in directory: /root/.cache/pip/wheels/8e/8b/24/85c35ac18a52734826d44adc480572c21a00ff685b6f03dcbe
+  Building wheel for names (setup.py): started
+  Building wheel for names (setup.py): finished with status 'done'
+  Created wheel for names: filename=names-0.3.0-py3-none-any.whl size=803689 sha256=ca99648ff0fda957b9d3c6728b71f1c881711fb6c00adf4db6ea7e00af5dd3a4
+  Stored in directory: /root/.cache/pip/wheels/f1/bc/04/55ab9499ea02359ece8b02b4169ebb30aa52d82b84c13fc506
+  Building wheel for parmed (setup.py): started
+  Building wheel for parmed (setup.py): finished with status 'done'
+  Created wheel for parmed: filename=ParmEd-3.0.0-cp39-cp39-linux_x86_64.whl size=858183 sha256=ca1301b9aec98c9717495c500b2b40250c48cc9b407e6dc1869987184911dfed
+  Stored in directory: /root/.cache/pip/wheels/4f/7d/b8/5bb1cdc160041e1a0cf935f114caf4b84519dbba579daf4869
+  Building wheel for phonopy (pyproject.toml): started
+  Building wheel for phonopy (pyproject.toml): finished with status 'done'
+  Created wheel for phonopy: filename=phonopy-2.11.0-cp39-cp39-linux_x86_64.whl size=448445 sha256=e50278c3e213ca1a64d74436b593c0354682689b02164c3fcc0c3b40bd4e44bb
+  Stored in directory: /root/.cache/pip/wheels/56/85/88/f2179feb10558902ff067593a06d96d11768ae8f20ad5b8fe3
+  Building wheel for pylint-mongoengine (setup.py): started
+  Building wheel for pylint-mongoengine (setup.py): finished with status 'done'
+  Created wheel for pylint-mongoengine: filename=pylint_mongoengine-0.3.3-py3-none-any.whl size=15715 sha256=27f09f3ce10491a3daf701d96f639371031e6d6685da84bf186bca3598837fe7
+  Stored in directory: /root/.cache/pip/wheels/ea/17/3b/e2c1c7a4a148eea4913f2b3bc4b07442e01c66d0dece890d2c
+  Building wheel for pylint-plugin-utils (setup.py): started
+  Building wheel for pylint-plugin-utils (setup.py): finished with status 'done'
+  Created wheel for pylint-plugin-utils: filename=pylint_plugin_utils-0.5-py3-none-any.whl size=10646 sha256=e9542d991f541d0a775fbe8bf9dc1e2f295b28bbb603a05bfd7bd8ac16852d79
+  Stored in directory: /root/.cache/pip/wheels/f4/cf/01/054c8a3aabee0d9ab224ed32684c596fa8b26a9d6f711416bc
+  Building wheel for pymatgen (pyproject.toml): started
+  Building wheel for pymatgen (pyproject.toml): finished with status 'done'
+  Created wheel for pymatgen: filename=pymatgen-2022.0.17-cp39-cp39-linux_x86_64.whl size=42154825 sha256=eb40cdfa92973600e3fcc018adf498e9104bbbd945c6b422d32e0037d43e7267
+  Stored in directory: /root/.cache/pip/wheels/45/ad/48/c99acb6649c355148c5b179be1ff601476a104cc9f54a90c0f
+  Building wheel for python-logstash (setup.py): started
+  Building wheel for python-logstash (setup.py): finished with status 'done'
+  Created wheel for python-logstash: filename=python_logstash-0.4.6-py3-none-any.whl size=8150 sha256=9a8b1455f40084cb1ee8a8b95b071b69d7bc4f88a7e1b300e8d87f230149a661
+  Stored in directory: /root/.cache/pip/wheels/5b/6c/51/6526a86105753718c48a8c613673b6d512c32dfa5bf0b2293a
+  Building wheel for python-multipart (setup.py): started
+  Building wheel for python-multipart (setup.py): finished with status 'done'
+  Created wheel for python-multipart: filename=python_multipart-0.0.5-py3-none-any.whl size=31669 sha256=82423bceb54fba300854700eed9da780198bce2dbb0f75e12eb4f4032c5a6bd1
+  Stored in directory: /root/.cache/pip/wheels/fe/04/d1/a10661cc45f03c3cecda50deb2d2c22f57b4e84a75b2a5987e
+  Building wheel for rope (pyproject.toml): started
+  Building wheel for rope (pyproject.toml): finished with status 'done'
+  Created wheel for rope: filename=rope-0.21.0-py3-none-any.whl size=185396 sha256=cfdec228e6592e534527373746af173c813df35518efbc5ae14c33b1221707a7
+  Stored in directory: /root/.cache/pip/wheels/fc/b8/97/fa6fb31a2ec831038e8a08475d410d8074373039a477a6f48c
+  Building wheel for zipfile37 (setup.py): started
+  Building wheel for zipfile37 (setup.py): finished with status 'done'
+  Created wheel for zipfile37: filename=zipfile37-0.1.3-py3-none-any.whl size=21029 sha256=25f185c3d2ecbc519de6594563e0bbe7baa9e21b2666c696fd8f914ca3341f97
+  Stored in directory: /root/.cache/pip/wheels/cf/50/35/a91822572e6653ad95a05d60a39ff228526016332ee8b7f0e2
+  Building wheel for websockets (setup.py): started
+  Building wheel for websockets (setup.py): finished with status 'done'
+  Created wheel for websockets: filename=websockets-8.1-cp39-cp39-linux_x86_64.whl size=72963 sha256=6e27801de152cd98413ddc102b4ba625e9f7f59f86f468add234396e136ca041
+  Stored in directory: /root/.cache/pip/wheels/d8/b9/a0/b97b211aeda2ebd6ac2e43fc300d308dbf1f9df520ed390cae
+  Building wheel for atomicwrites (setup.py): started
+  Building wheel for atomicwrites (setup.py): finished with status 'done'
+  Created wheel for atomicwrites: filename=atomicwrites-1.4.1-py2.py3-none-any.whl size=6943 sha256=6a05294bc47939f360e13dc8d3fb4a57d35921e3abe24ffaea077adc3a4a422e
+  Stored in directory: /root/.cache/pip/wheels/2a/b5/06/d2f34584f352e4af7d1d7ac1baf38b5d24142c8044cd024fd5
+  Building wheel for lark-parser (setup.py): started
+  Building wheel for lark-parser (setup.py): finished with status 'done'
+  Created wheel for lark-parser: filename=lark_parser-0.11.3-py2.py3-none-any.whl size=99724 sha256=5f8ce09ed207559cfc7685208a76ca613391c551bf6ccfa70ce78e323de58f41
+  Stored in directory: /root/.cache/pip/wheels/28/74/27/c4fece172b33b851fb80b3be1c8c234066bf735b53b5447bac
+  Building wheel for wrapt (setup.py): started
+  Building wheel for wrapt (setup.py): finished with status 'done'
+  Created wheel for wrapt: filename=wrapt-1.12.1-cp39-cp39-linux_x86_64.whl size=72136 sha256=7a9ad506fe506c908d995f1fc222668eabdb476d04b7c52f89c295c6a440c892
+  Stored in directory: /root/.cache/pip/wheels/98/23/68/efe259aaca055e93b08e74fbe512819c69a2155c11ba3c0f10
+  Building wheel for chronic (setup.py): started
+  Building wheel for chronic (setup.py): finished with status 'done'
+  Created wheel for chronic: filename=chronic-0.3.4-py3-none-any.whl size=4783 sha256=8699674fa93f5adbc5df254d163ea41259b647f67ca02b65391a8e0cf78838e0
+  Stored in directory: /root/.cache/pip/wheels/36/d2/42/a36ee4e35beb676f5eec5571c1a6db5a90099f09544b041d7c
+  Building wheel for optimade (setup.py): started
+  Building wheel for optimade (setup.py): finished with status 'done'
+  Created wheel for optimade: filename=optimade-0.14.0-py3-none-any.whl size=153138 sha256=bf86ed346a2b4a61fd0e459dcd41f9a31e43f69742ef536ee72a952a44390ac8
+  Stored in directory: /root/.cache/pip/wheels/c8/39/fe/7ee6ec58f2f57c61914b1ed35b0aec62766400323e9a25ae54
+  Building wheel for sklearn (setup.py): started
+  Building wheel for sklearn (setup.py): finished with status 'done'
+  Created wheel for sklearn: filename=sklearn-0.0-py2.py3-none-any.whl size=1315 sha256=a40fc08633600853b74558094afc14fb74b2c2d8ee8b18521f222dfb315b0183
+  Stored in directory: /root/.cache/pip/wheels/e4/7b/98/b6466d71b8d738a0c547008b9eb39bf8676d1ff6ca4b22af1c
+  Building wheel for termcolor (setup.py): started
+  Building wheel for termcolor (setup.py): finished with status 'done'
+  Created wheel for termcolor: filename=termcolor-1.1.0-py3-none-any.whl size=4830 sha256=ce0b0a1a7365d82cc1f18a55a22e92cd06f880f183f265f550d3e3da8154a8f5
+  Stored in directory: /root/.cache/pip/wheels/b6/0d/90/0d1bbd99855f99cb2f6c2e5ff96f8023fad8ec367695f7d72d
+  Building wheel for sentinels (setup.py): started
+  Building wheel for sentinels (setup.py): finished with status 'done'
+  Created wheel for sentinels: filename=sentinels-1.0.0-py3-none-any.whl size=3186 sha256=b5af5f8c5139c5a096193108673d266e99844b99363cb9795028aa981ba777ce
+  Stored in directory: /root/.cache/pip/wheels/39/4c/05/90d81b81899bc2fd244e072d9b323422128e69a99328e712a5
+Successfully built bitarray bs4 m2r matid mongoengine msgpack names parmed phonopy pylint-mongoengine pylint-plugin-utils pymatgen python-logstash python-multipart rope zipfile37 websockets atomicwrites lark-parser wrapt chronic optimade sklearn termcolor sentinels
+Installing collected packages: zipstream-new, zipfile37, wrapt, webencodings, typed-ast, termcolor, tabulate, snowballstemmer, sentinels, rope, rfc3987, python-logstash, pyjwt, passlib, parmed, palettable, names, mypy-extensions, msgpack, mpmath, mistune, mccabe, lark-parser, httptools, hjson, executing, essential-generators, commonmark, chronic, bitarray, billiard, bagit, alabaster, zipp, Werkzeug, websockets, webcolors, watchdog, vine, validators, uvloop, uvicorn, uri-template, unidecode, uncertainties, tqdm, threadpoolctl, tenacity, sympy, structlog, starlette, sphinxcontrib-serializinghtml, sphinxcontrib-qthelp, sphinxcontrib-jsmath, sphinxcontrib-htmlhelp, sphinxcontrib-devhelp, sphinxcontrib-applehelp, spglib, soupsieve, smmap, setuptools, scipy, runstats, ruamel.yaml.clib, rfc3339-validator, pyyaml-env-tag, python-multipart, python-magic, python-json-logger, python-dotenv, pyrsistent, pymongo, pygments, pycodestyle, py, pluggy, pkginfo, networkx, mypy, mrcfile, more-itertools, monty, mongomock, mmtf-python, mkdocs-material-extensions, mergedeep, markupsafe, lxml, lazy-object-proxy, jsonpointer, joblib, jeepney, itsdangerous, isort, inflection, imagesize, html5lib, h5py, gsd, greenlet, fqdn, filelock, fasteners, elasticsearch, docutils, dnspython, deprecated, coverage, colorama, cftime, bleach, biopython, basicauth, babel, attrs, atomicwrites, async-timeout, astunparse, asttokens, a2wsgi, watchgod, scikit-learn, ruamel.yaml, requests-toolbelt, redis, readme-renderer, rdflib, pytest, plotly, pandas, netCDF4, mongoengine, mdtraj, m2r, jsonschema, jinja2, jaraco.classes, importlib-metadata, gunicorn, GridDataFormats, gitdb, ghp-import, fastapi, eventlet, email_validator, devtools, cryptography, beautifulsoup4, bcrypt, astroid, arrow, amqp, xarray, sphinx, sklearn, SecretStorage, python-gitlab, pytest-timeout, pytest-cov, pymatgen, pylint, phonopy, panedr, optimade, mdanalysis, Markdown, kombu, isoduration, gitpython, flask, bs4, recommonmark, pymdown-extensions, pylint-plugin-utils, mkdocs, matid, keyring, flask-cors, celery, asr, twine, pylint-mongoengine, mkdocs-material, mkdocs-macros-plugin
+  Attempting uninstall: validators
+    Found existing installation: validators 0.20.0
+    Uninstalling validators-0.20.0:
+      Successfully uninstalled validators-0.20.0
+  Attempting uninstall: setuptools
+    Found existing installation: setuptools 52.0.0
+    Uninstalling setuptools-52.0.0:
+      Successfully uninstalled setuptools-52.0.0
+  Attempting uninstall: scipy
+    Found existing installation: scipy 1.9.1
+    Uninstalling scipy-1.9.1:
+      Successfully uninstalled scipy-1.9.1
+  Attempting uninstall: elasticsearch
+    Found existing installation: elasticsearch 7.17.6
+    Uninstalling elasticsearch-7.17.6:
+      Successfully uninstalled elasticsearch-7.17.6
+  Attempting uninstall: rdflib
+    Found existing installation: rdflib 6.2.0
+    Uninstalling rdflib-6.2.0:
+      Successfully uninstalled rdflib-6.2.0
+  Attempting uninstall: pandas
+    Found existing installation: pandas 1.4.4
+    Uninstalling pandas-1.4.4:
+      Successfully uninstalled pandas-1.4.4
+  Attempting uninstall: cryptography
+    Found existing installation: cryptography 38.0.1
+    Uninstalling cryptography-38.0.1:
+      Successfully uninstalled cryptography-38.0.1
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+sparqlwrapper 2.0.0 requires rdflib>=6.1.1, but you have rdflib 5.0.0 which is incompatible.
+Successfully installed GridDataFormats-1.0.1 Markdown-3.4.1 SecretStorage-3.3.3 Werkzeug-0.16.1 a2wsgi-1.4.0 alabaster-0.7.12 amqp-2.6.1 arrow-1.2.3 asr-0.4.1 astroid-2.5.1 asttokens-2.0.8 astunparse-1.6.3 async-timeout-4.0.2 atomicwrites-1.4.1 attrs-22.1.0 babel-2.10.3 bagit-1.8.1 basicauth-0.4.1 bcrypt-3.2.0 beautifulsoup4-4.11.1 billiard-3.6.4.0 biopython-1.79 bitarray-2.3.5 bleach-5.0.1 bs4-0.0.1 celery-4.4.7 cftime-1.6.1 chronic-0.3.4 colorama-0.4.5 commonmark-0.9.1 coverage-6.4.4 cryptography-3.3.2 deprecated-1.2.13 devtools-0.8.0 dnspython-2.2.1 docutils-0.19 elasticsearch-7.17.1 email_validator-1.2.1 essential-generators-1.0 eventlet-0.33.1 executing-0.10.0 fastapi-0.63.0 fasteners-0.17.3 filelock-3.3.1 flask-1.1.4 flask-cors-3.0.10 fqdn-1.5.1 ghp-import-2.1.0 gitdb-4.0.9 gitpython-3.1.24 greenlet-1.1.3 gsd-2.6.0 gunicorn-20.1.0 h5py-3.4.0 hjson-3.0.2 html5lib-1.1 httptools-0.1.2 imagesize-1.4.1 importlib-metadata-4.12.0 inflection-0.5.1 isoduration-20.11.0 isort-4.3.21 itsdangerous-1.1.0 jaraco.classes-3.2.2 jeepney-0.8.0 jinja2-2.11.3 joblib-1.1.0 jsonpointer-2.3 jsonschema-4.1.2 keyring-23.9.1 kombu-4.6.11 lark-parser-0.11.3 lazy-object-proxy-1.7.1 lxml-4.6.3 m2r-0.2.1 markupsafe-2.0.1 matid-0.6.1 mccabe-0.6.1 mdanalysis-2.3.0 mdtraj-1.9.6 mergedeep-1.3.4 mistune-2.0.4 mkdocs-1.2.3 mkdocs-macros-plugin-0.6.3 mkdocs-material-8.1.1 mkdocs-material-extensions-1.0.3 mmtf-python-1.1.2 mongoengine-0.19.1 mongomock-3.23.0 monty-2022.4.26 more-itertools-8.14.0 mpmath-1.2.1 mrcfile-1.4.2 msgpack-0.5.6 mypy-0.730 mypy-extensions-0.4.3 names-0.3.0 netCDF4-1.5.4 networkx-2.8.6 optimade-0.14.0 palettable-3.3.0 pandas-1.3.2 panedr-0.2 parmed-3.0.0 passlib-1.7.4 phonopy-2.11.0 pkginfo-1.8.3 plotly-5.10.0 pluggy-1.0.0 py-1.11.0 pycodestyle-2.8.0 pygments-2.13.0 pyjwt-1.7.1 pylint-2.3.1 pylint-mongoengine-0.3.3 pylint-plugin-utils-0.5 pymatgen-2022.0.17 pymdown-extensions-9.5 pymongo-3.11.4 pyrsistent-0.18.1 pytest-3.10.0 pytest-cov-2.7.1 pytest-timeout-1.4.2 python-dotenv-0.21.0 python-gitlab-2.10.1 python-json-logger-2.0.2 python-logstash-0.4.6 python-magic-0.4.24 python-multipart-0.0.5 pyyaml-env-tag-0.1 rdflib-5.0.0 readme-renderer-37.1 recommonmark-0.7.1 redis-4.3.4 requests-toolbelt-0.9.1 rfc3339-validator-0.1.4 rfc3987-1.3.8 rope-0.21.0 ruamel.yaml-0.17.21 ruamel.yaml.clib-0.2.6 runstats-2.0.0 scikit-learn-0.24.2 scipy-1.7.1 sentinels-1.0.0 setuptools-57.5.0 sklearn-0.0 smmap-5.0.0 snowballstemmer-2.2.0 soupsieve-2.3.2.post1 spglib-2.0.1 sphinx-5.1.1 sphinxcontrib-applehelp-1.0.2 sphinxcontrib-devhelp-1.0.2 sphinxcontrib-htmlhelp-2.0.0 sphinxcontrib-jsmath-1.0.1 sphinxcontrib-qthelp-1.0.3 sphinxcontrib-serializinghtml-1.1.5 starlette-0.13.6 structlog-20.1.0 sympy-1.11.1 tabulate-0.8.9 tenacity-8.0.1 termcolor-1.1.0 threadpoolctl-3.1.0 tqdm-4.64.1 twine-3.4.2 typed-ast-1.4.2 uncertainties-3.1.7 unidecode-1.3.2 uri-template-1.2.0 uvicorn-0.13.4 uvloop-0.16.0 validators-0.18.2 vine-1.3.0 watchdog-2.1.9 watchgod-0.8.2 webcolors-1.12 webencodings-0.5.1 websockets-8.1 wrapt-1.12.1 xarray-0.19.0 zipfile37-0.1.3 zipp-3.8.1 zipstream-new-1.1.5
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 metadata.py
+<Response [400]>
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/Nomad_metadata/metadata.py", line 68, in <module>
+    results = ArchiveQuery(
+  File "/usr/local/lib/python3.9/dist-packages/nomad/client/archive.py", line 101, in __init__
+    self._query_list.append({'quantities': list(_collect(self._required, EntryArchive.m_def))})
+  File "/usr/local/lib/python3.9/dist-packages/nomad/client/archive.py", line 49, in _collect
+    raise KeyError(f'{definition_name} is not a property of {parent_section}.')
+KeyError: 'section_run is not a property of nomad.datamodel.datamodel.EntryArchive:Section.'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE

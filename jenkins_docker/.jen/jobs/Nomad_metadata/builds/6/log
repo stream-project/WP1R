@@ -1,0 +1,23 @@
+Started by user [8mha:////4PXRqxyBfWUHAebwTWaf3LlWTKCEl8hOIL+fRcKSQqBOAAAAmB+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgYe/dLi1CL94pKi1MRcAPuW3GnBAAAA[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Nomad_metadata
+[Nomad_metadata] $ /bin/sh -xe /tmp/jenkins3795819654358091307.sh
++ pip3 install python-nomad
+Collecting python-nomad
+  Downloading python_nomad-1.4.1-py3-none-any.whl (30 kB)
+Requirement already satisfied: requests in /usr/local/lib/python3.9/dist-packages (from python-nomad) (2.28.1)
+Requirement already satisfied: charset-normalizer<3,>=2 in /usr/local/lib/python3.9/dist-packages (from requests->python-nomad) (2.1.1)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests->python-nomad) (2022.6.15)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests->python-nomad) (1.26.12)
+Requirement already satisfied: idna<4,>=2.5 in /usr/local/lib/python3.9/dist-packages (from requests->python-nomad) (3.3)
+Installing collected packages: python-nomad
+Successfully installed python-nomad-1.4.1
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 metadata.py
+<Response [400]>
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/Nomad_metadata/metadata.py", line 22, in <module>
+    from nomad.client import ArchiveQuery
+ModuleNotFoundError: No module named 'nomad.client'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
