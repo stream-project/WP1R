@@ -12,10 +12,12 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.BatchFile>
-      <command>python dcat.py</command>
+    <hudson.tasks.Shell>
+      <command>pip3 install nomad-lab==0.10.12
+pip3 install validators
+python3 dcat.py</command>
       <configuredLocalRules/>
-    </hudson.tasks.BatchFile>
+    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>

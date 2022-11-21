@@ -12,14 +12,14 @@
   <triggers/>
   <concurrentBuild>false</concurrentBuild>
   <builders>
-    <hudson.tasks.BatchFile>
-      <command>call python rdf.py&#xd;
-&#xd;
-call cd SDM-RDFizer/rdfizer&#xd;
-&#xd;
-call python run_rdfizer.py ../../configfile.ini</command>
+    <hudson.tasks.Shell>
+      <command> python3 rdf.py
+
+ cd SDM-RDFizer/rdfizer
+
+ python3 run_rdfizer.py ../../configfile.ini</command>
       <configuredLocalRules/>
-    </hudson.tasks.BatchFile>
+    </hudson.tasks.Shell>
   </builders>
   <publishers/>
   <buildWrappers/>

@@ -1,0 +1,25 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/db_to_csv
+[WS-CLEANUP] Deleting project workspace...
+[WS-CLEANUP] Done
+[db_to_csv] $ /bin/sh -xe /tmp/jenkins2102072562188646151.sh
++ pip3 install unidecode
+Collecting unidecode
+  Downloading Unidecode-1.3.6-py3-none-any.whl (235 kB)
+     ━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━ 235.9/235.9 kB 12.6 MB/s eta 0:00:00
+Installing collected packages: unidecode
+Successfully installed unidecode-1.3.6
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 db_to_csv.py
+/var/jenkins_home/workspace/db_to_csv/db_to_csv.py:44: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config.readfp(open('./tables.properties'))
+/var/jenkins_home/workspace/db_to_csv/db_to_csv.py:92: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+/var/jenkins_home/workspace/db_to_csv/db_to_csv.py:92: UserWarning: pandas only supports SQLAlchemy connectable (engine/connection) or database string URI or sqlite3 DBAPI2 connection. Other DBAPI2 objects are not tested. Please consider using SQLAlchemy.
+  results = pd.read_sql_query(query, mydb)
+select * from materials_dataset
+('hybrid',)
+select * from materials_dataset
+select * from materials_system
+Finished: SUCCESS

@@ -1,0 +1,181 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Nomad_dcat
+[Nomad_dcat] $ /bin/sh -xe /tmp/jenkins18339807156039235819.sh
++ pip3 install nomad-lab==0.10.12
+Requirement already satisfied: nomad-lab==0.10.12 in /usr/local/lib/python3.9/dist-packages (0.10.12)
+Requirement already satisfied: pip in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (22.3.1)
+Requirement already satisfied: ase==3.19.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (3.19.0)
+Requirement already satisfied: future==0.18.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.18.2)
+Requirement already satisfied: docstring-parser==0.12 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.12)
+Requirement already satisfied: elasticsearch-dsl==6.4.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (6.4.0)
+Requirement already satisfied: jmespath==0.10.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.10.0)
+Requirement already satisfied: pydantic==1.8.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (1.8.2)
+Requirement already satisfied: jsonschema[format]==3.2.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (3.2.0)
+Requirement already satisfied: click==7.1.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (7.1.2)
+Requirement already satisfied: aniso8601==7.0.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (7.0.0)
+Requirement already satisfied: fastentrypoints==0.12 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.12)
+Requirement already satisfied: cython>=0.19 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.29.32)
+Requirement already satisfied: cachetools==4.2.4 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (4.2.4)
+Requirement already satisfied: requests==2.26.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (2.26.0)
+Requirement already satisfied: Pint==0.17 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.17)
+Requirement already satisfied: wheel in /usr/lib/python3/dist-packages (from nomad-lab==0.10.12) (0.34.2)
+Requirement already satisfied: numpy==1.21.2 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (1.21.2)
+Requirement already satisfied: python-keycloak==0.26.1 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (0.26.1)
+Requirement already satisfied: orjson==3.6.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (3.6.0)
+Requirement already satisfied: pyyaml==6.0 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (6.0)
+Requirement already satisfied: pytz==2021.1 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (2021.1)
+Requirement already satisfied: bravado==11.0.3 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (11.0.3)
+Requirement already satisfied: nptyping==1.4.4 in /usr/local/lib/python3.9/dist-packages (from nomad-lab==0.10.12) (1.4.4)
+Requirement already satisfied: matplotlib in /usr/local/lib/python3.9/dist-packages (from ase==3.19.0->nomad-lab==0.10.12) (3.6.2)
+Requirement already satisfied: scipy in /usr/local/lib/python3.9/dist-packages (from ase==3.19.0->nomad-lab==0.10.12) (1.9.3)
+Requirement already satisfied: bravado-core>=5.16.1 in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (5.17.1)
+Requirement already satisfied: typing-extensions in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (4.4.0)
+Requirement already satisfied: simplejson in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (3.18.0)
+Requirement already satisfied: python-dateutil in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (2.8.2)
+Requirement already satisfied: six in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (1.16.0)
+Requirement already satisfied: msgpack in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (1.0.4)
+Requirement already satisfied: monotonic in /usr/local/lib/python3.9/dist-packages (from bravado==11.0.3->nomad-lab==0.10.12) (1.6)
+Requirement already satisfied: elasticsearch<7.0.0,>=6.0.0 in /usr/local/lib/python3.9/dist-packages (from elasticsearch-dsl==6.4.0->nomad-lab==0.10.12) (6.8.2)
+Requirement already satisfied: setuptools in /usr/lib/python3/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (52.0.0)
+Requirement already satisfied: attrs>=17.4.0 in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (22.1.0)
+Requirement already satisfied: pyrsistent>=0.14.0 in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (0.19.2)
+Requirement already satisfied: jsonpointer>1.13 in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (2.3)
+Requirement already satisfied: webcolors in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (1.12)
+Requirement already satisfied: strict-rfc3339 in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (0.7)
+Requirement already satisfied: idna in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (3.4)
+Requirement already satisfied: rfc3987 in /usr/local/lib/python3.9/dist-packages (from jsonschema[format]==3.2.0->nomad-lab==0.10.12) (1.3.8)
+Requirement already satisfied: typish>=1.7.0 in /usr/local/lib/python3.9/dist-packages (from nptyping==1.4.4->nomad-lab==0.10.12) (1.9.3)
+Requirement already satisfied: packaging in /usr/local/lib/python3.9/dist-packages (from Pint==0.17->nomad-lab==0.10.12) (21.3)
+Requirement already satisfied: python-jose>=1.4.0 in /usr/local/lib/python3.9/dist-packages (from python-keycloak==0.26.1->nomad-lab==0.10.12) (3.3.0)
+Requirement already satisfied: certifi>=2017.4.17 in /usr/local/lib/python3.9/dist-packages (from requests==2.26.0->nomad-lab==0.10.12) (2022.9.24)
+Requirement already satisfied: charset-normalizer~=2.0.0 in /usr/local/lib/python3.9/dist-packages (from requests==2.26.0->nomad-lab==0.10.12) (2.0.12)
+Requirement already satisfied: urllib3<1.27,>=1.21.1 in /usr/local/lib/python3.9/dist-packages (from requests==2.26.0->nomad-lab==0.10.12) (1.26.12)
+Requirement already satisfied: swagger-spec-validator>=2.0.1 in /usr/local/lib/python3.9/dist-packages (from bravado-core>=5.16.1->bravado==11.0.3->nomad-lab==0.10.12) (3.0.3)
+Requirement already satisfied: jsonref in /usr/local/lib/python3.9/dist-packages (from bravado-core>=5.16.1->bravado==11.0.3->nomad-lab==0.10.12) (1.0.1)
+Requirement already satisfied: pyasn1 in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab==0.10.12) (0.4.8)
+Requirement already satisfied: ecdsa!=0.15 in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab==0.10.12) (0.18.0)
+Requirement already satisfied: rsa in /usr/local/lib/python3.9/dist-packages (from python-jose>=1.4.0->python-keycloak==0.26.1->nomad-lab==0.10.12) (4.9)
+Requirement already satisfied: pyparsing>=2.2.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (3.0.9)
+Requirement already satisfied: contourpy>=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (1.0.6)
+Requirement already satisfied: pillow>=6.2.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (9.3.0)
+Requirement already satisfied: cycler>=0.10 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (0.11.0)
+Requirement already satisfied: fonttools>=4.22.0 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (4.38.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /usr/local/lib/python3.9/dist-packages (from matplotlib->ase==3.19.0->nomad-lab==0.10.12) (1.4.4)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ pip3 install validators
+Requirement already satisfied: validators in /usr/local/lib/python3.9/dist-packages (0.20.0)
+Requirement already satisfied: decorator>=3.4.0 in /usr/local/lib/python3.9/dist-packages (from validators) (5.1.1)
+WARNING: Running pip as the 'root' user can result in broken permissions and conflicting behaviour with the system package manager. It is recommended to use a virtual environment instead: https://pip.pypa.io/warnings/venv
++ python3 dcat.py
+/usr/local/lib/python3.9/dist-packages/nomad/metainfo/metainfo.py:1415: VisibleDeprecationWarning: Creating an ndarray from ragged nested sequences (which is a list-or-tuple of lists-or-tuples-or ndarrays with different lengths or shapes) is deprecated. If you meant to do this, you must specify 'dtype=object' when creating the ndarray.
+  quantity_value = np.asarray(quantity_value)
+Number queried entries: 11856930
+Number of entries loaded in the last api call: 10
+Bytes loaded in the last api call: 49795719
+Bytes loaded from this query: 49795719
+Number of downloaded entries: 10
+Number of made api calls: 1
+
+300
+0xY9qeShGDQAwLc7OvA4Ds3gNY5O
+0yEc0dIx40yGxDFvq-8WPaVRngGv
+0zj5JkkKq64JQqB-RoIsuctT5wjN
+1-J6gU8bl5X5mLcnrym1iE7e9_ZJ
+1-jMiWFvxBgtVtnf21Lb0PyhEDe6
+10-3SjWJ6JqXi8CRehGY2f6bT6mx
+10E-7LY8Z_fSOhlMUlITv1Z3Ip0s
+11X8gYVJn9idXwibrg0MPS9v3aP-
+11po8cnfIfdKgDNR3H7-KrsxROlz
+12OjgVxVHHAYVltWTsbDXbPAq1Z3
+12VNQqcoIlMw4b7DjRaunKe8blaL
+13FogQzPiVxWwmBwskcCPM3S6HGA
+13ibCPL2tn5kTLYPlGaKiibae78s
+14PcU3gTDF0LipRndmoDjCKXkinw
+14XQ5BqGoZVT0o-FiX5NgdGeFd6L
+15Sh1vwnKmA7YF3qCouRiTAzyh8Z
+16DGDIkyHvGCxWP_rZLI0TnvxJdp
+16zA9i76C3M0ZLs3msD7pzlco2lp
+17nUhk0Nzwb8dxkINMxrGljJ0Wuc
+18Hr5CeUdhf1IkKeLJj-YzLvhMo4
+19CyDpnsfEPJF9_k82f7gLcsTvSW
+19bxhSvC08gycC0gerjsYYPEbdGl
+1Al35cFR_1_X3je7zjh6TXZ-MlXn
+1Bi-s0r9XrYEGKWoMTkWDHVDmjnC
+1C5xXH1kOlGLNDAKSPu3E630gYyt
+1EB0kwgNDD8lh-sKLnkCorxSX-pZ
+1EL-Mol8ocfZ79vXA0l6xHQV0sFG
+1FhLa6XXr-z_qqyzJCL1KxQPV_Fr
+1G6RJKblqt6vyAEdkO68iv6CtNPN
+1HckIChddNylJEdXRSu7-S8oP6KI
+1Hf_fjX9SHsP9i7nUZU6bBV12pfm
+1IbdY9Dg89AGur1JQBsAJPo_UgTB
+1IpTGl2U_ZBrCxBvIC1dvahhiR7j
+1IyyUmYCCL4UM56iRHvWuSnxUVEd
+1JMRfW-t5tRG__X4QV0W3mMfzR3m
+1Jb_23hMlzscFUEjOFypmdZPFF-5
+1JjlLOpqA_iqHCviJK5iyZSfmnLC
+1JsEx9cD4xc6d5fEyt3qXR7Xp8sr
+1Jzb_9_gP8DzltuA0wk5YuPHhlWC
+1MHf3ph0_N-K3uw5n5ta8aRyE6F3
+1OpE24zAd3IklvA3PwBQce2UCgZ3
+1QbmKkyfx25spj6jqgKcdVdL80cF
+1R17BJiFY00oRJeddwEfLWYV3oGs
+1ROASIjbZhwMmJuMhIE04Lc0iBnx
+1RXX3MAOuRTzOb2bwIrGDWbKSaCl
+1Sw13vzJhOU14a63K0toUSKLSYNB
+1U6P3kGjGFWX7Ic4nmhH2eqU1a4x
+1UZgZnFADELnX9353LsLT_e-fs-O
+1V86g8RR29t06CVVnHFvXbj2JYNg
+1Vh1nY1XGd3loT7YZYV4rca3Mf2c
+1VqkLbII8h8eSB0T79pThtADtGYq
+1WA5DBIu8bsTSuGWIxk2g10X7Svr
+1Wdn_Q8UAEUoExsD1CHkrIkwOiEC
+1Wkt486zeCvO4X8forzo_jlI5uR2
+1X0oaWotsX8yNehkugLUX_bIszuU
+1XEpkjCPHF19A0unTYiiWSbMaar3
+1Xe90xOS6tHFEojBVRq7jwboCFlB
+1ZLHWK5rb5DDdDc6SoAK17bH5Y9J
+1_eZIhZ1uwx1fz9Zaz-24PopH4iW
+1_jUwZrXXVfCirUWHt59hkVqcouR
+1a50nQPxAsj2gplSIMBDZjugiOcA
+1aJBeSItfN48SfETeAxomMc-aV2F
+1aLK0YCqWiz_phb9EiVJ7_P4SGZq
+1absbaGb1VlZB4T-koVb0uCEgWqF
+1bfSMkpd29ZZHvRp5PT0m65Gp6Sk
+1c4pt5jtYPh-oH8Q4JVbftfTIoRA
+1c99GvzQZ-FsZ68d3ww5QiYilE55
+1crNZYdlySHmLE_VZOI0kUSVuKc_
+1d_Vx--7rFpgxsdF_DCMAY-tecf8
+1do4JQiq-zdQmMzrXdiqyfKp7IEw
+1dwWxCBAGYE3eXbbGeD2OAhMljDk
+1e5pCyWEXpd1fkA57iTKTKjHiIo4
+1ej-YsK8WA-sJzulBdjAxuHnQF-K
+1gn30wmvK2FRq5V0g3Ikdzd_Vxdz
+1h5bVx6BNUrL2lSs-IEIj2kcjgIb
+1i2vyNAm1n8--UxjYzVH1qGxzGcw
+1i42aUANLzc8h4XfY_IlzIKwqgv1
+1iSLVjq2vjBVmI2JCgQrA2XiNLEP
+1iScOWva4YCNFKsbitF36_6R4eIM
+1icVbr3RBQOd2cmC4a3F7a0oja03
+1jSDlC26nnyYLwFAq5JSKclssJK7
+1jrZ6bercu2pz9xyp2lTg433lifT
+1jv0_dQm97bA-80FMdgN2Nq1IuMx
+1kEUgcDP6b3I0rQdCiXAxa-AOon8
+1l_VQerhUMULyCvpzdJGv0g_nmd_
+1nJxDiqRLdtN4yGOgyzEeNogOw-z
+1ni4Cfj1bm2Y6CiGcfUtu62ARmjq
+1ns2mUYhC8I91x0l26-a_kKU4vV_
+1o1VifTt7EA8Tou9gRBJ-CjPtisI
+1o4exQwXl6mTIUq0D7A9tilHGLf3
+1oG7mwPZVJ6GST-bi4yS35fted4X
+1oOAyG6NTXcYRtOHl2fX3DU-bGA2
+1pkH1u9qXabD40zXNrdPvh5Zz_Na
+1pr9kejoxMduglMYeuRMuUrwgLrc
+1pt7csOppm5_i2IwI4bx966L5U38
+1qA-7_SIPGtI1PCpimbM-u2TsbQd
+1qFLsDBGnhqOL9jzpjIqv39o1c1V
+1rGPhaWm69Gc0BxedNk7pnKOEUkO
+1sY7xgbPL3xI1IW6z3ZjX1bCWKqU
+1t3mAQl4VHLGeYxaJ-B55b_g6Agp
+Finished: SUCCESS
