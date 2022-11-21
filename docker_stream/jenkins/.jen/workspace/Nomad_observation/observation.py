@@ -137,7 +137,7 @@ with open('un.txt', "rb") as fp:
 
 un = v
 # print(un)
-number = 100
+number = 400
 length = len(un) + number
 # print(length)
 total = 0
