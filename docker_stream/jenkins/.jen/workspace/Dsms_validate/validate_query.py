@@ -32,18 +32,21 @@ print(path2)
 os.chdir(path)
 result1 = []
 for f in os.listdir():
-    print(f)
-    a = os.path.join(path,f)
-    result1.append(a)
+    if f.endswith('.ttl'):
+        
+        print(f)
+        a = os.path.join(path,f)
+        result1.append(a)
   
 # print(result1)
     
 os.chdir(path2)
 result2 = []
 for f1 in os.listdir():
-    print(f1)
-    a1 = os.path.join(path2,f1)
-    result2.append(a1)
+    if f1.endswith('.ttl'):
+        print(f1)
+        a1 = os.path.join(path2,f1)
+        result2.append(a1)
 
 # print(result2)
 
