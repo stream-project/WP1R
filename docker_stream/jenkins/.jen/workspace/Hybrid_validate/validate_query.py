@@ -21,11 +21,11 @@ base_path = Path(__file__).parent
 
 print(base_path)
 
-path = (base_path / '../Query_hybrid/expected_results/').resolve()
+path = (base_path / '../Hybrid_query/expected_results/').resolve()
 
 print(path)
 
-path2 = (base_path / '../Query_hybrid/actual_results/').resolve()
+path2 = (base_path / '../Hybrid_query/actual_results/').resolve()
 
 print(path2)
 

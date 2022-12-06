@@ -21,11 +21,11 @@ base_path = Path(__file__).parent
 
 print(base_path)
 
-path = (base_path / '../Nomad_query/expected_results/').resolve()
+path = (base_path / '../Dsms_query/expected_results/').resolve()
 
 print(path)
 
-path2 = (base_path / '../Nomad_query/actual_results/').resolve()
+path2 = (base_path / '../Dsms_query/actual_results/').resolve()
 
 print(path2)
 
@@ -71,8 +71,7 @@ for (i,k) in zip(result[::2],result[1::2]):
     g1 = Graph()
     g1.parse(k)
     
-    # print(g)
-    # print(len(g1))
+
     
     iso1 = to_isomorphic(g)
     iso2 = to_isomorphic(g1)
