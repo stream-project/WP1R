@@ -24,7 +24,7 @@ RUN apk add --no-cache bash curl util-linux procps net-tools busybox-extras wget
 
 ENV PATH=${GRAPHDB_INSTALL_DIR}/bin:$PATH
 
-CMD ["-Dgraphdb.home=/opt/graphdb/home"]
+CMD ["-Dgraphdb.home=/opt/graphdb/home","-Dgraphdb.workbench.cors.enable=true","-Dgraphdb.workbench.cors.origin=*","-Dgraphdb.workbench.cors.expose-headers=*, Authorization"]
 
 ENTRYPOINT ["/opt/graphdb/dist/bin/graphdb"]
 
