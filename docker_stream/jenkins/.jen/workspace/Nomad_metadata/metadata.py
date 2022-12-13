@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Wed Dec  8 14:02:02 2021
 
-@author: GuptaR
-"""
 
 
 
@@ -144,7 +140,7 @@ for i, result in enumerate(results):
             cdt = Namespace('http://w3id.org/lindt/custom_datatypes#')
             geo = Namespace('http://www.w3.org/2003/01/geo/wgs84_pos#')
             base = Namespace('http://example.org/data/')
-            nomad = Namespace('http://https://nomad-coe.eu/ontology#')
+            nomad = Namespace('https://nomad-lab.eu/')
             dc = Namespace('http://purl.org/dc/elements/1.1/')
             ab = Namespace('http://learningsparql.com/ns/data#')
             cdt = Namespace('http://w3id.org/lindt/custom_datatypes#') 
