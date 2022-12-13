@@ -71,7 +71,7 @@ config.set('datasets','ordered', 'yes')
 
 ''' specify the path of path.properties file here '''
 
-config1.readfp(open('../db_to_csv/tables.properties'))
+config1.readfp(open('../Hybrid_db_to_csv/tables.properties'))
 
 
 x = 1
