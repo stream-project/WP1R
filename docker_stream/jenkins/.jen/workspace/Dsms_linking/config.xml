@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE LIMES SYSTEM "limes.dtd">
+<LIMES>
+<PREFIX>
+  <NAMESPACE>http://www.w3.org/2000/01/rdf-schema#</NAMESPACE>
+  <LABEL>rdfs</LABEL>
+</PREFIX>
+<PREFIX>
+  <NAMESPACE>http://dbpedia.org/resource/Category:</NAMESPACE>
+  <LABEL>dbr</LABEL>
+</PREFIX>
+<PREFIX>
+  <NAMESPACE>http://purl.org/dc/terms/</NAMESPACE>
+  <LABEL>dct</LABEL>
+</PREFIX>
+<PREFIX>
+  <NAMESPACE>http://test.de/</NAMESPACE>
+  <LABEL>test</LABEL>
+</PREFIX>
+<PREFIX>
+  <NAMESPACE>http://www.w3.org/2002/07/owl#</NAMESPACE>
+  <LABEL>owl</LABEL>
+</PREFIX>
+
+<SOURCE>
+  <ID>sourceId</ID>
+  <ENDPOINT>./statements.ttl</ENDPOINT>
+  <VAR>?s</VAR>
+  <PAGESIZE>1000</PAGESIZE>
+  <RESTRICTION></RESTRICTION>
+  <PROPERTY>test:repotype AS nolang->lowercase RENAME name</PROPERTY>
+
+
+  <TYPE>TURTLE</TYPE>
+</SOURCE>
+<TARGET>
+  <ID>targetId</ID>
+  <ENDPOINT>http://dbpedia.org/sparql</ENDPOINT>
+  <VAR>?t</VAR>
+  <PAGESIZE>1000</PAGESIZE>
+  <RESTRICTION>?t dct:subject dbr:International_cultural_organizations</RESTRICTION>
+  <PROPERTY>rdfs:label AS nolang->lowercase RENAME name</PROPERTY>
+
+
+  <TYPE>sparql</TYPE>
+</TARGET>
+<METRIC>
+  exactmatch(s.name,t.name)
+</METRIC>
+<ACCEPTANCE>
+  <THRESHOLD>0.98</THRESHOLD>
+  <FILE>accepted.nt</FILE>
+  <RELATION>owl:sameAs</RELATION>
+</ACCEPTANCE>
+<REVIEW>
+  <THRESHOLD>0.9</THRESHOLD>
+  <FILE>reviewme.nt</FILE>
+  <RELATION>owl:sameAs</RELATION>
+</REVIEW>
+<EXECUTION>
+  <REWRITER>DEFAULT</REWRITER>
+  <PLANNER>DEFAULT</PLANNER>
+  <ENGINE>DEFAULT</ENGINE>
+</EXECUTION>
+<OUTPUT>TTL</OUTPUT>
+</LIMES>
