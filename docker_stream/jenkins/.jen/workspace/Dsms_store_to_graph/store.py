@@ -49,9 +49,12 @@ for i_path in dirs:
         print(a)
 
         headers = {
-            'Content-Type': 'text/plain',
+            'Content-Type': 'application/x-turtle',
         }
         
+
+
+
         rdf = open(a,'r',encoding='utf-8').read()
         
         
