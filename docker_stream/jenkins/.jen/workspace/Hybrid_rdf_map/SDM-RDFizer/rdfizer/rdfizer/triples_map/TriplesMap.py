@@ -1,5 +1,5 @@
 import re
-
+# t
 class TriplesMap:
 
 	def __init__(self, triples_map_id, data_source, subject_map, predicate_object_maps_list, ref_form=None, iterator=None, tablename=None, query=None):
