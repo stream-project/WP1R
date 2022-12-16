@@ -20,6 +20,7 @@ import psycopg2
 import types
 import pandas as pd
 from .functions import *
+# t
 
 try:
 	from triples_map import TriplesMap as tm
