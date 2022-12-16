@@ -1,9 +1,5 @@
 # -*- coding: utf-8 -*-
-"""
-Created on Fri Apr  1 00:00:29 2022
 
-@author: GuptaR
-"""
 
 import configparser
 
