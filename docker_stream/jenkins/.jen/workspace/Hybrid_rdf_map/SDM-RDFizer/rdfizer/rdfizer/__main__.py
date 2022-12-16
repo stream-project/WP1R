@@ -1,7 +1,7 @@
 from rdfizer import semantify
 import sys
 import getopt
-
+# t
 
 
 '''
