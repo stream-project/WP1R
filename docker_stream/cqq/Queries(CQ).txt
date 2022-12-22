@@ -1,0 +1,844 @@
+
+# Query1) What are the details of all the materials and methods used for the simulation ?
+
+
+
+PREFIX nomad: <https://nomad-lab.eu/>  
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select   distinct ?material ?formula ?atom ?material_name ?basis_set ?code_name ?version ?compound ?crystal ?functional
+
+where
+
+{ 
+    
+    ?material a sosa:Sample;
+       nomad:has_atoms ?atom ;
+       nomad:has_formula ?formula;
+      sosa:isResultOf ?s.
+    
+    OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+    
+     
+   
+            ?s a sosa:Sampling;
+      
+            sosa:hasResult ?material;
+
+       nomad:has_basis_set ?basis_set;
+    
+          nomad:has_code_name ?code_name;
+       nomad:has_code_version ?version;
+       nomad:has_compound_type ?compound;
+       nomad:has_crystal_system ?crystal;
+	          nomad:has_xc_functional_names ?functional.
+
+       
+       
+    
+     
+    
+
+}
+
+
+
+''' This query will give us material details and the 
+details related to the method used for simulation ''' 
+
+
+--------------------------------------------------------------------------------------------
+
+
+# Query2: what are the energy and atom forces values of all the materials present in the database?
+
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select distinct ?material ?formula ?material_name ?code_name ?label  ?atom_forces ?stress_tensor ?energy_values ?unit
+where{
+    {
+
+select   ?material ?formula ?material_name ?code_name ?label  ?atom_forces ?unit
+
+{
+    ?material a sosa:Sample;
+       nomad:has_formula ?formula.
+         
+    
+  OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+    
+   
+        
+    ?s a sosa:Sampling;
+            sosa:hasResult ?material;
+       nomad:has_code_name ?code_name.
+  
+      
+       
+    
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r rdfs:label ?label;
+           ?p ?atom_forces;
+           qudt:unit ?unit.
+           
+        FILTER (?p = nomad:array || ?p = qudt:numericValue )
+        FILTER contains(?label, "atom_forces")
+    
+    
+
+        }
+        
+    }
+    
+    UNION
+    
+        {
+
+select   ?material ?formula ?material_name ?code_name ?label  ?energy_values ?unit
+
+{
+    ?material a sosa:Sample;
+       nomad:has_formula ?formula.
+         
+    
+  OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+    
+   
+        
+    ?s a sosa:Sampling;
+            sosa:hasResult ?material;
+       nomad:has_code_name ?code_name.
+      
+       
+    
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r rdfs:label ?label;
+           ?p ?energy_values;
+           qudt:unit ?unit.
+           
+        FILTER (?p = nomad:array || ?p = qudt:numericValue )
+                FILTER (contains (?label, "stress_tensor" ))
+    
+    
+
+        }
+        
+    }
+    
+    UNION
+    
+            {
+
+select   ?material ?formula ?material_name ?code_name ?label  ?energy_values ?unit
+
+{
+    ?material a sosa:Sample;
+       nomad:has_formula ?formula.
+         
+    
+  OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+    
+ 
+        
+    ?s a sosa:Sampling;
+            sosa:hasResult ?material;
+       nomad:has_code_name ?code_name.
+      
+       
+    
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r rdfs:label ?label;
+           ?p ?energy_values;
+           qudt:unit ?unit.
+           
+        FILTER (?p = nomad:array || ?p = qudt:numericValue )
+                FILTER (!regex (?label, "atom_forces" ) ) 
+                 FILTER (!regex (?label, "stress_tensor" ) )
+    
+    
+
+        }
+        
+    }
+    
+}
+
+''' This query will give us atom forces, energy and 
+stress tensor values of all the materials '''
+
+--------------------------------------------------------------------------------------------
+
+# Query3: what are the energy values of section_scf_iteration for all the materials present in the database along with their code name?
+
+
+
+
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select   ?material ?code_name ?attribute ?attribute_detail ?data_type ?value
+where
+
+{
+    
+    {
+        
+    ?s a sosa:Sampling;
+       nomad:has_code_name ?code_name;
+       sosa:hasResult ?material.
+      
+       
+    }
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r ?attribute ?r1.
+        ?r1 ?attribute_detail ?r2.
+        ?r2 ?data_type ?value.
+        
+          FILTER (?data_type = nomad:array ||?data_type = nomad:numericValue )
+          FILTER (?attribute != nomad:has_section_eigenvalues )
+
+
+    
+    
+}
+
+
+''' This query will give us all values of attribute section_scf_iteration '''
+
+
+---------------------------------------------------------------------------------------------
+
+# Query4: which material have highest energy_total_T0 value and what is that value?
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select ?material ?formula ?material_name ?energy_total_T0
+where
+{
+ 
+
+   ?material a sosa:Sample;
+       nomad:has_formula ?formula.
+    
+    OPTIONAL { ?material nomad:has_material_name ?material_name. }
+       
+           
+    
+        
+        ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r dc:title "energy_total_T0"@en;
+           ?p ?energy_total_T0.
+    
+      FILTER (?p = nomad:array || ?p = qudt:numericValue )
+        
+        
+    
+}
+   
+ORDER BY DESC((?value)) 
+LIMIT 1
+   
+''' This query will give us the highest energy_total_T0 value and the formula and name 
+of the material having highest that highest value '''
+   
+   
+   
+   
+---------------------------------------------------------------------------------------------
+
+# query5: what are all the material formulas and labels associated with them?
+
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/>  
+
+
+
+select   ?material ?formula (group_concat(distinct ?label ; separator = ",") as ?labels)
+
+where{
+    
+    ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label
+    
+}    
+
+GROUP BY ?material ?formula
+ORDER BY ?material ?formula
+
+
+''' This query will give us the material formulas and all the labels associated with them '''
+
+
+--------------------------------------------------------------------------------------------
+
+
+# query6: How many different crystal systems exist?
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+
+select   ?crystal  (COUNT(?crystal) as ?count)
+
+where{
+ ?mat a sosa:Sampling;
+     nomad:has_crystal_system ?crystal.
+
+}
+
+GROUP BY ?crystal
+
+''' This query will give us the count of the crystal system present in the database '''
+
+
+
+
+
+--------------------------------------------------------------------------------------------
+
+
+# query7: What are the material and crystal system names for space group 166?
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select   ?material ?formula ?material_name ?crystal
+where
+
+{
+    ?material a sosa:Sample;
+       nomad:has_formula ?formula;
+       sosa:isResultOf ?s.
+     OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+    
+    
+        ?s a sosa:Sampling;
+           nomad:has_crystal_system ?crystal;
+        nomad:has_spacegroup 166. 
+    
+}
+
+
+''' This query will give us the details of the materials having spacegroup 166 '''
+
+
+
+
+---------------------------------------------------------------------------------------------
+
+# query8: what are the materials having labels more than one or one label or no labels? 
+
+PREFIX dc: <http://purl.org/dc/elements/1.1/> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/>  
+
+select ?material ?formula ?more_than_one_label ?more_than_one_label_count  ?one_label ?one_label_count   ?no_label ?no_label_count 
+where{
+
+    {
+select ?material ?formula  ( group_concat(distinct ?label1 ; separator = ",") as ?more_than_one_label ) ?more_than_one_label_count
+
+    
+{
+       ?material a sosa:Sample;
+         nomad:has_formula ?formula .
+    ?formula  a matvoc:Formula;
+         rdfs:label ?label1.
+    { 
+select  ?material ?formula  (count(distinct ?label1) as ?more_than_one_label_count)
+
+
+        {
+    
+    ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label1.
+        }    
+
+GROUP BY ?material ?formula 
+HAVING ( ?more_than_one_label_count >1 )
+        }
+}
+    
+    GROUP BY ?material ?formula ?more_than_one_label_count
+    }
+
+    
+UNION
+    {
+   Select ?material ?formula ( group_concat(distinct ?label1 ; separator = ",") as ?one_label ) ?one_label_count 
+
+
+{
+       ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label1.
+    { 
+select  ?material ?formula (count(distinct ?label1) as ?one_label_count)
+
+
+        {
+    
+    ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label1.
+        }    
+
+GROUP BY ?material ?formula 
+        HAVING ( ?one_label_count =1 )
+    }
+            }
+
+        GROUP BY ?material ?formula ?one_label_count }
+
+UNION
+    {
+   Select ?material ?formula ( group_concat(distinct ?label1 ; separator = ",") as ?no_label  ) ?no_label_count 
+
+
+{
+       ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label1.
+    { 
+select  ?material ?formula (count(distinct ?label1) as ?no_label_count )
+
+
+        {
+    
+    ?material a sosa:Sample;
+         nomad:has_formula ?formula.
+    ?formula a matvoc:Formula;
+         rdfs:label ?label1.
+        }    
+
+GROUP BY ?material ?formula 
+        HAVING ( ?no_label_count  =0 )
+    }
+            }
+
+        GROUP BY ?material ?formula ?no_label_count }
+
+
+}
+
+
+''' This query will give us the material details having more than one label, one label and 
+no label '''
+
+----------------------------------------------------------------------------------------------
+
+# Query9: what are the values of density of states for all the materials present in the database along with their code name?
+
+
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#>  
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/> 
+
+select   ?material ?code_name ?attribute ?attribute_detail ?data_type ?value
+where
+
+{
+    
+     
+    
+        
+    ?s a sosa:Sampling;
+       nomad:has_code_name ?code_name;
+       sosa:hasResult ?material.
+      
+       
+    
+
+            ?ob a sosa:Observation;
+                                   sosa:hasfeatureOfInterest ?material;
+                                   sosa:hasResult ?r.
+        ?r ?attribute ?r1.
+        ?r1 ?attribute_detail ?r2.
+        ?r2 ?data_type ?value.
+        
+         
+          FILTER (?attribute != nomad:has_section_eigenvalues )
+         FILTER (?data_type = nomad:array ||?data_type = nomad:numericValue )
+        FILTER(?data_type != qudt:unit)
+
+
+    
+    
+}
+
+''' This query will give us the density of states values of all the materials present
+ in the database '''
+
+----------------------------------------------------------------------------------------------
+
+
+# Query 10: what is a good Phase-Change Memory Material? 
+
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX matvoc: <http://stream-ontology.com/matvoc-core/>
+
+select ?material ?formula ?material_name
+where
+{
+    
+     ?material a sosa:Sample;
+       nomad:has_atoms ?atom ;
+       nomad:has_formula ?formula;
+        nomad:has_atoms ?atom;
+      sosa:isResultOf ?s.
+    
+    OPTIONAL {  ?material nomad:has_material_name ?material_name.}
+   
+filter (contains(?atom, "Si" ) || contains(?atom, "Sn" ) || contains(?atom, "Te" ) ||contains(?atom, "Sb" ) || contains(?atom, "Po" ) || contains(?atom, "Lv" ) )
+}
+
+
+--------------------------------------------------------------------------------------------------------
+# Query 11: Give me the materials from Nomad and Dsms databases which contains "Mg" ? 
+
+
+PREFIX hybrid3: <https://materials.hybrid3.duke.edu/materials/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX matvoc:	<http://stream-ontology.com/matvoc-core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+PREFIX emmo: <http://emmo.info/emmo#>
+PREFIX mech:	<http://emmo.info/emmo/domain/mechanical-testing#>
+
+
+select *  where
+{
+    {
+
+
+select   distinct ?material ?nomad_formula ?labels
+
+where
+
+{ 
+    
+    ?material a sosa:Sample;
+      
+       nomad:has_formula ?nomad_formula;
+      sosa:isResultOf ?s.
+                
+                ?nomad_formula a matvoc:Formula;
+                               rdfs:label ?labels.
+    
+
+    
+   
+    
+filter((contains(?labels,'Mg')))
+}
+            
+        
+        }
+        
+
+    
+        UNION
+
+    
+    
+{
+
+        SERVICE <http://localhost:7200/repositories/Dsms_test>{
+
+select    ?material_name_instance ?dsms_material_name
+
+where
+
+{ 
+    
+ ?material_name_instance rdf:type mech:EMMO_71200c24_44fe_4533_96be_55ecb299681c; 	# Material name instance is of Type ShortName
+              matvoc:Formula ?dsms_material_name.
+    
+   filter((contains(?dsms_material_name,'Mg')))
+    
+
+}
+            
+        }
+        
+}
+
+} 
+
+----------------------------------------------------------------------------------------------------------------------------
+
+# Query 12: Give me all the materials from all the three datasets ? 
+
+
+PREFIX hybrid3: <https://materials.hybrid3.duke.edu/materials/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX matvoc:	<http://stream-ontology.com/matvoc-core/>
+PREFIX emmo: <http://emmo.info/emmo#>
+PREFIX mech:	<http://emmo.info/emmo/domain/mechanical-testing#>
+
+select *  where
+{
+{
+
+ SELECT ?id ?system  ?formula 
+
+
+ where
+    {
+    
+   ?id a sosa:FeatureOfInterest;
+         sosa:hasSample ?system.
+    
+         ?system a sosa:Sample;
+            
+               hybrid3:has_formula ?formula.
+             
+    
+    
+
+ }
+        limit 10
+}
+
+
+
+UNION
+
+    
+    
+{
+
+        SERVICE <http://localhost:7200/repositories/Nomad>{
+
+select   distinct ?material ?nomad_formula ?labels
+
+where
+
+{ 
+    
+    ?material a sosa:Sample;
+      
+       nomad:has_formula ?nomad_formula;
+      sosa:isResultOf ?s.
+                
+                ?nomad_formula a matvoc:Formula;
+                               rdfs:label ?labels.
+    
+
+    
+   
+    
+
+}
+            limit 10
+        }
+        
+}
+    
+        UNION
+
+    
+    
+{
+
+        SERVICE <http://localhost:7200/repositories/Dsms_test>{
+
+select    ?material_name_instance ?dsms_material_name
+
+where
+
+{ 
+    
+?material_name_instance rdf:type mech:EMMO_71200c24_44fe_4533_96be_55ecb299681c; 	# Material name instance is of Type ShortName
+              matvoc:Formula ?dsms_material_name.
+    
+   
+    
+
+}
+            limit 10
+        }
+        
+}
+
+}
+
+------------------------------------------------------
+
+# Query 13: get me the list of  toxic materials from Nomad database
+
+PREFIX hybrid3: <https://materials.hybrid3.duke.edu/materials/> 
+PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+PREFIX nomad: <https://nomad-lab.eu/>
+PREFIX qudt: <http://qudt.org/2.1/schema/qudt#> 
+PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+PREFIX qudt_unit: <http://qudt.org/2.1/vocab/unit#> 
+PREFIX matvoc:	<http://stream-ontology.com/matvoc-core/>
+PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
+
+
+
+
+
+
+select   distinct ?material ?nomad_formula ?labels
+
+where
+
+{ 
+    
+    ?material a sosa:Sample;
+      
+       nomad:has_formula ?nomad_formula;
+      sosa:isResultOf ?s.
+                
+                ?nomad_formula a matvoc:Formula;
+                               rdfs:label ?labels.
+    
+filter((contains(?labels,'Pb')))
+        }
+		
+		
+		
+--------------------------------------------------------------------------------------------
+
+# Query 14: get me the list of  toxic materials from Hybrid3 database
+
+PREFIX hybrid3: <https://materials.hybrid3.duke.edu/materials/> 
+ PREFIX matonto: <http://matonto.org/ontology/matonto#> 
+ PREFIX owl: <http://www.w3.org/2002/07/owl#> 
+ PREFIX rdfs: <http://www.w3.org/2000/01/rdf-schema#> 
+ PREFIX sosa: <http://www.w3.org/ns/sosa/> 
+ PREFIX ssn: <http://www.w3.org/ns/ssn/> 
+ PREFIX xsd: <http://www.w3.org/2001/XMLSchema#> 
+ PREFIX rml: <http://semweb.mmlab.be/ns/rml#>
+ PREFIX ql: <http://semweb.mmlab.be/ns/ql#> 
+ PREFIX rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> 
+PREFIX matvoc:	<http://stream-ontology.com/matvoc-core/>
+
+
+
+select * 
+
+ where{
+    
+   ?id a sosa:FeatureOfInterest;
+         sosa:hasSample ?system.
+    
+         ?system a sosa:Sample;
+               hybrid3:has_formula ?formula.
+Bind(concat(str(?formula)) as ?for)
+    
+    FILTER (regex(str(?for), "http://stream-ontology.com/matvoc-core/"))
+  BIND(REPLACE(?for, "http://stream-ontology.com/matvoc-core/", "", "i") AS ?for1) .
+    
+    filter (contains(?for1, 'Pb'))
+
+} 
