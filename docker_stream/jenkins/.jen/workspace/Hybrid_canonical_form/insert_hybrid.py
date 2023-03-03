@@ -66,7 +66,7 @@ data = "PREFIX hybrid3:<https://materials.hybrid3.duke.edu/materials/> PREFIX ma
     <https://materials.hybrid3.duke.edu/materials/system/1> hybrid3:has_canonical_formula matvoc:CH6NPbCl3.\
       <https://materials.hybrid3.duke.edu/materials/system/44> hybrid3:has_canonical_formula matvoc:CH5N2SnI3.}"
 
-response = requests.post('http://vm188067-l3s.hosting.uni-hannover.de:7200/repositories/Hybrid3/statements', 
+response = requests.post('http://graphdb:7200/repositories/Hybrid3/statements', 
                          headers=headers, data=data)
 
 

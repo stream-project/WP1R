@@ -224,7 +224,7 @@ matvoc:mat_C2H8I3NPb_-j6vzE9ZLj34lDgywyCKN2AMr5Az hybrid3:has_canonical_formula 
     
 
 
-response = requests.post('http://vm188067-l3s.hosting.uni-hannover.de:7200/repositories/Nomad_hybrid/statements', 
+response = requests.post('http://graphdb:7200/repositories/Nomad_hybrid/statements', 
                          headers=headers, data=data)
 
 
