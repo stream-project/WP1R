@@ -158,7 +158,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "https://materials.hybrid3.duke.edu/materials/property/{id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/property_{id}";
         rr:class ssn:Property
     ];
 
@@ -185,7 +185,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "https://materials.hybrid3.duke.edu/materials/experiment/{dataset_id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/experiment_{dataset_id}";
         rr:class sosa:Procedure
     ].
 
@@ -199,7 +199,7 @@
     ];
 
     rr:subjectMap [
-        rr:template "https://materials.hybrid3.duke.edu/materials/computation/{dataset_id}";
+        rr:template "https://materials.hybrid3.duke.edu/materials/computation_{dataset_id}";
         rr:class sosa:Procedure
     ].
 
@@ -211,7 +211,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/reference/{id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/reference_{id}";
     rr:class hybrid3:Reference
 ].
 
@@ -223,8 +223,8 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/reference/{reference_id}";
-    rr:class hybrid3:Reference
+    rr:template "https://materials.hybrid3.duke.edu/materials/author_reference_{reference_id}";
+    rr:class hybrid3:Author_reference
 ].
 
 
@@ -237,7 +237,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/system/{id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/system_{id}";
     rr:class sosa:Sample
 ].
 
@@ -249,7 +249,7 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/observation/{dataset_id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/observation_{dataset_id}";
     rr:class sosa:Observation
 ].
 
@@ -261,6 +261,6 @@ rml:referenceFormulation ql:CSV
 ];
 
 rr:subjectMap [
-    rr:template "https://materials.hybrid3.duke.edu/materials/observation/{dataset_id}";
+    rr:template "https://materials.hybrid3.duke.edu/materials/observation_{dataset_id}";
     rr:class sosa:Observation
 ].
