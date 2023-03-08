@@ -154,7 +154,7 @@ def formula(form,abx3):
         print(m)
             
             # insert(m,x1)
-        insert(m, "has_canonical_form", x1,"graphdb:7200/repositories/Nomad_hybrid/statements")
+        insert(m, "has_canonical_form", x1,"http://graphdb:7200/repositories/Nomad_hybrid/statements")
             
                 
 

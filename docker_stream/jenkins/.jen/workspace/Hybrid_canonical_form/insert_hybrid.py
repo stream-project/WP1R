@@ -131,7 +131,7 @@ def formula(form):
         # # print(type(m1))
             
        
-        insert(m, "has_canonical_form", form1,"http://vm188067-l3s.hosting.uni-hannover.de:7200/repositories/Hybrid3/statements")
+        insert(m, "has_canonical_form", form1,"http://graphdb:7200/repositories/Hybrid3/statements")
             
                 
 
