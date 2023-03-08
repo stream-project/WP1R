@@ -38,7 +38,7 @@ import sys
 
 from SPARQLWrapper import SPARQLWrapper
 
-sparql = SPARQLWrapper("http://graphdb:7200/repositories/Nomad")
+sparql = SPARQLWrapper("http://graphdb:7200/repositories/Nomad_hybrid")
 
 # sparql = SPARQLWrapper("metadata_v1_0.ttl")
 
