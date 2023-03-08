@@ -69,7 +69,7 @@ def insert(subject, predicate, object, graphdb_endpoint):
 
 
 
-sparql = SPARQLWrapper("http://vm188067-l3s.hosting.uni-hannover.de:7200//repositories/Hybrid3")
+sparql = SPARQLWrapper("http://graphdb:7200//repositories/Hybrid3")
    
 
 
