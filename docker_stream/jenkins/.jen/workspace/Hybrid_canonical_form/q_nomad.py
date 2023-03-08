@@ -61,8 +61,7 @@ WHERE
 { 
     
     ?material a sosa:Sample;
-       nomad:has_formula ?formula ;
-      sosa:isResultOf ?s.
+       nomad:has_formula ?formula.
         
 }
 """)
