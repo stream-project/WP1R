@@ -230,33 +230,54 @@ for i, result in enumerate(results):
                                 g.add((t1, URIRef(time1 + 'inXSDDateTime'), Literal(meta_data,datatype=XSD.dateTime)))  
                                 
                             elif att == "formula":
+                                
                                 s  = re.split("[^a-zA-Z]*", meta_data)
                                 s = [x for x in s if x]
                                 s = sorted(c for c in s if c.isupper())
-                                # print(s)
+                          
                                 
-                                # print(form1)
                                 if meta_data.startswith((s[0])) and len(formula1) == 0:
+                                    print('rohit')
                                     # ur_id = meta_data
                                     # print(ur_id)
-                                    formula1.append(meta_data)
-                                # form = sorted(meta_data)
-                                # form1 = "".join(form)
-                                # if meta_data not in formula:
-                                    # formula.append(form1)
-                                    # print(meta_data)
-                                    # print('1')
-                                    # f = meta_data[-3:] 
-                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+meta_data)))
-                                    g.add((URIRef(matvoc+meta_data), RDF.type, URIRef(matvoc+'Formula')))
+                                    # formula1.append(meta_data)
+                                    formula_arranged1 = re.sub("[^A-Za-z0-9]", '', meta_data)
+
+
+
+                                    formula_arranged1= re.sub( r"([A-Z])", r" \1", formula_arranged1).split()
+
+                                    # print(i3)
+
+                                    formula_arranged1 = sorted(formula_arranged1)
+
+                                    formula_arranged1 = ''.join(formula_arranged1)
+                
+                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+formula_arranged1)))
+                                    g.add((URIRef(matvoc+formula_arranged1), RDF.type, URIRef(matvoc+'Formula')))
                                     g.add((URIRef(matvoc+meta_data), RDFS.label, Literal(meta_data)))
+                                 
                                     # ur_id = meta_data
+                                    
                                 else:
                                     # print('2')
+                                    print('here')
                                     # ur_id = meta_mat
                                     # f = meta_data[-3:]
-                                    g.add((URIRef(matvoc+formula1[0]), RDF.type, URIRef(matvoc+'Formula')))
-                                    g.add((URIRef(matvoc+formula1[0]), RDFS.label, Literal(meta_data)))
+                                    formula_arranged = re.sub("[^A-Za-z0-9]", '', meta_data)
+
+
+
+                                    formula_arranged= re.sub( r"([A-Z])", r" \1", formula_arranged).split()
+
+                                    # print(i3)
+
+                                    formula_arranged = sorted(formula_arranged)
+
+                                    formula_arranged = ''.join(formula_arranged)
+                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+formula_arranged)))
+                                    g.add((URIRef(matvoc+formula_arranged), RDF.type, URIRef(matvoc+'Formula')))
+                                    g.add((URIRef(matvoc+formula_arranged), RDFS.label, Literal(meta_data)))
 
                  
                             else: # properties[c] != 'has_comment' and 'has_upload_time':
@@ -317,34 +338,55 @@ for i, result in enumerate(results):
                                                        
                                                         try:
                     
-                                                            if att == "formula":
-                                                                print(att)
-                                                                s  = re.split("[^a-zA-Z]*", meta_mat)
-                                                                print(s)
+                                                            elif att == "formula":
+                                                                
+                                                                s  = re.split("[^a-zA-Z]*", meta_data)
                                                                 s = [x for x in s if x]
                                                                 s = sorted(c for c in s if c.isupper())
-                                                                print(meta_mat)
-                                                                # print(s[0])
+                                                          
                                                                 
-                                                                # print(form1)
-                                                                if meta_mat.startswith((s[0])) and len(formula1) == 0:
-                                                                    ur_id = meta_mat
-                                                                    print('hhhhh')
-                                                                    formula1.append(meta_mat)
-                                                                    # f = meta_mat[-3:]
-                                                                    # print(f)
-                                                                    print('3')
-                                                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+meta_mat)))
-                                                                    g.add((URIRef(matvoc+meta_mat), RDF.type, URIRef(matvoc+'Formula')))
-                                                                    g.add((URIRef(matvoc+meta_mat), RDFS.label, Literal(meta_mat)))
-                                                                else:
-                                                                    print('4')
-                                                                    
+                                                                if meta_data.startswith((s[0])) and len(formula1) == 0:
+                                                                    print('rohit')
+                                                                    # ur_id = meta_data
                                                                     # print(ur_id)
-                                                                    # f = meta_mat[-3:]
-                                                                    g.add((URIRef(matvoc+formula1[0]), RDF.type, URIRef(matvoc+'Formula')))
-                                                                    g.add((URIRef(matvoc+formula1[0]), RDFS.label, Literal(meta_mat)))
-                                                                    # formulas.append(meta_mat)
+                                                                    # formula1.append(meta_data)
+                                                                    formula_arranged1 = re.sub("[^A-Za-z0-9]", '', meta_data)
+
+
+
+                                                                    formula_arranged1= re.sub( r"([A-Z])", r" \1", formula_arranged1).split()
+
+                                                                    # print(i3)
+
+                                                                    formula_arranged1 = sorted(formula_arranged1)
+
+                                                                    formula_arranged1 = ''.join(formula_arranged1)
+                                                
+                                                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+formula_arranged1)))
+                                                                    g.add((URIRef(matvoc+formula_arranged1), RDF.type, URIRef(matvoc+'Formula')))
+                                                                    g.add((URIRef(matvoc+meta_data), RDFS.label, Literal(meta_data)))
+                                                                 
+                                                                    # ur_id = meta_data
+                                                                    
+                                                                else:
+                                                                    # print('2')
+                                                                    print('here')
+                                                                    # ur_id = meta_mat
+                                                                    # f = meta_data[-3:]
+                                                                    formula_arranged = re.sub("[^A-Za-z0-9]", '', meta_data)
+
+
+
+                                                                    formula_arranged= re.sub( r"([A-Z])", r" \1", formula_arranged).split()
+
+                                                                    # print(i3)
+
+                                                                    formula_arranged = sorted(formula_arranged)
+
+                                                                    formula_arranged = ''.join(formula_arranged)
+                                                                    g.add((URIRef(matvoc+a), URIRef(nomad + properties[c]), URIRef(matvoc+formula_arranged)))
+                                                                    g.add((URIRef(matvoc+formula_arranged), RDF.type, URIRef(matvoc+'Formula')))
+                                                                    g.add((URIRef(matvoc+formula_arranged), RDFS.label, Literal(meta_data)))
                                                                     # print(formulas)
                                                                 
                                                                     # print(meta_mat)
