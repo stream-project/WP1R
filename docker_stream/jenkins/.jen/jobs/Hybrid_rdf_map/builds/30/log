@@ -1,0 +1,35 @@
+Started by user [8mha:////4IGVMtvk6iK1hwW+PI4nElqD5WuZBmgWM1foNK6n5D+9AAAAlx+LCAAAAAAAAP9b85aBtbiIQTGjNKU4P08vOT+vOD8nVc83PyU1x6OyILUoJzMv2y+/JJUBAhiZGBgqihhk0NSjKDWzXb3RdlLBUSYGJk8GtpzUvPSSDB8G5tKinBIGIZ+sxLJE/ZzEvHT94JKizLx0a6BxUmjGOUNodHsLgAzuEgZu/dLi1CL9ovyMzBIAOOgHy8AAAAA=[0mrohit gupta
+Running as SYSTEM
+Building in workspace /var/jenkins_home/workspace/Hybrid_rdf_map
+[Hybrid_rdf_map] $ /bin/sh -xe /tmp/jenkins4919388385467254285.sh
++ python3 rdf.py
+/var/jenkins_home/workspace/Hybrid_rdf_map/rdf.py:74: DeprecationWarning: This method will be removed in future versions.  Use 'parser.read_file()' instead.
+  config1.readfp(open('../Hybrid_db_to_csv/tables.properties'))
+/var/jenkins_home/workspace/Hybrid_rdf_map/rdf.py
+/var/jenkins_home/workspace/Hybrid_rdf_map
+/var/jenkins_home/workspace/Hybrid_rdf_map/SDM-RDFizer/exam
++ cd SDM-RDFizer/rdfizer
++ python3 run_rdfizer.py ../../configfile.ini
+Semantifying materials_dataset...
+Traceback (most recent call last):
+  File "/var/jenkins_home/workspace/Hybrid_rdf_map/SDM-RDFizer/rdfizer/run_rdfizer.py", line 3, in <module>
+    semantify(str(sys.argv[1]))
+  File "/var/jenkins_home/workspace/Hybrid_rdf_map/SDM-RDFizer/rdfizer/rdfizer/semantify.py", line 4147, in semantify
+    reader = pd.read_csv(source, dtype = str)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/util/_decorators.py", line 211, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/util/_decorators.py", line 331, in wrapper
+    return func(*args, **kwargs)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py", line 950, in read_csv
+    return _read(filepath_or_buffer, kwds)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py", line 605, in _read
+    parser = TextFileReader(filepath_or_buffer, **kwds)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py", line 1442, in __init__
+    self._engine = self._make_engine(f, self.engine)
+  File "/usr/local/lib/python3.9/dist-packages/pandas/io/parsers/readers.py", line 1735, in _make_engine
+    self.handles = get_handle(
+  File "/usr/local/lib/python3.9/dist-packages/pandas/io/common.py", line 856, in get_handle
+    handle = open(
+FileNotFoundError: [Errno 2] No such file or directory: '../../../db_to_csv/materials_property.csv'
+Build step 'Execute shell' marked build as failure
+Finished: FAILURE
