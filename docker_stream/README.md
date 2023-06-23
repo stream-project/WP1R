@@ -89,7 +89,7 @@ The pipeline takes the stored rdf data, stores the triples in the triple store G
     1. Once all the docker is running, go to folder:
     
      ```
-     cd WP1R/docker_streamautomate
+     cd WP1R/docker_stream/automate
      
      ```
      2. Run the command:
