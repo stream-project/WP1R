@@ -1,24 +1,21 @@
 # Containerized version of the Stream Project 
 
 This is the containerized version of the RDF counterpart of the Nomad and Hybri Database produced by TIB in the context of the Stream project.
-
 In order to automate the transformation process and control the intermediate and final outputs, a CI/CD automation pipeline has been employed.
-
 The pipeline is maintained under the same source control and versioning mechanisms to facilitate access, configuration, and re-execution. 
 
-Separate steps has been used for diffrenet database, three databases has been used for the rdf transformation, Nomad, Hybrid and DSMS. 
+Separate steps has been used for diffrenet database, three databases has been used for the rdf transformation, Nomad, Hybrid and Dsms. 
 
 For Nomad, 
 The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Nomad database, cleaning, 
 transforming into RDF triples, storing the triples in the triple store GraphDB, and querying and validating the triples.
-For the rdf transformation of Nomad database, the pipeline takes the data from Nomad api's,
-cleans it and transform the data into the rdf form and finally store the data into triple store.
 
 For Hybrid,
-The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Hybrid database, converting into csv, 
-cleaning, transforming into RDF triples, storing the triples in the triple store of choice, and querying and validating the triples. 
+For the rdf transformation of Hybrid database, the pipeline takes the data from mysql bacdive database,
+cleans it and transform the hybrid data into the rdf form, store the data into triple store of choice and querying and validating the triples.
 
-For
+For Dsms,
+The pipeline takes the stored rdf data, stores the triples in the triple store GraphDB, and does querying and validation of the triples.
 
 # In order to run the pipeline and the steps following software and language have been used:
            1 Python
@@ -74,13 +71,13 @@ For
 
  3. Clone the GitHub repository to `local_repo_path` 
     ```
-     git clone https://github.com/TIBHannover/diaspora.git
+     git clone https://github.com/stream-project/WP1R.git
     ```
 
  4. Access repository:
 
   ```
-     cd diaspora/wp2/t2.1/v1.0/docker/linux
+     cd WP1R/docker_stream
      
   ```
  5. Run the command:
@@ -92,7 +89,7 @@ For
     1. Once all the docker is running, go to folder:
     
      ```
-     cd diaspora/wp2/t2.1/v1.0/docker/linux/automate
+     cd WP1R/docker_streamautomate
      
      ```
      2. Run the command:
@@ -111,5 +108,5 @@ For
       ```
       http://localhost:7200/     
       ```
-      and here in the repository named "Diaspora", all the transformed RDF triples are stored
+      and here all the repositories with stored triples are there.
      
