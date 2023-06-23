@@ -8,11 +8,11 @@ Separate steps has been used for diffrenet database, three databases has been us
 
 For Nomad, 
 The pipeline is composed of a sequence of steps, each performing a set of related operations e.g., fetching data from the Nomad database, cleaning, 
-transforming into RDF triples, storing the triples in the triple store GraphDB, and querying and validating the triples.
+transforming into RDF triples, storing the triples in the triple store GraphDB, querying, validating the triples and converting the formulas in cannonical form.
 
 For Hybrid,
 For the rdf transformation of Hybrid database, the pipeline takes the data from mysql bacdive database,
-cleans it and transform the hybrid data into the rdf form, store the data into triple store of choice and querying and validating the triples.
+cleans it and transform the hybrid data into the rdf form, store the data into triple store of choice, querying, validating the triples and converting the formulas in cannonical form.
 
 For Dsms,
 The pipeline takes the stored rdf data, stores the triples in the triple store GraphDB, and does querying and validation of the triples.
