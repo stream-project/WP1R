@@ -89,7 +89,12 @@ Graphdb is used here to store transformed rdf files from Hybrid database, used s
         Cannonical_formulas: executing this job will find the common formulas between both the databases. 
 
 
- # 
+ # Running all the jobs:
+
+ In this directory, there is a folder named automate with two files:
+             
+    jobs.properties: here all the jobs can we mentioned that needs to be executed.
+    automate.py: running this script will run all the jobs in the jenkins.
 
 
 
