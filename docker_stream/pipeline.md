@@ -82,10 +82,10 @@ MySQl database is used to load Hybrid database dump and then used it to convert 
 Graphdb is used here to store transformed rdf files from Hybrid database, used several sparql queries for testing the knowledge graph. 
 
 
-### NOTE: Also, to find the common materials between both the databases ( hybrid, Nomad ), another job is created  ( Hybrid_canonical_form and Nomad_canonical_form ) for the both the databases which converts the formulas into cannonical form whoich can be further used in sparql query to identify the common materials between both the databases. To find the common materials between Hybrid and Nomad, following jobs can be executed in jenkins pipeline:
+## NOTE: Also, to find the common materials between both the databases ( hybrid, Nomad ), another job is created  ( Hybrid_canonical_form and Nomad_canonical_form ) for the both the databases which converts the formulas into cannonical form whoich can be further used in sparql query to identify the common materials between both the databases. To find the common materials between Hybrid and Nomad, following jobs can be executed in jenkins pipeline:
 
         Hybrid_canonical_form: convert the formulas from hybrid database into canonical form.
-	Nomad_canonical_form: convert the formulas from hybrid database into canonical form.
+        Nomad_canonical_form: convert the formulas from hybrid database into canonical form.
         Cannonical_form: executing this job woll find the common formulas between both the databases. 
 
 
