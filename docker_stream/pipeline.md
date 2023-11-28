@@ -82,4 +82,4 @@ MySQl database is used to load Hybrid database dump and then used it to convert 
 Graphdb is used here to store transformed rdf files from Hybrid database, used several sparql queries for testing the knowledge graph. 
 
 
-### NOTE: Also, to find the common materials between both the databases ( hybrid, Nomad ), we have created another job ( Hybrid_canonical_form and Nomad_canonical_form )for the both the databases which converts the formulas into cannonical form whoich can be further used in sparql query to identify the common materials between both the databases. 
+### NOTE: Also, to find the common materials between both the databases ( hybrid, Nomad ), another job is created  ( Hybrid_canonical_form and Nomad_canonical_form ) for the both the databases which converts the formulas into cannonical form whoich can be further used in sparql query to identify the common materials between both the databases. 
