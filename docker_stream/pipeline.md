@@ -89,7 +89,11 @@ Graphdb is used here to store transformed rdf files from Hybrid database, used s
         Cannonical_formulas: executing this job will find the common formulas between both the databases. 
 
 
- ## Running all the jobs:
+# Pipeline for Hybrid Database
+
+add here
+
+# Running all the jobs:
 
  In this directory, there is a folder named automate with two files:
              
