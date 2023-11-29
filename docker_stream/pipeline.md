@@ -91,13 +91,19 @@ Graphdb is used here to store transformed rdf files from Hybrid database, used s
 
 # Pipeline for Dsms Database
 
-add here
+For the Dsms pipeline, data is provided by IWM manually and then the following jobs are executed in order to store and validate the Dsms data:
+
+      Dsms_linking: 
+      Dsms_store_to_graph: stores the triples into graph database.
+      Dsms_query: For querying the triple store.
+      Dsms_validate: This job is used to validate the query results.
+      Dsms_clean_workspace: Once the rdf files are stored in the database, this job can be executed to clean up the workspace.
 
 # Running all the jobs:
 
  In this directory, there is a folder named automate with two files:
              
-    jobs.properties: here all the jobs can we mentioned that needs to be executed.
+    jobs.properties: here all the jobs can be mentioned that needs to be executed.
     automate.py: running this script will run all the jobs in the jenkins.
 
 
