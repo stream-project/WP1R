@@ -93,7 +93,7 @@ Graphdb is used here to store transformed rdf files from Hybrid database, used s
 
 For the Dsms pipeline, data is provided by IWM manually and then the following jobs are executed in order to store and validate the Dsms data:
 
-      Dsms_linking: 
+      Dsms_linking: For linking dsms data with dbpedia.
       Dsms_store_to_graph: stores the triples into graph database.
       Dsms_query: For querying the triple store.
       Dsms_validate: This job is used to validate the query results.
